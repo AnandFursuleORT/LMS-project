@@ -1,0 +1,279 @@
+@media (min-width: 1280px) and (max-width: 1440px) {
+    .navDropdown {
+        font-size: 14px !important;
+    }
+
+    .candidate-panel-div a {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .heroSection {
+        height: 110vh;
+    }
+
+    .banner-heading {
+        font-size: 48px;
+    }
+
+    .banner-pg {
+        font-size: 16px;
+    }
+
+    .banner-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .count1 h4 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .count1 p {
+        font-size: 18px;
+    }
+
+    .featureSect span {
+        font-size: 18px;
+    }
+
+    .featureSect h6 {
+        font-size: 22px;
+    }
+
+    .featureIconSect span {
+        font-size: 18px;
+    }
+
+    .c-heading h6 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .ct-text {
+        font-size: 14px;
+    }
+
+    .course-para p {
+        font-size: 14px;
+    }
+
+    .tab-title {
+        font-size: 16px !important;
+    }
+
+    .main-title {
+        font-size: 16px;
+    }
+
+    .crInfobox h6 {
+        font-size: 16px;
+        margin-bottom: 8px !important;
+    }
+
+    .features-sect {
+        padding: 40px 20px;
+        background: rgba(255, 230, 198, 0.70);
+    }
+
+    .cert-text h4 {
+        font-size: 24px;
+    }
+
+    .courses-sect {
+        padding: 60px 20px;
+    }
+
+    .solutions-sect {
+        padding: 60px 20px;
+    }
+
+    .purpose-sect {
+        padding: 60px 20px;
+    }
+
+    .blog-sect {
+        padding: 60px 20px;
+    }
+
+    .gallery-sect {
+        padding: 60px 20px;
+    }
+
+    .contact-sect {
+        padding: 60px 20px;
+    }
+
+    .cert-text p {
+        margin-top: 24px;
+        font-size: 14px;
+    }
+
+    .moreText {
+        font-size: 14px;
+    }
+
+    .moreLinks span img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .solution-part h6 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .solution-part p {
+        font-size: 14px;
+    }
+
+    .learn-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .sol-hdg h2 {
+        font-size: 36px;
+    }
+
+    .sol-hdg p {
+        font-size: 14px;
+    }
+
+    .mInfo-sect h4 {
+        font-size: 36px;
+    }
+
+    .mInfo-sect p {
+        font-size: 14px;
+    }
+
+    .vInfo-sect h4 {
+        font-size: 36px;
+    }
+
+    .vInfo-sect p {
+        font-size: 14px;
+    }
+
+    .blog2Text1 h6 {
+        font-size: 18px;
+    }
+
+    .blog2Text1 p {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+    .blog2Text2 h6 {
+        font-size: 18px;
+    }
+
+    .blog2Text2 p {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+    .blogDiv2 {
+        margin-top: 24px;
+    }
+
+    .blogDiv1 h6 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .blogDiv1 p {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .blogIn1 p {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+    }
+
+    .inpFormfields {
+        padding: 14px 12px !important;
+    }
+    
+    .textareaFields {
+        font-size: 14px;
+    }
+
+    .textSide p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    /* footer css */
+
+    .ft-para {
+        font-size: 14px;
+    }
+
+    .inner-text {
+        font-size: 14px;
+    }
+
+    .logoimgDiv {
+        padding: 12px;
+    }
+
+    .pay-logo-part p {
+        font-size: 16px;
+    }
+
+    .footer-web {
+        padding: 60px 20px;
+    }
+    
+    .headingText {
+        font-size: 20px;
+    }
+
+    .links-ul li a {
+        font-size: 14px;
+    }
+
+    .nextLinks a {
+        font-size: 14px;
+    }
+
+    .logoText {
+        font-size: 14px;
+    }
+
+    .joinBtn {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 100px;
+    }
+
+    .sendBtn {
+        width: 100px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .cp-text p {
+        font-size: 14px;
+    }
+
+    .policySect a {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (device-width: 1280px) and (device-height: 720px) {}
+
+@media only screen and (min-width: 1366px) and (device-height: 768px) {}
+
+/*1400x900*/
+@media only screen and (min-width: 1440px) and (device-height: 900px) {}

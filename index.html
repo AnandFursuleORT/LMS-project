@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- start header -->
+    <header class="header-with-topbar">
+        <div class="top-bar d-none d-lg-block d-md-block">
+            <div class="container nav-header-container">
+                <div class="row d-flex flex-wrap align-items-center">
+                    <div class="col-lg-6 col-md-6 col-6 header-social-icon me-auto">
+                        <div class="top-info-section d-flex align-items-center">
+                            <div class="top-header-icon-section">
+                                <a href="#" style="text-decoration: none">
+                                    <span><img src="Lms-images/mail-01.svg" alt="mailicon"></span>
+                                    <span class="alt-font">hello@navlearn.com</span>
+                                </a>
+                            </div>
+
+                            <div class="top-header-icon-section">
+                                <a href="#" style="text-decoration: none">
+                                    <span><img src="Lms-images/call.svg" alt=""></span>
+                                    <span class="alt-font">+91 00000 00000</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-6 text-center">
+                        <li class="nav-item dropdown top-nav-dropdown d-flex justify-content-end">
+                            <img src="Lms-images/flag-01.svg" alt="">
+                            <a class="nav-link top-nav-dropdown-item dropdown-toggle ms-2" href="#" role="button"
+                                data-bs-toggle="dropdown">English
+                                <img src="Lms-images/arrow-down-02-round.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropMenu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="Lms-images/russia-flag.png" alt="flag1">
+                                        Russian
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="Lms-images/spain-flag.png" alt="flag2">
+                                        Spanish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="Lms-images/flag-01.svg" alt="flag3" width="16px" height="16px">
+                                        English
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-bar d-sm-block d-lg-none d-md-none">
+            <div class="container nav-header-container">
+                <div class="row d-flex flex-wrap align-items-center">
+                    <div class="col-lg-6 col-md-6 col-6 header-social-icon me-auto">
+                        <div class="top-info-section d-flex align-items-center">
+                            <div class="top-header-icon-section">
+                                <a href="#" style="text-decoration: none">
+                                    <span><img src="Lms-images/mail-01.svg" alt="mailicon"></span>
+                                    <span class="alt-font">hello@navlearn.com</span>
+                                </a>
+                            </div>
+
+                            <div class="top-header-icon-section">
+                                <a href="#" style="text-decoration: none">
+                                    <span><img src="Lms-images/call.svg" alt=""></span>
+                                    <span class="alt-font">+91 00000 00000</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-6 text-center">
+                        <li class="nav-item dropdown top-nav-dropdown d-flex justify-content-end">
+                            <img src="Lms-images/flag-01.svg" alt="">
+                            <a class="nav-link top-nav-dropdown-item dropdown-toggle ms-2" href="#" role="button"
+                                data-bs-toggle="dropdown">EN
+                                <img src="Lms-images/arrow-down-02-round.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="Lms-images/russia-flag.png" alt="#">
+                                        RUS
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="Lms-images/spain-flag.png" alt="">
+                                        SPN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="Lms-images/flag-01.svg" alt="">
+                                        EN
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Navbar section  -->
+        <nav class="navbar navbar-expand-md nav-main">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto navbar-nav-scroll">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navDropdown" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                                <img src="Lms-images/arrow-down-01-round.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropMenu">
+                                <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a>
+                                <li class="dropdown-submenu">
+                                    <a href="#" data-bs-toggle="dropdown"
+                                        class="dropdown-item dropdown-toggle menu-item">People
+                                        of the Sea</a>
+                                    <ul class="dropdown-menu items-submenu">
+                                        <li>
+                                            <a href="#" class="dropdown-item sub-item">Qualification</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item sub-item">Labor</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item sub-item">Training</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item menu-item" href="#">Ports and Auxiliary Maritime
+                                        Industries</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navDropdown" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Consultations
+                                <img src="Lms-images/arrow-down-01-round.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropMenu">
+                                <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">People of the Sea</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Ports and Auxiliary Maritime
+                                        Industries</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">License Cancellation Notice</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navDropdown" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Courses
+                                <img src="Lms-images/arrow-down-01-round.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropMenu">
+                                <li><a class="dropdown-item menu-item" href="#">Navigation</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Safety & Survival</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Engineering</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Cargo Handling</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Compliance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navDropdown" aria-current="page" href="#">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex align-items-center" role="search">
+                        <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
+                    </form>
+                    <a href="login.html" class="signIn-btn">
+                        <span class="signIn-text">Sign In</span>
+                    </a>
+                    <a href="Account.html" class="signUp-btn">
+                        <span class="signUp-text">Sign Up</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+    <!-- start hero section -->
+    <section class="heroSection">
+        <div class="container">
+            <div class="row">
+                <div class="banner-main">
+                    <h2 class="banner-heading">Panama: Empowering Global Maritime Excellence</h2>
+                    <p class="banner-pg">A Trusted Name in Global Shipping and Navigation</p>
+                    <a href="#" class="banner-btn">Primary Button</a>
+                </div>
+            </div>
+        </div>
+        <div class="counter-sect">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-6 col-lg-3 col-md-3 d-flex justify-content-center">
+                        <div class="count1">
+                            <h4>8,742</h4>
+                            <div class="border-solid"></div>
+                            <p>Registered Vessels Worldwide</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-3 d-flex justify-content-center">
+                        <div class="count1">
+                            <h4>249.1 M</h4>
+                            <div class="border-solid"></div>
+                            <p>Gross Registered Tons</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-3 d-flex justify-content-center">
+                        <div class="count1">
+                            <h4>100 M</h4>
+                            <div class="border-solid"></div>
+                            <p>Annual Revenue to the National Treasury</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-3 d-flex justify-content-center">
+                        <div class="count1">
+                            <h4>318,437</h4>
+                            <div class="border-solid"></div>
+                            <p>Technical Documentations for Seafarers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end hero section -->
+
+    <!-- start features section -->
+    <section class="features-sect">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 d-flex">
+                    <div class="featureSect">
+                        <span>About Navlearn</span>
+                        <h6>Get to know us</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 d-flex ab-col">
+                    <div class="featureIconSect">
+                        <img src="Lms-images/icon1.png" alt="ficon1">
+                        <span><strong>Meet</strong> with our experts trainers</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 d-flex ab-col">
+                    <div class="featureIconSect">
+                        <img src="Lms-images/icon2.png" alt="ficon1">
+                        <span><strong>Learn</strong> more about training at navlearn</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 d-flex">
+                    <div class="featureIconSect">
+                        <img src="Lms-images/icon3.png" alt="ficon1">
+                        <span><strong> Be</strong> a navlearner, value your growth!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end features section -->
+
+    <!-- start courses section -->
+    <section class="courses-sect">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="course">
+                        <div class="c-heading">
+                            <h6>Our Courses</h6>
+                        </div>
+                        <div class="c-catalog d-flex align-items-center">
+                            <a href="#" class="d-flex align-items-center" style="text-decoration: none;">
+                                <span><img src="Lms-images/catalogue.svg" alt="ct"></span>
+                                <span class="ct-text ps-2">Course Catalog</span>
+                            </a>
+
+                            <div class="look-small">
+                                <span>Take</span>
+                                <span>a look!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="course-para">
+                        <p>We currently offer 5 certified training courses, mainly Navigation, Safety & Survival,
+                            Engineering, Cargo Handling and Compliance. Below you will find all the training courses and
+                            modules we offer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Courses Tabs section start -->
+            <div class="row">
+                <div class="col-12 tab-style">
+                    <!-- start tab navigation -->
+                    <ul class="nav nav-tabs text-center c-tab">
+                        <li class="nav-item title-course">
+                            <span class="main-title">Courses</span>
+                        </li>
+                        <li class="nav-item tab-item">
+                            <a class="nav-link tab-title active" data-bs-toggle="tab"
+                                href="#navigation-tab">Navigation</a>
+                        </li>
+                        <li class="nav-item tab-item">
+                            <a class="nav-link tab-title" data-bs-toggle="tab" href="#safety-tab">Safety & Survival</a>
+                        </li>
+                        <li class="nav-item tab-item">
+                            <a class="nav-link tab-title" data-bs-toggle="tab" href="#eng-tab">Engineering</a>
+                        </li>
+                        <li class="nav-item tab-item">
+                            <a class="nav-link tab-title" data-bs-toggle="tab" href="#cargo-tab">Cargo
+                                Handling</a>
+                        </li>
+                        <li class="nav-item tab-item">
+                            <a class="nav-link tab-title" data-bs-toggle="tab" href="#comp-tab">Compliance</a>
+                        </li>
+                    </ul>
+                    <!-- end tab navigation -->
+                    <div class="tab-content crTab">
+                        <!-- start tab item -->
+                        <div id="navigation-tab" class="tab-pane fade active show">
+                            <div class="row g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Fundamentals: Marine Navigation</h6>
+                                                <p class="m-0">Learn the basics of navigating vessels using charts and
+                                                    tools.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Chart Plotting Techniques</h6>
+                                                <p class="m-0">Master precise plotting methods for complex voyages.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Radar Operation and Safety</h6>
+                                                <p class="m-0">Understand radar systems to ensure safe navigation at
+                                                    sea.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2 g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Basics of Celestial Navigation</h6>
+                                                <p class="m-0">Use celestial bodies for navigation in open waters.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Vessel Handling & Maintenance</h6>
+                                                <p class="m-0">Enhance your skills in vessel handling and upkeep.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="Courses-list.html" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6 class="">View All Courses</h6>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end tab item -->
+                        <!-- start tab item -->
+                        <div id="safety-tab" class="tab-pane fade">
+                            <div class="row g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Fundamentals: Marine Navigation</h6>
+                                                <p class="m-0">Learn the basics of navigating vessels using charts and
+                                                    tools.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Chart Plotting Techniques</h6>
+                                                <p class="m-0">Master precise plotting methods for complex voyages.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Radar Operation and Safety</h6>
+                                                <p class="m-0">Understand radar systems to ensure safe navigation at
+                                                    sea.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2 g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Basics of Celestial Navigation</h6>
+                                                <p class="m-0">Use celestial bodies for navigation in open waters.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Vessel Handling & Maintenance</h6>
+                                                <p class="m-0">Enhance your skills in vessel handling and upkeep.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="Courses-list.html" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>View All Courses</h6>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end tab item -->
+                        <!-- start tab item -->
+                        <div id="eng-tab" class="tab-pane fade">
+                            <div class="row g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Fundamentals: Marine Navigation</h6>
+                                                <p class="m-0">Learn the basics of navigating vessels using charts and
+                                                    tools.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Chart Plotting Techniques</h6>
+                                                <p class="m-0">Master precise plotting methods for complex voyages.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Radar Operation and Safety</h6>
+                                                <p class="m-0">Understand radar systems to ensure safe navigation at
+                                                    sea.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2 g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Basics of Celestial Navigation</h6>
+                                                <p class="m-0">Use celestial bodies for navigation in open waters.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Vessel Handling & Maintenance</h6>
+                                                <p class="m-0">Enhance your skills in vessel handling and upkeep.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="Courses-list.html" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>View All Courses</h6>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end tab item -->
+                        <!-- start tab item -->
+                        <div id="cargo-tab" class="tab-pane fade">
+                            <div class="row g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Fundamentals: Marine Navigation</h6>
+                                                <p class="m-0">Learn the basics of navigating vessels using charts and
+                                                    tools.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Chart Plotting Techniques</h6>
+                                                <p class="m-0">Master precise plotting methods for complex voyages.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Radar Operation and Safety</h6>
+                                                <p class="m-0">Understand radar systems to ensure safe navigation at
+                                                    sea.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2 g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Basics of Celestial Navigation</h6>
+                                                <p class="m-0">Use celestial bodies for navigation in open waters.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Vessel Handling & Maintenance</h6>
+                                                <p class="m-0">Enhance your skills in vessel handling and upkeep.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="Courses-list.html" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>View All Courses</h6>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end tab item -->
+                        <!-- start tab item -->
+                        <div id="comp-tab" class="tab-pane fade">
+                            <div class="row g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Fundamentals: Marine Navigation</h6>
+                                                <p class="m-0">Learn the basics of navigating vessels using charts and
+                                                    tools.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Chart Plotting Techniques</h6>
+                                                <p class="m-0">Master precise plotting methods for complex voyages.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Radar Operation and Safety</h6>
+                                                <p class="m-0">Understand radar systems to ensure safe navigation at
+                                                    sea.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2 g-3">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Basics of Celestial Navigation</h6>
+                                                <p class="m-0">Use celestial bodies for navigation in open waters.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>Vessel Handling & Maintenance</h6>
+                                                <p class="m-0">Enhance your skills in vessel handling and upkeep.</p>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="c-info-sect">
+                                        <a href="Courses-list.html" class="box-of-course">
+                                            <div class="crInfobox">
+                                                <h6>View All Courses</h6>
+                                            </div>
+                                            <div class="arrowDiv">
+                                                <img src="Lms-images/arrow-right-02-sharp.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end tab item -->
+                    </div>
+                </div>
+            </div>
+            <!-- Courses Tabs section end -->
+
+            <!-- Certificate section code start -->
+            <div class="cert-Sect">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="cert-text d-flex flex-column gap-2">
+                            <h4>Certificate Showroom</h4>
+                            <p>Get your Course Certificate and upload your Exam Certificate afterwards.
+                                Certificate Showroom allows you to represent your growth the best way
+                                possible with great graphics. Visit to see full features and instructions to
+                                prepare your showroom.</p>
+                        </div>
+                        <div class="moreDiv">
+                            <a href="" class="moreLinks" style="text-decoration: none;">
+                                <span><img src="Lms-images/link-square-02.svg" alt="square-link"></span>
+                                <span class="moreText">Learn More</span>
+                            </a>
+                            <a href="Courses-list.html" class="moreLinks"
+                                style="text-decoration: none; margin-left: 24px;">
+                                <span><img src="Lms-images/link-square-02.svg" alt="square-link"></span>
+                                <span class="moreText">See All Courses</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 offset-lg-1">
+                        <div class="ctImg-section">
+                            <img src="Lms-images/cert1.png" alt="crt1">
+                            <img class="cert2Img" src="Lms-images/cert2.png" alt="crt2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Certificate section code end -->
+        </div>
+    </section>
+    <!-- end courses section -->
+
+    <!-- start solutions section -->
+    <section class="solutions-sect">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sol-hdg text-center">
+                        <h2>Explore Maritime Solutions</h2>
+                        <p>Discover essential services empowering maritime operations, workforce, and global trade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sol-col">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-3 col-6 py-1">
+                        <div class="solution-part">
+                            <img src="Lms-images/sol1.png" alt="">
+                            <h6>Merchant Fleet</h6>
+                            <p>Discover the extensive global fleet operations, ensuring safe and efficient maritime
+                                transport solutions.
+                            </p>
+                            <a href="#" class="learn-btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 py-1">
+                        <div class="solution-part">
+                            <img src="Lms-images/sol2.png" alt="">
+                            <h6>Public Registry</h6>
+                            <p>Access verified public records, registration and certifications for ships, crew, and
+                                maritime services.
+                            </p>
+                            <a href="#" class="learn-btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 py-1">
+                        <div class="solution-part">
+                            <img src="Lms-images/sol3.png" alt="">
+                            <h6>Seafarer Workforce</h6>
+                            <p>Empowering skilled seafarers with training, employment opportunities, and essential
+                                resources.
+                            </p>
+                            <a href="#" class="learn-btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 py-1">
+                        <div class="solution-part">
+                            <img src="Lms-images/sol4.png" alt="">
+                            <h6>Ports & Maritime</h6>
+                            <p>Explore key ports and auxiliary industries supporting global maritime trade and
+                                logistics.
+                            </p>
+                            <a href="#" class="learn-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end solutions section -->
+
+    <!-- start purpose section -->
+    <section class="purpose-sect">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sol-hdg text-center">
+                        <h2>Our Purpose and Ambition</h2>
+                        <p>Driving excellence in maritime services through a clear mission and visionary leadership.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-sect d-none d-lg-block d-md-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                            <div class="mInfo-sect">
+                                <h4>Mission</h4>
+                                <p>We provide high-quality services to the maritime industry, guaranteeing legal
+                                    security, free enterprise and a competitive market; through compliance with national
+                                    and international regulations, within a framework of transparency and environmental
+                                    social responsibility.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-sect d-none d-lg-block d-md-block">
+                <div class="container vSect">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                            <div class="vInfo-sect">
+                                <h4>Vision</h4>
+                                <p>To be leaders in the provision of maritime, logistics and port services, promoting
+                                    investments and strategic alliances that strengthen trade, through efficient and
+                                    innovative processes, with the best human talent; achieving sustainable economic
+                                    growth for the country.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-sect d-sm-block d-lg-none d-md-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <img class="infoImg" src="Lms-images/about1.png" alt="ab1">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="mission-info-sect">
+                                <h4>Mission</h4>
+                                <p>We provide high-quality services to the maritime industry, guaranteeing legal
+                                    security, free enterprise and a competitive market; through compliance with national
+                                    and international regulations, within a framework of transparency and environmental
+                                    social responsibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="v-sect d-sm-block d-lg-none d-md-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <img class="infoImg" src="Lms-images/about2.png" alt="ab2">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="vission-info-sect">
+                                <h4>Vision</h4>
+                                <p>To be leaders in the provision of maritime, logistics and port services, promoting
+                                    investments and strategic alliances that strengthen trade, through efficient and
+                                    innovative processes, with the best human talent; achieving sustainable economic
+                                    growth for the country.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end purpose section -->
+
+    <!-- start video section -->
+    <section class="video-sect">
+        <div class="videoDiv">
+            <img class="video-img" src="Lms-images/ship.png" alt="ship">
+            <img class="videoPlay_button" src="Lms-images/_Play button.svg" alt="play">
+        </div>
+    </section>
+    <!-- end video section -->
+
+    <!-- start blogs section -->
+    <section class="blog-sect">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sol-hdg text-center">
+                        <h2>Our Blogs</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Turpis amet potenti auctor nisl ullamcorper semper
+                            maecenas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row blog-row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="Blog-leftPart">
+                        <div class="blogImgDiv">
+                            <img src="Lms-images/img1.png" alt="blog1">
+                        </div>
+                        <div class="blogDiv1">
+                            <h6>Release...</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Egestas mattis mattis id ac senectus.</p>
+                        </div>
+                        <div class="blogDiv2">
+                            <div class="blogIn1">
+                                <h6>Author Name Here</h6>
+                                <p>Dec 14, 2024 | 5 min read</p>
+                            </div>
+                            <a href="#">
+                                <div class="blogIn2">
+                                    <img src="Lms-images/link-square-02.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="blog2Div">
+                        <div class="row align-items-center g-4">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="blog2ImgDiv">
+                                    <img src="Lms-images/img2.png" alt="blog2">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="blog2Text1">
+                                    <h6>AMP holds an informative conversation on the reforms to the CSS</h6>
+                                    <p>Lorem ipsum dolor sit amet egestas mattis mattis id ac senectus...</p>
+                                </div>
+                                <div class="blogDiv2">
+                                    <div class="blog2Text2">
+                                        <h6>Author Name Here</h6>
+                                        <p class="">Dec 13, 2024 | 5 min read</p>
+                                    </div>
+                                    <a href="#">
+                                        <div class="blogIn2">
+                                            <img src="Lms-images/link-square-02.svg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog3Div">
+                        <div class="row align-items-center g-4">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="blog3ImgDiv">
+                                    <img src="Lms-images/img3.png" alt="blog2">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="blog2Text1">
+                                    <h6>AMP and ARAP sign cooperation agreement to prevent illegal fishing</h6>
+                                    <p>Lorem ipsum dolor sit amet egestas mattis mattis id ac senectus...</p>
+                                </div>
+                                <div class="blogDiv2">
+                                    <div class="blog2Text2">
+                                        <h6>Author Name Here</h6>
+                                        <p class="">Dec 13, 2024 | 5 min read</p>
+                                    </div>
+                                    <a href="#">
+                                        <div class="blogIn2">
+                                            <img src="Lms-images/link-square-02.svg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="viewBtn">
+                <a href="#" class="learn-btn">View All</a>
+            </div>
+        </div>
+    </section>
+    <!-- end blogs section -->
+
+    <!-- start blogs section -->
+    <section class="gallery-sect">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sol-hdg text-center">
+                        <h2>Explore our Gallery</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Turpis amet potenti auctor nisl ullamcorper semper
+                            maecenas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper img-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-content"></div>
+                        <div class="swiper-slide-img">
+                            <img src="Lms-images/img5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="Lms-images/img6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="Lms-images/img4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="Lms-images/img6.png" alt="">
+                        </div>
+                        <div class="swiper-slide-content"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="Lms-images/img5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-img">
+                            <img src="Lms-images/img4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-next">
+                    <img src="Lms-images/Arrow_alt_right.svg" alt="arrow-right">
+                </div>
+                <div class="swiper-prev">
+                    <img src="Lms-images/Arrow_alt_left.svg" alt="arrow-left">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end blogs section -->
+
+    <!-- start contact form section -->
+    <section class="contact-sect">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sol-hdg text-center">
+                        <h2>We'd love to here from you</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Turpis amet potenti auctor nisl ullamcorper semper
+                            maecenas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 align-items-center gx-5">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <form class="contactForm">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="mb-3">
+                                        <label for="InputFisrtName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control inpFormfields" placeholder="First Name"
+                                            id="InputFisrtName" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="mb-3">
+                                        <label for="InputLastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control inpFormfields" placeholder="Last Name"
+                                            id="InputLastName" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="mb-3">
+                                        <label for="InputEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control inpFormfields"
+                                            placeholder="Enter your Name" id="InputEmail" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="mb-3">
+                                        <label for="InputSubject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control inpFormfields"
+                                            placeholder="Enter your Subject" id="InputSubject" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="Textarea" class="form-label">Message</label>
+                                        <textarea class="form-control textareaFields" id="Textarea"
+                                            rows="5">Message...</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="formInputDiv">
+                                        <div class="mb-3 d-flex align-items-center gap-2">
+                                            <input type="checkbox" class="form-check-input" id="inputCheck1" checked>
+                                            <label class="form-check-label" for="inputCheck1">I agree with Terms of Use
+                                                and Privacy Policy</label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <button type="submit" class="sendBtn">Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="contact-info">
+                        <div class="infoSect">
+                            <div class="iconSide">
+                                <span class="iconBg">
+                                    <img src="Lms-images/phone-fill.svg" alt="phone">
+                                </span>
+                            </div>
+                            <div class="textSide">
+                                <h6>Phone</h6>
+                                <a href="#">
+                                    <p class="">+91 00000 00000</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="infoSect">
+                            <div class="iconSide">
+                                <span class="iconBg">
+                                    <img src="Lms-images/map-pin-2-fill.svg" alt="phone">
+                                </span>
+                            </div>
+                            <div class="textSide">
+                                <h6>Office</h6>
+                                <a href="#">
+                                    <p class="">1901 Thornridge Cir. Shiloh,
+                                        Hawaii 81063</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="infoSect">
+                            <div class="iconSide">
+                                <span class="iconBg">
+                                    <img src="Lms-images/mail-fill.svg" alt="phone">
+                                </span>
+                            </div>
+                            <div class="textSide">
+                                <h6>Email</h6>
+                                <p class="">hello@navlearn.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contact form section -->
+
+    <!-- start footer section -->
+    <footer class="footer-web">
+        <div class="footerDiv">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer-left-section">
+                            <div class="footer-logo-img">
+                                <img src="Lms-images/logo.png" alt="logoImg">
+                            </div>
+                            <div class="footer-text-part">
+                                <p class="ft-para">We specialize in training in the IT industry and offer you the best
+                                    in-person and
+                                    online seminars, including in areas like <span class="inner-text">Navigation, Safety
+                                        & Survival,
+                                        Engineering, Cargo Handling, Compliance</span> and many more.
+                                    We design trainings for individuals, companies and entire teams.</p>
+                            </div>
+
+                            <div class="footer-logo-part">
+                                <a href="#" class="logoimgDiv">
+                                    <img src="Lms-images/fb.svg" alt="fbImg">
+                                </a>
+                                <a href="#" class="logoimgDiv">
+                                    <img src="Lms-images/instagram.svg" alt="insImg">
+                                </a>
+                                <a href="#" class="logoimgDiv">
+                                    <img src="Lms-images/twitter.svg" alt="tImg">
+                                </a>
+                                <a href="#" class="logoimgDiv">
+                                    <img src="Lms-images/linked.svg" alt="lknImg">
+                                </a>
+                            </div>
+
+                            <div class="pay-logo-part">
+                                <p>Pay securely with:</p>
+                                <div class="pay-img-part">
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge6.svg" alt="fbImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge.svg" alt="insImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge2.svg" alt="tImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge7.svg" alt="lknImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge3.svg" alt="lknImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge4.svg" alt="lknImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge8.svg" alt="lknImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge5.svg" alt="lknImg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <div class="footer-right-section">
+                            <div class="right-text-section">
+                                <h6 class="headingText">Navigation</h6>
+                            </div>
+                            <div class="links-part d-none d-lg-block d-md-block">
+                                <div class="row g-4">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <div class="navLinks">
+                                            <ul class="links-ul">
+                                                <li><a href="">Academy</a></li>
+                                                <li><a href="">Enterprise Solutions</a></li>
+                                                <li><a href="">About Us</a></li>
+                                                <li><a href="">Insights</a></li>
+                                                <li><a href="">E-learning</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-12">
+                                        <div class="nextLinks">
+                                            <a href="">All</a>
+                                            <a href="">iSAQB®</a>
+                                            <a href="">SAFe®</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">Inhouse Training</a>
+                                            <a href="">Customized SAFe Kickstarter</a>
+                                            <a href="">Digital Leaders</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">Who are we?</a>
+                                            <a href="">Our Trainers</a>
+                                            <a href="">References</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">All</a>
+                                            <a href="">Software Architecture</a>
+                                            <a href="">Case Studies</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">Sign-In</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="links-part d-sm-block d-lg-none d-md-none">
+                                <div class="row g-4">
+                                    <div class="col-sm-12">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        Academy
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">All</a></li>
+                                                            <li><a href="#">iSAQB®</a></li>
+                                                            <li><a href="#">SAFe®</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false"
+                                                        aria-controls="collapseTwo">
+                                                        Enterprise Solutions
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">Inhouse Training</a></li>
+                                                            <li><a href="#">Customized SAFe Kickstarter</a></li>
+                                                            <li><a href="#">Digital Leaders</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                                        aria-controls="collapseThree">
+                                                        About Us
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">Who are we?</a></li>
+                                                            <li><a href="#">Our Trainers</a></li>
+                                                            <li><a href="#">References</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                                        aria-controls="collapseFour">
+                                                        Insights
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">All</a></li>
+                                                            <li><a href="#">Software Architecture</a></li>
+                                                            <li><a href="#">Case Studies</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                                        aria-controls="collapseFive">
+                                                        E-learning
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFive" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">Sign-In</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inputs-part">
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="right-text-section">
+                                            <h6 class="headingText">Contact</h6>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="Lms-images/SVG1.svg" alt="location">
+                                            </div>
+                                            <div class="logoText">Ammerswilerstrasse 19a CH - 5600 Lenzburg</div>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="Lms-images/SVG2.svg" alt="location">
+                                            </div>
+                                            <div class="logoText">+91 00000 00000</div>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="Lms-images/SVG3.svg" alt="location">
+                                            </div>
+                                            <div class="logoText">hello@navlearn.com</div>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="Lms-images/SVG4.svg" alt="location">
+                                            </div>
+                                            <div class="logoText">Mon - Fri | 09:00 - 17:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12">
+                                        <div class="right-text-section">
+                                            <h6 class="headingText">Subscribe to the Newsletter</h6>
+                                        </div>
+                                        <div class="right-input-section">
+                                            <form action="">
+                                                <div class="inputsect">
+                                                    <input type="email" class="form-control footer-input"
+                                                        placeholder="E-Mail Address" id="InputEmail">
+                                                </div>
+                                                <div class="formInputDiv">
+                                                    <div class="mb-3 d-flex gap-2">
+                                                        <input type="checkbox" class="form-check-input check-input"
+                                                            id="inputCheck2">
+                                                        <label class="form-check-label" for="inputCheck2">I accept the
+                                                            monthly newsletter and getting informational e-mail for the
+                                                            email address provided.<br>
+                                                            <span><a class="terms-link" href="#">Terms of Service</a>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <button type="submit" class="joinBtn">Join</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footerBottomSect">
+        <div class="container">
+            <div class="row">
+                <div class="cp-sect">
+                    <div class="cp-text">
+                        <p>© Copyright 2024, Navlearn, All Rights Reserved</p>
+                    </div>
+                    <div class="policySect">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#" class="ms-4">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer section -->
+    <script src=" js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        var swiper = new Swiper(".swiper", {
+            spaceBetween: 20,
+            centeredSlides: true,
+            coverflowEffect: {
+                stretch: 0,
+                depth: 80,
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            keyboard: {
+                enabled: true
+            },
+            navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },
+            loop: true,
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                },
+                1280: {
+                    slidesPerView: 3
+                }
+            }
+        });
+
+        swiper.slideTo(2, false, false);
+    </script>
+</body>
+
+</html>

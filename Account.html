@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/test.css">
+</head>
+
+<body>
+    <div class="container-fulid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                <div class="img-div">
+                    <img src="Lms-images/Color-bg.png" width="100%" alt="bg-img">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 box-1 p-0">
+                <div class="container1">
+                    <header>
+                        <div class="logo">
+                            <img src="/Lms-images/Logo.png" width="124px" height="48px" alt="logo png">
+                        </div>
+                        <div class="heading">
+                            <h2>Create an account</h2>
+                            <p>Fill in the details to register your account</p>
+                        </div>
+                    </header>
+                    <!-- ---------------------progress bar ---------------------------------- -->
+                    <div class="progress-bar1">
+                        <div class="step step-1">
+                            <div class="bullet">
+                                <span>01</span>
+                            </div>
+                            <p>
+                                Basics
+                            </p>
+                            <div class="check fas fa-check"></div>
+                        </div>
+                        <div class="step step-2">
+                            <div class="bullet">
+                                <span>02</span>
+                            </div>
+                            <p>
+                                Details
+                            </p>
+                            <div class="check fas fa-check"></div>
+                        </div>
+                        <div class="step step-3">
+                            <div class="bullet">
+                                <span>03</span>
+                            </div>
+                            <p>
+                                Uploads
+                            </p>
+                            <div class="check fas fa-check"></div>
+                        </div>
+                    </div>
+                    <div class="form-outer">
+                        <form action="#">
+                            <!-- ---------------------First page ---------------------------------- -->
+                            <div class="page slide-page">
+                                <div class="field name">
+                                    <div class="first">
+                                        <div class="mb-2">
+                                            <label for="exampleFormControlInput1" class="form-label">First Name<span
+                                                    id="astric">*</span></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Enter your first name">
+                                        </div>
+                                    </div>
+                                    <div class="last">
+                                        <div class="mb-2">
+                                            <label for="exampleFormControlInput1" class="form-label">Last Name<span
+                                                    id="astric">*</span></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Enter your last name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field number">
+                                    <label for="exampleFormControlInput1" class="form-label">Phone Number<span
+                                            id="astric">*</span></label>
+                                    <div class="input-group mb-2">
+                                        <button class="btn btn-1  dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">+91
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                            </svg>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another </a></li>
+                                            <li><a class="dropdown-item" href="#">Something</a></li>
+                                        </ul>
+                                        <input type="text" class="form-control"
+                                            aria-label="Text input with dropdown button">
+                                        <button id="start2" class="btn  upload-inputs btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#staticBackdrop2"
+                                            data-bs-target="#exampleModal1" type=" button" id="button-addon2">Send
+                                            OTP</button>
+                                    </div>
+                                </div>
+                                <div class="field number ">
+                                    <label for="exampleFormControlInput1" class="form-label">Email<span
+                                            id="astric">*</span> </label>
+                                    <div class="input-group mb-3">
+                                        <img src="/Lms-images/elements.png" width="18px" height="16px"
+                                            class="icon email-ic " alt="">
+                                        <input type="text" placeholder="Enter your email" class="form-control email-1"
+                                            aria-label="Text input with dropdown button">
+
+                                        <button id="start" class="btn upload-inputs btn-outline-secondary"
+                                            data-bs-toggle="modal" data-bs-target="#staticBackdrop" type=" button"
+                                            data-bs-target="#exampleModal1" id="button-addon2">Send
+                                            OTP</button>
+                                    </div>
+                                </div>
+                                <div class="field name">
+                                    <div class="d-col">
+                                        <label for="exampleFormControlInput1" class="form-label">Password<span
+                                                id="astric">*</span></label>
+                                        <div class="password-div-1">
+                                            <div class="input-group ">
+                                                <img src="/Lms-images/lock.png" width="20px" height="20px"
+                                                    class="lock-icon icon" alt="">
+                                                <input type="text" class="form-control form-control-1 "
+                                                    id="exampleFormControlInput1" placeholder="Enter your Password">
+                                                <img src="/Lms-images/eye (1).png" width="20px" height="20px"
+                                                    class=" icon1" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-col">
+                                        <label for="exampleFormControlInput1" class="form-label">Confirm
+                                            Password<span id="astric">*</span></label>
+                                        <div class="password-div-1">
+                                            <div class="input-group ">
+                                                <img src="/Lms-images/lock.png" width="20px" height="20px"
+                                                    class="lock-icon icon" alt="">
+                                                <input type="text" class="form-control form-control-1 "
+                                                    id="exampleFormControlInput1" placeholder="Re-enter your password">
+                                                <img src="/Lms-images/eye (1).png" width="20px" height="20px"
+                                                    class=" icon1" alt="">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- input Note  -->
+                                <div class="field number">
+                                    <div class="form-text mb-2 " id="basic-addon4">
+                                        <div class="text-div p-2">
+                                            <div class=" mb-2 ps-1" id="basic-addon4">Password must contain 8
+                                                characters,
+                                                1
+                                                uppercase, 1
+                                                lowercase and 1 number. </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="field buttons buttons-1">
+                                    <div class="back-btn">
+                                        <button type="button" style="width: 78px;"
+                                            class="bk-btn btn btn-outline-secondary">Back</button>
+                                    </div>
+                                    <div class="next-btn">
+                                        <button type="button" style="width: 78px;"
+                                            class="firstNext next nt-btn btn btn-primary">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ---------------------Second  page ---------------------------------- -->
+                            <div class="page">
+                                <div class="field name">
+                                    <div class="d-col">
+                                        <label for="exampleFormControlInput1" class="form-label">Sea Fearers No<span
+                                                id="astric">*</span>
+                                        </label>
+                                        <div class="input-group mb-2  ">
+                                            <img src="/Lms-images/ship-icon.png" width="16px" height="14px" class="icon"
+                                                alt="">
+                                            <input type="text" placeholder="Enter your indorse number"
+                                                class="form-control email-1"
+                                                aria-label="Text input with dropdown button">
+                                        </div>
+                                    </div>
+                                    <div class="d-col">
+                                        <label for="exampleFormControlInput1" class="form-label">Passport No<span
+                                                id="astric">*</span> </label>
+                                        <div class="input-group mb-2 ">
+                                            <img src="/Lms-images/passport.png" width="16px" height="14px" class="icon"
+                                                alt="">
+                                            <input type="text" placeholder="Enter your passport number"
+                                                class="form-control email-1"
+                                                aria-label="Text input with dropdown button">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field name">
+                                    <div class="d-col">
+                                        <label for="exampleFormControlInput1" class="form-label">Department<span
+                                                id="astric">*</span> </label>
+                                        <div class="input-group mb-2 ">
+                                            <img src="/Lms-images/department.png" width="16px" height="14px"
+                                                class="icon" alt="">
+                                            <select class="form-select" id="inputGroupSelect03"
+                                                aria-label="Example select with button addon">
+                                                <option selected>Select Your Department</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-col">
+                                        <label for="exampleFormControlInput1" class="form-label">Rank<span
+                                                id="astric">*</span> </label>
+                                        <div class="input-group mb-2 ">
+                                            <img src="/Lms-images/rank.png" width="16px" height="14px" class="icon"
+                                                alt="">
+                                            <select class="form-select" id="inputGroupSelect03"
+                                                aria-label="Example select with button addon">
+                                                <option selected>Select your rank</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field name">
+                                    <div class="d-col">
+                                        <label for="exampleFormControlInput1" class="form-label">Date Of Birth<span
+                                                id="astric">*</span> </label>
+                                        <div class="input-group mb-2 ">
+                                            <img src="/Lms-images/date.png" width="16px" height="14px" class="icon"
+                                                alt="">
+                                            <input type="date" placeholder="Enter your passport number"
+                                                class="form-control email-1"
+                                                aria-label="Text input with dropdown button">
+                                        </div>
+                                    </div>
+                                    <div class="d-col">
+                                        <label for="exampleFormControlInput1" class="form-label">Country<span
+                                                id="astric">*</span> </label>
+                                        <div class="input-group mb-2 ">
+                                            <img src="/Lms-images/country.png" width="16px" height="14px" class="icon"
+                                                alt="">
+                                            <select class="form-select" id="inputGroupSelect03"
+                                                aria-label="Example select with button addon">
+                                                <option selected>Select your country</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field d-col">
+                                    <label for="exampleFormControlInput1" class="form-label">Pin Code </label>
+                                    <div class="input-group mb-2">
+                                        <img src="/Lms-images/location-pin.png" width="18px" height="16px"
+                                            class="icon email-ic " alt="">
+                                        <input type="text" placeholder="Enter your pin code"
+                                            class="form-control email-1" aria-label="Text input with dropdown button">
+
+                                        <button class="btn upload-inputs btn-outline-secondary" type="button"
+                                            data-bs-target="#exampleModal1" id="button-addon2">Locate
+                                            me</button>
+                                    </div>
+
+                                </div>
+                                <div class="field buttons buttons-2">
+                                    <div class="back-btn">
+                                        <button type="button" style="width: 78px;"
+                                            class="prev-1 prev bk-btn btn btn-outline-secondary">Back</button>
+                                    </div>
+                                    <div class="next-btn">
+                                        <button type="button" style="width: 78px;"
+                                            class="next-1 next nt-btn btn btn-primary">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ---------------------Third  page ---------------------------------- -->
+                            <div class="page">
+                                <div class="field d-col">
+                                    <label for="exampleFormControlInput1" class="form-label">Birth Certificate<span
+                                            id="astric">*</span> </label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" placeholder="Upload your birth certificate"
+                                            class="form-control " aria-label="Text input with dropdown button">
+                                        <button class="btn upload-btn up-btn btn-outline-secondary" type="button"
+                                            id="button-addon2">
+                                            <img src="/Lms-images/upload 1.png" class="icon" alt="">
+                                            <span>Upload</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="field d-col">
+                                    <label for="exampleFormControlInput1" class="form-label">Passport<span
+                                            id="astric">*</span> </label> </label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" placeholder="Upload your passport" class="form-control "
+                                            aria-label="Text input with dropdown button">
+                                        <button class="btn upload-btn up-btn btn-outline-secondary" type="button"
+                                            id="button-addon2">
+                                            <img src="/Lms-images/upload 1.png" class="icon" alt="">
+                                            <span>Upload</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="field d-col">
+                                    <label for="exampleFormControlInput1" class="form-label">COC
+                                        <span><i>(Optional)</i></span>
+                                    </label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" placeholder="Upload your COC" class="form-control "
+                                            aria-label="Text input with dropdown button">
+                                        <button class="btn upload-btn up-btn btn-outline-secondary" type="button"
+                                            id="button-addon2">
+                                            <img src="/Lms-images/upload 1.png" class="icon" alt="">
+                                            <span>Upload</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="field d-col">
+                                    <label for="exampleFormControlInput1" class="form-label">Course Completion
+                                        Certificate
+                                        <span><i>(Optional)</i></span> </label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" placeholder="Upload your Completion Certificate"
+                                            class="form-control " aria-label="Text input with dropdown button">
+                                        <button class="btn upload-btn up-btn btn-outline-secondary" type="button"
+                                            id="button-addon2">
+                                            <img src="/Lms-images/upload 1.png" class="icon" alt="">
+                                            <span>Upload</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="field d-col">
+                                    <label for="exampleFormControlInput1" class="form-label">CDC
+                                        <span><i>(Optional)</i></span>
+                                    </label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" placeholder="Upload your CDC" class="form-control "
+                                            aria-label="Text input with dropdown button">
+                                        <button class="btn upload-btn up-btn btn-outline-secondary" type="button"
+                                            id="button-addon2">
+                                            <img src="/Lms-images/upload 1.png" class="icon" alt="">
+                                            <span>Upload</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="field buttons buttons-3">
+                                    <div class="back-btn">
+                                        <button type="button" style="width: 78px;"
+                                            class="prev-2 prev bk-btn btn btn-outline-secondary">Back</button>
+                                    </div>
+                                    <div class="next-btn">
+                                        <button type="button" style="width: 78px;"
+                                            class="next-2 next nt-btn btn btn-primary">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ---------------------fourth page ---------------------------------- -->
+                            <div class="page">
+                                <div class="field">
+                                    <div class="form-div">
+                                        <div class="final-div">
+                                            <div class="img-div1">
+                                                <img src="/Lms-images/Group.png" width="70%" height="100%" alt="">
+                                            </div>
+                                            <p class="para">Application no: #268-136-734</p>
+                                            <h6 class="text-1">Your registration has been successfully submitted!</h6>
+                                            <p class="para">Kindly visit the training center with a printed copy of your
+                                                documents for
+                                                validation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field buttons buttons-4 ">
+                                    <div class="back-btn">
+                                        <button type="button" style="width: 78px;"
+                                            class="prev-3 prev bk-btn btn btn-outline-secondary">Back</button>
+                                    </div>
+                                    <div class="next-btn">
+                                        <a href="index2.html" style="width: 78px; text-decoration: none; color: #FAFBFB;" class="submit nt-btn">Finish</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- --------------------------------- Email modal popup -------------------------------------- -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header ">
+                                <div class="icon-img">
+                                    <img src="/Lms-images/verify.png" width="40px" height="40px" alt="">
+                                </div>
+                                <div class="icon-img1">
+                                    <img src="/Lms-images/cancel-01.png" id="stop" data-bs-dismiss="modal" width="24px"
+                                        height="20px" alt="">
+                                </div>
+                            </div>
+                            <div class="message-div">
+                                <p>Lorem ipsum dolor sit, amet consectetur </p>
+                            </div>
+                            <div class="text-2">
+                                <h3>Verify Your Email Address</h3>
+                                <p>We've sent a code to test@gmail.com</p>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-bx mb-4 mt-1">
+                                    <form method="get" class="digit-group" data-group-name="digits"
+                                        data-autosubmit="false" autocomplete="off">
+                                        <input type="text" placeholder="*" id="digit-1" name="digit-1"
+                                            data-next="digit-2" />
+                                        <input type="text" placeholder="*" id="digit-2" name="digit-2"
+                                            data-next="digit-3" data-previous="digit-1" />
+                                        <input type="text" placeholder="*" id="digit-3" name="digit-3"
+                                            data-next="digit-4" data-previous="digit-2" />
+                                        <input type="text" placeholder="*" id="digit-4" name="digit-4"
+                                            data-next="digit-5" data-previous="digit-3" />
+                                    </form>
+                                </div>
+                            </div>
+                            <div class=" modal-footer2">
+
+                                <span>Didn’t get the code?</span>
+                                <span class="timer" id="countdown" class="countdown2">0:10</span>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------- Phone no modal popup -------------------------------------- -->
+                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header ">
+                                <div class="icon-img">
+                                    <img src="/Lms-images/message.png" width="40px" height="40px" alt="">
+                                </div>
+                                <div class="icon-img1">
+                                    <img src="/Lms-images/cancel-01.png" id="stop2" data-bs-dismiss="modal" width="24px"
+                                        height="20px" alt="">
+                                </div>
+                            </div>
+                            <div class="message-div">
+                                <p>Lorem ipsum dolor sit, amet consectetur </p>
+                            </div>
+                            <div class="text-2">
+                                <h3>Verify Your Phone Number</h3>
+                                <p>We've sent a code to +91 95486 91247</p>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-bx mb-4 mt-1">
+                                    <form method="get" class="digit-group" data-group-name="digits"
+                                        data-autosubmit="false" autocomplete="off">
+                                        <input type="text" placeholder="*" id="digit-1" name="digit-1"
+                                            data-next="digit-2" />
+                                        <input type="text" placeholder="*" id="digit-2" name="digit-2"
+                                            data-next="digit-3" data-previous="digit-1" />
+                                        <input type="text" placeholder="*" id="digit-3" name="digit-3"
+                                            data-next="digit-4" data-previous="digit-2" />
+                                        <input type="text" placeholder="*" id="digit-4" name="digit-4"
+                                            data-next="digit-5" data-previous="digit-3" />
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer ">
+                                <span>Didn’t get the code?</span>
+                                <span class="timer" id="countdown2">0:10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/login.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

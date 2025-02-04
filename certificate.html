@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Panel</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md nav-main">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/Logo.svg" alt="main-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto navbar-nav-scroll">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                            <img src="images/arrow-down-01-round.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu dropMenu">
+                            <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a>
+                            <li class="dropdown-submenu">
+                                <a href="#" data-bs-toggle="dropdown"
+                                    class="dropdown-item dropdown-toggle menu-item">People
+                                    of the Sea</a>
+                                <ul class="dropdown-menu items-submenu">
+                                    <li>
+                                        <a href="#" class="dropdown-item sub-item">Qualification</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item sub-item">Labor</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item sub-item">Training</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item menu-item" href="#">Ports and Auxiliary Maritime
+                                    Industries</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Consultations
+                            <img src="images/arrow-down-01-round.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu dropMenu">
+                            <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">People of the Sea</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Ports and Auxiliary Maritime
+                                    Industries</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">License Cancellation Notice</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                            <img src="images/arrow-down-01-round.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu dropMenu">
+                            <li><a class="dropdown-item menu-item" href="#">Navigation</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Safety & Survival</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Engineering</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Cargo Handling</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Compliance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navDropdown" aria-current="page" href="#">About</a>
+                    </li>
+                </ul>
+                <div class=" nav-end ">
+                   <form class="d-flex" role="search">
+                    <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
+                </form>
+                <div class="notify">
+                    <a href="#"><img src="images/bell.svg" alt=""></a>
+                  
+                </div>
+                <div class="profile-div  d-flex align-items-center">
+                    <img src="images/profile-photo.svg" class="prof-img" alt="profile">
+                    <div class="prof-dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-profile" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="prof-sect ms-2">
+                                    <h6 class="prof-name mb-0">Satyam</h6>
+                                    <p class="prof-dst mb-0">Captain</p>
+                                </div>
+                                <div class="dropDown-prof ms-2">
+                                    <img src="images/arrow-down-black.svg" alt="dropdown">
+                                </div>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+               
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="sidebar">
+                                <div class="menu-one">
+                                    <ul class="menu-list">
+                                        <li class="menu-item">
+                                            <a href="home.html">
+                                                <img src="images/home.svg" alt="home-icon" />
+                                                <span>Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="training.html">
+                                                <img src="images/sidebar-yourTraining.svg" alt="training-icon" />
+                                                <span>Your Training</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-two">
+                                    <p>Library</p>
+                                    <ul class="menu-list">
+                                        <li class="menu-item">
+                                            <a href="recommendation.html">
+                                                <img src="images/sidebar-reccomendation.svg "
+                                                    alt="Recommendation-icon" />
+                                                <span>Recommendation</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="course.html">
+                                                <img src="images/sidebar-courses.svg" alt="courses-icon" />
+                                                <span>Courses</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="exam.html">
+                                                <img src="images/sidebar-exam.svg" alt="exam-icon" />
+                                                <span>Exam</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="result.html">
+                                                <img src="images/sidebar-results.svg" alt="results-icon" />
+                                                <span>Results</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item active">
+                                            <a href="certificate.html">
+                                                <img src="images/certificate.svg" alt="certification-icon" />
+                                                <span class="active">Certification</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-three">
+                                    <p>Others</p>
+                                    <ul class="menu-list">
+                                        <li class="menu-item">
+                                            <a href="feedback.html">
+                                                <img src="images/sidebar-feedback.svg" alt="courses-icon" />
+                                                <span>Feedback</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="faq.html">
+                                                <img src="images/sidebar-faq.svg" alt="exam-icon" />
+                                                <span">FAQs</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="main-content">
+                        <div class="certification-heading mb-4">
+                            <div class="title ">
+                                <h2 class="mb-0">Certification</h2>
+                            </div>
+
+                           
+
+                        </div>
+                        <div class="row course-card gy-4">
+                            <div class="col-6 custom-col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="certificate-card d-flex flex-column gap-3">
+                                            <div class="institute-label d-flex align-items-center">
+                                                <img src="images/training-inst-logo.svg" alt="">
+                                                <div class="institute-name">
+                                                    <p class="mb-0">Macosnar Training Institute Corp.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="certificate-name d-flex flex-column ">
+                                                <div class="course-title">
+                                                    <h4 class="mb-0">Chart Plotting Techniques</h4>
+                                                </div>
+                                                <div class="certificate-id d-flex justify-content-between">
+                                                    <span>ID: #ACF110918</span>
+                                                    <span>Duration: 25.5 hrs</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="certificate-btn d-flex justify-content-between gap-2">
+                                            <a href="" class="view-btn">View</a>
+                                            <a href="" class="download-btn">Download</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 custom-col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="certificate-card d-flex flex-column gap-3">
+                                            <div class="institute-label d-flex align-items-center">
+                                                <img src="images/training-inst-logo.svg" alt="">
+                                                <div class="institute-name">
+                                                    <p class="mb-0">Macosnar Training Institute Corp.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="certificate-name d-flex flex-column ">
+                                                <div class="course-title">
+                                                    <h4 class="mb-0">Chart Plotting Techniques</h4>
+                                                </div>
+                                                <div class="certificate-id d-flex justify-content-between">
+                                                    <span>ID: #ACF110918</span>
+                                                    <span>Duration: 25.5 hrs</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="certificate-btn d-flex justify-content-between gap-2">
+                                            <a href="" class="view-btn">View</a>
+                                            <a href="" class="download-btn">Download</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 custom-col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="certificate-card d-flex flex-column gap-3">
+                                            <div class="institute-label d-flex align-items-center">
+                                                <img src="images/training-inst-logo.svg" alt="">
+                                                <div class="institute-name">
+                                                    <p class="mb-0">Macosnar Training Institute Corp.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="certificate-name d-flex flex-column ">
+                                                <div class="course-title">
+                                                    <h4 class="mb-0">Chart Plotting Techniques</h4>
+                                                </div>
+                                                <div class="certificate-id d-flex justify-content-between">
+                                                    <span>ID: #ACF110918</span>
+                                                    <span>Duration: 25.5 hrs</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="certificate-btn d-flex justify-content-between gap-2">
+                                            <a href="" class="view-btn">View</a>
+                                            <a href="" class="download-btn">Download</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 custom-col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="certificate-card d-flex flex-column gap-3">
+                                            <div class="institute-label d-flex align-items-center">
+                                                <img src="images/training-inst-logo.svg" alt="">
+                                                <div class="institute-name">
+                                                    <p class="mb-0">Macosnar Training Institute Corp.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="certificate-name d-flex flex-column ">
+                                                <div class="course-title">
+                                                    <h4 class="mb-0">Chart Plotting Techniques</h4>
+                                                </div>
+                                                <div class="certificate-id d-flex justify-content-between">
+                                                    <span>ID: #ACF110918</span>
+                                                    <span>Duration: 25.5 hrs</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="certificate-btn d-flex justify-content-between gap-2">
+                                            <a href="" class="view-btn">View</a>
+                                            <a href="" class="download-btn">Download</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 custom-col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="certificate-card d-flex flex-column gap-3">
+                                            <div class="institute-label d-flex align-items-center">
+                                                <img src="images/training-inst-logo.svg" alt="">
+                                                <div class="institute-name">
+                                                    <p class="mb-0">Macosnar Training Institute Corp.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="certificate-name d-flex flex-column ">
+                                                <div class="course-title">
+                                                    <h4 class="mb-0">Chart Plotting Techniques</h4>
+                                                </div>
+                                                <div class="certificate-id d-flex justify-content-between">
+                                                    <span>ID: #ACF110918</span>
+                                                    <span>Duration: 25.5 hrs</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="certificate-btn d-flex justify-content-between gap-2">
+                                            <a href="" class="view-btn">View</a>
+                                            <a href="" class="download-btn">Download</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 custom-col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="certificate-card d-flex flex-column gap-3">
+                                            <div class="institute-label d-flex align-items-center">
+                                                <img src="images/training-inst-logo.svg" alt="">
+                                                <div class="institute-name">
+                                                    <p class="mb-0">Macosnar Training Institute Corp.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="certificate-name d-flex flex-column ">
+                                                <div class="course-title">
+                                                    <h4 class="mb-0">Chart Plotting Techniques</h4>
+                                                </div>
+                                                <div class="certificate-id d-flex justify-content-between">
+                                                    <span>ID: #ACF110918</span>
+                                                    <span>Duration: 25.5 hrs</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="certificate-btn d-flex justify-content-between gap-2">
+                                            <a href="" class="view-btn">View</a>
+                                            <a href="" class="download-btn">Download</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 custom-col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="certificate-card d-flex flex-column gap-3">
+                                            <div class="institute-label d-flex align-items-center">
+                                                <img src="images/training-inst-logo.svg" alt="">
+                                                <div class="institute-name">
+                                                    <p class="mb-0">Macosnar Training Institute Corp.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="certificate-name d-flex flex-column ">
+                                                <div class="course-title">
+                                                    <h4 class="mb-0">Chart Plotting Techniques</h4>
+                                                </div>
+                                                <div class="certificate-id d-flex justify-content-between">
+                                                    <span>ID: #ACF110918</span>
+                                                    <span>Duration: 25.5 hrs</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="certificate-btn d-flex justify-content-between gap-2">
+                                            <a href="" class="view-btn">View</a>
+                                            <a href="" class="download-btn">Download</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer-web">
+        <div class="footerDiv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="brand-logo">
+                            <img src="images/brand-logo.svg" alt="brand-logo" />
+                        </div>
+                        <div class="footer-text">
+                            <p>
+                                We specialize in training in the IT industry and offer you the best in-person and
+                                online seminars, including in areas like
+                                <span class="highlighted-text">Navigation, Safety & Survival, Engineering, Cargo
+                                    Handling,
+                                    Compliance</span>
+                                and many more. We design trainings for individuals, companies and entire teams.
+                            </p>
+                        </div>
+                        <div class="social-media-icon">
+                            <a href=""><img src="images/facebook.svg" alt="fb-icon" /></a>
+                            <a href=""><img src="images/insta.svg" alt="insta-icon" /></a>
+                            <a href=""><img src="images/twitter.svg" alt="twitter-icon" /></a>
+                            <a href=""><img src="images/linkedin.svg" alt="linkedin-icon" /></a>
+
+                        </div>
+                        <div class="payments">
+                            <p>Pay securely with:</p>
+                            <div class="payment-part d-flex align-items-center">
+
+                                <div class="payment-icon">
+                                    <img src="images/visa.svg" alt="" />
+                                </div>
+
+                                <div class="payment-icon">
+                                    <img src="images/mastercard.svg" alt="" />
+                                </div>
+                                <div class="payment-icon">
+                                    <img src="images/maestro.svg" alt="" />
+                                </div>
+                                <div class="payment-icon">
+                                    <img src="images/am-ex.svg" alt="" />
+                                </div>
+                                <div class="payment-icon">
+                                    <img src="images/g-pay.svg" alt="" />
+                                </div>
+                                <div class="payment-icon">
+                                    <img src="images/apple-pay.svg" alt="" />
+                                </div>
+                                <div class="payment-icon">
+                                    <img src="images/klarna.svg" alt="" />
+                                </div>
+                                <div class="payment-icon">
+                                    <img src="images/amazon-pay.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <div class="footer-right-section">
+                            <div class="right-text-section">
+                                <h6 class="headingText">Navigation</h6>
+                            </div>
+                            <div class="links-part d-none d-lg-block d-md-block">
+                                <div class="row g-4">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <div class="navLinks">
+                                            <ul class="links-ul">
+                                                <li><a href="">Academy</a></li>
+                                                <li><a href="">Enterprise Solutions</a></li>
+                                                <li><a href="">About Us</a></li>
+                                                <li><a href="">Insights</a></li>
+                                                <li><a href="">E-learning</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-12">
+                                        <div class="nextLinks">
+                                            <a href="">All</a>
+                                            <a href="">iSAQB®</a>
+                                            <a href="">SAFe®</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">Inhouse Training</a>
+                                            <a href="">Customized SAFe Kickstarter</a>
+                                            <a href="">Digital Leaders</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">Who are we?</a>
+                                            <a href="">Our Trainers</a>
+                                            <a href="">References</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">All</a>
+                                            <a href="">Software Architecture</a>
+                                            <a href="">Case Studies</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">Sign-In</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="links-part d-sm-block d-lg-none d-md-none">
+                                <div class="row g-4">
+                                    <div class="col-sm-12">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        Academy
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">All</a></li>
+                                                            <li><a href="#">iSAQB®</a></li>
+                                                            <li><a href="#">SAFe®</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        Enterprise Solutions
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">Inhouse Training</a></li>
+                                                            <li><a href="#">Customized SAFe Kickstarter</a></li>
+                                                            <li><a href="#">Digital Leaders</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        About Us
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">Who are we?</a></li>
+                                                            <li><a href="#">Our Trainers</a></li>
+                                                            <li><a href="#">References</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                        aria-expanded="false" aria-controls="collapseFour">
+                                                        Insights
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">All</a></li>
+                                                            <li><a href="#">Software Architecture</a></li>
+                                                            <li><a href="#">Case Studies</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                        aria-expanded="false" aria-controls="collapseFive">
+                                                        E-learning
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFive" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">Sign-In</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inputs-part">
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="right-text-section">
+                                            <h6 class="headingText">Contact</h6>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="images/location.svg" alt="location" />
+                                            </div>
+                                            <div class="logoText">Ammerswilerstrasse 19a CH - 5600 Lenzburg</div>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="images/phone.svg" alt="location" />
+                                            </div>
+                                            <div class="logoText">+91 00000 00000</div>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="images/email.svg" alt="location" />
+                                            </div>
+                                            <div class="logoText">hello@navlearn.com</div>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="images/location.svg" alt="location" />
+                                            </div>
+                                            <div class="logoText">Mon - Fri | 09:00 - 17:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12">
+                                        <div class="right-text-section">
+                                            <h6 class="headingText">Subscribe to the Newsletter</h6>
+                                        </div>
+                                        <div class="right-input-section">
+                                            <form action="">
+                                                <div class="inputsect">
+                                                    <input type="email" class="form-control footer-input"
+                                                        placeholder="E-Mail Address" id="InputEmail" />
+                                                </div>
+                                                <div class="formInputDiv d-flex">
+                                                    <div class="mb-3 d-flex gap-2">
+                                                        <input type="checkbox" class="form-check-input check-input"
+                                                            id="inputCheck2" />
+                                                        <label class="form-check-label" for="inputCheck2">I accept the
+                                                            monthly newsletter and
+                                                            getting informational e-mail
+                                                            for the email address provided.<br />
+                                                            <span><a class="terms-link" href="#">Terms of Service</a>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <button type="submit" class="joinBtn">Join</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footerBottomSect">
+        <div class="container">
+            <div class="row">
+                <div class="cp-sect">
+                    <div class="cp-text">
+                        <p class="mb-0">© Copyright 2024, Navlearn, All Rights Reserved</p>
+                    </div>
+                    <div class="policySect">
+                        <a href="">Privacy Policy</a>
+                        <a href="" class="ms-4">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

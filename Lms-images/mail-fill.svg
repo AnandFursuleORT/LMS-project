@@ -1,0 +1,16 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="mail-fill" clip-path="url(#clip0_193_846)">
+<g id="Group">
+<path id="Vector" d="M3.75 3.75H26.25C26.5815 3.75 26.8995 3.8817 27.1339 4.11612C27.3683 4.35054 27.5 4.66848 27.5 5V25C27.5 25.3315 27.3683 25.6495 27.1339 25.8839C26.8995 26.1183 26.5815 26.25 26.25 26.25H3.75C3.41848 26.25 3.10054 26.1183 2.86612 25.8839C2.6317 25.6495 2.5 25.3315 2.5 25V5C2.5 4.66848 2.6317 4.35054 2.86612 4.11612C3.10054 3.8817 3.41848 3.75 3.75 3.75ZM15.075 14.6037L7.06 7.7975L5.44125 9.7025L15.0912 17.8963L24.5675 9.69625L22.9325 7.805L15.075 14.6037Z" fill="url(#paint0_linear_193_846)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_193_846" x1="40.2219" y1="33.457" x2="0.996385" y2="31.3176" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFB555"/>
+<stop offset="1" stop-color="#E28000"/>
+</linearGradient>
+<clipPath id="clip0_193_846">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>

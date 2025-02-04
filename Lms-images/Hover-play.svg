@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="_Play button/xs/Outline/Hover" filter="url(#filter0_b_820_6852)">
+<rect width="24" height="24" rx="12" fill="#03599F"/>
+<path id="Shape" d="M16.875 11.3712C17.375 11.6507 17.375 12.3493 16.875 12.6288L10.125 16.4016C9.625 16.6811 9 16.3318 9 15.7728L9 8.22716C9 7.66823 9.625 7.31889 10.125 7.59836L16.875 11.3712Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_b_820_6852" x="-16" y="-16" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="8"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_820_6852"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_820_6852" result="shape"/>
+</filter>
+</defs>
+</svg>
