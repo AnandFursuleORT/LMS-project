@@ -1,0 +1,160 @@
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .navDropdown {
+        font-size: 14px;
+    }
+
+   .main .title h2 {
+        font-size: 22px;
+    }
+    .course-text .text{
+        font-size: 16px;
+    }
+
+    /* Courses */ 
+
+
+    .offer .discount {
+        font-size: 18px;
+    }
+    .offer .mrp{
+        font-size: 18px;
+    }
+    
+    /* Feedback */ 
+
+    .question p {
+        font-size: 14px ;
+    }
+    .feedback-description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+ 
+    .feedback-title h5 {
+        font-size: 18px;
+    }
+    .category h6 {
+        font-size: 16px;
+    }
+    .prev-nxt-btn{
+        margin-top: 32px ;
+    }
+
+    .history-title {
+        font-size: 18px;
+    }
+    .add-feedback-text {
+        font-size: 14px;
+    }
+    .add-feedback-editor::placeholder {
+        font-size: 12px;
+    }
+    .feedback-title-thankyou h5  {
+        font-size: 18px;
+    }
+
+
+    /* FAQ */
+
+    .banner-text {
+        font-size: 32px;
+    }
+
+    .faq-banner-search {
+        width: 100%;
+    }
+    .tabs-banner .tabs  {
+        font-size: 10px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .card-links a {
+        font-size: 14px;
+    }
+    
+    .settting-title h2 { 
+        font-size: 26px;
+    }
+
+
+
+
+
+
+
+
+    /* footer css */
+ 
+    .ft-para {
+        font-size: 14px;
+    }
+ 
+    .inner-text {
+        font-size: 14px;
+    }
+ 
+    .logoimgDiv {
+        padding: 12px;
+    }
+ 
+    .pay-logo-part p {
+        font-size: 16px;
+    }
+ 
+    .footer-web {
+        padding: 60px 20px;
+    }
+   
+    .headingText {
+        font-size: 20px;
+    }
+ 
+    .links-ul li a {
+        font-size: 16px;
+    }
+ 
+    .nextLinks a {
+        font-size: 16px;
+    }
+ 
+    .logoText {
+        font-size: 14px;
+    }
+ 
+    .joinBtn {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 100px;
+    }
+ 
+    .sendBtn {
+        width: 100px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+ 
+    .cp-text p {
+        font-size: 14px;
+    }
+ 
+    .policySect a {
+        font-size: 14px;
+    }
+
+    /*FAQ */
+    .tab-links ul li a {
+        font-size: 14px;
+    }
+    .faq-tab-btn {
+        font-size: 18px !important;
+    }
+    .faq-accordion-btn {
+        font-size: 14px !important;
+       
+    }
+
+
+    
+
+}

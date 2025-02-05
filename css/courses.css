@@ -241,8 +241,21 @@ img {
     align-items: center;
     justify-content: center;
 }
-
-
+.candidate-panel-div a {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #03599F;
+    text-decoration: none;
+    color: #03599F;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
 /* ===================================
     2. Course List Banner
 ====================================== */

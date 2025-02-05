@@ -214,7 +214,7 @@ img {
     line-height: 36px;
     font-weight: 600;
     color: #011B30;
-    font-family: "ES Rebond Grotesque TRIAL";
+    font-family: "ES Rebond Grotesque TRIAL" !important;
     
 
 
@@ -249,14 +249,14 @@ img {
 .course-count {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 48px
+    margin-bottom: 24px
 }
 
 .course-count .count {
-    font-size: 48px;
+    font-size: 32px;
     line-height: 36px;
     font-weight: 600;
-    font-family: "ES Rebond Grotesque TRIAL";
+    font-family: "ES Rebond Grotesque TRIAL" !important;
     color: #011B30;
 }
 
@@ -563,6 +563,9 @@ img {
 }
 
 .course-info img {
+    margin-right: 8px;
+}
+.course-info-expired  img {
     margin-right: 8px;
 }
 
@@ -918,7 +921,7 @@ table td a {
 /* FAQ */
 
 .faq-banner {
-    padding: 32px 0px 32px 0px;
+    padding: 32px 12px 32px 12px;
     border-radius: 20px;
     gap: 24px;
     background: linear-gradient(255deg, #000910 -0.13%, #03599F 112.12%);
@@ -929,7 +932,7 @@ table td a {
     font-size: 36px;
     line-height: 50px;
     font-weight: 600;
-    font-family: "ES Rebond Grotesque TRIAL";
+    font-family: "ES Rebond Grotesque TRIAL" !important;
     color: #FAFBFB;
 }
 
@@ -939,12 +942,11 @@ table td a {
     background-color: transparent;
     background-image: url(/images/training-search.svg);
     background-repeat: no-repeat;
-    background-position: 10px 10px;
-    padding: 9px;
-    padding-left: 36px;
+    background-position: 98% 50%;
+    padding: 12px;
     border: 1px solid #FFFFFF33;
     border-radius: 8px;
-    width: 910px;
+   width: 100%;
     color: #FAFBFB;
 }
 
@@ -952,7 +954,7 @@ table td a {
     color: #94a3ae;
 }
 
-.banner-tabs .tabs {
+.tabs-banner .tabs {
     padding: 8px 16px;
     border: 1px solid #FFFFFF33;
     font-size: 14px;
@@ -1092,7 +1094,11 @@ table td a {
     border: 1px solid #DEE3E6 !important;
     border-radius: 12px !important;
 }
-
+.faq-accordion-btn {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 500 !important; 
+}
 /* Feedback */
 
 .feedback-title h5 {
@@ -1165,12 +1171,16 @@ table td a {
     font-weight:600;
     font-family: "Raleway";
 }
+
 .question p{
     color: #1D3C55;
     font-size: 16px;
     line-height: 24px;
     font-weight:500;
     
+}
+.prev-nxt-btn {
+    margin-top: 24px;
 }
 .previous-btn {
     padding: 8px 12px;
@@ -1276,7 +1286,579 @@ table td a {
     
 }
 
+/* Setting */
 
+.settting-title h2 {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 600;
+    font-family: "ES Rebond Grotesque TRIAL" !important;
+    color: #011B30;
+    
+}
+
+/* Setting-General */
+
+.general-section-one,
+.general-section-two,
+.general-section-three,
+.general-section-four {
+    padding: 24px;
+    border-bottom: 1px solid #DEE2E6;
+
+}
+
+
+.personal-info-text h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #01233F;
+}
+.remove {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768998;
+    text-decoration: none;
+}
+.update {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #E28000;
+    text-decoration: none;
+}
+.personal-info-text p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+
+.personal-info label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+.personal-info .input-field {
+    padding: 12px;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #01233F;
+    max-width: 500px;
+}
+
+.acct-info-text h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #01233F;
+}
+
+.acct-info-text p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+.acct-info-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.acct-info .input-field {
+    padding: 12px;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #01233F;
+    max-width: 500px;
+}
+
+.input-group input {
+
+    border-radius: 8px;
+    background-color: #FAFBFB;
+    padding: 8px 16px;
+    max-width: 330px;
+
+
+}
+
+.pass-btn {
+    padding: 12px 16px;
+    border: 1px solid #DEE2E6;
+    color: #01233F;
+    font-weight: 700;
+    outline: none;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    
+}
+.form-control {
+    box-shadow: none !important;
+   
+}
+.form-control:focus {
+    box-shadow: none !important;
+   
+}
+.acct-info input {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #01233F;
+}
+
+.acct-info-input label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+.lang-region-text h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #01233F;
+}
+
+.lang-region-text p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #768897;
+}
+
+.lang-region-input label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+.custom-select-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 6px 12px;
+    position: relative;
+    max-width: 500px;
+    margin-bottom: 16PX;
+}
+
+.form-select {
+    flex: 1;
+    border: none !important;
+    outline: none !important;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #01233f;
+    appearance: none;
+    padding-right: 24px;
+    cursor: pointer;
+    color: #01233F;
+    box-shadow: none !important;
+}
+
+
+.timezone-input label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+.custom-select-container-2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 6px 12px;
+    position: relative;
+    max-width: 500px;
+}
+
+.delete-acct-text h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #01233F;
+}
+
+.delete-acct-text p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #768897;
+    max-width: 500px;
+}
+
+.delete-btn {
+    padding: 12px 16px;
+    border: 1px solid #E53A3A;
+    border-radius: 12px;
+    color: #E53A3A;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    background-color: #FAFBFB;
+
+}
+
+.delete-acct-btn {
+    margin-top: 16px;
+    max-width: 500px;
+    display: flex;
+    justify-content: end;
+}
+
+.delete-btn:hover {
+    background-color: #FAD8D8;
+}
+
+.delete-btn:active {
+    background-color: #F5B0B0;
+}
+
+.btn-cancel {
+    padding: 12px 16px;
+    background-color: transparent;
+    color: #01233F;
+    border-radius: 12px;
+    border: 1px solid #c0c8cf;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    width: 160px;
+}
+
+.btn-savechanges {
+    padding: 12px 16px;
+    background-color: #43A9FB;
+    color: #FAFBFB;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    width: 160px;
+}
+
+.btn-savechanges:hover {
+    background-color: #6ABBFC;
+}
+
+.btn-savechanges:active {
+    background-color: #1D97FB;
+}
+
+.btn-savechanges:disabled {
+    background-color: #A4D5FD;
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: end;
+    padding: 116px 24px 24px 0px;
+    gap: 16px;
+}
+
+
+/* Delete Modal */
+
+.modal-dialog {
+    max-width: 556px;
+}
+
+.modal-body {
+    padding: 32px;
+
+}
+
+
+.modal-body h5 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #01233F;
+
+}
+
+.modal-body p {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 500;
+    color: #768897;
+
+}
+
+.modal-btn {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+}
+
+.cancel-btn {
+    padding: 12px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #01233F;
+    border: 1px solid #DEE2E6;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+
+.confirm-btn {
+    padding: 12px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #E53A3A;
+    border: 1px solid #E53A3A;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+
+.confirm-btn:hover {
+    background-color: #FAD8D8;
+}
+
+.confirm-btn:active {
+    background-color: #F5B0B0;
+}
+
+/* Privacy & Security */
+
+
+.privacy-section-one,
+.privacy-section-two {
+    padding: 24px;
+    border-bottom: 1px solid #DEE2E6;
+
+}
+
+
+.privacy-text h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #01233F;
+}
+
+.privacy-text p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+.privacy-btn {
+    padding: 12px 16px;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    color: #01233F;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    background-color: #FFFFFF;
+    gap: 8px;
+
+}
+
+.privacy_policy-btn {
+    margin-top: 16px;
+    max-width: 500px;
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    max-width: 500px;
+    align-items: center;
+}
+
+
+.verification-text h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #01233F;
+}
+
+.verification-text p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+.verification {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    background-color: #FAFBFB;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    padding: 12px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.verification-switch-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #01233F;
+}
+
+
+.form-switch.form-check-input {
+    height: 20px;
+    width: 40px;
+}
+
+.verification-method label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+.form-check-input:focus {
+    box-shadow: none !important;
+}
+
+
+.privacy-input label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+
+.privacy-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.privacy .input-field {
+    padding: 12px;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #01233F;
+    max-width: 500px;
+}
+.form-check-input:focus {
+    border-color: #DEE3E6 !important;
+   
+}
+.form-switch .form-check-input:focus {
+    background-image: url('/images/toggle-background.svg') !important;
+}
+.form-switch .form-check-input:checked {
+    background-image: url('/images/white-toggle.svg') !important;
+    background-color: #E28000 !important;
+    border: none !important;
+}
+.privacy label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+
+
+
+.input-group.privacy input {
+
+    border-radius: 8px;
+    background-color: #FAFBFB;
+    padding: 8px 16px;
+    max-width: 420px;
+
+
+}
+
+.privacy-input::placeholder {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+.verify-btn {
+    padding: 12px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #DEE2E6;
+    color: #01233F;
+    font-weight: 700;
+    outline: none;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.enable-btn {
+    max-width: 500px;
+    display: flex;
+    justify-content: end;
+}
+
+.enable-btn button {
+    padding: 12px 16px;
+    background-color: #43A9FB;
+    color: #FAFBFB;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 12px;
+    border: none;
+
+}
+
+.enable-btn button:hover {
+    background-color: #6ABBFC;
+}
+
+.enable-btn button:active {
+    background-color: #1D97FB;
+}
+
+.enable-btn button:disabled {
+    background-color: #A4D5FD;
+}
 
 
 
