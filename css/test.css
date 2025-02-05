@@ -18,13 +18,13 @@ body {
   color: #e53a3a;
 }
 
-img {
+.img-container {
   max-width: 100%;
-  height: auto;
 }
 
 .img-container img {
   max-height: 100vh;
+  width: 100%;
 }
 
 .d-col {
@@ -1020,9 +1020,7 @@ form .page .field .label {
 
 form .page .field select {
   width: 100%;
-  /* padding-left: 10px; */
   font-size: 0.875rem;
-  /* padding: 8px 41px; */
   font-weight: 500;
 }
 
@@ -1042,7 +1040,6 @@ form .page .btns button.next {
 }
 
 .container1 .progress-bar1 .step {
-  /* text-align: center; */
   width: 100%;
   position: relative;
 }
@@ -1198,25 +1195,29 @@ form .page .btns button.next {
 /* popup style */
 
 .right-form-box {
-  max-height: 100vh;
   overflow-x: hidden;
   background: linear-gradient(161deg, rgba(255, 230, 198, 0.00) 9.06%, rgba(255, 230, 198, 0.70) 90.22%), var(--Surface-White, #FFF);
 }
 
 .form-section {
   margin: 0 auto;
-  width: 62%;
+  width: 65%;
 }
 
 .form-container {
-  margin-top: 80px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.heading h3 {
-  color: #01233f;
-  font-weight: 700;
-  font-size: 1.375rem;
-  line-height: 28px;
+.heading h2 {
+  color: #011B30;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
 }
 
 .heading p {
@@ -1261,7 +1262,7 @@ form .page .btns button.next {
   position: absolute;
   z-index: 99;
   right: 16px;
-  bottom: 9px;
+  bottom: 12px;
 }
 
 .input_label {
@@ -1277,7 +1278,7 @@ form .page .btns button.next {
   padding: 0 0 0 40px;
   border-radius: 8px;
   border: 1px solid #e5e5e5;
-  background-color: #f5f6f7;
+  background-color: #FFF;
 }
 
 .input_field:focus {
@@ -1293,8 +1294,6 @@ form .page .btns button.next {
   align-items: center;
   width: 100%;
   color: #768897;
-  margin-bottom: 12px;
-  margin-top: 9px;
   font-size: 0.875rem;
   line-height: 20px;
   font-weight: 500;
@@ -1307,29 +1306,46 @@ form .page .btns button.next {
   margin-top: 4px;
 }
 
-.forgot-password {
-  color: #43A9FB;
+.forgot-password a {
+  color: #03599F;
 }
 
 /* login button css */
 
-.login-btn button {
+.login-btn a {
   border: none;
   font-size: 0.875rem;
-  border-radius: 8px;
+  border-radius: 12px;
   width: 100%;
   background-color: #03599F;
   color: #FFF;
   text-align: center;
-  padding: 8px 16px 8px 16px;
+  text-decoration: none;
+  padding: 8px 16px;
 }
 
-.login-btn button:hover {
+.login-btn a:hover {
   background-color: #1d97fb;
 }
 
-.login-btn button:active {
+.login-btn a:active {
   background-color: #1d97fb;
+}
+
+.login-btn2 a {
+  color: #011B30;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0px;
+  display: flex;
+  padding: 8px 16px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #DEE3E6;
+  text-decoration: none;
 }
 
 /* line-container */
@@ -1363,6 +1379,7 @@ form .page .btns button.next {
 .social-icons {
   display: flex;
   justify-content: center;
+  gap: 16px;
 }
 
 .social-links img {
@@ -1371,24 +1388,17 @@ form .page .btns button.next {
 }
 
 .button1 {
-  border: 1px solid #dee2e6;
+  display: flex;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
   border-radius: 12px;
-  padding: 10px 14px;
-  text-align: center;
-  margin: 5px 6px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.social-icons .button1 {
-  background-color: white;
-  color: black;
+  border: 1px solid #DEE3E6;
+  background-color: transparent;
 }
 
 .button1:hover {
-  background-color: #f5f6f7;
-  color: white;
-  border: 1px solid #dee2e6;
+  background-color: #DEE3E6;
 }
 
 .button1:focus {
@@ -1411,106 +1421,4 @@ form .page .btns button.next {
 
 .create-account a:focus {
   color: #f68b00;
-}
-
-@media screen and (max-width: 500px) {
-  .img-container img {
-    width: 100%;
-  }
-
-  .back-img-container {
-    background-image: url("./Images/background-img.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100%;
-  }
-
-  .form-container {
-    width: 82%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem auto;
-    border-radius: 3rem;
-    max-height: 100vh;
-  }
-
-  .form-section {
-    width: 78%;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 768px) {
-
-  .back-img-container {
-    background-image: url("./Images/background-img.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100%;
-  }
-
-  .form-container {
-    width: 74%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem auto;
-    border-radius: 3rem;
-  }
-
-  .form-section {
-    width: 82%;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1000px) {
-  .img-container img {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .form-section {
-    margin: 5rem auto;
-    width: 78%;
-  }
-}
-
-@media (min-width: 1001px) and (max-width: 1360px) {
-  .main {
-    height: 100vh;
-  }
-
-  .img-container img {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .form-section {
-    margin: 3rem auto;
-    width: 71%;
-  }
-}
-
-@media (min-width: 1361px) and (max-width: 1600px) {
-  .img-container img {
-    width: 100%;
-  }
-
-  .form-section {
-    margin: 3rem auto;
-    width: 75%;
-  }
-}
-
-@media (min-width: 1601px) and (max-width: 1900px) {
-  .img-container img {
-    width: 100%;
-  }
-
-  .form-section {
-    margin: 3rem auto;
-    width: 71%;
-  }
 }

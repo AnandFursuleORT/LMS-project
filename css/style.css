@@ -1551,6 +1551,10 @@ input::placeholder {
     text-decoration: none;
 }
 
+.policySect a:hover {
+    color: #03599F;
+}
+
 @media only screen and (max-width: 480px) {
     .footer-web {
         padding: 32px 16px;

@@ -356,7 +356,6 @@ img {
     font-family: "Plus Jakarta Sans";
     font-size: 18px;
     font-weight: 600;
-    line-height: 24px;
     gap: 4px;
 }
 
@@ -444,7 +443,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* gap: 16px; */
+    gap: 16px;
 }
 
 .pre-para {
@@ -665,9 +664,9 @@ li::marker {
     background-color: #FAFBFB !important;
     border-radius: 12px !important;
     border: 1px solid #DEE3E6 !important;
-    color: #1D3C55;
+    color: #1D3C55 !important;
     font-family: "Raleway", serif;
-    font-size: 18px;
+    font-size: 18px !important;
     font-weight: 600;
 }
 
@@ -903,9 +902,9 @@ li::marker {
     background-color: #FAFBFB !important;
     border-radius: 12px !important;
     border: 1px solid #DEE3E6 !important;
-    color: #1D3C55;
+    color: #1D3C55 !important;
     font-family: "Raleway", serif;
-    font-size: 18px;
+    font-size: 18px !important;
     font-weight: 600;
 }
 
@@ -986,7 +985,6 @@ li::marker {
     font-family: "Raleway", serif;
     font-size: 18px;
     font-weight: 600;
-    line-height: 26px;
 }
 
 .review-date {
@@ -1448,11 +1446,14 @@ li::marker {
     text-decoration: none;
 }
 
+.policySect a:hover {
+    color: #03599F;
+}
+
 @media only screen and (max-width: 480px) {
     .footer-web {
         padding: 32px 16px;
     }
-
 
     .alt-font {
         display: none;
