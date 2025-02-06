@@ -70,9 +70,8 @@ body {
 }
 
 .container1 {
-  margin-top: 10rem;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: 5px;
   padding: 0px 100px;
 }
@@ -87,11 +86,6 @@ body {
 
 .name .last {
   width: 100%;
-}
-
-.email-ic {
-  width: 18px !important;
-  height: 16px !important;
 }
 
 .name {
@@ -112,7 +106,7 @@ body {
   position: absolute;
   z-index: 99;
   left: 12px;
-  bottom: 9px;
+  bottom: 8px;
 }
 
 .lock-icon {
@@ -492,7 +486,7 @@ body {
   }
 
   .buttons-4 {
-    margin-top: 12.8rem;
+    margin-top: 12rem;
   }
 
   .nt-btn {
@@ -666,7 +660,7 @@ body {
     position: absolute;
     content: "";
     bottom: 11px;
-    right: -226px;
+    right: -222px;
     height: 2px;
     width: 13.6rem;
     background: #dee2e6;
@@ -909,7 +903,7 @@ body {
 }
 
 .buttons-4 {
-  margin-top: 12.8rem;
+  margin-top: 12rem;
 }
 
 .nt-btn {
@@ -1085,9 +1079,9 @@ form .page .btns button.next {
   position: absolute;
   content: "";
   bottom: 11px;
-  right: -226px;
+  right: -246px;
   height: 2px;
-  width: 13.6rem;
+  width: 15.2rem;
   background: #dee2e6;
 }
 
@@ -1117,7 +1111,7 @@ form .page .btns button.next {
 .progress-bar1 .step .check {
   position: absolute;
   left: 8%;
-  top: 30%;
+  top: 28%;
   font-size: 15px;
   transform: translate(-50%, -50%);
   display: none;
@@ -1126,7 +1120,7 @@ form .page .btns button.next {
 .progress-bar1 .step-2 .check {
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 28%;
   font-size: 15px;
   transform: translate(-50%, -50%);
   display: none;
@@ -1135,7 +1129,7 @@ form .page .btns button.next {
 .progress-bar1 .step-3 .check {
   position: absolute;
   left: 92%;
-  top: 30%;
+  top: 28%;
   font-size: 15px;
   transform: translate(-50%, -50%);
   display: none;
@@ -1421,4 +1415,48 @@ form .page .btns button.next {
 
 .create-account a:focus {
   color: #f68b00;
+}
+
+@media (max-width: 1280px) and (device-height: 720px) {
+  .heading h2 {
+    font-size: 1.2rem;
+    line-height: 28px;
+  }
+
+  .progress-bar1 .step .check .active {
+    left: 11%;
+    top: 28%;
+    font-size: 12px;
+  }
+
+  .progress-bar1 .step .bullet:before,
+  .progress-bar1 .step .bullet:after {
+    position: absolute;
+    content: "";
+    bottom: 11px;
+    right: -208px;
+    height: 2px;
+    width: 12.5rem;
+    background: #dee2e6;
+  }
+
+  .buttons-1 {
+    margin-top: 0.2rem;
+  }
+
+  .buttons-3 {
+    margin-top: 0.5rem;
+  }
+
+  .buttons-4 {
+    margin-top: 10rem;
+  }
+
+  .container1 {
+    padding: 0px 70px;
+  }
+
+  .form-control {
+    font-size: 0.75rem;
+  }
 }
