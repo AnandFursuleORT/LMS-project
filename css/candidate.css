@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Plus Jakarta Sans", serif;
-    
+    font-family: "Plus Jakarta Sans", serif;   
 }
 
 html,
@@ -319,9 +320,6 @@ img {
 }
 
 .logoimgDiv {
-
-
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -508,11 +506,8 @@ img {
 
 /* Ypur Traning */
 
-
-
-
 .training-search {
-    background-image: url(/images/training-search.svg);
+    background-image: url('/images/training-search.svg');
     background-repeat: no-repeat;
     background-position: 10px 10px;
 
@@ -609,11 +604,8 @@ img {
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
-    color: #011B30;
-    
+    color: #011B30;   
     font-family: "Raleway" !important;
-    
-
 }
 
 .progress-bar {
