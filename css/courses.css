@@ -241,6 +241,7 @@ img {
     align-items: center;
     justify-content: center;
 }
+
 .candidate-panel-div a {
     display: flex;
     padding: 12px 24px;
@@ -256,6 +257,7 @@ img {
     font-weight: 600;
     line-height: 24px;
 }
+
 /* ===================================
     2. Course List Banner
 ====================================== */
@@ -611,12 +613,28 @@ img {
 .course-tab1 {
     margin-top: 48px;
     gap: 15px;
-    display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     border-radius: 16px;
     border: 1px solid #DEE3E6;
     background: #FFF;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-width: 100%;
+}
+
+.course-tab1::-webkit-scrollbar {
+    width: 2px;
+    background-color: #FFFFFF;
+}
+
+.course-tab1::-webkit-scrollbar-thumb {
+    background: #FAFBFB;
+}
+
+.course-tab1 li a {
+    width: 170px !important;
 }
 
 .cr-title {
@@ -629,7 +647,7 @@ img {
 
 .title-course {
     border-right: 1px solid #DEE3E6;
-    padding-right: 48px;
+    padding: 0 14px;
 }
 
 .c-tab-title {
