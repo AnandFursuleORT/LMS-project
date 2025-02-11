@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Plus Jakarta Sans", serif;   
+    font-family: "Plus Jakarta Sans", serif;
 }
 
 html,
@@ -23,48 +23,49 @@ img {
     border: 1px solid #DEE3E6 !important;
     border-radius: 16px !important;
 }
+
 .nav-main {
     padding: 20px 0 !important;
     background-color: rgba(255, 230, 198, 0.20);
 }
- 
+
 .dropdown-submenu {
     position: relative;
 }
- 
+
 .dropdown-submenu .dropdown-menu {
     top: 10%;
     left: 100%;
     margin-top: -1px;
 }
- 
+
 .dropMenu {
     background-color: #FFFAF4 !important;
 }
- 
+
 .items-submenu {
     background-color: #FFFAF4 !important;
 }
- 
+
 .menu-item:active {
     background-color: transparent !important;
     color: #03599F !important;
 }
- 
+
 .sub-item:hover {
     background-color: transparent !important;
     color: #03599F !important;
 }
- 
+
 .sub-item:active {
     background-color: transparent !important;
     color: #03599F !important;
 }
- 
+
 .navbar-nav li:hover>ul.dropdown-menu {
     display: block;
 }
- 
+
 .dropdown-item {
     color: #FAFBFB;
     font-family: "Plus Jakarta Sans", serif;
@@ -72,18 +73,18 @@ img {
     font-weight: 400;
     letter-spacing: 0.56px;
 }
- 
+
 .dropdown-toggle::after {
     display: none !important;
 }
- 
+
 .navDropdown {
     color: #03599F !important;
     font-family: "Raleway", serif;
     font-size: 18px;
     font-weight: 600 !important;
 }
- 
+
 /* .search-btn {
     display: flex;
     padding: 12px;
@@ -93,7 +94,7 @@ img {
     border: 1px solid #DEE3E6;
     background: linear-gradient(273deg, #FFB555 -50.01%, #E28000 100%);
 } */
- 
+
 .search-input {
     background-image: url('/images/search.svg');
     background-repeat: no-repeat;
@@ -108,7 +109,7 @@ img {
     background-color: transparent !important;
     color: #011B30;
 }
- 
+
 .search-input::placeholder {
     color: #768998;
     font-family: "Plus Jakarta Sans";
@@ -116,50 +117,53 @@ img {
     font-weight: 500;
     line-height: 24px;
 }
- 
+
 .search-input:focus-visible {
     outline: none !important;
 }
+
 .nav-end {
     display: flex;
     gap: 10px;
 }
- 
+
 .notify {
     padding: 12px;
     border: 1px solid #DEE3E6;
     border-radius: 8px;
 }
+
 .prof-name {
     color: #011B30;
     font-family: "Plus Jakarta Sans";
     font-size: 16px;
     font-weight: 600;
 }
- 
+
 .prof-dst {
     color: #768998;
     font-family: "Plus Jakarta Sans";
     font-size: 14px;
     font-weight: 500;
 }
- 
+
 .prof-img {
     border-radius: 50%;
 }
- 
+
 .dropdown-profile::after {
     display: none !important;
 }
- 
+
 .dropdown-profile {
     display: flex !important;
     align-items: center;
     justify-content: center;
 }
+
 .main {
     padding-top: 32px;
-    background: linear-gradient(169deg, rgba(255, 230, 198, 0.00) 21.8%, rgba(255, 230, 198, 0.70) 80.49%), var(--Surface-White, #FFF); 
+    background: linear-gradient(169deg, rgba(255, 230, 198, 0.00) 21.8%, rgba(255, 230, 198, 0.70) 80.49%), var(--Surface-White, #FFF);
     padding-bottom: 100px;
 }
 
@@ -211,7 +215,7 @@ img {
     font-weight: 600;
     color: #011B30;
     font-family: "ES Rebond Grotesque TRIAL" !important;
-    
+
 
 
 }
@@ -555,7 +559,8 @@ img {
 .course-info img {
     margin-right: 8px;
 }
-.course-info-expired  img {
+
+.course-info-expired img {
     margin-right: 8px;
 }
 
@@ -604,7 +609,7 @@ img {
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
-    color: #011B30;   
+    color: #011B30;
     font-family: "Raleway" !important;
 }
 
@@ -627,6 +632,7 @@ img {
     font-weight: 400;
     color: #1D3C55;
 }
+
 .course-info-expired {
     font-size: 14px;
     line-height: 20px;
@@ -635,29 +641,23 @@ img {
     padding-bottom: 16px;
     border-bottom: 1px solid #F5F6F7
 }
+
 .expired-card {
-    background: linear-gradient(166deg, rgba(229, 58, 58, 0.00) 2.31%, rgba(229, 58, 58, 0.20) 67.92%), #FFF; 
+    background: linear-gradient(166deg, rgba(229, 58, 58, 0.00) 2.31%, rgba(229, 58, 58, 0.20) 67.92%), #FFF;
 }
 
-.progressBar-text{
+.progressBar-text {
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
     color: #E53A3A;
 }
 
-
-
-
-
-
-
 /* Recommendation */
 
 .card-bottom {
     gap: 16px;
 }
-
 
 .recommend label {
     background-color: rgba(151, 71, 255, 0.2);
@@ -731,7 +731,7 @@ img {
 
 /* Courses */
 
-    .course-category {
+.course-category {
     padding: 8px 16px;
     font-size: 14px;
     line-height: 20px;
@@ -836,6 +836,7 @@ table td a {
 .course-name {
     gap: 12px;
 }
+
 .course-description p {
     font-size: 14px;
     line-height: 20px;
@@ -854,25 +855,28 @@ table td a {
     padding: 16px;
     gap: 10px;
 }
+
 .attempt-date {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
     color: #768998;
 }
+
 .attempt-number {
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
     color: #011B30;
-   
+
 }
+
 .attempt-mode {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
     color: #768998;
-   
+
 }
 
 .attempt-connect {
@@ -885,7 +889,7 @@ table td a {
     padding: 8px 12px;
     background-color: #03599F;
     border-radius: 8px;
-    text-align: center  ;
+    text-align: center;
 }
 
 .reattempt-btn a {
@@ -933,7 +937,7 @@ table td a {
     padding: 12px;
     border: 1px solid #FFFFFF33;
     border-radius: 8px;
-   width: 100%;
+    width: 100%;
     color: #FAFBFB;
 }
 
@@ -986,8 +990,7 @@ table td a {
     text-decoration: none;
 }
 
-
-.accordion-tab{
+.accordion-tab {
     padding: 16px 24px !important;
 }
 
@@ -998,15 +1001,14 @@ table td a {
     font-weight: 600;
     font-family: "Raleway" !important;
 }
+
 .faq-tab-btn {
     color: #011B30 !important;
     font-size: 20px !important;
     line-height: 28px !important;
     font-weight: 600;
     font-family: "Raleway" !important;
-    
 }
-
 
 .tab-links ul li a {
     text-decoration: none;
@@ -1015,13 +1017,13 @@ table td a {
     line-height: 20px;
     font-weight: 500;
     padding: 4px 4px 4px 14px;
-    
+
 }
 
 .tab-links .faq-ul li a:hover {
     color: #03599F;
     font-weight: 600;
-    border-left: 2px solid #03599F;  
+    border-left: 2px solid #03599F;
 }
 
 .tab-links .faq-ul li a:focus {
@@ -1037,6 +1039,7 @@ table td a {
 .faq-tab-btn::after {
     background-image: none !important;
 }
+
 .faq-tab-btn:focus {
     box-shadow: none !important;
 }
@@ -1054,11 +1057,12 @@ table td a {
     border: none !important;
 }
 
-.faq-accordion-btn  {
+.faq-accordion-btn {
     padding: 12px !important;
     border: 1px solid #DEE3E6 !important;
     border-radius: 12px !important;
 }
+
 .faq-accordion-btn::after {
     background-image: url('/images/arrow-down-accordion.svg') !important;
 }
@@ -1081,11 +1085,13 @@ table td a {
     border: 1px solid #DEE3E6 !important;
     border-radius: 12px !important;
 }
+
 .faq-accordion-btn {
     font-size: 16px !important;
     line-height: 20px !important;
-    font-weight: 500 !important; 
+    font-weight: 500 !important;
 }
+
 /* Feedback */
 
 .feedback-title h5 {
@@ -1095,6 +1101,7 @@ table td a {
     color: #03599F;
     font-family: "Raleway" !important;
 }
+
 .feedback-title-thankyou h5 {
     font-size: 24px;
     line-height: 36px;
@@ -1125,25 +1132,26 @@ table td a {
 }
 
 .feedback-text {
-    
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: 500;
-        color: #1D3C55;
-        
-}
-.date-time {
-    
-        font-size: 12px;
-        line-height: 18px;
-        font-weight: 500;
-        color: #768998;
-        
+
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #1D3C55;
+
 }
 
-.feedback-btn a{
+.date-time {
+
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #768998;
+
+}
+
+.feedback-btn a {
     padding: 8px 12px;
-    background-color:#03599F;
+    background-color: #03599F;
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
@@ -1151,48 +1159,55 @@ table td a {
     border-radius: 8px;
     text-decoration: none;
 }
+
 .category h6 {
     color: #E28000;
     font-size: 20px;
     line-height: 28px;
-    font-weight:600;
+    font-weight: 600;
     font-family: "Raleway";
 }
 
-.question p{
+.question p {
     color: #1D3C55;
     font-size: 16px;
     line-height: 24px;
-    font-weight:500;
-    
+    font-weight: 500;
+
 }
+
 .prev-nxt-btn {
     margin-top: 24px;
 }
+
 .previous-btn {
     padding: 8px 12px;
-    background-color:#EBEDF0;
+    background-color: #EBEDF0;
     font-size: 14px;
     line-height: 20px;
-    font-weight:500;
+    font-weight: 500;
     color: #1D3C55;
     border-radius: 8px;
     text-decoration: none;
     width: 15%;
     text-align: center;
 }
-.next-btn,.submit-btn, .home-btn{
+
+.next-btn,
+.submit-btn,
+.home-btn {
     padding: 8px 12px;
-    background-color:#03599F;
+    background-color: #03599F;
     font-size: 14px;
     line-height: 20px;
-    font-weight:500;
+    font-weight: 500;
     color: #FAFBFB;
     border-radius: 8px;
     text-decoration: none;
     width: 15%;
     text-align: center;
 }
+
 .num-rating {
     width: 40px;
     height: 40px;
@@ -1205,9 +1220,10 @@ table td a {
     font-weight: 500;
     background-color: #F5F6F7;
     border-radius: 100px;
-      
+
 }
-.rated{
+
+.rated {
     color: #E28000;
     font-size: 14px;
     line-height: 20px;
@@ -1235,42 +1251,44 @@ table td a {
 .certificate-name {
     gap: 12px;
 }
+
 .certificate-id {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
     color: #768998;
 }
+
 .certificate-btn {
-    margin-top: 24px ;
+    margin-top: 24px;
 }
 
-.view-btn{
+.view-btn {
     padding: 8px 12px;
-    background-color:#EBEDF0;
+    background-color: #EBEDF0;
     font-size: 14px;
     line-height: 20px;
-    font-weight:500;
+    font-weight: 500;
     color: #1D3C55;
     border-radius: 8px;
     text-decoration: none;
     width: 50%;
-        text-align: center;
+    text-align: center;
 }
 
 .download-btn {
-    
-        padding: 8px 12px;
-        background-color:#03599F;
-        font-size: 14px;
-        line-height: 20px;
-        font-weight:500;
-        color: #FAFBFB;
-        border-radius: 8px;
-        text-decoration: none;
-        width: 50%;
-        text-align: center;
-    
+
+    padding: 8px 12px;
+    background-color: #03599F;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #FAFBFB;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+
 }
 
 /* Setting */
@@ -1281,7 +1299,7 @@ table td a {
     font-weight: 600;
     font-family: "ES Rebond Grotesque TRIAL" !important;
     color: #011B30;
-    
+
 }
 
 /* Setting-General */
@@ -1303,6 +1321,7 @@ table td a {
     margin-bottom: 8px;
     color: #01233F;
 }
+
 .remove {
     font-size: 14px;
     line-height: 20px;
@@ -1310,6 +1329,7 @@ table td a {
     color: #768998;
     text-decoration: none;
 }
+
 .update {
     font-size: 14px;
     line-height: 20px;
@@ -1317,6 +1337,7 @@ table td a {
     color: #E28000;
     text-decoration: none;
 }
+
 .personal-info-text p {
     font-size: 14px;
     line-height: 20px;
@@ -1393,16 +1414,19 @@ table td a {
     outline: none;
     background-color: #FFFFFF;
     border-radius: 8px;
-    
+
 }
+
 .form-control {
     box-shadow: none !important;
-   
+
 }
+
 .form-control:focus {
     box-shadow: none !important;
-   
+
 }
+
 .acct-info input {
     font-size: 14px;
     line-height: 20px;
@@ -1766,18 +1790,22 @@ table td a {
     color: #01233F;
     max-width: 500px;
 }
+
 .form-check-input:focus {
     border-color: #DEE3E6 !important;
-   
+
 }
+
 .form-switch .form-check-input:focus {
     background-image: url('/images/toggle-background.svg') !important;
 }
+
 .form-switch .form-check-input:checked {
     background-image: url('/images/white-toggle.svg') !important;
     background-color: #E28000 !important;
     border: none !important;
 }
+
 .privacy label {
     font-size: 14px;
     line-height: 20px;
@@ -1873,16 +1901,15 @@ table td a {
 
 
 
-@media screen and (min-width: 1280px) and (max-width: 1600px) {
-    
-}
+@media screen and (min-width: 1280px) and (max-width: 1600px) {}
 
 @media (min-width: 1600px) {
     .custom-col {
-      flex: 0 0 33.3333% !important; /* Equivalent to col-4 (4/12 columns) */
-      max-width: 33.3333% !important;
+        flex: 0 0 33.3333% !important;
+        /* Equivalent to col-4 (4/12 columns) */
+        max-width: 33.3333% !important;
     }
-  }  
+}
 
 
 
