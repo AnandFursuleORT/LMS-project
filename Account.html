@@ -436,9 +436,9 @@
                                 <p>We've sent a code to test@gmail.com</p>
                             </div>
                             <div class="modal-body">
-                                <div class="input-bx mb-4 mt-1">
+                                <div class="input-bx mb-4 mt-1" id="inputs">
                                     <form method="get" class="digit-group" data-group-name="digits"
-                                        data-autosubmit="false" autocomplete="off">
+                                        data-autosubmit="false" autocomplete="on">
                                         <input type="text" placeholder="*" maxlength="1" id="digit-1" name="digit-1"
                                             data-next="digit-2" />
                                         <input type="text" placeholder="*" maxlength="1" id="digit-2" name="digit-2"
@@ -479,9 +479,9 @@
                                 <p>We've sent a code to +91 95486 91247</p>
                             </div>
                             <div class="modal-body">
-                                <div class="input-bx mb-4 mt-1">
+                                <div class="input-bx mb-4 mt-1" id="inputs2">
                                     <form method="get" class="digit-group" data-group-name="digits"
-                                        data-autosubmit="false" autocomplete="off">
+                                        data-autosubmit="false" autocomplete="on">
                                         <input type="text" placeholder="*" maxlength="1" id="digit-1" name="digit-1"
                                             data-next="digit-2" />
                                         <input type="text" placeholder="*" maxlength="1" id="digit-2" name="digit-2"
@@ -513,6 +513,65 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 
+    <script>
+        // Email otp js code
+        const inputs = document.getElementById("inputs");
+        inputs.addEventListener("input", function (e) {
+            const target = e.target;
+            const val = target.value;
+            if (isNaN(val)) {
+                target.value = "";
+                return;
+            }
+            if (val != "") {
+                const next = target.nextElementSibling;
+                if (next) {
+                    next.focus();
+                }
+            }
+        });
+        inputs.addEventListener("keyup", function (e) {
+            const target = e.target;
+            const key = e.key.toLowerCase();
+            if (key == "backspace" || key == "delete") {
+                target.value = "";
+                const prev = target.previousElementSibling;
+                if (prev) {
+                    prev.focus();
+                }
+                return;
+            }
+        });
+
+        // Phone no otp js code
+        const inputs2 = document.getElementById("inputs2");
+        inputs2.addEventListener("input", function (e) {
+            const target = e.target;
+            const val = target.value;
+            if (isNaN(val)) {
+                target.value = "";
+                return;
+            }
+            if (val != "") {
+                const next = target.nextElementSibling;
+                if (next) {
+                    next.focus();
+                }
+            }
+        });
+        inputs2.addEventListener("keyup", function (e) {
+            const target = e.target;
+            const key = e.key.toLowerCase();
+            if (key == "backspace" || key == "delete") {
+                target.value = "";
+                const prev = target.previousElementSibling;
+                if (prev) {
+                    prev.focus();
+                }
+                return;
+            }
+        });
+    </script>
 </body>
 
 </html>
