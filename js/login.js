@@ -1,5 +1,3 @@
-// Login Page Js code
-
 const slidePage = document.querySelector(".slide-page");
 const nextBtnFirst = document.querySelector(".firstNext");
 const prevBtnSec = document.querySelector(".prev-1");
@@ -11,31 +9,40 @@ const submitBtn = document.querySelector(".submit");
 const progressText = document.querySelectorAll(".step p");
 const progressCheck = document.querySelectorAll(".step .check");
 const bullet = document.querySelectorAll(".step .bullet");
+const step1 = document.querySelector(".step1");
+const step2 = document.querySelector(".step2");
+const step3 = document.querySelector(".step3");
+const number3 = document.querySelector(".number3");
+const line1 = document.querySelector(".line-1");
+const line2 = document.querySelector(".line-2");
+const p1 = document.querySelector(".progress-text-1");
+const p2 = document.querySelector(".progress-text-2");
+const p3 = document.querySelector(".progress-text-3");
+const check = document.querySelector(".step1");
 let current = 1;
 
 nextBtnFirst.addEventListener("click", function (event) {
     event.preventDefault();
     slidePage.style.marginLeft = "-25%";
-    bullet[current - 1].classList.add("active");
-    progressCheck[current - 1].classList.add("active");
-    progressText[current - 1].classList.add("active");
-    current += 1;
+    step1.classList.add("active-color");
+    line1.classList.add("active-line");
+    p1.classList.add("active-color-p");
+    p1.innerHTML = `<i class="check fas fa-check "></i>`;
 });
 nextBtnSec.addEventListener("click", function (event) {
     event.preventDefault();
     slidePage.style.marginLeft = "-50%";
-    bullet[current - 1].classList.add("active");
-    progressCheck[current - 1].classList.add("active");
-    progressText[current - 1].classList.add("active");
-    current += 1;
+    step2.classList.add("active-color");
+    line2.classList.add("active-line");
+    p2.classList.add("active-color-p");
+    p2.innerHTML = `<i class="check fas fa-check "></i>`;
 });
 nextBtnThird.addEventListener("click", function (event) {
     event.preventDefault();
     slidePage.style.marginLeft = "-75%";
-    bullet[current - 1].classList.add("active");
-    progressCheck[current - 1].classList.add("active");
-    progressText[current - 1].classList.add("active");
-    current += 1;
+    step3.classList.add("active-color");
+    p3.classList.add("active-color-p");
+    p3.innerHTML = `<i class="check fas fa-check "></i>`;
 });
 submitBtn.addEventListener("click", function () {
     bullet[current - 1].classList.add("active");
@@ -51,26 +58,25 @@ submitBtn.addEventListener("click", function () {
 prevBtnSec.addEventListener("click", function (event) {
     event.preventDefault();
     slidePage.style.marginLeft = "0%";
-    bullet[current - 2].classList.remove("active");
-    progressCheck[current - 2].classList.remove("active");
-    progressText[current - 2].classList.remove("active");
-    current -= 1;
+    step1.classList.remove("active-color");
+    line1.classList.remove("active-line");
+    p1.classList.remove("active-color-p");
+    p1.innerHTML = `01`;
 });
 prevBtnThird.addEventListener("click", function (event) {
     event.preventDefault();
     slidePage.style.marginLeft = "-25%";
-    bullet[current - 2].classList.remove("active");
-    progressCheck[current - 2].classList.remove("active");
-    progressText[current - 2].classList.remove("active");
-    current -= 1;
+    step2.classList.remove("active-color");
+    line2.classList.remove("active-line");
+    p2.classList.remove("active-color-p");
+    p2.innerHTML = `02`;
 });
 prevBtnFourth.addEventListener("click", function (event) {
     event.preventDefault();
     slidePage.style.marginLeft = "-50%";
-    bullet[current - 2].classList.remove("active");
-    progressCheck[current - 2].classList.remove("active");
-    progressText[current - 2].classList.remove("active");
-    current -= 1;
+    step3.classList.remove("active-color");
+    p3.classList.remove("active-color-p");
+    p3.innerHTML = `03`;
 });
 
 // ------------------------------  otp timer----------------------------------------
@@ -96,7 +102,7 @@ function startCountdown() {
             countdownElement.innerHTML = "Resend OTP ";
             countdownElement.style.cursor = "pointer";
             countdownElement.addEventListener("click", restartCountdown);
-            countdownElement2.innerHTML = "Resend OTP";
+            countdownElement2.innerHTML = "Resend OTP ";
             countdownElement2.style.cursor = "pointer";
             countdownElement2.addEventListener("click", restartCountdown);
         } else {
@@ -125,3 +131,34 @@ function restartCountdown() {
     document.getElementById("countdown2").style.cursor = "default";
     startCountdown();
 }
+
+function triggerFileInput(fileInputId, fileNameId) {
+    console.log(fileInputId);
+    document.getElementById(fileInputId).addEventListener("change", () => {
+        const fileInput = document.getElementById(fileInputId);
+        const fileName = fileInput.files[0]?.name || "";
+        document.getElementById(fileNameId).value = fileName;
+    });
+}
+//toggle password
+document.addEventListener("DOMContentLoaded", function () {
+    const togglePassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#id_password");
+
+    togglePassword.addEventListener("click", function () {
+        const type =
+            password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+    });
+});
+//toggle confirm password
+document.addEventListener("DOMContentLoaded", function () {
+    const togglePassword2 = document.querySelector("#togglePassword-2");
+    const password2 = document.querySelector("#id_password-2");
+
+    togglePassword2.addEventListener("click", function () {
+        const type =
+            password2.getAttribute("type") === "password" ? "text" : "password";
+        password2.setAttribute("type", type);
+    });
+});

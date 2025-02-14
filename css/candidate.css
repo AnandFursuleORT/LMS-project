@@ -19,6 +19,10 @@ img {
     height: auto;
 }
 
+.offcanvas-backdrop {
+    cursor: url('/Lms-images/cancel-01.png'), auto;
+}
+
 .card {
     border: 1px solid #DEE3E6 !important;
     border-radius: 16px !important;

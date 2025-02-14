@@ -614,29 +614,20 @@ img {
 
 .course-tab1 {
     margin-top: 48px;
-    gap: 15px;
-    justify-content: space-between;
+    gap: 16px;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 16px;
     border: 1px solid #DEE3E6;
     background: #FFF;
     flex-wrap: nowrap !important;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     overflow-y: hidden;
     max-width: 100%;
 }
 
-.course-tab1::-webkit-scrollbar {
-    width: 2px;
-    background-color: #FFFFFF;
-}
-
-.course-tab1::-webkit-scrollbar-thumb {
-    background: #FAFBFB;
-}
-
 .course-tab1 li a {
-    width: 170px !important;
+    width: 180px;
 }
 
 .cr-title {
@@ -649,7 +640,7 @@ img {
 
 .title-course {
     border-right: 1px solid #DEE3E6;
-    padding: 0 14px;
+    padding: 0 20px 0 20px;
 }
 
 .c-tab-title {
