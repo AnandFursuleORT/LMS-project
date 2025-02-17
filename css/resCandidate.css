@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 @media (min-width: 1200px) and (max-width: 1440px) {
     .navDropdown {
         font-size: 14px;
@@ -13,11 +15,11 @@
 
     /* Courses */
 
-    .offer .discount {
+    .main-price {
         font-size: 18px;
     }
 
-    .offer .mrp {
+    .strike-price {
         font-size: 18px;
     }
 
@@ -60,6 +62,9 @@
         font-size: 18px;
     }
 
+    .feeback-history {
+        padding-bottom: 10px;
+    }
 
     /* FAQ */
 
@@ -67,8 +72,8 @@
         font-size: 32px;
     }
 
-    .faq-banner-search {
-        width: 100%;
+    .banner-search {
+        padding: 0px 30px 0px 30px;
     }
 
     .tabs-banner .tabs {
@@ -85,42 +90,6 @@
 
     .settting-title h2 {
         font-size: 26px;
-    }
-
-    /* institute css */
-
-    .inst-info img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .inst-name {
-        font-size: 16px;
-        line-height: 22px;
-    }
-
-    .inst-info-hdg {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .inst-info-para {
-        font-size: 12px;
-    }
-
-    .details-enroll {
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    .info-enroll {
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    .price-number {
-        font-size: 16px;
-        line-height: 22px;
     }
 
     /* footer css */
@@ -195,7 +164,63 @@
 
     }
 
+    /* Setting-Devices-&-Activities */
 
+
+    .signout-btn {
+        padding: 8px 10px;
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .validity-text p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .expiry-text p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    /* Setting-Institute */
+
+
+    /* institute css */
+
+    .inst-info img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .inst-name {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .inst-info-hdg {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .inst-info-para {
+        font-size: 12px;
+    }
+
+    .details-enroll {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .info-enroll {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .price-number {
+        font-size: 16px;
+        line-height: 22px;
+    }
 
 
 }

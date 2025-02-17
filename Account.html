@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="referrer" />
-    <link rel="stylesheet" href="css/test1.css">
+    <link rel="stylesheet" href="css/signUp.css">
 </head>
 
 <body>
@@ -123,10 +123,9 @@
                                                 <input type="number" class="form-control"
                                                     aria-label="Text input with dropdown button"
                                                     id="exampleFormControlInput3">
-                                                <button id="start2" class="btn  upload-inputs btn-outline-secondary"
+                                                <button id="start2" class="btn upload-inputs btn-outline-secondary"
                                                     data-bs-toggle="modal" data-bs-target="#staticBackdrop2"
-                                                    data-bs-target="#exampleModal1" type=" button"
-                                                    id="button-addon2">Send
+                                                    type="button">Send
                                                     OTP</button>
                                             </div>
                                         </div>
@@ -143,8 +142,7 @@
 
                                                 <button id="start" class="btn upload-inputs btn-outline-secondary"
                                                     data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                                    type=" button" data-bs-target="#exampleModal1"
-                                                    id="button-addon2">Send
+                                                    type="button">Send
                                                     OTP</button>
                                             </div>
                                         </div>
@@ -444,14 +442,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="field buttons buttons-4 ">
-                                    <div class="back-btn">
-                                        <button type="button" style="width: 78px;"
-                                            class="prev-3 prev bk-btn btn btn-outline-secondary">Back</button>
-                                    </div>
+                                <div class="field buttons buttons-4 d-flex justify-content-end">
                                     <div class="next-btn">
-                                        <button type="button" style="width: 78px;"
-                                            class="submit nt-btn btn btn-primary">Home</button>
+                                        <button type="button" onclick="location.href='index2.html'"
+                                            style="width: 78px;" class="submit nt-btn btn btn-primary">Home</button>
                                     </div>
                                 </div>
                             </div>
@@ -465,7 +459,7 @@
                         <div class="modal-content">
                             <div class="modal-header ">
                                 <div class="icon-img">
-                                    <img src="Lms-images/verify.png" width="40px" height="40px" alt="">
+                                    <img src="Lms-images/inbox-unread.svg" width="40px" height="40px" alt="">
                                 </div>
                                 <div class="icon-img1">
                                     <img src="Lms-images/cancel-01.svg" id="stop" data-bs-dismiss="modal" width="24px"
@@ -480,7 +474,7 @@
                                 <p>We've sent a code to test@gmail.com</p>
                             </div>
                             <div class="modal-body">
-                                <div class="input-bx mb-2 mt-1 " id="inputs">
+                                <div class="input-bx mb-2 mt-1" id="inputs">
                                     <form method="get" class="digit-group" data-group-name="digits"
                                         data-autosubmit="false" autocomplete="off">
                                         <input type="text" placeholder="*" id="digit-1" name="digit-1"
@@ -570,76 +564,9 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        // Handle dropdown item click to change selected country code
-        document.querySelectorAll('#countryCodeDropdown .dropdown-item').forEach(function (item) {
-            item.addEventListener('click', function (event) {
-                event.preventDefault();
-                var selectedCode = this.getAttribute('data-code');
-                document.getElementById('selectedCountryCode').innerText = selectedCode;
-            });
-        });
-    </script>
-    <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         })
-        // Email otp js code
-        const inputs = document.getElementById("inputs");
-        inputs.addEventListener("input", function (e) {
-            const target = e.target;
-            const val = target.value;
-            if (isNaN(val)) {
-                target.value = "";
-                return;
-            }
-            if (val != "") {
-                const next = target.nextElementSibling;
-                if (next) {
-                    next.focus();
-                }
-            }
-        });
-        inputs.addEventListener("keyup", function (e) {
-            const target = e.target;
-            const key = e.key.toLowerCase();
-            if (key == "backspace" || key == "delete") {
-                target.value = "";
-                const prev = target.previousElementSibling;
-                if (prev) {
-                    prev.focus();
-                }
-                return;
-            }
-        });
-
-        // Phone no otp js code
-        const inputs2 = document.getElementById("inputs2");
-        inputs2.addEventListener("input", function (e) {
-            const target = e.target;
-            const val = target.value;
-            if (isNaN(val)) {
-                target.value = "";
-                return;
-            }
-            if (val != "") {
-                const next = target.nextElementSibling;
-                if (next) {
-                    next.focus();
-                }
-            }
-        });
-        inputs2.addEventListener("keyup", function (e) {
-            const target = e.target;
-            const key = e.key.toLowerCase();
-            if (key == "backspace" || key == "delete") {
-                target.value = "";
-                const prev = target.previousElementSibling;
-                if (prev) {
-                    prev.focus();
-                }
-                return;
-            }
-        });
     </script>
 </body>
 

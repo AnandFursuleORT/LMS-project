@@ -109,8 +109,8 @@
                                 </div>
                             </a>
 
-                            <ul class="dropdown-menu dropdown-menu-lg-end">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
+                                <li><a class="dropdown-item" href="general.html">Settings</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
@@ -139,10 +139,10 @@
                                                 <span>Home</span>
                                             </a>
                                         </li>
-                                        <li class="menu-item active">
+                                        <li class="menu-item sidebar-active">
                                             <a href="training.html">
                                                 <img src="images/training.svg" alt="training-icon" />
-                                                <span class="active">Your Training</span>
+                                                <span class="sidebar-active">Your Training</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -212,277 +212,595 @@
                             </div>
 
                             <div class="course-progress-tab d-flex">
-                                <div class="course-progress d-flex align-items-center">
-                                    <div class="course-status all">All</div>
-                                    <div class="course-status">Not Started</div>
-                                    <div class="course-status">In Progress</div>
-                                    <div class="course-status">Completed</div>
-                                </div>
+                                <div class="recommend-tabs">
+                                    <ul class="nav nav-pills gap-2" id="pills-tab" role="tablist">
+                                   <li class="nav-item" role="presentation">
+                                       <button class="nav-link course-tab active" id="pills-training-all-tab"
+                                           data-bs-toggle="pill" data-bs-target="#pills-training-all" type="button" role="tab"
+                                           aria-controls="pills-training-all" aria-selected="true">All</button>
+                                   </li>
+                                   <li class="nav-item" role="presentation">
+                                       <button class="nav-link course-tab" id="pills-notstarted-tab"
+                                           data-bs-toggle="pill" data-bs-target="#pills-notstarted" type="button"
+                                           role="tab" aria-controls="pills-notstarted"
+                                           aria-selected="false">Not Started</button>
+                                   </li>
+                                   <li class="nav-item" role="presentation">
+                                       <button class="nav-link course-tab" id="pills-inprogress-tab"
+                                           data-bs-toggle="pill" data-bs-target="#pills-inprogress" type="button"
+                                           role="tab" aria-controls="pills-inprogress" aria-selected="false">In Progress</button>
+                                   </li>
+                                   <li class="nav-item" role="presentation">
+                                       <button class="nav-link course-tab" id="pills-completed-tab"
+                                           data-bs-toggle="pill" data-bs-target="#pills-completed" type="button"
+                                           role="tab" aria-controls="pills-completed" aria-selected="false">Completed</button>
+                                   </li>
+                                   <li class="nav-item" role="presentation">
+                                       <button class="nav-link course-tab" id="pills-expired-tab"
+                                           data-bs-toggle="pill" data-bs-target="#pills-expired" type="button"
+                                           role="tab" aria-controls="pills-expired" aria-selected="false">Expired</button>
+                                   </li>
+
+                               </ul>
+                               </div>
 
                                 <div class="search">
-                                    <input type="search" class="training-search" name="" id="" placeholder="search...">
+                                    <input type="search" class="training-search" name="" id="" placeholder="Search...">
 
                                 </div>
                             </div>
 
                         </div>
-                        <div class="row course-card gy-4">
-                            <div class="col-6 custom-col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="course-status-card">
-                                            <div class="d-flex flex-column gap-3">
-                                                <div class="institute-label d-flex align-items-center">
-                                                    <img src="images/training-inst-logo.svg" alt="">
-                                                    <div class="institute-name">
-                                                        <p>Macosnar Training Institute Corp.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="course-name">
-                                                    <div class="course-title">
-                                                        <h4>Radar Operation and Safety</h4>
-                                                    </div>
-                                                    <div class="course-description">
-                                                        <p>Understand radar systems to ensure safe navigation at sea.</p>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="card-bottom d-flex flex-column">
-                                                <div class="course-info d-flex justify-content-between">
-                                                    <div>
-                                                        <img src="images/mode.svg" alt="">
-                                                        Online
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/user-multiple.svg" alt="">
-                                                        39
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/duration.svg" alt="">
-                                                        2 days
-                                                    </div>
-                                                </div>
-                                                <div class="progressBar d-flex align-items-center">
-                                                    <div class="progress zero w-100" role="progressbar"
-                                                        aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                                                        aria-valuemax="100">
-                                                        <div class="progress-bar course-complete" style="width: 0%">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-training-all" role="tabpanel"
+                                aria-labelledby="pills-training-all" tabindex="0">
+                                <div class="row gy-4">
+                                    <div class="col-6 custom-col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="course-status-card">
+                                                    <div class="d-flex flex-column gap-3">
+                                                        <div class="institute-label d-flex align-items-center">
+                                                            <img src="images/training-inst-logo.svg" alt="">
+                                                            <div class="institute-name">
+                                                                <p>Macosnar Training Institute Corp.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-name">
+                                                            <div class="course-title">
+                                                                <h4>Radar Operation and Safety</h4>
+                                                            </div>
+                                                            <div class="course-description">
+                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                            </div>
+            
                                                         </div>
                                                     </div>
-                                                    <div class="progress-percent">0%</div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 custom-col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="course-status-card">
-                                            <div class="d-flex flex-column gap-3">
-                                                <div class="institute-label d-flex align-items-center">
-                                                    <img src="images/training-inst-logo.svg" alt="">
-                                                    <div class="institute-name">
-                                                        <p>Macosnar Training Institute Corp.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="course-name">
-                                                    <div class="course-title">
-                                                        <h4>Radar Operation and Safety</h4>
-                                                    </div>
-                                                    <div class="course-description">
-                                                        <p>Understand radar systems to ensure safe navigation at sea.</p>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-                                            <div class="card-bottom d-flex flex-column">
-                                                <div class="course-info d-flex justify-content-between">
-                                                    <div>
-                                                        <img src="images/mode.svg" alt="">
-                                                        Online
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/user-multiple.svg" alt="">
-                                                        39
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/duration.svg" alt="">
-                                                        2 days
-                                                    </div>
-                                                </div>
-                                                <div class="progressBar d-flex align-items-center">
-                                                    <div class="progress zero w-100" role="progressbar"
-                                                        aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                                                        aria-valuemax="100">
-                                                        <div class="progress-bar " style="width:45%"></div>
-                                                    </div>
-                                                    <div class="progress-percent">45%</div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 custom-col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="course-status-card">
-                                            <div class="d-flex flex-column gap-3">
-                                                <div class="d-flex flex-column gap-3">
-                                                    <div class="institute-label d-flex align-items-center">
-                                                        <img src="images/training-inst-logo.svg" alt="">
-                                                        <div class="institute-name">
-                                                            <p>Macosnar Training Institute Corp.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="course-name">
-                                                        <div class="course-title">
-                                                            <h4>Radar Operation and Safety</h4>
-                                                        </div>
-                                                        <div class="course-description">
-                                                            <p>Understand radar systems to ensure safe navigation at sea.</p>
-                                                        </div>
-        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-bottom d-flex flex-column">
-                                                <div class="course-info d-flex justify-content-between">
-                                                    <div>
-                                                        <img src="images/mode.svg" alt="">
-                                                        Online
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/user-multiple.svg" alt="">
-                                                        39
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/duration.svg" alt="">
-                                                        2 days
-                                                    </div>
-                                                </div>
-                                                <div class="progressBar d-flex align-items-center">
-                                                    <div class="progress zero w-100" role="progressbar"
-                                                        aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                                                        aria-valuemax="100">
-                                                        <div class="progress-bar  " style="width:45%"></div>
-                                                    </div>
-                                                    <div class="progress-percent">45%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 custom-col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="course-status-card">
-                                            <div class="d-flex flex-column gap-3">
-                                                <div class="institute-label d-flex align-items-center">
-                                                    <img src="images/training-inst-logo.svg" alt="">
-                                                    <div class="institute-name">
-                                                        <p>Macosnar Training Institute Corp.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="course-name">
-                                                    <div class="course-title">
-                                                        <h4>Radar Operation and Safety</h4>
-                                                    </div>
-                                                    <div class="course-description">
-                                                        <p>Understand radar systems to ensure safe navigation at sea.</p>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-                                            <div class="card-bottom d-flex flex-column">
-                                                <div class="course-info d-flex justify-content-between">
-                                                    <div>
-                                                        <img src="images/mode.svg" alt="">
-                                                        Online
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/user-multiple.svg" alt="">
-                                                        39
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/duration.svg" alt="">
-                                                        2 days
-                                                    </div>
-                                                </div>
-                                                <div class="progressBar d-flex align-items-center">
-                                                    <div class="progress zero w-100" role="progressbar"
-                                                        aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                                                        aria-valuemax="100">
-                                                        <div class="progress-bar course-complete " style="width: 100%">
-                                                        </div>
-                                                    </div>
-                                                    <div class="progress-percent">100%</div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 custom-col">
-                                <div class="card expired-card">
-                                    <div class="card-body">
-                                        <div class="course-status-card">
-                                            <div class="d-flex flex-column gap-3">
-                                                <div class="institute-label d-flex align-items-center">
-                                                    <img src="images/training-inst-logo.svg" alt="">
-                                                    <div class="institute-name">
-                                                        <p>Macosnar Training Institute Corp.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="course-name">
-                                                    <div class="course-title">
-                                                        <h4>Radar Operation and Safety</h4>
-                                                    </div>
-                                                    <div class="course-description">
-                                                        <p>Understand radar systems to ensure safe navigation at sea.</p>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-                                            <div class="card-bottom d-flex flex-column">
-                                                <div class="course-info-expired d-flex justify-content-between">
-                                                    <div>
-                                                        <img src="images/mode.svg" alt="">
-                                                        Online
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/user-multiple.svg" alt="">
-                                                        39
-                                                    </div>
-                                                    <div>
-                                                        <img src="images/duration.svg" alt="">
-                                                        2 days
-                                                    </div>
-                                                </div>
-                                                <div class="progressBar-text d-flex align-items-center">
                                                     
-                                                    This course has been expired!
+                                                    <div class="card-bottom d-flex flex-column">
+                                                        <div class="infoDiv pt-4 pb-3">
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/mode.svg" alt="mode">
+                                                                <span class="mode-hdg ms-2">Online</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/user-multiple.svg" alt="user-multiple">
+                                                                <span class="mode-hdg ms-2">39</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/duration.svg" alt="duration">
+                                                                <span class="mode-hdg ms-2">2 days</span>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="progressBar d-flex align-items-center">
+                                                            <div class="progress zero w-100" role="progressbar"
+                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                                <div class="progress-bar course-complete" style="width: 0%">
+                                                                </div>
+                                                            </div>
+                                                            <div class="progress-percent">0%</div>
+                                                        </div>
+                                                    </div>
+        
+        
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="course-status-card">
+                                                    <div class="d-flex flex-column gap-3">
+                                                        <div class="institute-label d-flex align-items-center">
+                                                            <img src="images/training-inst-logo.svg" alt="">
+                                                            <div class="institute-name">
+                                                                <p>Macosnar Training Institute Corp.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-name">
+                                                            <div class="course-title">
+                                                                <h4>Radar Operation and Safety</h4>
+                                                            </div>
+                                                            <div class="course-description">
+                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                            </div>
+            
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-bottom d-flex flex-column">
+                                                        <div class="infoDiv pt-4 pb-3">
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/mode.svg" alt="mode">
+                                                            <span class="mode-hdg ms-2">Online</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/user-multiple.svg" alt="user-multiple">
+                                                            <span class="mode-hdg ms-2">39</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/duration.svg" alt="duration">
+                                                            <span class="mode-hdg ms-2">2 days</span>
+                                                        </div>
+                                                    </div>
 
+                                                        <div class="progressBar d-flex align-items-center">
+                                                            <div class="progress zero w-100" role="progressbar"
+                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                                <div class="progress-bar " style="width:45%"></div>
+                                                            </div>
+                                                            <div class="progress-percent">45%</div>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="course-status-card">
+                                                    <div class="d-flex flex-column gap-3">
+                                                        <div class="d-flex flex-column gap-3">
+                                                            <div class="institute-label d-flex align-items-center">
+                                                                <img src="images/training-inst-logo.svg" alt="">
+                                                                <div class="institute-name">
+                                                                    <p>Macosnar Training Institute Corp.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-name">
+                                                                <div class="course-title">
+                                                                    <h4>Radar Operation and Safety</h4>
+                                                                </div>
+                                                                <div class="course-description">
+                                                                    <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                                </div>
+                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-bottom d-flex flex-column">
+                                                        <div class="infoDiv pt-4 pb-3">
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/mode.svg" alt="mode">
+                                                            <span class="mode-hdg ms-2">Online</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/user-multiple.svg" alt="user-multiple">
+                                                            <span class="mode-hdg ms-2">39</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/duration.svg" alt="duration">
+                                                            <span class="mode-hdg ms-2">2 days</span>
+                                                        </div>
+                                                    </div>
+
+                                                        <div class="progressBar d-flex align-items-center">
+                                                            <div class="progress zero w-100" role="progressbar"
+                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                                <div class="progress-bar  " style="width:45%"></div>
+                                                            </div>
+                                                            <div class="progress-percent">45%</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="course-status-card">
+                                                    <div class="d-flex flex-column gap-3">
+                                                        <div class="institute-label d-flex align-items-center">
+                                                            <img src="images/training-inst-logo.svg" alt="">
+                                                            <div class="institute-name">
+                                                                <p>Macosnar Training Institute Corp.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-name">
+                                                            <div class="course-title">
+                                                                <h4>Radar Operation and Safety</h4>
+                                                            </div>
+                                                            <div class="course-description">
+                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                            </div>
+            
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-bottom d-flex flex-column">
+                                                        <div class="infoDiv pt-4 pb-3">
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/mode.svg" alt="mode">
+                                                            <span class="mode-hdg ms-2">Online</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/user-multiple.svg" alt="user-multiple">
+                                                            <span class="mode-hdg ms-2">39</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/duration.svg" alt="duration">
+                                                            <span class="mode-hdg ms-2">2 days</span>
+                                                        </div>
+                                                    </div>
+
+                                                        <div class="progressBar d-flex align-items-center">
+                                                            <div class="progress zero w-100" role="progressbar"
+                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                                <div class="progress-bar course-complete " style="width: 100%">
+                                                                </div>
+                                                            </div>
+                                                            <div class="progress-percent">100%</div>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card expired-card">
+                                            <div class="card-body">
+                                                <div class="course-status-card">
+                                                    <div class="d-flex flex-column gap-3">
+                                                        <div class="institute-label d-flex align-items-center">
+                                                            <img src="images/training-inst-logo.svg" alt="">
+                                                            <div class="institute-name">
+                                                                <p>Macosnar Training Institute Corp.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-name">
+                                                            <div class="course-title">
+                                                                <h4>Radar Operation and Safety</h4>
+                                                            </div>
+                                                            <div class="course-description">
+                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                            </div>
+            
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-bottom d-flex flex-column">
+                                                        <div class="course-info-expired d-flex justify-content-between">
+                                                            <div>
+                                                                <img src="images/mode.svg" alt="">
+                                                                Online
+                                                            </div>
+                                                            <div>
+                                                                <img src="images/user-multiple.svg" alt="">
+                                                                39
+                                                            </div>
+                                                            <div>
+                                                                <img src="images/duration.svg" alt="">
+                                                                2 days
+                                                            </div>
+                                                        </div>
+                                                        <div class="progressBar-text d-flex align-items-center">
+                                                            
+                                                            This course has been expired!
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="tab-pane fade" id="pills-notstarted" role="tabpanel"
+                                aria-labelledby="pills-notstarted-tab" tabindex="0">
+                                <div class="row gy-4">
+                                    <div class="col-6 custom-col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="course-status-card">
+                                                    <div class="d-flex flex-column gap-3">
+                                                        <div class="institute-label d-flex align-items-center">
+                                                            <img src="images/training-inst-logo.svg" alt="">
+                                                            <div class="institute-name">
+                                                                <p>Macosnar Training Institute Corp.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-name">
+                                                            <div class="course-title">
+                                                                <h4>Radar Operation and Safety</h4>
+                                                            </div>
+                                                            <div class="course-description">
+                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                            </div>
+            
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="card-bottom d-flex flex-column">
+                                                        <div class="infoDiv pt-4 pb-3">
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/mode.svg" alt="mode">
+                                                            <span class="mode-hdg ms-2">Online</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/user-multiple.svg" alt="user-multiple">
+                                                            <span class="mode-hdg ms-2">39</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/duration.svg" alt="duration">
+                                                            <span class="mode-hdg ms-2">2 days</span>
+                                                        </div>
+                                                    </div>
+
+                                                        <div class="progressBar d-flex align-items-center">
+                                                            <div class="progress zero w-100" role="progressbar"
+                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                                <div class="progress-bar course-complete" style="width: 0%">
+                                                                </div>
+                                                            </div>
+                                                            <div class="progress-percent">0%</div>
+                                                        </div>
+                                                    </div>
+        
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-inprogress" role="tabpanel"
+                                aria-labelledby="pills-inprogress-tab" tabindex="0">
+                                <div class="row gy-4">
+                                    <div class="col-6 custom-col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="course-status-card">
+                                                    <div class="d-flex flex-column gap-3">
+                                                        <div class="institute-label d-flex align-items-center">
+                                                            <img src="images/training-inst-logo.svg" alt="">
+                                                            <div class="institute-name">
+                                                                <p>Macosnar Training Institute Corp.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-name">
+                                                            <div class="course-title">
+                                                                <h4>Radar Operation and Safety</h4>
+                                                            </div>
+                                                            <div class="course-description">
+                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                            </div>
+            
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-bottom d-flex flex-column">
+                                                        <div class="infoDiv pt-4 pb-3">
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/mode.svg" alt="mode">
+                                                            <span class="mode-hdg ms-2">Online</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/user-multiple.svg" alt="user-multiple">
+                                                            <span class="mode-hdg ms-2">39</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/duration.svg" alt="duration">
+                                                            <span class="mode-hdg ms-2">2 days</span>
+                                                        </div>
+                                                    </div>
+
+                                                        <div class="progressBar d-flex align-items-center">
+                                                            <div class="progress zero w-100" role="progressbar"
+                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                                <div class="progress-bar " style="width:45%"></div>
+                                                            </div>
+                                                            <div class="progress-percent">45%</div>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 custom-col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="course-status-card">
+                                                    <div class="d-flex flex-column gap-3">
+                                                        <div class="d-flex flex-column gap-3">
+                                                            <div class="institute-label d-flex align-items-center">
+                                                                <img src="images/training-inst-logo.svg" alt="">
+                                                                <div class="institute-name">
+                                                                    <p>Macosnar Training Institute Corp.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-name">
+                                                                <div class="course-title">
+                                                                    <h4>Radar Operation and Safety</h4>
+                                                                </div>
+                                                                <div class="course-description">
+                                                                    <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                                </div>
+                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-bottom d-flex flex-column">
+                                                        <div class="infoDiv pt-4 pb-3">
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/mode.svg" alt="mode">
+                                                            <span class="mode-hdg ms-2">Online</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/user-multiple.svg" alt="user-multiple">
+                                                            <span class="mode-hdg ms-2">39</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/duration.svg" alt="duration">
+                                                            <span class="mode-hdg ms-2">2 days</span>
+                                                        </div>
+                                                    </div>
+
+                                                        <div class="progressBar d-flex align-items-center">
+                                                            <div class="progress zero w-100" role="progressbar"
+                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                                <div class="progress-bar  " style="width:45%"></div>
+                                                            </div>
+                                                            <div class="progress-percent">45%</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-completed" role="tabpanel"
+                                aria-labelledby="pills-completed-tab" tabindex="0">
+                                <div class="row gy-4">
+                                    <div class="col-6 custom-col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="course-status-card">
+                                                    <div class="d-flex flex-column gap-3">
+                                                        <div class="institute-label d-flex align-items-center">
+                                                            <img src="images/training-inst-logo.svg" alt="">
+                                                            <div class="institute-name">
+                                                                <p>Macosnar Training Institute Corp.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-name">
+                                                            <div class="course-title">
+                                                                <h4>Radar Operation and Safety</h4>
+                                                            </div>
+                                                            <div class="course-description">
+                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                            </div>
+            
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-bottom d-flex flex-column">
+                                                        <div class="infoDiv pt-4 pb-3">
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/mode.svg" alt="mode">
+                                                            <span class="mode-hdg ms-2">Online</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/user-multiple.svg" alt="user-multiple">
+                                                            <span class="mode-hdg ms-2">39</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/duration.svg" alt="duration">
+                                                            <span class="mode-hdg ms-2">2 days</span>
+                                                        </div>
+                                                    </div>
+
+                                                        <div class="progressBar d-flex align-items-center">
+                                                            <div class="progress zero w-100" role="progressbar"
+                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                                <div class="progress-bar course-complete " style="width: 100%">
+                                                                </div>
+                                                            </div>
+                                                            <div class="progress-percent">100%</div>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-expired" role="tabpanel"
+                                aria-labelledby="pills-expired-tab" tabindex="0">
+                                <div class="row gy-4">
+                                    <div class="col-6 custom-col">
+                                        <div class="card expired-card">
+                                            <div class="card-body">
+                                                <div class="course-status-card">
+                                                    <div class="d-flex flex-column gap-3">
+                                                        <div class="institute-label d-flex align-items-center">
+                                                            <img src="images/training-inst-logo.svg" alt="">
+                                                            <div class="institute-name">
+                                                                <p>Macosnar Training Institute Corp.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-name">
+                                                            <div class="course-title">
+                                                                <h4>Radar Operation and Safety</h4>
+                                                            </div>
+                                                            <div class="course-description">
+                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                            </div>
+            
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-bottom d-flex flex-column">
+                                                        <div class="course-info-expired d-flex justify-content-between">
+                                                            <div>
+                                                                <img src="images/mode.svg" alt="">
+                                                                Online
+                                                            </div>
+                                                            <div>
+                                                                <img src="images/user-multiple.svg" alt="">
+                                                                39
+                                                            </div>
+                                                            <div>
+                                                                <img src="images/duration.svg" alt="">
+                                                                2 days
+                                                            </div>
+                                                        </div>
+                                                        <div class="progressBar-text d-flex align-items-center">
+                                                            
+                                                            This course has been expired!
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                           
                         </div>
 
                     </div>

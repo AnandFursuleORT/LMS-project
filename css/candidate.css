@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -19,14 +19,6 @@ img {
     height: auto;
 }
 
-.offcanvas-backdrop {
-    cursor: url('/Lms-images/cancel-01.png'), auto;
-}
-
-.card {
-    border: 1px solid #DEE3E6 !important;
-    border-radius: 16px !important;
-}
 
 .nav-main {
     padding: 20px 0 !important;
@@ -50,6 +42,8 @@ img {
 .items-submenu {
     background-color: #FFFAF4 !important;
 }
+
+
 
 .menu-item:active {
     background-color: transparent !important;
@@ -167,7 +161,7 @@ img {
 
 .main {
     padding-top: 32px;
-    background: linear-gradient(169deg, rgba(255, 230, 198, 0.00) 21.8%, rgba(255, 230, 198, 0.70) 80.49%), var(--Surface-White, #FFF);
+    background: linear-gradient(169deg, rgba(255, 230, 198, 0.00) 21.8%, rgba(255, 230, 198, 0.70) 80.49%), #FFF;
     padding-bottom: 100px;
 }
 
@@ -175,7 +169,7 @@ img {
     gap: 16px;
 }
 
-.active {
+.sidebar-active {
     background-color: #DDEFFE80;
     color: #03599F !important;
     font-size: 16px;
@@ -211,17 +205,12 @@ img {
     color: #768998;
 }
 
-
-
 .main .title h2 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 36px;
     font-weight: 600;
     color: #011B30;
     font-family: "ES Rebond Grotesque TRIAL" !important;
-
-
-
 }
 
 .bell-icon {
@@ -241,8 +230,9 @@ img {
 
 .card {
     padding: 24px;
-    border: 1px solid #DEE3E6;
-    border-radius: 16px;
+    border: 1px solid #DEE3E6 !important;
+    border-radius: 16px !important;
+
 
 }
 
@@ -328,6 +318,9 @@ img {
 }
 
 .logoimgDiv {
+
+
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -517,14 +510,13 @@ img {
 .training-search {
     background-image: url('/images/training-search.svg');
     background-repeat: no-repeat;
-    background-position: 10px 10px;
-
-    padding: 9px;
+    background-position: 8px 9px;
+    background-size: 12% auto;
+    padding: 6px;
     padding-left: 36px;
     border: 1px solid #DEE3E6;
     border-radius: 8px;
-    max-width: 151px;
-
+    max-width: 150px;
 }
 
 .course-progress-tab {
@@ -614,7 +606,10 @@ img {
     line-height: 24px;
     font-weight: 600;
     color: #011B30;
+
     font-family: "Raleway" !important;
+
+
 }
 
 .progress-bar {
@@ -657,10 +652,25 @@ img {
     color: #E53A3A;
 }
 
+
+
+
+
+
+
 /* Recommendation */
 
 .card-bottom {
     gap: 16px;
+}
+
+.reccomendation-course-info {
+    border-bottom: 1px solid #DEE3E6;
+    padding-bottom: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #1D3C55;
 }
 
 .recommend label {
@@ -735,50 +745,128 @@ img {
 
 /* Courses */
 
-.course-category {
-    padding: 8px 16px;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 500;
+.course-tab {
+
+    border-radius: 100px !important;
+    border: 1px solid #DEE3E6 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-weight: 500 !important;
+    color: #1D3C55 !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #FFF3E380 !important;
+}
+
+.info-hdg {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.info-p {
     color: #1D3C55;
-    border: 1px solid #DEE3E6;
-    border-radius: 100px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
 }
 
-.course-tabs {
-    margin-bottom: 24px;
+.mode-hdg {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
 }
 
-.course-tab-active {
-    background-color: rgba(255, 243, 227, 0.5);
+.infoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #DEE3E6;
 }
 
-.offer {
-    gap: 12px;
+.priceDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.offer .mrp {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 500;
+.strike-price {
     color: #94A3AF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
     text-decoration: line-through;
 }
 
-.offer .discount {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
+.main-price {
     color: #011B30;
-
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
 }
 
-.offer-percent {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 600;
+.discout-offer {
     color: #18BB54;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
 
+.course-info {
+    height: 100%;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #DEE3E6;
+    background-color: #FFF !important;
+    box-shadow: 0px 4px 12px 0px rgba(7, 4, 27, 0.04);
+}
+
+.course-info:hover {
+    background: radial-gradient(102.43% 102.43% at 50% 36.92%, rgba(249, 249, 249, 0.00) 42.12%, rgba(249, 249, 249, 0.26) 88.38%), linear-gradient(295deg, #000910 -27.02%, #03599F 81.57%);
+    box-shadow: 0px 4px 12px 0px rgba(7, 4, 27, 0.08);
+}
+
+.course-info:hover .info-hdg {
+    color: #FAFBFB;
+}
+
+.course-info:hover .info-p {
+    color: #FAFBFB;
+}
+
+.course-info:hover .comp-hdg {
+    color: #FAFBFB;
+}
+
+.course-info:hover .mode-hdg {
+    color: #FAFBFB;
+}
+
+.course-info:hover .main-price {
+    color: #FAFBFB;
+}
+
+.course-info:hover svg path {
+    stroke: #FAFBFB;
+}
+
+.course-Enroll-btn a {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #03599F;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #FAFBFB;
 }
 
 
@@ -796,8 +884,8 @@ img {
 
 
 table th {
-    padding: 16px !important;
-    background-color: rgba(221, 239, 254, 0.5) !important;
+    padding: 14px !important;
+    background-color: #DDEFFE80 !important;
     color: #011B30;
     font-size: 14px;
     line-height: 20px;
@@ -817,16 +905,20 @@ table td a {
 }
 
 
-.table-bordered {
-    border: 1px solid #DEE3E6 !important;
-    border-radius: 20px !important;
+.form-check-input {
+    border: 1.5px solid #768998 !important;
 }
+
 
 .status-dropdown {
     border: 1px solid #DEE3E6;
     border-radius: 8px;
     padding: 8px 12px;
     gap: 8px;
+}
+
+.nav-link:focus-visible {
+    box-shadow: none !important;
 }
 
 .text-status {
@@ -904,11 +996,9 @@ table td a {
     font-weight: 600;
 }
 
-
-
-
-
-
+.offcanvas-backdrop {
+    cursor: url('/images/cancel-01.svg'), auto;
+}
 
 
 
@@ -931,7 +1021,9 @@ table td a {
     color: #FAFBFB;
 }
 
-
+.banner-search {
+    padding: 0px 40px 0px 40px;
+}
 
 .faq-banner-search {
     background-color: transparent;
@@ -957,8 +1049,20 @@ table td a {
     font-weight: 500;
     color: #FAFBFB;
     background-color: #DDEFFE1A;
-    border-radius: 100px;
+    border-radius: 100px !important;
+    background-color: #DDEFFE1A !important;
 }
+
+.nav-pills .tabs.active {
+    background-color: #FAFBFB !important;
+    color: #011B30 !important;
+}
+
+.tabs:hover {
+    background-color: #FAFBFB !important;
+    color: #011B30 !important;
+}
+
 
 .card-title {
     margin-bottom: 16px !important;
@@ -994,6 +1098,7 @@ table td a {
     text-decoration: none;
 }
 
+
 .accordion-tab {
     padding: 16px 24px !important;
 }
@@ -1012,7 +1117,9 @@ table td a {
     line-height: 28px !important;
     font-weight: 600;
     font-family: "Raleway" !important;
+
 }
+
 
 .tab-links ul li a {
     text-decoration: none;
@@ -1059,6 +1166,12 @@ table td a {
 
 .faq-tab-accordion {
     border: none !important;
+}
+
+.faq-accordion .accordion-body {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
 }
 
 .faq-accordion-btn {
@@ -1180,8 +1293,20 @@ table td a {
 
 }
 
-.prev-nxt-btn {
-    margin-top: 24px;
+.prev-nxt-btn2 {
+    margin-top: 26px;
+}
+
+.prev-nxt-btn3 {
+    margin-top: 10px;
+}
+
+.prev-nxt-btn4 {
+    margin-top: 10px;
+}
+
+.prev-nxt-btn5 {
+    margin-top: 17px;
 }
 
 .previous-btn {
@@ -1704,6 +1829,7 @@ table td a {
     line-height: 20px;
     background-color: #FFFFFF;
     gap: 8px;
+    text-decoration: none;
 
 }
 
@@ -1880,16 +2006,537 @@ table td a {
 }
 
 
+/* Notification */
+
+
+.notification-section-one,
+.notification-section-two,
+.notification-section-three {
+    padding: 24px;
+    border-bottom: 1px solid #DEE2E6;
+
+}
+
+.notification-text h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #01233F;
+}
+
+.notification-text p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+
+}
+
+
+.notification {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    background-color: #FAFBFB;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    padding: 12px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.notification-switch-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #01233F;
+}
+
+
+.form-switch.form-check-input {
+    height: 20px;
+    width: 40px;
+}
+
+.notification-switch p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #768897;
+    margin-bottom: 0 !important;
+}
+
+.privacy-policy {
+    color: #E28000;
+}
+
+
+.notification-section-three {
+    border-bottom: 1px solid #DEE2E6;
+}
+
+
+/* Devices & Activities */
+
+.devices-activities-section-one {
+    padding: 24px;
+    border-bottom: 1px solid #DEE2E6;
+
+}
+
+.devices-activities-text h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #01233F;
+}
+
+.devices-activities-text p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+
+}
 
 
 
 
+.session-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    margin-bottom: 24px;
+
+
+}
+
+.browser-icon {
+    border: 1px solid #DEE2E6;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.session-info {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.browser-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.current-session {
+    font-size: 14px;
+    color: #28a745;
+    margin-left: 5px;
+}
+
+.session-details {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.signout-btn {
+    padding: 8px 12px;
+    border: 1px solid #E53A3A;
+    border-radius: 8px;
+    color: #E53A3A;
+    background-color: #FAFBFB;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.signout-btn:hover {
+    background-color: #FAD8D8;
+}
+
+.signout-btn:active {
+    background-color: #F5B0B0;
+}
 
 
 
+/* Setting-Paymemts */
+.payments-section-one {
+    padding: 24px;
+    border-bottom: 1px solid #DEE2E6;
+
+}
+
+.payment-method h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #01233F;
+}
+
+.payment-method p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+.payment-card {
+    border: 1px solid #DEE3E6;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.card-text h6 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #011B30;
+}
+
+.card-expiry p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #768998;
+}
+
+.change-btn {
+    padding: 12px 16px;
+    border: 1px solid #DEE3E6;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.change-btn a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #011B30;
+    text-decoration: none;
+}
+
+.payment-note p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768998;
+}
+
+.payment-history h6 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #011B30;
+}
+
+.payment-history p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #768998;
+}
+
+.filter-btn {
+    padding: 12px 16px;
+    border: 1px solid #DEE3E6;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.filter-btn button {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #011B30;
+    background: none;
+    border: none;
+
+}
+
+.dropdown-item:active {
+    background-color: #FAFBFB !important;
+    color: #1D3C55 !important;
+}
+
+.payment-history-download-btn {
+    padding: 12px 16px;
+    border: 1px solid #DEE3E6;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.payment-history-download-btn a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #011B30;
+    text-decoration: none;
+}
+
+.table-download {
+    text-decoration: none;
+    align-items: center;
+}
+
+/* Setting-Seafarers */
+
+.seafarers-info label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768897;
+}
+
+.seafarers-info .input-field {
+    padding: 12px;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #011B30;
+
+}
+
+.coc-validity {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    border-radius: 12px;
+    color: #FACC15;
+    background-color: rgba(250, 204, 21, 0.15);
+    padding: 16px;
+}
+
+.validity-text p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #FACC15;
+}
+
+.coc-expiry {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    border-radius: 12px;
+    color: #FACC15;
+    background-color: rgba(229, 58, 58, 0.15);
+    ;
+    padding: 16px;
+}
+
+.expiry-text p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #E53A3A;
+}
+
+.upload-btn .btn {
+    background-color: #03599F !important;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #FAFBFB;
+}
+
+.upload-btn .btn:hover {
+    color: #FAFBFB !important;
+}
+
+.seafarers-info .form-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #768998;
+}
+
+.verify-input {
+    position: relative;
+}
+
+.verified {
+    position: absolute;
+    top: 41%;
+    right: 5%;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #18BB54;
+    text-decoration: none;
+}
+
+.alert {
+    border-radius: 12px !important;
+    color: #FACC15 !important;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    background-color: rgba(250, 204, 21, 0.15) !important;
+}
+
+/* Setting-Documents */
+
+
+.documents-info {
+    padding: 12px 16px;
+    border: 1px solid #DEE3E6;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+
+.document-type h6 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #011B30;
+}
+
+.document-verified {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #18BB54;
+}
 
 
 
+/* Settng-Institute */
+
+.inst-acdn {
+    border-radius: 12px !important;
+    border: none !important;
+}
+
+.inst-item {
+    border: 1px solid #DEE3E6 !important;
+    border-radius: 12px !important;
+}
+
+.inst-name {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.inst-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.inst-accordion-btn {
+    padding: 12px !important;
+    border-radius: 12px !important;
+}
+
+.inst-accordion-btn::after {
+    background-image: url('/images/arrow-down-accordion.svg') !important;
+}
+
+.inst-accordion-btn:focus {
+    box-shadow: none !important;
+}
+
+.inst-accordion-btn:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.accdn-body {
+    border-radius: 0 0 12px 12px !important;
+}
+
+.inst-info-card {
+    border-radius: 12px;
+    border: 1px solid #DEE3E6;
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.inst-info-hdg {
+    color: #011B30;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.inst-info-para {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.bottom-info-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details-enroll {
+    color: #768998;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.info-enroll {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.price-number {
+    color: #011B30;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+/* Notifications css */
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notf-read {
+    text-decoration: none;
+    display: inline-flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid #DEE3E6;
+}
+
+.notf-read h6 {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
 
 
 

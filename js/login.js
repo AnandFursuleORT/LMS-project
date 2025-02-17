@@ -1,3 +1,71 @@
+
+// Email otp js code
+const inputs = document.getElementById("inputs");
+inputs.addEventListener("input", function (e) {
+    const target = e.target;
+    const val = target.value;
+    if (isNaN(val)) {
+        target.value = "";
+        return;
+    }
+    if (val != "") {
+        const next = target.nextElementSibling;
+        if (next) {
+            next.focus();
+        }
+    }
+});
+inputs.addEventListener("keyup", function (e) {
+    const target = e.target;
+    const key = e.key.toLowerCase();
+    if (key == "backspace" || key == "delete") {
+        target.value = "";
+        const prev = target.previousElementSibling;
+        if (prev) {
+            prev.focus();
+        }
+        return;
+    }
+});
+
+// Phone no otp js code
+const inputs2 = document.getElementById("inputs2");
+inputs2.addEventListener("input", function (e) {
+    const target = e.target;
+    const val = target.value;
+    if (isNaN(val)) {
+        target.value = "";
+        return;
+    }
+    if (val != "") {
+        const next = target.nextElementSibling;
+        if (next) {
+            next.focus();
+        }
+    }
+});
+inputs2.addEventListener("keyup", function (e) {
+    const target = e.target;
+    const key = e.key.toLowerCase();
+    if (key == "backspace" || key == "delete") {
+        target.value = "";
+        const prev = target.previousElementSibling;
+        if (prev) {
+            prev.focus();
+        }
+        return;
+    }
+});
+
+// Handle dropdown item click to change selected country code
+document.querySelectorAll('#countryCodeDropdown .dropdown-item').forEach(function (item) {
+    item.addEventListener('click', function (event) {
+        event.preventDefault();
+        var selectedCode = this.getAttribute('data-code');
+        document.getElementById('selectedCountryCode').innerText = selectedCode;
+    });
+});
+
 const slidePage = document.querySelector(".slide-page");
 const nextBtnFirst = document.querySelector(".firstNext");
 const prevBtnSec = document.querySelector(".prev-1");
@@ -99,7 +167,7 @@ function startCountdown() {
         if (time === 0) {
             clearInterval(timer);
             timer = null;
-            countdownElement.innerHTML = "Resend OTP ";
+            countdownElement.innerHTML = "Resend OTP";
             countdownElement.style.cursor = "pointer";
             countdownElement.addEventListener("click", restartCountdown);
             countdownElement2.innerHTML = "Resend OTP ";
@@ -162,3 +230,5 @@ document.addEventListener("DOMContentLoaded", function () {
         password2.setAttribute("type", type);
     });
 });
+
+

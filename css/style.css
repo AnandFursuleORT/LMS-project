@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -190,16 +190,6 @@ img {
     font-weight: 600 !important;
 }
 
-/* .search-btn {
-    display: flex;
-    padding: 12px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    border: 1px solid #DEE3E6;
-    background: linear-gradient(273deg, #FFB555 -50.01%, #E28000 100%);
-} */
-
 .search-input {
     background-image: url('/Lms-images/search-icon.svg');
     background-repeat: no-repeat;
@@ -265,7 +255,62 @@ img {
     font-weight: 500;
 }
 
+.nt-icon {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #DEE3E6;
+}
+
+.prof-name {
+    color: #011B30;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.prof-dst {
+    color: #768998;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.prof-img {
+    border-radius: 50%;
+}
+
+.dropdown-profile::after {
+    display: none !important;
+}
+
+.dropdown-profile {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.candidate-panel-div a {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #03599F;
+    text-decoration: none;
+    color: #03599F;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
 /* ===================================
+Homepage CSS
     2. Banner
 ====================================== */
 
@@ -547,16 +592,26 @@ img {
 
 .c-tab {
     margin-top: 40px;
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-shrink: 0;
+    flex-wrap: nowrap !important;
     border-radius: 16px;
     background: rgba(1, 27, 48, 0.20);
     box-shadow: 4px 4px 12px 0px rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
     border: none !important;
-    gap: 15px;
+}
+
+.scroll-buttons.left-scroll {
+    background: linear-gradient(to left, transparent, #F2F2F2 80%);
+    left: 8%;
+}
+
+.scroll-buttons.right-scroll {
+    background: linear-gradient(to right, transparent, #F2F2F2 80%);
+    right: 0;
 }
 
 .title-course {
@@ -569,7 +624,6 @@ img {
     font-family: "Raleway", serif;
     font-size: 20px !important;
     font-weight: 500 !important;
-    line-height: 28px;
     letter-spacing: 0.8px;
     background-color: transparent !important;
     padding: 0 !important;
@@ -616,7 +670,7 @@ img {
     height: 125px;
 }
 
-.crInfobox h6 {
+.home-c-hdg {
     color: #FFF;
     font-family: "Raleway", serif;
     font-size: 18px;
@@ -624,7 +678,7 @@ img {
     letter-spacing: 0.72px;
 }
 
-.crInfobox p {
+.home-p {
     color: #EBEDF0;
     font-family: "Raleway", serif;
     font-size: 14px;
@@ -1327,6 +1381,1613 @@ input::placeholder {
     }
 }
 
+
+/* ===================================
+Course List page CSS
+    2. Course List Banner
+====================================== */
+
+.Course-list-banner {
+    display: flex;
+    padding: 32px 0 100px 0;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(257deg, #03599F 0.23%, #000910 231.99%);
+}
+
+.hdgSect {
+    padding-top: 48px;
+}
+
+.courseHdg {
+    color: #FFE6C6;
+    font-family: "ES Rebond Grotesque TRIAL";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.coursePara {
+    color: #FFF;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.ct-text {
+    color: #FFF;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.look-small {
+    border-radius: 50%;
+    background: #E28000;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.look-small span {
+    color: #FFF;
+    font-family: "Raleway", serif;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+/* ===================================
+    3. Course List
+====================================== */
+
+.Course-list {
+    display: flex;
+    padding: 100px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(166deg, rgba(255, 230, 198, 0.00) 2.31%, rgba(255, 230, 198, 0.70) 67.92%);
+}
+
+.course-tabHdg h2 {
+    color: #011B30;
+    font-family: "ES Rebond Grotesque TRIAL";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.courses-number {
+    color: #768998;
+    font-family: "ES Rebond Grotesque TRIAL";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.crInfobox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.search-input-side {
+    gap: 8px;
+}
+
+.web-search {
+    width: 350px;
+    box-sizing: border-box;
+    border: 1px solid #DEE3E6;
+    background: #FAFBFB;
+    border-radius: 12px;
+    background-image: url('/Lms-images/search-icon.svg');
+    background-position: 16px 16px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    padding: 16px 16px 16px 48px;
+    color: #768998;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.filter {
+    display: flex;
+    padding: 16px !important;
+    align-items: center;
+    border-radius: 12px !important;
+    border: 1px solid #DEE3E6 !important;
+    background: #FAFBFB !important;
+}
+
+.filter-search {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #DEE3E6;
+    background: #FAFBFB;
+    background-image: url('/Lms-images/small-search.svg');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 12px 12px 34px;
+    gap: 8px;
+    color: #768998;
+    font-family: "Raleway", serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.filter:hover {
+    border: 1px solid #884D00 !important;
+    background-color: #E28000 !important;
+}
+
+.filter:hover svg path {
+    stroke: #FAFBFB;
+}
+
+.filter:focus:not(:focus-visible) {
+    border: 1px solid #884D00 !important;
+    background-color: #E28000 !important;
+    outline: 0;
+}
+
+.filter:focus:not(:focus-visible) svg path {
+    stroke: #FAFBFB;
+}
+
+.filter-li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-sect {
+    padding: 8px 16px 16px 16px !important;
+    width: 420px;
+    border-radius: 20px !important;
+    border: 1px solid #DEE3E6 !important;
+    background: #FFF !important;
+}
+
+.dropdown-header {
+    color: #011B30 !important;
+    font-family: "ES Rebond Grotesque TRIAL";
+    font-size: 28px !important;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+/* location list scrollbar */
+
+#locationList {
+    max-height: 80px;
+    overflow-y: auto;
+    padding-left: 2px;
+}
+
+#locationList::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#locationList::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#locationList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #011B30;
+}
+
+/* vessel list scrollbar */
+
+#VesselList {
+    max-height: 80px;
+    overflow-y: auto;
+    padding-left: 2px;
+}
+
+#VesselList::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#VesselList::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#VesselList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #011B30;
+}
+
+/* Duration list scrollbar */
+
+#DurationList {
+    max-height: 80px;
+    overflow-y: auto;
+    padding-left: 2px;
+}
+
+#DurationList::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#DurationList::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#DurationList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #011B30;
+}
+
+.filter-acdn {
+    margin-bottom: 16px;
+    border-radius: 8px !important;
+    border: 1px solid #DEE3E6 !important;
+    background-color: #FAFBFB !important;
+}
+
+.filter-acdn-btn::after {
+    background-image: url('/Lms-images/filter-down.svg') !important;
+    background-position: center center;
+}
+
+.filter-acdn-btn {
+    border-radius: 8px !important;
+    font-family: "Raleway" !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 20px;
+    color: #011B30;
+    line-height: 24px;
+    letter-spacing: 0.72px;
+}
+
+.filter-acdn-btn:focus {
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.filter-acdn-btn:not(.collapsed) {
+    background-color: transparent !important;
+    border-radius: 8px 8px 0 0 !important;
+    box-shadow: none !important;
+}
+
+.filter-check {
+    border-radius: 6px !important;
+    border: 1px solid #011B30 !important;
+}
+
+.filter-label {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.rank-numbers {
+    color: #768998;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.reset-btn {
+    color: #03599F;
+    text-align: right;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.72px;
+    background: none !important;
+    border: none !important;
+}
+
+.form-check-input:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+/* Tabs section css */
+
+.course-tab1 {
+    margin-top: 48px;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid #DEE3E6;
+    background: #FFF;
+    position: relative;
+    flex-wrap: nowrap !important;
+}
+
+.scroll-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    overflow-x: auto;
+    max-width: 100%;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 0 10px;
+}
+
+.scroll-div::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.scroll-buttons.left {
+    background: linear-gradient(to left, transparent, #FFE6C6 80%);
+    left: 8%;
+}
+
+.scroll-buttons.right {
+    background: linear-gradient(to right, transparent, #FFE6C6 80%);
+    right: 0;
+}
+
+.cr-title {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title-course {
+    border-right: 1px solid #DEE3E6;
+    padding: 0 50px 0 25px;
+}
+
+.c-tab-title {
+    color: #1D3C55 !important;
+    font-family: "Raleway", serif;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.8px;
+    background-color: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.c-tab-title.active {
+    padding: 20px 0 !important;
+    color: #FF9C1C !important;
+    border-bottom: 2px solid #FF9C1C !important;
+}
+
+.c-tab-title:hover {
+    padding: 20px 0 !important;
+    color: #FF9C1C !important;
+    border-bottom: 2px solid #FF9C1C !important;
+}
+
+.crTab {
+    margin-top: 48px;
+}
+
+.course-info {
+    height: 100%;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #DEE3E6;
+    background-color: #FFF !important;
+    box-shadow: 0px 4px 12px 0px rgba(7, 4, 27, 0.04);
+}
+
+.course-info:hover {
+    background: radial-gradient(102.43% 102.43% at 50% 36.92%, rgba(249, 249, 249, 0.00) 42.12%, rgba(249, 249, 249, 0.26) 88.38%), linear-gradient(295deg, #000910 -27.02%, #03599F 81.57%);
+    box-shadow: 0px 4px 12px 0px rgba(7, 4, 27, 0.08);
+}
+
+.course-info:hover .info-hdg {
+    color: #FAFBFB;
+}
+
+.course-info:hover .info-p {
+    color: #FAFBFB;
+}
+
+.course-info:hover .comp-hdg {
+    color: #FAFBFB;
+}
+
+.course-info:hover .mode-hdg {
+    color: #FAFBFB;
+}
+
+.course-info:hover .main-price {
+    color: #FAFBFB;
+}
+
+.course-info:hover svg path {
+    stroke: #FAFBFB;
+}
+
+.comp-hdg {
+    color: #011B30;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.course-box {
+    text-decoration: none;
+}
+
+.info-hdg {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.info-p {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.mode-hdg {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.infoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #DEE3E6;
+}
+
+.priceDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.strike-price {
+    color: #94A3AF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-decoration: line-through;
+}
+
+.main-price {
+    color: #011B30;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.discout-offer {
+    color: #18BB54;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* ===================================
+    3. Course Chance
+====================================== */
+
+.Course-chance {
+    display: flex;
+    padding: 100px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.chance-hdg {
+    color: #011B30;
+    font-family: "ES Rebond Grotesque TRIAL";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.chance-para {
+    color: #1D3C55;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/* ===================================
+    4. Course Skills Section
+====================================== */
+
+.Skills-sect {
+    display: flex;
+    padding: 100px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(255deg, #000910 -0.13%, #03599F 112.12%);
+}
+
+.skill-hdg {
+    color: #FFE6C6;
+    text-align: center;
+    font-family: "ES Rebond Grotesque TRIAL";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.skill-para {
+    color: #FAFBFB;
+    text-align: center;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.mainSkillDiv {
+    padding-top: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.skillsDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.skillHdgtext {
+    display: flex;
+    align-items: center;
+}
+
+.skill-text {
+    color: #FFF;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.skill-info {
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 16px;
+}
+
+.skill-info2 {
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 8px;
+}
+
+@media only screen and (max-width: 480px) {
+    .mainSkillDiv {
+        flex-direction: column;
+    }
+}
+
+/* ===================================
+Course Details page css
+    2. Course Details Banner
+====================================== */
+
+.breadcrumb-item {
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.breadcrumb-item a {
+    color: #DEE3E6;
+}
+
+.breadcrumb-item.active {
+    color: #FF9C1C !important;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Course-detail-banner {
+    padding: 32px 0 60px 0;
+    background: linear-gradient(180deg, rgba(1, 27, 48, 0.00) -1.73%, rgba(1, 27, 48, 0.90) 100%), url('/Lms-images/detail-Image.png') lightgray 0px -440.078px / 100% 256.031% no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.university-name {
+    color: #FFF;
+    font-family: "Nunito Sans", serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.ust-hdg-div h2 {
+    color: #FFE6C6;
+    font-family: "ES Rebond Grotesque TRIAL";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.demo-btn {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #FAFBFB;
+    color: #FAFBFB;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sign-btn {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    background-color: #03599F;
+    color: #FAFBFB;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ===================================
+    3. Course Details Tabs
+====================================== */
+
+.course-details-main {
+    padding: 40px 0 60px 0;
+    background: linear-gradient(166deg, rgba(255, 230, 198, 0.00) 2.31%, rgba(255, 230, 198, 0.70) 67.92%);
+}
+
+.nav-button-sect {
+    border-radius: 20px;
+    border: 1px solid #DEE3E6;
+    background-color: #FFF;
+    padding: 16px !important;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-pills .details-tab-btn {
+    display: flex;
+    padding: 12px 24px !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px !important;
+    border: 1px solid #DEE3E6 !important;
+    background: #FAFBFB !important;
+    color: #768998 !important;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-weight: 600;
+    gap: 4px;
+}
+
+.nav-pills .details-tab-btn:hover {
+    background: #03599F !important;
+    color: #FAFBFB !important;
+    font-weight: 600;
+}
+
+.nav-pills .details-tab-btn:hover svg path {
+    stroke: #FFFFFF;
+}
+
+.nav-pills .details-tab-btn.active {
+    display: flex;
+    padding: 12px 24px !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px !important;
+    background: #03599F !important;
+    color: #FAFBFB !important;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-pills .details-tab-btn.active svg path {
+    stroke: #FFFFFF;
+}
+
+/* About content part css */
+
+.about-content-div1 {
+    border-radius: 20px;
+    border: 1px solid #DEE3E6;
+    background: #FFF;
+    padding: 24px 16px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.abt-hdg {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.about-content {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid #DEE3E6;
+    background-color: #FAFBFB;
+}
+
+.pre-content {
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid #DEE3E6;
+    background-color: #FAFBFB;
+}
+
+.content-para {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.about-content-div2 {
+    margin-top: 24px;
+    border-radius: 20px;
+    border: 1px solid #DEE3E6;
+    background: #FFF;
+    padding: 24px 16px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.pre-para {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.pre-ul {
+    padding: 1rem !important;
+}
+
+.pre-li {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.pre-hdr {
+    color: #E28000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.bottom-para {
+    color: #768998;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.about-content-div3 {
+    margin-top: 24px;
+    border-radius: 20px;
+    border: 1px solid #DEE3E6;
+    background: #FFF;
+    padding: 24px 16px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+li::marker {
+    color: #E28000 !important;
+}
+
+.lms-info {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.dt-info-hdg {
+    color: #E28000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+/* Institute content part css */
+
+.inst-content-div {
+    border-radius: 20px;
+    border: 1px solid #DEE3E6;
+    background: #FFF;
+    padding: 24px 16px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.inst-hdg {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.inst-inner-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location-btn-div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.loct-dn {
+    background-image: url('/Lms-images/arrow-down-round2.svg');
+    background-repeat: no-repeat;
+    background-position: 165px 15px;
+    padding: 12px 16px !important;
+    border-radius: 8px !important;
+    border: 1px solid #DEE3E6 !important;
+    background-color: #FAFBFB !important;
+    width: 200px;
+    text-align: left !important;
+    color: #768998 !important;
+    font-family: "Raleway", serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.cont-dn {
+    background-image: url('/Lms-images/arrow-down-round2.svg');
+    background-repeat: no-repeat;
+    background-position: 165px 15px;
+    padding: 12px 16px !important;
+    border-radius: 8px !important;
+    border: 1px solid #DEE3E6 !important;
+    background-color: #FAFBFB !important;
+    width: 200px;
+    text-align: left !important;
+    color: #768998 !important;
+    font-family: "Raleway", serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.inst-div {
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #DEE3E6;
+    background-color: #FAFBFB;
+    box-shadow: 0px 4px 12px 0px rgba(7, 4, 27, 0.04);
+}
+
+.inst-name {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.inst-info-div span {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.inst-info {
+    color: #03599F;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+/* Lessons content part css */
+
+.lesson-content-div {
+    border-radius: 20px;
+    border: 1px solid #DEE3E6;
+    background: #FFF;
+    padding: 24px 16px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.lesson-hdg {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.lsn-acdn-btn::after {
+    display: none;
+}
+
+.accdn-outer-div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lesson-acdn {
+    border-radius: 12px !important;
+    border: none !important;
+}
+
+.accdn-body {
+    border-radius: 0 0 12px 12px !important;
+    background-color: rgba(221, 239, 254, 0.50) !important;
+}
+
+.lsn-acdn-btn {
+    background-image: url('/Lms-images/arrow-down-01-round.svg');
+    background-repeat: no-repeat;
+    background-position: 14px 16px;
+    padding-left: 40px !important;
+    justify-content: space-between !important;
+    background-color: #FAFBFB !important;
+    border-radius: 12px !important;
+    border: 1px solid #DEE3E6 !important;
+    color: #1D3C55 !important;
+    font-family: "Raleway", serif;
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+.lsn-acdn-btn:focus {
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.lsn-acdn-btn:not(.collapsed) {
+    background-image: url('/Lms-images/arrow-down-02-round.svg');
+    background-repeat: no-repeat;
+    background-position: 14px 16px;
+    color: #FAFBFB !important;
+    background-color: #03599F !important;
+    border: 1px solid #DEE3E6 !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.lsn-acdn-btn:not(.collapsed) .small-border-div {
+    background-color: #DEE3E6;
+}
+
+.small-border-div {
+    height: 1px;
+    width: 20px;
+    transform: rotate(90deg);
+    background-color: #1D3C55;
+}
+
+.lsn-acdn-btn:not(.collapsed) .lect {
+    color: #FAFBFB !important;
+}
+
+.lsn-acdn-btn:not(.collapsed) .duration {
+    color: #FAFBFB !important;
+}
+
+.lesson-body {
+    padding: 8px 16px !important;
+}
+
+.lect {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.duration {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.lect-sect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lect-hdg-left {
+    color: #1D3C55;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.lect-time {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.watch-btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #03599F;
+    color: #FAFBFB;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+/* Resources content part css */
+
+.resources-content-div {
+    border-radius: 20px;
+    border: 1px solid #DEE3E6;
+    background: #FFF;
+    padding: 24px 16px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.res-inner-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lang-select {
+    background-image: url('/Lms-images/arrow-down-01-sharp.svg') !important;
+    background-size: 18px 18px !important;
+    border-radius: 8px !important;
+    border: 1px solid #DEE3E6 !important;
+    background-color: #FAFBFB !important;
+    color: #768998 !important;
+    font-family: "Raleway", serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    padding: 12px 16px !important;
+    width: 200px !important;
+}
+
+.lang-select:focus {
+    box-shadow: none !important;
+}
+
+.module-card-div {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 12px;
+    border: 1px solid #DEE3E6;
+    background: #FAFBFB;
+}
+
+.mod-badge {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: start;
+    width: 100px;
+    border-radius: 6px;
+    border: 1px solid #FE9000;
+    background: rgba(255, 156, 28, 0.16);
+}
+
+.mod-num {
+    color: #FE9000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.chapter-name {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.chapter-info {
+    color: #768998;
+    font-family: "Raleway", serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.mod-btn {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    gap: 8px;
+    background: #03599F;
+    color: #FAFBFB;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+/* Faqs content part css */
+
+.faq-content-div {
+    border-radius: 20px;
+    border: 1px solid #DEE3E6;
+    background: #FFF;
+    padding: 24px 16px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.faq-hdg {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.accdn-outer-div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.faq-acdn {
+    border-radius: 12px !important;
+    border: none !important;
+}
+
+.accdn-body {
+    border-radius: 0 0 12px 12px !important;
+    background-color: rgba(221, 239, 254, 0.50) !important;
+}
+
+.faq-acdn-btn {
+    background-color: #FAFBFB !important;
+    border-radius: 12px !important;
+    border: 1px solid #DEE3E6 !important;
+    color: #1D3C55 !important;
+    font-family: "Raleway", serif;
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+.faq-acdn-btn::after {
+    background-image: url('/Lms-images/arrow-down-round2.svg') !important;
+    background-repeat: no-repeat !important;
+}
+
+.faq-acdn-btn:focus {
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.faq-acdn-btn:not(.collapsed)::after {
+    background-image: url('/Lms-images/arrow-down-02-round.svg') !important;
+    background-repeat: no-repeat !important;
+}
+
+.faq-acdn-btn:not(.collapsed) {
+    color: #FAFBFB !important;
+    background-color: #03599F !important;
+    border: 1px solid #DEE3E6 !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.faq-acdn-btn:not(.collapsed) .small-border-div {
+    background-color: #DEE3E6;
+}
+
+.small-border-div {
+    height: 1px;
+    width: 20px;
+    transform: rotate(90deg);
+    background-color: #1D3C55;
+}
+
+.faq-sect p {
+    color: #1D3C55;
+    font-family: "Raleway", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* Reviews content part css */
+
+.review-content-div {
+    border-radius: 20px;
+    border: 1px solid #DEE3E6;
+    background: #FFF;
+    padding: 24px 16px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.review-hdg {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.review-box {
+    border-radius: 16px;
+    border: 1px solid #DEE3E6;
+    background-color: #FAFBFB;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-name {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.review-date {
+    color: #768998;
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.review-sect-hd {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.review-dsc {
+    color: #1D3C55;
+    font-family: "Raleway", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* Course pricing card css */
+.cardMainDiv {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid #DEE3E6;
+    background-color: #FFF;
+    gap: 32px;
+}
+
+.course-price-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-price {
+    color: #94A3AF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    text-decoration: line-through;
+}
+
+.dis-price {
+    color: #011B30;
+    font-family: "Plus Jakarta Sans";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.dis-offer {
+    color: #18BB54;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.save-btn {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: none;
+    border: 1px solid #03599F;
+    color: #03599F;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.save-btn:hover {
+    background-color: #03599F;
+    color: #FFFFFF;
+}
+
+.detailsMode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mode-sect span {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.result-div span {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.wd-div {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 181, 85, 0.30);
+    background: linear-gradient(166deg, rgba(255, 230, 198, 0.00) 2.31%, rgba(255, 230, 198, 0.70) 67.92%);
+}
+
+.wd-course {
+    color: #03599F;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.wd-para {
+    color: #011B30;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.wd-htext {
+    color: #E28000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.course-start-div {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 16px;
+    border: 1px solid rgba(24, 187, 84, 0.30);
+    background: linear-gradient(166deg, rgba(24, 187, 84, 0.00) 2.31%, rgba(24, 187, 84, 0.20) 67.92%);
+}
+
+.course-time-text {
+    color: #18BB54;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.course-time-div {
+    display: flex;
+    gap: 12px;
+}
+
+.course-day1 {
+    color: #18BB54;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+.course-day2 {
+    color: #003900;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+.colon-div {
+    color: #18BB54;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.pay-hdg {
+    color: #768998;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.share-hdg {
+    color: #768998;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.social-logo-div {
+    gap: 12px;
+}
+
+.social-class {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid #768998;
+}
+
+.social-class:hover {
+    background-color: #DEE3E6;
+}
+
 /* Footer section css */
 
 .footer-web {
@@ -1752,4 +3413,3 @@ input::placeholder {
         padding: 32px 16px;
     }
 }
-

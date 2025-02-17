@@ -109,8 +109,8 @@
                                     </div>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-menu-lg-end">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                <ul class="dropdown-menu dropMenu dropdown-menu-lg-end">
+                                    <li><a class="dropdown-item" href="general.html">Settings</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
@@ -169,10 +169,10 @@
                                                 <span>Exam</span>
                                             </a>
                                         </li>
-                                        <li class="menu-item active">
+                                        <li class="menu-item sidebar-active">
                                             <a href="result.html">
                                                 <img src="images/result.svg" alt="results-icon" />
-                                                <span class="active">Results</span>
+                                                <span class="sidebar-active">Results</span>
                                             </a>
                                         </li>
                                         <li class="menu-item">
@@ -216,31 +216,55 @@
                             </div>
 
 
-                            <div class="course-tabs d-flex align-items-center justify-content-between">
-                                <div class=" d-flex align-items-center gap-2">
-                                    <div class="course-category course-tab-active">
-                                        All
+                            <div class="course-tabs d-flex align-items-center justify-content-between mb-4">
+                                <ul class="nav nav-pills  gap-2" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link course-tab active" id="pills-all-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+                                            aria-selected="true">All</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link course-tab" id="pills-navigation-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-navigation" type="button" role="tab"
+                                            aria-controls="pills-navigation" aria-selected="false">Navigation</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link course-tab" id="pills-SafetySurvival-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-SafetySurvival" type="button"
+                                            role="tab" aria-controls="pills-SafetySurvival" aria-selected="false">Safety &
+                                            Survival</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link course-tab" id="pills-Engineering-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-Engineering" type="button" role="tab"
+                                            aria-controls="pills-Engineering" aria-selected="false">Engineering</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link course-tab" id="pills-CargoHandling-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-CargoHandling" type="button"
+                                            role="tab" aria-controls="pills-CargoHandling" aria-selected="false">Cargo
+                                            Handling</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link course-tab" id="pills-Compliance-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-Compliance" type="button" role="tab"
+                                            aria-controls="pills-Compliance" aria-selected="false">Compliance</button>
+                                    </li>
+                                </ul>
+                                
+                                    <div class="nav-item dropdown status-dropdown">
+                                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Status
+                                            <img src="images/arrow-down-black.svg" alt="">
+                                        </a>
+                                        <ul class="dropdown-menu dropMenu">
+                                            <li><a class="dropdown-item menu-item" href="#">Competent</a></li>
+                                            <li><a class="dropdown-item menu-item" href="#">Not Yet Competent</a></li>
+                                            <li><a class="dropdown-item menu-item" href="#">In Review</a></li>
+                                        </ul>
                                     </div>
-                                    <div class="course-category">
-                                        Navigation
-                                    </div>
-                                    <div class="course-category">
-                                        Safety & Survival
-                                    </div>
-                                    <div class="course-category">
-                                        Engineering
-                                    </div>
-                                    <div class="course-category">
-                                        Cargo Handling
-                                    </div>
-                                    <div class="course-category">
-                                        Compliance
-                                    </div>
-                                </div>
-                                <div class="status-dropdown d-flex align-items-center">
-                                    <div class="text-status">Status</div>
-                                    <img src="images/arrow-down-grey.svg" alt="">
-                                </div>
+                                
 
                             </div>
                         </div>
@@ -248,7 +272,8 @@
                         <div class="row course-card gy-4">
                             <div class="card card-table">
                                 <div class="card-body">
-                                    <table class="table align-middle table-bordered" id="result_table">
+                                    <table class="table align-middle table-bordered rounded-3 overflow-hidden mb-0"
+                                        id="result_table">
                                         <thead>
                                             <tr class="text-start">
                                                 <th class="min-w-40px">Sr. No.</th>
@@ -659,7 +684,7 @@
 
     <!-- Result-Attempts-Offcanvas -->
 
-    <div class="offcanvas offcanvas-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-body">
             <div class="attempt-drawer d-flex flex-column gap-3">
                 <div class="card">
@@ -766,10 +791,14 @@
                     <a href="" class="btn-reattempt" role="button">Reattempt Exam</a>
                 </div>
             </div>
+
+
         </div>
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+
+ 
 </body>
 
 </html>

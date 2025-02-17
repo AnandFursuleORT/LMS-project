@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course List</title>
-    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -623,12 +623,19 @@
             <div class="row">
                 <div class="col-12">
                     <!-- start tab navigation -->
-                    <ul class="nav nav-tabs text-center course-tab1">
+                    <ul class="nav nav-tabs course-tab1">
                         <li class="nav-item title-course">
                             <span class="cr-title">Courses</span>
                         </li>
 
-                        <div class="overflow-div d-flex align-items-center justify-content-center">
+                        <div class="scroll-div">
+                            <div class="scroll-buttons left" id="scroll-left">
+                                <img class="left-btn" src="Lms-images/arrow-left1.svg"></img>
+                            </div>
+                            <div class="scroll-buttons right" id="scroll-right">
+                                <img class="right-btn" src="Lms-images/arrow-right2.svg"></img>
+                            </div>
+
                             <li class="nav-item tab-item">
                                 <a class="nav-link c-tab-title active" data-bs-toggle="tab"
                                     href="#navigation-tab2">Navigation</a>
@@ -1179,6 +1186,7 @@
                             </div>
                         </div>
                         <!-- end tab item -->
+
                         <!-- start tab item -->
                         <div id="safety-tab2" class="tab-pane fade">
                             <div class="row g-3">
@@ -2932,6 +2940,18 @@
     <!-- end footer section -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+        // Handle scroll on left and right arrows
+        document.getElementById('scroll-left').addEventListener('click', function () {
+            document.querySelector('.scroll-div').scrollBy({ left: -100, behavior: 'smooth' });
+        });
+
+        document.getElementById('scroll-right').addEventListener('click', function () {
+            document.querySelector('.scroll-div').scrollBy({ left: 100, behavior: 'smooth' });
+        });
+    </script>
+
 </body>
 
 </html>
