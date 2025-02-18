@@ -2531,14 +2531,142 @@ table td a {
 
 .notf-read h6 {
     color: #1D3C55;
-    font-family: "Plus Jakarta Sans";
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0px;
 }
 
+.nt-main-div {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    border-radius: 24px;
+    border: 1px solid #DEE3E6;
+    background: #FFF;
+}
 
+.nt-part-div {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px solid #DEE3E6;
+    background: #FAFBFB;
+    box-shadow: 0px 4px 4px 0px rgba(9, 11, 33, 0.02);
+}
+
+.nt-para {
+    color: #1D3C55;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.nt-view-btn {
+    color: #FAFBFB;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #03599F;
+    text-decoration: none;
+}
+
+.nt-btn-side span {
+    color: #768998;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+.nt-img-div {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: linear-gradient(273deg, #FFB555 -50.01%, #E28000 100%), #E7F6FF;
+}
+
+.nt-info-div h6 {
+    color: #011B30;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.nt-temp-para {
+    color: #768998;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.nt-inst-div p {
+    color: #011B30;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.rec-span {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #9747FF;
+    background: rgba(151, 71, 255, 0.20);
+    color: #9747FF;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.new-view-btn {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #EBEDF0;
+    color: #1D3C55;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+.new-accept-btn {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #03599F;
+    color: #FAFBFB;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mandatory-span {
+    color: #FE9000;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #FE9000;
+    background: rgba(255, 156, 28, 0.16);
+}
 
 
 
