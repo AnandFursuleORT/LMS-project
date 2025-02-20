@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Plus Jakarta Sans", serif;
 }
 
 html,
@@ -28,14 +29,92 @@ img {
     height: auto;
 }
 
-.nt-icon {
-    display: flex;
+.notify-btn {
     padding: 12px;
+    border: 1px solid #DEE3E6;
+    border-radius: 8px;
+    background-color: transparent !important;
+}
+
+.nt-hdg {
+    color: #011B30;
+    font-family: "ES Rebond Grotesque TRIAL";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.notification-dropdown {
+    width: 420px;
+    padding: 16px !important;
+    border-radius: 20px !important;
+    border: 1px solid #DEE3E6 !important;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notification-item {
+    display: flex;
+    align-items: start;
+    padding: 12px;
+    gap: 16px;
+    transition: 0.3s;
+    position: relative;
+    border-radius: 16px;
+    border: 1px solid #DEE3E6;
+    background: #FAFBFB;
+    box-shadow: 0px 4px 4px 0px rgba(9, 11, 33, 0.02);
+}
+
+.icon-nt {
+    width: 55px;
+    height: 35px;
+    border-radius: 8px;
+    background: linear-gradient(273deg, #FFB555 -50.01%, #E28000 100%), #E7F6FF;
+}
+
+.nt-view-text {
+    color: #03599F;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.notification-text h6 {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.notification-text p {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 0;
+}
+
+.claim-btn {
+    display: flex;
+    padding: 8px 12px !important;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    border: 1px solid #DEE3E6;
+    border-radius: 8px !important;
+    background: #03599F !important;
+    color: #FAFBFB !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0px;
+}
+
+.close-btn {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: none;
+    transform: translateY(-50%);
 }
 
 .prof-name {
@@ -2799,15 +2878,6 @@ li::marker {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.main-price {
-    color: #94A3AF;
-    font-family: "Plus Jakarta Sans";
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 32px;
-    text-decoration: line-through;
 }
 
 .dis-price {

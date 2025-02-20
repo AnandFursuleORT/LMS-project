@@ -23,8 +23,8 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto navbar-nav-scroll">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Services
                             <img src="images/arrow-down-01-round.svg" alt="">
                         </a>
@@ -54,8 +54,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Consultations
                             <img src="images/arrow-down-01-round.svg" alt="">
                         </a>
@@ -69,8 +69,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Courses
                             <img src="images/arrow-down-01-round.svg" alt="">
                         </a>
@@ -87,39 +87,83 @@
                     </li>
                 </ul>
                 <div class=" nav-end ">
-                   <form class="d-flex" role="search">
-                    <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
-                </form>
-                <div class="notify">
-                    <a href="#"><img src="images/bell.svg" alt=""></a>
-                  
-                </div>
-                <div class="profile-div  d-flex align-items-center">
-                    <img src="images/profile-photo.svg" class="prof-img" alt="profile">
-                    <div class="prof-dropdown">
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle dropdown-profile" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="prof-sect ms-2">
-                                    <h6 class="prof-name mb-0">Satyam</h6>
-                                    <p class="prof-dst mb-0">Captain</p>
-                                </div>
-                                <div class="dropDown-prof ms-2">
-                                    <img src="images/arrow-down-black.svg" alt="dropdown">
-                                </div>
-                            </a>
+                    <form class="d-flex" role="search">
+                        <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
+                    </form>
+                    <div class="notify dropdown">
+                        <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">
+                            <img src="images/bell.svg" alt="">
+                        </button>
 
-                            <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
-                                <li><a class="dropdown-item" href="general.html">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <ul class="dropdown-menu notification-dropdown dropdown-menu-end"
+                            aria-labelledby="notificationDropdown">
+                            <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                                <span class="fw-bold nt-hdg">Notifications</span>
+                                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+                            </li>
+
+                            <li class="notification-item">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                    <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="profile-div  d-flex align-items-center">
+                        <img src="images/profile-photo.svg" class="prof-img" alt="profile">
+                        <div class="prof-dropdown">
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle dropdown-profile" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="prof-sect ms-2">
+                                        <h6 class="prof-name mb-0">Satyam</h6>
+                                        <p class="prof-dst mb-0">Captain</p>
+                                    </div>
+                                    <div class="dropDown-prof ms-2">
+                                        <img src="images/arrow-down-black.svg" alt="dropdown">
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
+                                    <li><a class="dropdown-item" href="general.html">Settings</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-               
-                
+
+
             </div>
         </div>
     </nav>
@@ -214,35 +258,39 @@
                             <div class="course-progress-tab d-flex">
                                 <div class="recommend-tabs">
                                     <ul class="nav nav-pills gap-2" id="pills-tab" role="tablist">
-                                   <li class="nav-item" role="presentation">
-                                       <button class="nav-link course-tab active" id="pills-training-all-tab"
-                                           data-bs-toggle="pill" data-bs-target="#pills-training-all" type="button" role="tab"
-                                           aria-controls="pills-training-all" aria-selected="true">All</button>
-                                   </li>
-                                   <li class="nav-item" role="presentation">
-                                       <button class="nav-link course-tab" id="pills-notstarted-tab"
-                                           data-bs-toggle="pill" data-bs-target="#pills-notstarted" type="button"
-                                           role="tab" aria-controls="pills-notstarted"
-                                           aria-selected="false">Not Started</button>
-                                   </li>
-                                   <li class="nav-item" role="presentation">
-                                       <button class="nav-link course-tab" id="pills-inprogress-tab"
-                                           data-bs-toggle="pill" data-bs-target="#pills-inprogress" type="button"
-                                           role="tab" aria-controls="pills-inprogress" aria-selected="false">In Progress</button>
-                                   </li>
-                                   <li class="nav-item" role="presentation">
-                                       <button class="nav-link course-tab" id="pills-completed-tab"
-                                           data-bs-toggle="pill" data-bs-target="#pills-completed" type="button"
-                                           role="tab" aria-controls="pills-completed" aria-selected="false">Completed</button>
-                                   </li>
-                                   <li class="nav-item" role="presentation">
-                                       <button class="nav-link course-tab" id="pills-expired-tab"
-                                           data-bs-toggle="pill" data-bs-target="#pills-expired" type="button"
-                                           role="tab" aria-controls="pills-expired" aria-selected="false">Expired</button>
-                                   </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link course-tab active" id="pills-training-all-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-training-all" type="button"
+                                                role="tab" aria-controls="pills-training-all"
+                                                aria-selected="true">All</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link course-tab" id="pills-notstarted-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-notstarted" type="button"
+                                                role="tab" aria-controls="pills-notstarted" aria-selected="false">Not
+                                                Started</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link course-tab" id="pills-inprogress-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-inprogress" type="button"
+                                                role="tab" aria-controls="pills-inprogress" aria-selected="false">In
+                                                Progress</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link course-tab" id="pills-completed-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-completed" type="button"
+                                                role="tab" aria-controls="pills-completed"
+                                                aria-selected="false">Completed</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link course-tab" id="pills-expired-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-expired" type="button"
+                                                role="tab" aria-controls="pills-expired"
+                                                aria-selected="false">Expired</button>
+                                        </li>
 
-                               </ul>
-                               </div>
+                                    </ul>
+                                </div>
 
                                 <div class="search">
                                     <input type="search" class="training-search" name="" id="" placeholder="Search...">
@@ -272,12 +320,13 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.</p>
                                                             </div>
-            
+
                                                         </div>
                                                     </div>
-                                                    
+
                                                     <div class="card-bottom d-flex flex-column">
                                                         <div class="infoDiv pt-4 pb-3">
                                                             <div class="modeInfo d-flex align-items-center">
@@ -293,19 +342,20 @@
                                                                 <span class="mode-hdg ms-2">2 days</span>
                                                             </div>
                                                         </div>
-    
+
                                                         <div class="progressBar d-flex align-items-center">
                                                             <div class="progress zero w-100" role="progressbar"
-                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                                                                aria-valuemax="100">
-                                                                <div class="progress-bar course-complete" style="width: 0%">
+                                                                aria-label="Basic example" aria-valuenow="0"
+                                                                aria-valuemin="0" aria-valuemax="100">
+                                                                <div class="progress-bar course-complete"
+                                                                    style="width: 0%">
                                                                 </div>
                                                             </div>
                                                             <div class="progress-percent">0%</div>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -327,37 +377,38 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.</p>
                                                             </div>
-            
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom d-flex flex-column">
                                                         <div class="infoDiv pt-4 pb-3">
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/mode.svg" alt="mode">
-                                                            <span class="mode-hdg ms-2">Online</span>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/mode.svg" alt="mode">
+                                                                <span class="mode-hdg ms-2">Online</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/user-multiple.svg" alt="user-multiple">
+                                                                <span class="mode-hdg ms-2">39</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/duration.svg" alt="duration">
+                                                                <span class="mode-hdg ms-2">2 days</span>
+                                                            </div>
                                                         </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/user-multiple.svg" alt="user-multiple">
-                                                            <span class="mode-hdg ms-2">39</span>
-                                                        </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/duration.svg" alt="duration">
-                                                            <span class="mode-hdg ms-2">2 days</span>
-                                                        </div>
-                                                    </div>
 
                                                         <div class="progressBar d-flex align-items-center">
                                                             <div class="progress zero w-100" role="progressbar"
-                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                                                                aria-valuemax="100">
+                                                                aria-label="Basic example" aria-valuenow="0"
+                                                                aria-valuemin="0" aria-valuemax="100">
                                                                 <div class="progress-bar " style="width:45%"></div>
                                                             </div>
                                                             <div class="progress-percent">45%</div>
                                                         </div>
                                                     </div>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -380,32 +431,33 @@
                                                                     <h4>Radar Operation and Safety</h4>
                                                                 </div>
                                                                 <div class="course-description">
-                                                                    <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                                    <p>Understand radar systems to ensure safe
+                                                                        navigation at sea.</p>
                                                                 </div>
-                
+
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom d-flex flex-column">
                                                         <div class="infoDiv pt-4 pb-3">
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/mode.svg" alt="mode">
-                                                            <span class="mode-hdg ms-2">Online</span>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/mode.svg" alt="mode">
+                                                                <span class="mode-hdg ms-2">Online</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/user-multiple.svg" alt="user-multiple">
+                                                                <span class="mode-hdg ms-2">39</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/duration.svg" alt="duration">
+                                                                <span class="mode-hdg ms-2">2 days</span>
+                                                            </div>
                                                         </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/user-multiple.svg" alt="user-multiple">
-                                                            <span class="mode-hdg ms-2">39</span>
-                                                        </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/duration.svg" alt="duration">
-                                                            <span class="mode-hdg ms-2">2 days</span>
-                                                        </div>
-                                                    </div>
 
                                                         <div class="progressBar d-flex align-items-center">
                                                             <div class="progress zero w-100" role="progressbar"
-                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                                                                aria-valuemax="100">
+                                                                aria-label="Basic example" aria-valuenow="0"
+                                                                aria-valuemin="0" aria-valuemax="100">
                                                                 <div class="progress-bar  " style="width:45%"></div>
                                                             </div>
                                                             <div class="progress-percent">45%</div>
@@ -432,38 +484,40 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.</p>
                                                             </div>
-            
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom d-flex flex-column">
                                                         <div class="infoDiv pt-4 pb-3">
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/mode.svg" alt="mode">
-                                                            <span class="mode-hdg ms-2">Online</span>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/mode.svg" alt="mode">
+                                                                <span class="mode-hdg ms-2">Online</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/user-multiple.svg" alt="user-multiple">
+                                                                <span class="mode-hdg ms-2">39</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/duration.svg" alt="duration">
+                                                                <span class="mode-hdg ms-2">2 days</span>
+                                                            </div>
                                                         </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/user-multiple.svg" alt="user-multiple">
-                                                            <span class="mode-hdg ms-2">39</span>
-                                                        </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/duration.svg" alt="duration">
-                                                            <span class="mode-hdg ms-2">2 days</span>
-                                                        </div>
-                                                    </div>
 
                                                         <div class="progressBar d-flex align-items-center">
                                                             <div class="progress zero w-100" role="progressbar"
-                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                                                                aria-valuemax="100">
-                                                                <div class="progress-bar course-complete " style="width: 100%">
+                                                                aria-label="Basic example" aria-valuenow="0"
+                                                                aria-valuemin="0" aria-valuemax="100">
+                                                                <div class="progress-bar course-complete "
+                                                                    style="width: 100%">
                                                                 </div>
                                                             </div>
                                                             <div class="progress-percent">100%</div>
                                                         </div>
                                                     </div>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -485,9 +539,10 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.</p>
                                                             </div>
-            
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom d-flex flex-column">
@@ -506,11 +561,11 @@
                                                             </div>
                                                         </div>
                                                         <div class="progressBar-text d-flex align-items-center">
-                                                            
+
                                                             This course has been expired!
                                                         </div>
                                                     </div>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -537,40 +592,42 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.</p>
                                                             </div>
-            
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="card-bottom d-flex flex-column">
-                                                        <div class="infoDiv pt-4 pb-3">
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/mode.svg" alt="mode">
-                                                            <span class="mode-hdg ms-2">Online</span>
-                                                        </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/user-multiple.svg" alt="user-multiple">
-                                                            <span class="mode-hdg ms-2">39</span>
-                                                        </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/duration.svg" alt="duration">
-                                                            <span class="mode-hdg ms-2">2 days</span>
+
                                                         </div>
                                                     </div>
 
+                                                    <div class="card-bottom d-flex flex-column">
+                                                        <div class="infoDiv pt-4 pb-3">
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/mode.svg" alt="mode">
+                                                                <span class="mode-hdg ms-2">Online</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/user-multiple.svg" alt="user-multiple">
+                                                                <span class="mode-hdg ms-2">39</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/duration.svg" alt="duration">
+                                                                <span class="mode-hdg ms-2">2 days</span>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="progressBar d-flex align-items-center">
                                                             <div class="progress zero w-100" role="progressbar"
-                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                                                                aria-valuemax="100">
-                                                                <div class="progress-bar course-complete" style="width: 0%">
+                                                                aria-label="Basic example" aria-valuenow="0"
+                                                                aria-valuemin="0" aria-valuemax="100">
+                                                                <div class="progress-bar course-complete"
+                                                                    style="width: 0%">
                                                                 </div>
                                                             </div>
                                                             <div class="progress-percent">0%</div>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -597,37 +654,38 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.</p>
                                                             </div>
-            
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom d-flex flex-column">
                                                         <div class="infoDiv pt-4 pb-3">
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/mode.svg" alt="mode">
-                                                            <span class="mode-hdg ms-2">Online</span>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/mode.svg" alt="mode">
+                                                                <span class="mode-hdg ms-2">Online</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/user-multiple.svg" alt="user-multiple">
+                                                                <span class="mode-hdg ms-2">39</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/duration.svg" alt="duration">
+                                                                <span class="mode-hdg ms-2">2 days</span>
+                                                            </div>
                                                         </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/user-multiple.svg" alt="user-multiple">
-                                                            <span class="mode-hdg ms-2">39</span>
-                                                        </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/duration.svg" alt="duration">
-                                                            <span class="mode-hdg ms-2">2 days</span>
-                                                        </div>
-                                                    </div>
 
                                                         <div class="progressBar d-flex align-items-center">
                                                             <div class="progress zero w-100" role="progressbar"
-                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                                                                aria-valuemax="100">
+                                                                aria-label="Basic example" aria-valuenow="0"
+                                                                aria-valuemin="0" aria-valuemax="100">
                                                                 <div class="progress-bar " style="width:45%"></div>
                                                             </div>
                                                             <div class="progress-percent">45%</div>
                                                         </div>
                                                     </div>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -650,32 +708,33 @@
                                                                     <h4>Radar Operation and Safety</h4>
                                                                 </div>
                                                                 <div class="course-description">
-                                                                    <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                                    <p>Understand radar systems to ensure safe
+                                                                        navigation at sea.</p>
                                                                 </div>
-                
+
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom d-flex flex-column">
                                                         <div class="infoDiv pt-4 pb-3">
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/mode.svg" alt="mode">
-                                                            <span class="mode-hdg ms-2">Online</span>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/mode.svg" alt="mode">
+                                                                <span class="mode-hdg ms-2">Online</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/user-multiple.svg" alt="user-multiple">
+                                                                <span class="mode-hdg ms-2">39</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/duration.svg" alt="duration">
+                                                                <span class="mode-hdg ms-2">2 days</span>
+                                                            </div>
                                                         </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/user-multiple.svg" alt="user-multiple">
-                                                            <span class="mode-hdg ms-2">39</span>
-                                                        </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/duration.svg" alt="duration">
-                                                            <span class="mode-hdg ms-2">2 days</span>
-                                                        </div>
-                                                    </div>
 
                                                         <div class="progressBar d-flex align-items-center">
                                                             <div class="progress zero w-100" role="progressbar"
-                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                                                                aria-valuemax="100">
+                                                                aria-label="Basic example" aria-valuenow="0"
+                                                                aria-valuemin="0" aria-valuemax="100">
                                                                 <div class="progress-bar  " style="width:45%"></div>
                                                             </div>
                                                             <div class="progress-percent">45%</div>
@@ -685,7 +744,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-completed" role="tabpanel"
@@ -708,43 +767,45 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.</p>
                                                             </div>
-            
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom d-flex flex-column">
                                                         <div class="infoDiv pt-4 pb-3">
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/mode.svg" alt="mode">
-                                                            <span class="mode-hdg ms-2">Online</span>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/mode.svg" alt="mode">
+                                                                <span class="mode-hdg ms-2">Online</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/user-multiple.svg" alt="user-multiple">
+                                                                <span class="mode-hdg ms-2">39</span>
+                                                            </div>
+                                                            <div class="modeInfo d-flex align-items-center">
+                                                                <img src="images/duration.svg" alt="duration">
+                                                                <span class="mode-hdg ms-2">2 days</span>
+                                                            </div>
                                                         </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/user-multiple.svg" alt="user-multiple">
-                                                            <span class="mode-hdg ms-2">39</span>
-                                                        </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/duration.svg" alt="duration">
-                                                            <span class="mode-hdg ms-2">2 days</span>
-                                                        </div>
-                                                    </div>
 
                                                         <div class="progressBar d-flex align-items-center">
                                                             <div class="progress zero w-100" role="progressbar"
-                                                                aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                                                                aria-valuemax="100">
-                                                                <div class="progress-bar course-complete " style="width: 100%">
+                                                                aria-label="Basic example" aria-valuenow="0"
+                                                                aria-valuemin="0" aria-valuemax="100">
+                                                                <div class="progress-bar course-complete "
+                                                                    style="width: 100%">
                                                                 </div>
                                                             </div>
                                                             <div class="progress-percent">100%</div>
                                                         </div>
                                                     </div>
-        
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-expired" role="tabpanel"
@@ -767,9 +828,10 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.</p>
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.</p>
                                                             </div>
-            
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom d-flex flex-column">
@@ -788,19 +850,19 @@
                                                             </div>
                                                         </div>
                                                         <div class="progressBar-text d-flex align-items-center">
-                                                            
+
                                                             This course has been expired!
                                                         </div>
                                                     </div>
-        
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
-                           
+
                         </div>
 
                     </div>
@@ -1100,6 +1162,7 @@
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -23,8 +23,8 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto navbar-nav-scroll">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Services
                             <img src="images/arrow-down-01-round.svg" alt="">
                         </a>
@@ -54,8 +54,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Consultations
                             <img src="images/arrow-down-01-round.svg" alt="">
                         </a>
@@ -69,8 +69,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Courses
                             <img src="images/arrow-down-01-round.svg" alt="">
                         </a>
@@ -87,39 +87,83 @@
                     </li>
                 </ul>
                 <div class=" nav-end ">
-                   <form class="d-flex" role="search">
-                    <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
-                </form>
-                <div class="notify">
-                    <a href="#"><img src="images/bell.svg" alt=""></a>
-                  
-                </div>
-                <div class="profile-div  d-flex align-items-center">
-                    <img src="images/profile-photo.svg" class="prof-img" alt="profile">
-                    <div class="prof-dropdown">
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle dropdown-profile" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="prof-sect ms-2">
-                                    <h6 class="prof-name mb-0">Satyam</h6>
-                                    <p class="prof-dst mb-0">Captain</p>
-                                </div>
-                                <div class="dropDown-prof ms-2">
-                                    <img src="images/arrow-down-black.svg" alt="dropdown">
-                                </div>
-                            </a>
+                    <form class="d-flex" role="search">
+                        <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
+                    </form>
+                    <div class="notify dropdown">
+                        <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">
+                            <img src="images/bell.svg" alt="">
+                        </button>
 
-                            <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
-                                <li><a class="dropdown-item" href="general.html">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <ul class="dropdown-menu notification-dropdown dropdown-menu-end"
+                            aria-labelledby="notificationDropdown">
+                            <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                                <span class="fw-bold nt-hdg">Notifications</span>
+                                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+                            </li>
+
+                            <li class="notification-item">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                    <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="profile-div  d-flex align-items-center">
+                        <img src="images/profile-photo.svg" class="prof-img" alt="profile">
+                        <div class="prof-dropdown">
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle dropdown-profile" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="prof-sect ms-2">
+                                        <h6 class="prof-name mb-0">Satyam</h6>
+                                        <p class="prof-dst mb-0">Captain</p>
+                                    </div>
+                                    <div class="dropDown-prof ms-2">
+                                        <img src="images/arrow-down-black.svg" alt="dropdown">
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
+                                    <li><a class="dropdown-item" href="general.html">Settings</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-               
-                
+
+
             </div>
         </div>
     </nav>
@@ -198,12 +242,6 @@
                                                 <span">FAQs</span>
                                             </a>
                                         </li>
-                                        <li class="menu-item">
-                                            <a href="faq2.html">
-                                                <img src="images/sidebar-faq.svg" alt="exam-icon" />
-                                                <span >FAQs-2</span>
-                                            </a>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -216,21 +254,22 @@
                         <div class="title mb-3">
                             <h2 class="mb-0">Feedback</h2>
                         </div>
-                            <div class="feedback d-flex flex-column gap-3">
-                                <div class="feedback-title">
-                                    <h5 class="">Please give us your feedback</h5>
-                                    <div class="feedback-description">
-                                        We value your insights! Your feedback helps us enhance your 
-                                        learning experience and improve our services. You can submit 
-                                        feedback as many times as you like—there are no limits! 
-                                    </div>
+                        <div class="feedback d-flex flex-column gap-3">
+                            <div class="feedback-title">
+                                <h5 class="">Please give us your feedback</h5>
+                                <div class="feedback-description">
+                                    We value your insights! Your feedback helps us enhance your
+                                    learning experience and improve our services. You can submit
+                                    feedback as many times as you like—there are no limits!
                                 </div>
+                            </div>
                             <div class="feedback d-flex flex-column gap-3">
                                 <div class="category">
                                     <h6 class="mb-0">Category 02</h6>
                                 </div>
                                 <div class="question d-flex flex-column gap-3">
-                                    <p class="mb-0">Q.1 Est facilis natus perferendis cumque magnam nisi quia consequatur ?</p>
+                                    <p class="mb-0">Q.1 Est facilis natus perferendis cumque magnam nisi quia
+                                        consequatur ?</p>
                                     <div class="rating d-flex  gap-3">
                                         <div class="num-rating">
                                             <span><img src="images/Happy-Face.svg" alt=""></span>
@@ -247,11 +286,12 @@
                                         <div class="num-rating">
                                             <span><img src="images/Smiley-Crying.svg" alt=""></span>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="question d-flex flex-column gap-3">
-                                    <p class="mb-0">Q.2 Est facilis natus perferendis cumque magnam nisi quia consequatur ?</p>
+                                    <p class="mb-0">Q.2 Est facilis natus perferendis cumque magnam nisi quia
+                                        consequatur ?</p>
                                     <div class="rating d-flex  gap-3">
                                         <div class="num-rating">
                                             <span><img src="images/Happy-Face.svg" alt=""></span>
@@ -268,11 +308,12 @@
                                         <div class="num-rating">
                                             <span><img src="images/Smiley-Crying.svg" alt=""></span>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="question d-flex flex-column gap-3">
-                                    <p class="mb-0">Q.3 Est facilis natus perferendis cumque magnam nisi quia consequatur ?</p>
+                                    <p class="mb-0">Q.3 Est facilis natus perferendis cumque magnam nisi quia
+                                        consequatur ?</p>
                                     <div class="rating d-flex  gap-3">
                                         <div class="num-rating">
                                             <span><img src="images/happy-face--smiley-y.svg" alt=""></span>
@@ -289,74 +330,74 @@
                                         <div class="num-rating">
                                             <span><img src="images/Smiley-Crying-y.svg" alt=""></span>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
-    
-                            </div>
-                            <div class="prev-nxt-btn4 d-flex justify-content-between"> 
-                                <a href="feedback-3.html" class="previous-btn" role="button">Previous</a>
-                                <a href="feedback-5.html" class="next-btn" role="button">Next</a>
-                            </div>
-                           
+
+                        </div>
+                        <div class="prev-nxt-btn4 d-flex justify-content-between">
+                            <a href="feedback-3.html" class="previous-btn" role="button">Previous</a>
+                            <a href="feedback-5.html" class="next-btn" role="button">Next</a>
+                        </div>
+
+                    </div>
+
                 </div>
-                
-            </div>
-            <div class="col-md-3">
-                <div class="card ">
-                    <div class="card-body">
-                        <div class="history-title " >
-                            History
+                <div class="col-md-3">
+                    <div class="card ">
+                        <div class="card-body">
+                            <div class="history-title ">
+                                History
+                            </div>
+                            <div class="history d-flex flex-column gap-2">
+                                <div class="feeback-history d-flex flex-column gap-2">
+                                    <div class="feedback-text">
+                                        Sint culpa provident accusantium quaerat et. Quae et et aut in...
+                                    </div>
+                                    <div class="date-time">
+                                        26 Jan, 2023 · 3:30 pm
+                                    </div>
+                                </div>
+                                <div class="feeback-history d-flex flex-column gap-2">
+                                    <div class="feedback-text">
+                                        Sint culpa provident accusantium quaerat et. Quae et et aut in...
+                                    </div>
+                                    <div class="date-time">
+                                        26 Jan, 2023 · 3:30 pm
+                                    </div>
+                                </div>
+                                <div class="feeback-history d-flex flex-column gap-2">
+                                    <div class="feedback-text">
+                                        Sint culpa provident accusantium quaerat et. Quae et et aut in...
+                                    </div>
+                                    <div class="date-time">
+                                        26 Jan, 2023 · 3:30 pm
+                                    </div>
+                                </div>
+                                <div class="feeback-history d-flex flex-column gap-2">
+                                    <div class="feedback-text">
+                                        Sint culpa provident accusantium quaerat et. Quae et et aut in...
+                                    </div>
+                                    <div class="date-time">
+                                        26 Jan, 2023 · 3:30 pm
+                                    </div>
+                                </div>
+                                <div class="feeback-history d-flex flex-column gap-2">
+                                    <div class="feedback-text">
+                                        Sint culpa provident accusantium quaerat et. Quae et et aut in...
+                                    </div>
+                                    <div class="date-time">
+                                        26 Jan, 2023 · 3:30 pm
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="history d-flex flex-column gap-2">
-                            <div class="feeback-history d-flex flex-column gap-2">
-                                <div class="feedback-text">
-                                    Sint culpa provident accusantium quaerat et. Quae et et aut in...
-                                </div>
-                                <div class="date-time">
-                                    26 Jan, 2023  ·  3:30 pm
-                                </div>
-                            </div>
-                            <div class="feeback-history d-flex flex-column gap-2">
-                                <div class="feedback-text">
-                                    Sint culpa provident accusantium quaerat et. Quae et et aut in...
-                                </div>
-                                <div class="date-time">
-                                    26 Jan, 2023  ·  3:30 pm
-                                </div>
-                            </div>
-                            <div class="feeback-history d-flex flex-column gap-2">
-                                <div class="feedback-text">
-                                    Sint culpa provident accusantium quaerat et. Quae et et aut in...
-                                </div>
-                                <div class="date-time">
-                                    26 Jan, 2023  ·  3:30 pm
-                                </div>
-                            </div>
-                            <div class="feeback-history d-flex flex-column gap-2">
-                                <div class="feedback-text">
-                                    Sint culpa provident accusantium quaerat et. Quae et et aut in...
-                                </div>
-                                <div class="date-time">
-                                    26 Jan, 2023  ·  3:30 pm
-                                </div>
-                            </div>
-                            <div class="feeback-history d-flex flex-column gap-2">
-                                <div class="feedback-text">
-                                    Sint culpa provident accusantium quaerat et. Quae et et aut in...
-                                </div>
-                                <div class="date-time">
-                                    26 Jan, 2023  ·  3:30 pm
-                                </div>
-                            </div>
-                        </div>
-                        
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <footer class="footer-web">
         <div class="footerDiv">
@@ -648,6 +689,7 @@
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

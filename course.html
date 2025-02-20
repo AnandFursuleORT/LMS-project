@@ -90,9 +90,53 @@
                     <form class="d-flex" role="search">
                         <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
                     </form>
-                    <div class="notify">
-                        <a href="#"><img src="images/bell.svg" alt=""></a>
+                    <div class="notify dropdown">
+                        <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">
+                            <img src="images/bell.svg" alt="">
+                        </button>
 
+                        <ul class="dropdown-menu notification-dropdown dropdown-menu-end"
+                            aria-labelledby="notificationDropdown">
+                            <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                                <span class="fw-bold nt-hdg">Notifications</span>
+                                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+                            </li>
+
+                            <li class="notification-item">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                    <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                     <div class="profile-div  d-flex align-items-center">
                         <img src="images/profile-photo.svg" class="prof-img" alt="profile">
@@ -263,7 +307,7 @@
 
                                                     <div class="cr-info-hdg d-flex align-items-center">
                                                         <img src="images/training-inst-logo.svg" alt="comp-logo">
-                                                        <span class="comp-hdg ms-2">Macosnar Training Institute
+                                                        <span class="comp-hdg">Macosnar Training Institute
                                                             Corp.</span>
                                                     </div>
 
@@ -289,7 +333,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -298,83 +342,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-enroll.html">Enroll Now</a>
+                                                            <a href="Course-enroll.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 custom-col">
-                                            <div class="course-box" onclick="location.href='Course-detail.html';"
-                                                style="cursor: pointer;">
-                                                <div class="course-info">
-
-                                                    <div class="cr-info-hdg d-flex align-items-center">
-                                                        <img src="images/training-inst-logo.svg" alt="comp-logo">
-                                                        <span class="comp-hdg ms-2">Macosnar Training Institute
-                                                            Corp.</span>
-                                                    </div>
-
-                                                    <div class="crInfobox mt-3">
-                                                        <h6 class="info-hdg">Chart Plotting Techniques</h6>
-                                                        <p class="info-p">Master precise plotting methods for complex
-                                                            voyages.</p>
-                                                    </div>
-
-                                                    <div class="infoDiv pt-4 pb-3">
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/mode.svg" alt="mode">
-                                                            <span class="mode-hdg">Online</span>
-                                                        </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/user-multiple.svg" alt="user-multiple">
-                                                            <span class="mode-hdg">39</span>
-                                                        </div>
-                                                        <div class="modeInfo d-flex align-items-center">
-                                                            <img src="images/duration.svg" alt="duration">
-                                                            <span class="mode-hdg">2 days</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
-                                                            <h6 class="strike-price mb-0">$80</h6>
-                                                            <h6 class="main-price mb-0">$72</h6>
-                                                            <div class="discount d-flex align-items-center">
-                                                                <img src="images/Discount.svg" alt="discount">
-                                                                <h6 class="discout-offer  mb-0">30% off</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
-                                                        </div>
-
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -413,7 +383,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -422,21 +392,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -475,7 +433,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -484,21 +442,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -537,7 +483,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -546,21 +492,59 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 custom-col">
+                                            <div class="course-box" onclick="location.href='Course-detail.html';"
+                                                style="cursor: pointer;">
+                                                <div class="course-info">
+
+                                                    <div class="cr-info-hdg d-flex align-items-center">
+                                                        <img src="images/training-inst-logo.svg" alt="comp-logo">
+                                                        <span class="comp-hdg">Macosnar Training Institute
+                                                            Corp.</span>
+                                                    </div>
+
+                                                    <div class="crInfobox mt-3">
+                                                        <h6 class="info-hdg">Chart Plotting Techniques</h6>
+                                                        <p class="info-p">Master precise plotting methods for complex
+                                                            voyages.</p>
+                                                    </div>
+
+                                                    <div class="infoDiv pt-4 pb-3">
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/mode.svg" alt="mode">
+                                                            <span class="mode-hdg">Online</span>
                                                         </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/user-multiple.svg" alt="user-multiple">
+                                                            <span class="mode-hdg">39</span>
+                                                        </div>
+                                                        <div class="modeInfo d-flex align-items-center">
+                                                            <img src="images/duration.svg" alt="duration">
+                                                            <span class="mode-hdg">2 days</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="priceDiv pt-3">
+                                                        <div class="price d-flex align-items-center">
+                                                            <h6 class="strike-price mb-0">$80</h6>
+                                                            <h6 class="main-price mb-0">$72</h6>
+                                                            <div class="discount d-flex align-items-center">
+                                                                <img src="images/Discount.svg" alt="discount">
+                                                                <h6 class="discout-offer  mb-0">30% off</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-Enroll-btn">
+                                                            <a href="Course-detail.html">Enroll</a>
+                                                        </div>
+
                                                     </div>
 
                                                 </div>
@@ -604,7 +588,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -613,21 +597,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -666,7 +638,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -675,21 +647,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -728,7 +688,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -737,21 +697,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -790,7 +738,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -799,21 +747,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -852,7 +788,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -861,21 +797,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -919,7 +843,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -928,21 +852,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -981,7 +893,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -990,21 +902,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1043,7 +943,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1052,21 +952,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1105,7 +993,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1114,21 +1002,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1167,7 +1043,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1176,21 +1052,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1234,7 +1098,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1243,21 +1107,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1296,7 +1148,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1305,21 +1157,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1358,7 +1198,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1367,21 +1207,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1420,7 +1248,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1429,21 +1257,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1482,7 +1298,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1491,21 +1307,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1549,7 +1353,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1558,21 +1362,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1611,7 +1403,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1620,21 +1412,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1673,7 +1453,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1682,21 +1462,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1735,7 +1503,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1744,21 +1512,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1797,7 +1553,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1806,21 +1562,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1864,7 +1608,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1873,21 +1617,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1926,7 +1658,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1935,21 +1667,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -1988,7 +1708,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -1997,21 +1717,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -2050,7 +1758,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -2059,21 +1767,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
 
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -2112,7 +1808,7 @@
                                                     </div>
 
                                                     <div class="priceDiv pt-3">
-                                                        <div class="price d-flex align-items-center gap-3">
+                                                        <div class="price d-flex align-items-center">
                                                             <h6 class="strike-price mb-0">$80</h6>
                                                             <h6 class="main-price mb-0">$72</h6>
                                                             <div class="discount d-flex align-items-center">
@@ -2121,23 +1817,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="course-Enroll-btn">
-                                                            <a href="Course-detail.html">Enroll Now</a>
-                                                        </div>
-
-                                                        <div class="arrowDiv">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path d="M19.6667 11.9998L4.66675 11.9998"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M15.6666 6.99991L19.9595 11.2928C20.2929 11.6261 20.4595 11.7928 20.4595 11.9999C20.4595 12.207 20.2929 12.3737 19.9595 12.707L15.6666 16.9999"
-                                                                    stroke="#011B30" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
+                                                            <a href="Course-detail.html">Enroll</a>
                                                         </div>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -2443,6 +2125,7 @@
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

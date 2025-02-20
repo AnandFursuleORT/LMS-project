@@ -90,9 +90,53 @@
                     <form class="d-flex" role="search">
                         <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
                     </form>
-                    <div class="notify">
-                        <a href="#"><img src="images/bell.svg" alt=""></a>
+                    <div class="notify dropdown">
+                        <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">
+                            <img src="images/bell.svg" alt="">
+                        </button>
 
+                        <ul class="dropdown-menu notification-dropdown dropdown-menu-end"
+                            aria-labelledby="notificationDropdown">
+                            <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                                <span class="fw-bold nt-hdg">Notifications</span>
+                                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+                            </li>
+
+                            <li class="notification-item">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                    <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                     <div class="profile-div  d-flex align-items-center">
                         <img src="images/profile-photo.svg" class="prof-img" alt="profile">
@@ -212,25 +256,27 @@
 
                             <div class="course-progress-tab d-flex">
                                 <div class="recommend-tabs">
-                                     <ul class="nav nav-pills    gap-2" id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link course-tab active" id="pills-recommendation-all-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-recommendation-all" type="button" role="tab"
-                                            aria-controls="pills-recommendation-all" aria-selected="true">All</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link course-tab" id="pills-recommended-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-recommended" type="button"
-                                            role="tab" aria-controls="pills-recommended"
-                                            aria-selected="false">Recommended</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link course-tab" id="pills-mandatory-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-mandatory" type="button"
-                                            role="tab" aria-controls="pills-mandatory" aria-selected="false">Mandatory</button>
-                                    </li>
+                                    <ul class="nav nav-pills    gap-2" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link course-tab active" id="pills-recommendation-all-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-recommendation-all"
+                                                type="button" role="tab" aria-controls="pills-recommendation-all"
+                                                aria-selected="true">All</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link course-tab" id="pills-recommended-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-recommended" type="button"
+                                                role="tab" aria-controls="pills-recommended"
+                                                aria-selected="false">Recommended</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link course-tab" id="pills-mandatory-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-mandatory" type="button"
+                                                role="tab" aria-controls="pills-mandatory"
+                                                aria-selected="false">Mandatory</button>
+                                        </li>
 
-                                </ul>
+                                    </ul>
                                 </div>
 
                                 <div class="search">
@@ -261,18 +307,20 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
-        
+
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="recommend">
                                                             <label>Recommended</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -290,8 +338,8 @@
                                                             <button class="w-100">Requested</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -313,17 +361,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="recommend">
                                                             <label>Recommended</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -342,8 +392,8 @@
                                                             <button class="accept w-100">Re-Apply</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -365,17 +415,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="recommend">
                                                             <label>Recommended</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -394,8 +446,8 @@
                                                             <button class="accept w-100">Accept</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -417,17 +469,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="mandatory">
                                                             <label>Mandatory</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -446,8 +500,8 @@
                                                             <button class="accept w-100">Accept</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -469,17 +523,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="mandatory">
                                                             <label>Mandatory</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -498,8 +554,8 @@
                                                             <button class="accept w-100">Accept</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -526,18 +582,20 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
-        
+
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="recommend">
                                                             <label>Recommended</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -555,8 +613,8 @@
                                                             <button class="w-100">Requested</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -578,17 +636,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="recommend">
                                                             <label>Recommended</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -607,8 +667,8 @@
                                                             <button class="accept w-100">Re-Apply</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -630,17 +690,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="recommend">
                                                             <label>Recommended</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -659,8 +721,8 @@
                                                             <button class="accept w-100">Accept</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -687,17 +749,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="mandatory">
                                                             <label>Mandatory</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -716,8 +780,8 @@
                                                             <button class="accept w-100">Accept</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -739,17 +803,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="mandatory">
                                                             <label>Mandatory</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -768,16 +834,16 @@
                                                             <button class="accept w-100">Accept</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
-                           
+
                         </div>
 
                     </div>
@@ -1077,6 +1143,7 @@
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

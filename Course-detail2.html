@@ -195,9 +195,54 @@
                     <form class="d-flex" role="search">
                         <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
                     </form>
-                    <a href="#" class="nt-icon ms-3">
-                        <img src="Lms-images/Notification.svg" alt="notification">
-                    </a>
+                    <div class="notify dropdown ms-2">
+                        <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">
+                            <img src="images/bell.svg" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu notification-dropdown dropdown-menu-end"
+                            aria-labelledby="notificationDropdown">
+                            <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                                <span class="fw-bold nt-hdg">Notifications</span>
+                                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+                            </li>
+
+                            <li class="notification-item">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                    <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="profile-div ms-3 d-flex align-items-center">
                         <img src="Lms-images/profile.png" class="prof-img" alt="profile">
                         <div class="prof-dropdown">
@@ -213,10 +258,10 @@
                                     </div>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-menu-lg-end">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
+                                    <li><a class="dropdown-item menu-item" href="general.html">Settings</a></li>
+                                    <li><a class="dropdown-item menu-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item menu-item" href="#">Something else here</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1308,14 +1353,14 @@
                                                         <img src="Lms-images/Star2.svg" alt="star2">
                                                     </div>
                                                     <div class="name-info mt-4">
-                                                        <h6 class= review-name">Ethel King</h6>
+                                                        <h6 class=review-name">Ethel King</h6>
                                                         <span class="review-date">Jan 15, 25</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-9 col-sm-12">
                                                 <h6 class="review-sect-hd">Great course! smooth content</h6>
-                                                <p class= review-dsc">Designed for seafarers, crew members, and
+                                                <p class=review-dsc">Designed for seafarers, crew members, and
                                                     maritime professionals,
                                                     this program emphasizes leadership, teamwork, and effective risk
                                                     management. Participants will engage in real-world simulations...
@@ -1336,14 +1381,14 @@
                                                         <img src="Lms-images/Star2.svg" alt="star2">
                                                     </div>
                                                     <div class="name-info mt-4">
-                                                        <h6 class= review-name">Ricky Cole</h6>
+                                                        <h6 class=review-name">Ricky Cole</h6>
                                                         <span class="review-date">Jan 15, 25</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-9 col-sm-12">
                                                 <h6 class="review-sect-hd">Great course! smooth content</h6>
-                                                <p class= review-dsc">Designed for seafarers, crew members, and
+                                                <p class=review-dsc">Designed for seafarers, crew members, and
                                                     maritime professionals,
                                                     this program emphasizes leadership, teamwork, and effective risk
                                                     management. Participants will engage in real-world simulations...
@@ -1363,14 +1408,14 @@
                                                         <img src="Lms-images/Star2.svg" alt="star2">
                                                     </div>
                                                     <div class="name-info mt-4">
-                                                        <h6 class= review-name">Michael Rolfson</h6>
+                                                        <h6 class=review-name">Michael Rolfson</h6>
                                                         <span class="review-date">Jan 12, 25</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-9 col-sm-12">
                                                 <h6 class="review-sect-hd">Great course! smooth content</h6>
-                                                <p class= review-dsc">Designed for seafarers, crew members, and
+                                                <p class=review-dsc">Designed for seafarers, crew members, and
                                                     maritime professionals,
                                                     this program emphasizes leadership, teamwork, and effective risk
                                                     management. Participants will engage in real-world simulations...
@@ -1390,14 +1435,14 @@
                                                         <img src="Lms-images/Star2.svg" alt="star2">
                                                     </div>
                                                     <div class="name-info mt-4">
-                                                        <h6 class= review-name">Dr. Bonnie Huel</h6>
+                                                        <h6 class=review-name">Dr. Bonnie Huel</h6>
                                                         <span class="review-date">Jan 11, 25</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-9 col-sm-12">
                                                 <h6 class="review-sect-hd">Great course! smooth content</h6>
-                                                <p class= review-dsc">Designed for seafarers, crew members, and
+                                                <p class=review-dsc">Designed for seafarers, crew members, and
                                                     maritime professionals,
                                                     this program emphasizes leadership, teamwork, and effective risk
                                                     management. Participants will engage in real-world simulations...
@@ -1417,14 +1462,14 @@
                                                         <img src="Lms-images/Star2.svg" alt="star2">
                                                     </div>
                                                     <div class="name-info mt-4">
-                                                        <h6 class= review-name">Ethel King</h6>
+                                                        <h6 class=review-name">Ethel King</h6>
                                                         <span class="review-date">Jan 10, 25</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-9 col-sm-12">
                                                 <h6 class="review-sect-hd">Great course! smooth content</h6>
-                                                <p class= review-dsc">Designed for seafarers, crew members, and
+                                                <p class=review-dsc">Designed for seafarers, crew members, and
                                                     maritime professionals,
                                                     this program emphasizes leadership, teamwork, and effective risk
                                                     management. Participants will engage in real-world simulations...
@@ -1444,14 +1489,14 @@
                                                         <img src="Lms-images/Star2.svg" alt="star2">
                                                     </div>
                                                     <div class="name-info mt-4">
-                                                        <h6 class= review-name">Dr. Bonnie Huel</h6>
+                                                        <h6 class=review-name">Dr. Bonnie Huel</h6>
                                                         <span class="review-date">Jan 8, 25</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-9 col-sm-12">
                                                 <h6 class="review-sect-hd">Great course! smooth content</h6>
-                                                <p class= review-dsc">Designed for seafarers, crew members, and
+                                                <p class=review-dsc">Designed for seafarers, crew members, and
                                                     maritime professionals,
                                                     this program emphasizes leadership, teamwork, and effective risk
                                                     management. Participants will engage in real-world simulations...
@@ -1471,14 +1516,14 @@
                                                         <img src="Lms-images/Star2.svg" alt="star2">
                                                     </div>
                                                     <div class="name-info mt-4">
-                                                        <h6 class= review-name">Ricky Cole</h6>
+                                                        <h6 class=review-name">Ricky Cole</h6>
                                                         <span class="review-date">Jan 8, 25</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-9 col-sm-12">
                                                 <h6 class="review-sect-hd">Great course! smooth content</h6>
-                                                <p class= review-dsc">Designed for seafarers, crew members, and
+                                                <p class="review-dsc">Designed for seafarers, crew members, and
                                                     maritime professionals,
                                                     this program emphasizes leadership, teamwork, and effective risk
                                                     management. Participants will engage in real-world simulations...
@@ -1495,7 +1540,7 @@
                     <div class="cardMainDiv">
                         <div class="course-price-div">
                             <div class="pricing-left d-flex align-items-center gap-3">
-                                <h6 class="main-price">$80</h6>
+                                <h6 class="strike-price">$80</h6>
                                 <h6 class="dis-price">$72</h6>
                             </div>
                             <div class="discount-right d-flex align-items-center gap-2">
@@ -1584,8 +1629,8 @@
                         </div>
 
                         <div class="wd-div">
-                            <h6 class= "wd-course">Course validity</h6>
-                            <p class= "wd-para">Once enrolled, you must complete this course within <span
+                            <h6 class="wd-course">Course validity</h6>
+                            <p class="wd-para">Once enrolled, you must complete this course within <span
                                     class="wd-htext"> one
                                     year</span> from the enrollment date.
                             </p>
@@ -1953,9 +1998,9 @@
                     <div class="cp-text">
                         <p class=">© Copyright 2024, Navlearn, All Rights Reserved</p>
                     </div>
-                    <div class="policySect">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#" class="ms-4">Terms of Use</a>
+                    <div class=" policySect">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#" class="ms-4">Terms of Use</a>
                     </div>
                 </div>
             </div>

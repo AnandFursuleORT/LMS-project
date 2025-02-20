@@ -90,9 +90,53 @@
                     <form class="d-flex" role="search">
                         <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
                     </form>
-                    <div class="notify">
-                        <a href="#"><img src="images/bell.svg" alt=""></a>
+                    <div class="notify dropdown">
+                        <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">
+                            <img src="images/bell.svg" alt="">
+                        </button>
 
+                        <ul class="dropdown-menu notification-dropdown dropdown-menu-end"
+                            aria-labelledby="notificationDropdown">
+                            <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                                <span class="fw-bold nt-hdg">Notifications</span>
+                                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+                            </li>
+
+                            <li class="notification-item">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                    <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                     <div class="profile-div  d-flex align-items-center">
                         <img src="images/profile-photo.svg" class="prof-img" alt="profile">
@@ -256,21 +300,21 @@
                                             </li>
                                             <li class="nav-item" role="presentation">
                                                 <button class="nav-link tabs" id="pills-payments-tab"
-                                                    data-bs-toggle="pill" data-bs-target="#pills-payments"
-                                                    type="button" role="tab" aria-controls="pills-payments"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-payments" type="button"
+                                                    role="tab" aria-controls="pills-payments"
                                                     aria-selected="true">Payments</button>
                                             </li>
                                             <li class="nav-item" role="presentation">
                                                 <button class="nav-link tabs" id="pills-PrivacySecurity-tab"
-                                                    data-bs-toggle="pill" data-bs-target="#pills-PrivacySecurity" type="button"
-                                                    role="tab" aria-controls="pills-PrivacySecurity"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-PrivacySecurity"
+                                                    type="button" role="tab" aria-controls="pills-PrivacySecurity"
                                                     aria-selected="false">Privacy & Security</button>
                                             </li>
-                                            
+
                                             <li class="nav-item" role="presentation">
                                                 <button class="nav-link tabs" id="pills-Courses-tab"
-                                                    data-bs-toggle="pill" data-bs-target="#pills-Courses"
-                                                    type="button" role="tab" aria-controls="pills-Courses"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-Courses" type="button"
+                                                    role="tab" aria-controls="pills-Courses"
                                                     aria-selected="false">Courses</button>
                                             </li>
                                         </ul>
@@ -295,8 +339,9 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
-        
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -314,7 +359,8 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -332,7 +378,8 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -350,7 +397,8 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -368,7 +416,8 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -386,7 +435,8 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -409,7 +459,8 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -427,7 +478,8 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -450,7 +502,8 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -468,7 +521,8 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -486,7 +540,8 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -510,7 +565,8 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -528,7 +584,8 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -551,8 +608,9 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
-        
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -570,8 +628,9 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
-        
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -594,8 +653,9 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
-        
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -613,8 +673,9 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
-        
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -632,8 +693,9 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
-        
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -656,8 +718,9 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
-        
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -675,8 +738,9 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
-        
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -694,8 +758,9 @@
                                             <div class="footer-card  d-flex align-items-center justify-content-between">
                                                 <a href="faq2.html" class="view">View more</a>
                                                 <div class="right-arrow">
-                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg" alt=""></a>
-        
+                                                    <a href="faq2.html"> <img src="images/arrow-right-red.svg"
+                                                            alt=""></a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -998,6 +1063,7 @@
         </div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

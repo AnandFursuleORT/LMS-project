@@ -43,8 +43,6 @@ img {
     background-color: #FFFAF4 !important;
 }
 
-
-
 .menu-item:active {
     background-color: transparent !important;
     color: #03599F !important;
@@ -125,10 +123,96 @@ img {
     gap: 10px;
 }
 
-.notify {
+.notify-btn {
     padding: 12px;
     border: 1px solid #DEE3E6;
     border-radius: 8px;
+    background-color: transparent !important;
+}
+
+.nt-hdg {
+    color: #011B30;
+    font-family: "ES Rebond Grotesque TRIAL";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.notification-dropdown {
+    width: 420px;
+    padding: 16px !important;
+    border-radius: 20px !important;
+    border: 1px solid #DEE3E6 !important;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notification-item {
+    display: flex;
+    align-items: start;
+    padding: 12px;
+    gap: 16px;
+    transition: 0.3s;
+    position: relative;
+    border-radius: 16px;
+    border: 1px solid #DEE3E6;
+    background: #FAFBFB;
+    box-shadow: 0px 4px 4px 0px rgba(9, 11, 33, 0.02);
+}
+
+.icon-nt {
+    width: 55px;
+    height: 35px;
+    border-radius: 8px;
+    background: linear-gradient(273deg, #FFB555 -50.01%, #E28000 100%), #E7F6FF;
+}
+
+.nt-view-text {
+    color: #03599F;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.notification-text h6 {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.notification-text p {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 0;
+}
+
+.claim-btn {
+    display: flex;
+    padding: 8px 12px !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px !important;
+    background: #03599F !important;
+    color: #FAFBFB !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0px;
+}
+
+.close-btn {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: none;
+    transform: translateY(-50%);
+}
+
+.close-btn:hover {
+    color: black;
 }
 
 .prof-name {
@@ -746,7 +830,6 @@ img {
 /* Courses */
 
 .course-tab {
-
     border-radius: 100px !important;
     border: 1px solid #DEE3E6 !important;
     font-size: 14px !important;
@@ -788,6 +871,10 @@ img {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #DEE3E6;
+}
+
+.price {
+    gap: 16px;
 }
 
 .priceDiv {
@@ -867,6 +954,9 @@ img {
     border-radius: 8px;
     text-decoration: none;
     color: #FAFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -1249,12 +1339,10 @@ table td a {
 }
 
 .feedback-text {
-
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
     color: #1D3C55;
-
 }
 
 .date-time {
@@ -2098,11 +2186,7 @@ table td a {
     line-height: 20px;
     font-weight: 500;
     color: #768897;
-
 }
-
-
-
 
 .session-container {
     display: flex;
@@ -2110,8 +2194,6 @@ table td a {
     justify-content: space-between;
     max-width: 500px;
     margin-bottom: 24px;
-
-
 }
 
 .browser-icon {
@@ -2162,13 +2244,10 @@ table td a {
     background-color: #F5B0B0;
 }
 
-
-
 /* Setting-Paymemts */
 .payments-section-one {
     padding: 24px;
     border-bottom: 1px solid #DEE2E6;
-
 }
 
 .payment-method h5 {
@@ -2242,21 +2321,17 @@ table td a {
     color: #768998;
 }
 
-.filter-btn {
+.jcalendar-input {
     padding: 12px 16px;
-    border: 1px solid #DEE3E6;
+    background-image: url('/images/filter.svg') !important;
+    padding-right: 0px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-weight: 600 !important;
+    color: #011B30 !important;
     border-radius: 8px;
-    background-color: #FFFFFF;
-}
-
-.filter-btn button {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 600;
-    color: #011B30;
-    background: none;
-    border: none;
-
+    border: 1px solid #DEE3E6 !important;
+    background: #FFF;
 }
 
 .dropdown-item:active {
@@ -2301,7 +2376,6 @@ table td a {
     line-height: 20px;
     font-weight: 500;
     color: #011B30;
-
 }
 
 .coc-validity {
@@ -2405,8 +2479,6 @@ table td a {
     font-weight: 500;
     color: #18BB54;
 }
-
-
 
 /* Settng-Institute */
 
@@ -2668,34 +2740,25 @@ table td a {
     background: rgba(255, 156, 28, 0.16);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1280px) and (max-width: 1600px) {}
-
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
     .custom-col {
         flex: 0 0 33.3333% !important;
-        /* Equivalent to col-4 (4/12 columns) */
         max-width: 33.3333% !important;
     }
+
+    .course-Enroll-btn a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .price {
+        gap: 8px;
+    }
+
+    .course-info {
+        padding: 18px;
+    }
 }
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 480px) {

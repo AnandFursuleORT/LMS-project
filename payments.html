@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
 </head>
 
 <body>
@@ -89,9 +90,52 @@
           <form class="d-flex" role="search">
             <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
           </form>
-          <div class="notify">
-            <a href="#"><img src="images/bell.svg" alt=""></a>
+          <div class="notify dropdown">
+            <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              aria-expanded="false">
+              <img src="images/bell.svg" alt="">
+            </button>
 
+            <ul class="dropdown-menu notification-dropdown dropdown-menu-end" aria-labelledby="notificationDropdown">
+              <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                <span class="fw-bold nt-hdg">Notifications</span>
+                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+              </li>
+
+              <li class="notification-item">
+                <div class="icon-nt"></div>
+                <div class="notification-text flex-grow-1">
+                  <h6 class="fw-bold">Add templates</h6>
+                  <p>To start work with data, please create your first components templates.</p>
+                </div>
+                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                  <img src="images/cancel-cross.svg" alt="close">
+                </button>
+              </li>
+
+              <li class="notification-item mt-2">
+                <div class="icon-nt"></div>
+                <div class="notification-text flex-grow-1">
+                  <h6 class="fw-bold">Add templates</h6>
+                  <p>To start work with data, please create your first components templates.</p>
+                </div>
+                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                  <img src="images/cancel-cross.svg" alt="close">
+                </button>
+              </li>
+
+              <li class="notification-item mt-2">
+                <div class="icon-nt"></div>
+                <div class="notification-text flex-grow-1">
+                  <h6 class="fw-bold">Add templates</h6>
+                  <p>To start work with data, please create your first components templates.</p>
+                  <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                </div>
+                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                  <img src="images/cancel-cross.svg" alt="close">
+                </button>
+              </li>
+            </ul>
           </div>
           <div class="profile-div  d-flex align-items-center">
             <img src="images/profile-photo.svg" class="prof-img" alt="profile">
@@ -211,7 +255,7 @@
                       <h6>customer@navlearn.com</h6>
                     </div>
                     <div class="card-expiry">
-                      <p>Expiry 06/08/2025</p>
+                      <p class="mb-0">Expiry 06/08/2025</p>
                     </div>
                   </div>
 
@@ -243,27 +287,9 @@
               </div>
 
               <div class="payment-history-btn d-flex gap-2">
-                <div class="filter-btn position-relative">
-                  <button class=" dropdown-toggle" id="filterButton" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="images/filter.svg" alt="filter-icon">
-                  </button>
-                  
-                  <!-- Dropdown Menu -->
-                  <ul class="dropdown-menu" aria-labelledby="filterButton" id="monthDropdown">
-                      <li><a class="dropdown-item" href="#">January</a></li>
-                      <li><a class="dropdown-item" href="#">February</a></li>
-                      <li><a class="dropdown-item" href="#">March</a></li>
-                      <li><a class="dropdown-item" href="#">April</a></li>
-                      <li><a class="dropdown-item" href="#">May</a></li>
-                      <li><a class="dropdown-item" href="#">June</a></li>
-                      <li><a class="dropdown-item" href="#">July</a></li>
-                      <li><a class="dropdown-item" href="#">August</a></li>
-                      <li><a class="dropdown-item" href="#">September</a></li>
-                      <li><a class="dropdown-item" href="#">October</a></li>
-                      <li><a class="dropdown-item" href="#">November</a></li>
-                      <li><a class="dropdown-item" href="#">December</a></li>
-                  </ul>
-              </div>
+
+                <input id='calendar' type="text" placeholder="MMM-YYYY" />
+
                 <div class="payment-history-download-btn">
                   <a href="#" role="button"><img src="images/download.svg" class="me-2" alt="download-icon">
                     Download All
@@ -690,17 +716,59 @@
   </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://jsuites.net/v4/jsuites.js"></script>
+  <script src="js/script.js"></script>
 
-    <!-- script for filter dropdown -->
+  <!-- Month and Year Filter  -->
 
   <script>
-    document.querySelectorAll("#monthDropdown .dropdown-item").forEach(item => {
-        item.addEventListener("click", function () {
-            document.getElementById("filterButton").innerHTML = 
-                '<img src="images/filter.svg" alt="filter-icon"> ' + this.innerText;
-        });
+    document.addEventListener("DOMContentLoaded", function () {
+      let calendarInput = document.getElementById("calendar");
+      let calendarInstance = null;
+
+      calendarInstance = jSuites.calendar(calendarInput, {
+        type: "year-month-picker",
+        format: "MMM-YYYY",
+        position: "top", // Controls where the calendar appears relative to input
+        opened: false, // Keep track of open state
+
+        onopen: function (instance) {
+          let calendarContainer = instance.calendar;
+          document.body.appendChild(calendarContainer); // Move calendar to body
+
+          updateCalendarPosition(calendarContainer);
+
+          // Prevent the calendar from moving when scrolling
+          window.addEventListener("scroll", function () {
+            if (calendarInstance.opened) {
+              updateCalendarPosition(calendarContainer);
+            }
+          });
+        },
+
+        onclose: function () {
+          calendarInstance.opened = false; // Mark as closed
+          if (!calendarInput.value) {
+            calendarInput.placeholder = "MMM-YYYY"; // Reset placeholder if empty
+          }
+        },
+      });
+
+      // Function to update the calendar position
+      function updateCalendarPosition(calendarContainer) {
+        let rect = calendarInput.getBoundingClientRect();
+        calendarContainer.style.position = "fixed"; // Keep it fixed
+        calendarContainer.style.top = `${rect.bottom}px`;
+        calendarContainer.style.left = `${rect.left}px`;
+        calendarContainer.style.zIndex = "9999"; // Ensure it stays on top
+      }
+
+      // Ensure placeholder remains visible on page load if empty
+      if (!calendarInput.value) {
+        calendarInput.placeholder = "MMM-YYYY";
+      }
     });
-</script>
+  </script>
 </body>
 
 </html>
