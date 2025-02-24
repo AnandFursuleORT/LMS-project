@@ -226,6 +226,144 @@
         font-size: 16px;
         line-height: 22px;
     }
+}
 
 
+@media screen and (min-width: 1620px) {
+    .custom-col {
+        flex: 0 0 33.3333% !important;
+        max-width: 33.3333% !important;
+    }
+
+    .course-Enroll-btn a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .price {
+        gap: 8px;
+    }
+
+    .course-info {
+        padding: 18px;
+    }
+
+    .main-price {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .strike-price {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .footer-web {
+        padding: 32px 16px;
+    }
+
+    .footer-right-section {
+        padding-left: 0px;
+    }
+
+    .cp-sect {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nextLinks a {
+        font-size: 16px;
+    }
+
+    .links-ul li a {
+        font-size: 16px;
+    }
+
+    .logoText {
+        font-size: 16px;
+    }
+
+    .headingText {
+        font-size: 20px;
+    }
+
+    .right-text-section {
+        padding-bottom: 18px;
+        padding-top: 14px;
+        border-bottom: 1px solid #E28000;
+    }
+
+    .footer-text-part {
+        margin-top: 24px;
+    }
+
+    .footer-logo-part {
+        gap: 20px;
+        margin-top: 18px;
+    }
+
+    .inputsect {
+        flex-direction: column;
+    }
+
+    .pay-logo-part {
+        margin-top: 32px;
+    }
+
+    .accd-links {
+        list-style: none;
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .accd-links li a {
+        color: #03599F;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .accd-links li {
+        margin-bottom: 10px !important;
+    }
+
+    .footer-adn {
+        margin-bottom: 16px;
+        border-radius: 8px !important;
+        border: 1px solid #DEE3E6 !important;
+    }
+
+    .accordion-button::after {
+        background-image: url('/Lms-images/elements.svg') !important;
+        background-position: center center;
+    }
+
+    .accordion-button {
+        border-radius: 8px !important;
+        border: 1px solid #DEE3E6 !important;
+        color: #03599F;
+        font-family: "Raleway" !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        line-height: 20px;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none !important;
+        background-color: transparent !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: transparent !important;
+        border-radius: 8px 8px 0 0 !important;
+    }
+
+    .inputs-part {
+        margin-top: 16px;
+    }
 }

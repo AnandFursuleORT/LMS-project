@@ -7,6 +7,14 @@
     font-family: "Plus Jakarta Sans", serif;
 }
 
+@font-face {
+    font-family: "ES Rebond Grotesque TRIAL";
+    src: url('/fonts/ESRebondGrotesqueTRIAL-Bold-BF66189040400df.otf') format('truetype');
+    src: url('/fonts/ESRebondGrotesqueTRIAL-Regular-BF66189040b697b.otf') format('truetype');
+    src: url('/fonts/ESRebondGrotesqueTRIAL-Medium-BF6618904088566.otf') format('truetype');
+    src: url('/fonts/ESRebondGrotesqueTRIAL-Semibold-BF66189040640ea.otf') format('truetype');
+}
+
 html,
 body {
     width: 100%;
@@ -671,6 +679,7 @@ Homepage CSS
 
 .c-tab {
     margin-top: 40px;
+    padding: 0 40px 0 0;
     position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -684,12 +693,10 @@ Homepage CSS
 }
 
 .scroll-buttons.left-scroll {
-    background: linear-gradient(to left, transparent, #F2F2F2 80%);
     left: 8%;
 }
 
 .scroll-buttons.right-scroll {
-    background: linear-gradient(to right, transparent, #F2F2F2 80%);
     right: 0;
 }
 
@@ -705,24 +712,21 @@ Homepage CSS
     font-weight: 500 !important;
     letter-spacing: 0.8px;
     background-color: transparent !important;
-    padding: 0 !important;
+    padding: 20px 10px !important;
     border: none !important;
 }
 
 .tab-title.active {
-    padding: 20px 0 !important;
     color: #FF9C1C !important;
     border-bottom: 2px solid #FF9C1C !important;
 }
 
 .tab-title:hover {
-    padding: 20px 0 !important;
     color: #FF9C1C !important;
     border-bottom: 2px solid #FF9C1C !important;
 }
 
 .tab-title-main.active {
-    padding: 20px 0 !important;
     color: #FF9C1C !important;
     border-bottom: 2px solid #FF9C1C !important;
 }
@@ -1797,6 +1801,7 @@ Course List page CSS
 
 .course-tab1 {
     margin-top: 48px;
+    padding: 0 40px 0 0;
     align-items: center;
     border-radius: 16px;
     border: 1px solid #DEE3E6;
@@ -1814,7 +1819,6 @@ Course List page CSS
     max-width: 100%;
     white-space: nowrap;
     scroll-behavior: smooth;
-    padding: 0 10px;
 }
 
 .scroll-div::-webkit-scrollbar {
@@ -1859,18 +1863,16 @@ Course List page CSS
     font-weight: 500 !important;
     letter-spacing: 0.8px;
     background-color: transparent !important;
-    padding: 0 !important;
+    padding: 25px 10px !important;
     border: none !important;
 }
 
 .c-tab-title.active {
-    padding: 20px 0 !important;
     color: #FF9C1C !important;
     border-bottom: 2px solid #FF9C1C !important;
 }
 
 .c-tab-title:hover {
-    padding: 20px 0 !important;
     color: #FF9C1C !important;
     border-bottom: 2px solid #FF9C1C !important;
 }
@@ -3288,7 +3290,7 @@ li::marker {
     color: #03599F;
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .footer-web {
         padding: 32px 16px;
     }
