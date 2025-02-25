@@ -44,6 +44,14 @@ img {
     background-color: transparent !important;
 }
 
+.save-later {
+    padding: 12px;
+    border: 1px solid #DEE3E6;
+    border-radius: 8px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 .nt-hdg {
     color: #011B30;
     font-family: "ES Rebond Grotesque TRIAL";
@@ -679,7 +687,7 @@ Homepage CSS
 
 .c-tab {
     margin-top: 40px;
-    padding: 0 40px 0 0;
+    padding-right: 40px;
     position: relative;
     display: flex;
     justify-content: space-evenly;
