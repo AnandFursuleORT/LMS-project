@@ -120,7 +120,7 @@
         </div>
         <!-- Main Navbar section  -->
         <nav class="navbar navbar-expand-md nav-main">
-            <div class="container">
+            <div class="container p-0">
                 <a class="navbar-brand" href="index.html"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -195,9 +195,58 @@
                     <form class="d-flex" role="search">
                         <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
                     </form>
-                    <a href="#" class="nt-icon ms-3">
-                        <img src="Lms-images/Notification.svg" alt="notification">
-                    </a>
+                    <div class="save-later ms-2">
+                        <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg"
+                                alt="bookmark-icon"></a>
+                    </div>
+                    <div class="notify dropdown ms-2">
+                        <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">
+                            <img src="images/bell.svg" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu notification-dropdown dropdown-menu-end"
+                            aria-labelledby="notificationDropdown">
+                            <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                                <span class="fw-bold nt-hdg">Notifications</span>
+                                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+                            </li>
+
+                            <li class="notification-item">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                    <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="profile-div ms-3 d-flex align-items-center">
                         <img src="Lms-images/profile.png" class="prof-img" alt="profile">
                         <div class="prof-dropdown">
@@ -213,8 +262,8 @@
                                     </div>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-menu-lg-end">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                <ul class="dropdown-menu dropMenu  dropdown-menu-lg-end">
+                                    <li><a class="dropdown-item" href="general.html" target="_blank">Setting</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
@@ -222,7 +271,7 @@
                         </div>
                     </div>
                     <div class="candidate-panel-div ms-2">
-                        <a href="home.html">Go to panel</a>
+                        <a href="home.html" target="_blank">Go to panel</a>
                     </div>
                 </div>
             </div>
@@ -1467,7 +1516,7 @@
                     <div class="cardMainDiv">
                         <div class="course-price-div">
                             <div class="pricing-left d-flex align-items-center gap-3">
-                                <h6 class="main-price mb-0">$80</h6>
+                                <h6 class="strike-price mb-0">$80</h6>
                                 <h6 class="dis-price mb-0">$72</h6>
                             </div>
                             <div class="discount-right d-flex align-items-center gap-2">
@@ -1950,6 +1999,36 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+    <!-- // ========================= Course Enroll Timer js code ==================================== -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let timeElements = document.querySelectorAll(".course-day1");
+
+            let totalSeconds = 364 * 24 * 60 * 60 + 24 * 60 * 60 + 60 * 60 + 40; // Corrected total seconds calculation
+
+            function updateTimer() {
+                let days = Math.floor(totalSeconds / (24 * 60 * 60));
+                let hours = Math.floor((totalSeconds % (24 * 60 * 60)) / (60 * 60));
+                let minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+                let seconds = totalSeconds % 60;
+
+                timeElements[0].textContent = days;
+                timeElements[1].textContent = hours;
+                timeElements[2].textContent = minutes;
+                timeElements[3].textContent = seconds;
+
+                if (totalSeconds > 0) {
+                    totalSeconds--;
+                }
+            }
+
+            updateTimer(); // Initial call to set the timer immediately
+            setInterval(updateTimer, 1000); // Update timer every second
+        });
+
+    </script>
 </body>
 
 </html>

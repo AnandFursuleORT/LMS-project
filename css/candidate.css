@@ -7,6 +7,14 @@
     font-family: "Plus Jakarta Sans", serif;
 }
 
+@font-face {
+    font-family: "ES Rebond Grotesque TRIAL";
+    src: url('/fonts/ESRebondGrotesqueTRIAL-Bold-BF66189040400df.otf') format('truetype');
+    src: url('/fonts/ESRebondGrotesqueTRIAL-Regular-BF66189040b697b.otf') format('truetype');
+    src: url('/fonts/ESRebondGrotesqueTRIAL-Medium-BF6618904088566.otf') format('truetype');
+    src: url('/fonts/ESRebondGrotesqueTRIAL-Semibold-BF66189040640ea.otf') format('truetype');
+}
+
 html,
 body {
     width: 100%;
@@ -16,7 +24,6 @@ body {
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
 
@@ -125,10 +132,124 @@ img {
     gap: 10px;
 }
 
-.notify {
+.notify-btn {
     padding: 12px;
     border: 1px solid #DEE3E6;
     border-radius: 8px;
+    background-color: transparent !important;
+}
+
+.save-later {
+    padding: 12px;
+    border: 1px solid #DEE3E6;
+    border-radius: 8px;
+    background-color: transparent !important;
+}
+
+.candidate-panel-div a {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #03599F;
+    text-decoration: none;
+    color: #03599F;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.candidate-panel-div a:hover {
+    background-color: #03599F;
+    color: #FAFBFB;
+}
+
+.nt-hdg {
+    color: #011B30;
+    font-family: "ES Rebond Grotesque TRIAL";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.notification-dropdown {
+    width: 420px;
+    padding: 16px !important;
+    border-radius: 20px !important;
+    border: 1px solid #DEE3E6 !important;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notification-item {
+    display: flex;
+    align-items: start;
+    padding: 12px;
+    gap: 16px;
+    transition: 0.3s;
+    position: relative;
+    border-radius: 16px;
+    border: 1px solid #DEE3E6;
+    background: #FAFBFB;
+    box-shadow: 0px 4px 4px 0px rgba(9, 11, 33, 0.02);
+}
+
+.icon-nt {
+    width: 55px;
+    height: 35px;
+    border-radius: 8px;
+    background: linear-gradient(273deg, #FFB555 -50.01%, #E28000 100%), #E7F6FF;
+}
+
+.nt-view-text {
+    color: #03599F;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.notification-text h6 {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.notification-text p {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 0;
+}
+
+.claim-btn {
+    display: flex;
+    padding: 8px 12px !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px !important;
+    background: #03599F !important;
+    color: #FAFBFB !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0px;
+}
+
+.close-btn {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: none;
+    transform: translateY(-50%);
+}
+
+.close-btn:hover {
+    color: black;
 }
 
 .prof-name {
@@ -279,8 +400,9 @@ img {
     margin-top: 24px !important;
 }
 
+/* Footer section css */
+
 .footer-web {
-    background: rgb(118, 192, 252);
     background: linear-gradient(25deg, rgba(118, 192, 252, 0.4823179271708683) 0%, rgba(255, 255, 255, 1) 14%, rgba(255, 255, 255, 1) 80%, rgba(255, 230, 198, 1) 100%);
     padding: 100px 20px;
 }
@@ -310,7 +432,7 @@ img {
     font-weight: 700;
 }
 
-.social-media-icon {
+.footer-logo-part {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -318,19 +440,19 @@ img {
 }
 
 .logoimgDiv {
-
-
-
+    padding: 14px;
+    border-radius: 100%;
+    background: #03599F;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.payments {
+.pay-logo-part {
     margin-top: 48px;
 }
 
-.payments p {
+.pay-logo-part p {
     color: #576E81;
     font-family: "Raleway", serif;
     font-size: 18px;
@@ -338,7 +460,7 @@ img {
     letter-spacing: -0.22px;
 }
 
-.payment-part {
+.pay-img-part {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -358,7 +480,7 @@ img {
 
 .right-text-section {
     padding-bottom: 24px;
-    border-bottom: 1px solid #011B30;
+    border-bottom: 1px solid #E28000;
 }
 
 .links-part {
@@ -441,6 +563,8 @@ img {
 }
 
 .formInputDiv {
+    display: flex;
+    justify-content: space-between;
     margin-top: 24px;
     gap: 60px;
 }
@@ -454,7 +578,7 @@ img {
 }
 
 .joinBtn {
-    border-radius: 100px;
+    border-radius: 8px;
     border: 1px solid #03599F;
     display: flex;
     padding: 12px 24px;
@@ -492,6 +616,7 @@ img {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: -0.22px;
+    margin-bottom: 0px !important;
 }
 
 .policySect a {
@@ -504,8 +629,120 @@ img {
     text-decoration: none;
 }
 
+.policySect a:hover {
+    color: #03599F;
+}
 
-/* Ypur Traning */
+@media screen and (max-width: 480px) {
+    .footer-web {
+        padding: 32px 16px;
+    }
+
+    .footer-right-section {
+        padding-left: 0px;
+    }
+
+    .cp-sect {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nextLinks a {
+        font-size: 16px;
+    }
+
+    .links-ul li a {
+        font-size: 16px;
+    }
+
+    .logoText {
+        font-size: 16px;
+    }
+
+    .headingText {
+        font-size: 20px;
+    }
+
+    .right-text-section {
+        padding-bottom: 18px;
+        padding-top: 14px;
+        border-bottom: 1px solid #E28000;
+    }
+
+    .footer-text-part {
+        margin-top: 24px;
+    }
+
+    .footer-logo-part {
+        gap: 20px;
+        margin-top: 18px;
+    }
+
+    .inputsect {
+        flex-direction: column;
+    }
+
+    .pay-logo-part {
+        margin-top: 32px;
+    }
+
+    .accd-links {
+        list-style: none;
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .accd-links li a {
+        color: #03599F;
+        font-family: "Raleway";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .accd-links li {
+        margin-bottom: 10px !important;
+    }
+
+    .footer-adn {
+
+        margin-bottom: 16px;
+        border-radius: 8px !important;
+        border: 1px solid #DEE3E6 !important;
+    }
+
+    .footer-acdn-btn::after {
+        background-image: url('/Lms-images/elements.svg') !important;
+        background-position: center center;
+    }
+
+    .footer-acdn-btn {
+        border-radius: 8px !important;
+        border: 1px solid #DEE3E6 !important;
+        color: #03599F;
+        font-family: "Raleway" !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        line-height: 20px;
+    }
+
+    .footer-acdn-btn:focus {
+        box-shadow: none !important;
+        background-color: transparent !important;
+    }
+
+    .footer-acdn-btn:not(.collapsed) {
+        background-color: transparent !important;
+        border-radius: 8px 8px 0 0 !important;
+    }
+
+    .inputs-part {
+        margin-top: 16px;
+    }
+}
+
+/* Your Traning */
 
 .training-search {
     background-image: url('/images/training-search.svg');
@@ -645,12 +882,26 @@ img {
     background: linear-gradient(166deg, rgba(229, 58, 58, 0.00) 2.31%, rgba(229, 58, 58, 0.20) 67.92%), #FFF;
 }
 
+.reapply-btn a {
+    background-color: #03599F;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #FAFBFB;
+    text-decoration: none;
+}
+
 .progressBar-text {
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
     color: #E53A3A;
 }
+
+
 
 
 
@@ -756,8 +1007,231 @@ img {
 }
 
 .nav-pills .nav-link.active {
-    background-color: #FFF3E380 !important;
+    background-color: #047fe3 !important;
+    color: #FAFBFB !important;
 }
+
+.nav-pills .nav-link:hover {
+    background-color: #047fe3 !important;
+    color: #FAFBFB !important;
+
+}
+
+.filter {
+    display: flex;
+    padding: 8px !important;
+    align-items: center;
+    border-radius: 12px !important;
+    border: 1px solid #DEE3E6 !important;
+    background: #FAFBFB !important;
+}
+
+.filter-search {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #DEE3E6;
+    background: #FAFBFB;
+    background-image: url('/Lms-images/small-search.svg');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 12px 12px 34px;
+    gap: 8px;
+    color: #768998;
+    font-family: "Raleway", serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.filter:hover {
+    border: 1px solid #884D00 !important;
+    background-color: #E28000 !important;
+}
+
+.filter:hover svg path {
+    stroke: #FAFBFB;
+}
+
+.filter:focus:not(:focus-visible) {
+    border: 1px solid #884D00 !important;
+    background-color: #E28000 !important;
+    outline: 0;
+}
+
+.filter:focus:not(:focus-visible) svg path {
+    stroke: #FAFBFB;
+}
+
+.filter-li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-sect {
+    padding: 8px 16px 16px 16px !important;
+    width: 420px;
+    border-radius: 20px !important;
+    border: 1px solid #DEE3E6 !important;
+    background: #FFF !important;
+}
+
+.dropdown-header {
+    color: #011B30 !important;
+    font-family: "ES Rebond Grotesque TRIAL";
+    font-size: 28px !important;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+/* location list scrollbar */
+
+#locationList {
+    max-height: 80px;
+    overflow-y: auto;
+    padding-left: 2px;
+}
+
+#locationList::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#locationList::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#locationList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #011B30;
+}
+
+/* vessel list scrollbar */
+
+#VesselList {
+    max-height: 80px;
+    overflow-y: auto;
+    padding-left: 2px;
+}
+
+#VesselList::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#VesselList::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#VesselList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #011B30;
+}
+
+/* Duration list scrollbar */
+
+#DurationList {
+    max-height: 80px;
+    overflow-y: auto;
+    padding-left: 2px;
+}
+
+#DurationList::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#DurationList::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#DurationList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #011B30;
+}
+
+.filter-acdn {
+    margin-bottom: 16px;
+    border-radius: 8px !important;
+    border: 1px solid #DEE3E6 !important;
+    background-color: #FAFBFB !important;
+}
+
+.filter-acdn-btn::after {
+    background-image: url('/Lms-images/filter-down.svg') !important;
+    background-position: center center;
+}
+
+.filter-acdn-btn {
+    border-radius: 8px !important;
+    font-family: "Raleway" !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 20px;
+    color: #011B30;
+    line-height: 24px;
+    letter-spacing: 0.72px;
+}
+
+.filter-acdn-btn:focus {
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.filter-acdn-btn:not(.collapsed) {
+    background-color: transparent !important;
+    border-radius: 8px 8px 0 0 !important;
+    box-shadow: none !important;
+}
+
+.filter-check {
+    border-radius: 6px !important;
+    border: 1px solid #011B30 !important;
+}
+
+.filter-label {
+    color: #1D3C55;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.rank-numbers {
+    color: #768998;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.reset-btn {
+    color: #03599F;
+    text-align: right;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.72px;
+    background: none !important;
+    border: none !important;
+}
+
+.form-check-input:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none !important;
+}
+
 
 .info-hdg {
     color: #011B30;
@@ -794,6 +1268,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.price {
+    gap: 16px;
 }
 
 .strike-price {
@@ -869,9 +1347,7 @@ img {
     color: #FAFBFB;
 }
 
-
 /* Results */
-
 
 .badge {
     padding: 4px 8px !important;
@@ -880,8 +1356,6 @@ img {
 .card-table {
     padding: 0 !important;
 }
-
-
 
 table th {
     padding: 14px !important;
@@ -1249,12 +1723,10 @@ table td a {
 }
 
 .feedback-text {
-
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
     color: #1D3C55;
-
 }
 
 .date-time {
@@ -1264,6 +1736,10 @@ table td a {
     font-weight: 500;
     color: #768998;
 
+}
+
+.feedback-btn {
+    margin-top: 30px;
 }
 
 .feedback-btn a {
@@ -1602,7 +2078,7 @@ table td a {
     padding: 6px 12px;
     position: relative;
     max-width: 500px;
-    margin-bottom: 16PX;
+    margin-bottom: 16px;
 }
 
 .form-select {
@@ -2242,21 +2718,17 @@ table td a {
     color: #768998;
 }
 
-.filter-btn {
+.jcalendar-input {
     padding: 12px 16px;
-    border: 1px solid #DEE3E6;
+    background-image: url('/images/filter.svg') !important;
+    padding-right: 0px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-weight: 600 !important;
+    color: #011B30 !important;
     border-radius: 8px;
-    background-color: #FFFFFF;
-}
-
-.filter-btn button {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 600;
-    color: #011B30;
-    background: none;
-    border: none;
-
+    border: 1px solid #DEE3E6 !important;
+    background: #FFF;
 }
 
 .dropdown-item:active {
@@ -2301,7 +2773,6 @@ table td a {
     line-height: 20px;
     font-weight: 500;
     color: #011B30;
-
 }
 
 .coc-validity {
@@ -2668,140 +3139,284 @@ table td a {
     background: rgba(255, 156, 28, 0.16);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1280px) and (max-width: 1600px) {}
-
-@media (min-width: 1600px) {
-    .custom-col {
-        flex: 0 0 33.3333% !important;
-        /* Equivalent to col-4 (4/12 columns) */
-        max-width: 33.3333% !important;
-    }
+/* Course-Enroll */
+.enroll-main-div {
+    padding: 24px;
+    gap: 16px;
+    border-radius: 24px;
+    border: 1px solid #DEE3E6;
+    background: #FFF;
 }
 
+.checkout-title h6 {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
 
+.accordion-item:first-of-type {
+    border-radius: 0 !important;
+}
 
+.accordion-item:last-of-type {
+    border-radius: 0 !important;
+}
 
+.form-check-input:checked {
+    background-color: #011B30 !important;
+}
 
+.billing-select {
+    border: 1px solid #011B30 !important;
+    padding: 6px 12px !important;
+    border-radius: 8px;
+}
 
+.select-tab {
+    background-color: transparent !important;
+}
 
+.input-label {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+}
 
+.form-p {
+    color: #011B30;
+    font-size: 14px;
+    font-weight: 400;
+}
 
-@media only screen and (max-width: 480px) {
-    .footer-web {
-        padding: 32px 16px;
-    }
+.payment-div span {
+    color: #011B30;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 2px dashed #000910;
+}
 
-    .footer-right-section {
-        padding-left: 0px;
-    }
+.payment-accordion {
+    font-size: 18px !important;
+    padding: 12px;
+    background-color: #F5F5F5;
+}
 
-    .cp-sect {
-        flex-direction: column;
-        gap: 8px;
-    }
+.pay-img {
+    border: 1px solid #d1d2e0;
+    border-radius: 4px;
+    background: #fff;
+}
+.pay-img2 {
+    border-radius: 6px;
+}
+.upi-label {
+    color: #011B30;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
 
-    .nextLinks a {
-        font-size: 16px;
-    }
+.upi-para {
+    color: #011B30;
+    font-size: 14px;
+    font-weight: 400;
+}
 
-    .links-ul li a {
-        font-size: 16px;
-    }
+.upi-tabs-sect {
+    border: 1px solid #DEE3E6;
+    border-radius: 6px;
+    gap: 8px;
+    flex-wrap: nowrap !important;
+}
 
-    .logoText {
-        font-size: 16px;
-    }
+.upi-tab-btn {
+    border: 0;
+    border-radius: 6px;
+    color: #011B30 !important;
+    font-weight: 500;
+    text-align: center;
+}
 
-    .headingText {
-        font-size: 20px;
-    }
+.nav-pills .upi-tab-btn.active {
+    background-color: #43A9FB !important;
+    border: 1px solid #01233F !important;
+}
 
-    .right-text-section {
-        padding-bottom: 18px;
-        padding-top: 14px;
-        border-bottom: 1px solid #E28000;
-    }
+.nav-pills .upi-tab-btn:hover {
+    background-color: #43A9FB !important;
+}
 
-    .footer-text-part {
-        margin-top: 24px;
-    }
+.content-seperator {
+    color: #011B30;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
 
-    .footer-logo-part {
-        gap: 20px;
-        margin-top: 18px;
-    }
+.content-seperator:before {
+    background: #e6e9eb;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin-right: 16px;
+}
 
-    .inputsect {
-        flex-direction: column;
-    }
+.content-seperator:after {
+    background: #e6e9eb;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin-left: 16px;
+}
 
-    .pay-logo-part {
-        margin-top: 32px;
-    }
+.qr-para {
+    color: #011B30;
+    font-size: 16px;
+    font-weight: 600;
+}
 
-    .accd-links {
-        list-style: none;
-        padding: 0 !important;
-        margin-bottom: 0 !important;
-    }
+.upi-label {
+    color: #011B30;
+    font-size: 16px;
+    font-weight: 600;
+}
 
-    .accd-links li a {
-        color: #03599F;
+.upi-input {
+    border: 1px solid #011B30 !important;
+}
 
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 20px;
-        text-decoration: none;
-    }
+.upi-id-para {
+    color: #011B30;
+    font-size: 16px;
+    font-weight: 400;
+}
 
-    .accd-links li {
-        margin-bottom: 10px !important;
-    }
+.order-summary {
+    padding: 22px;
+    border-radius: 10px;
+}
 
-    .footer-adn {
-        margin-bottom: 16px;
-        border-radius: 8px !important;
-        border: 1px solid #DEE3E6 !important;
-    }
+.orderSummary-text {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #011B30;
+    font-family: "ES Rebond Grotesque TRIAL" !important;
+}
 
-    .accordion-button::after {
-        background-image: url('/Lms-images/elements.svg') !important;
-        background-position: center center;
-    }
+.order-price {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: "Raleway", serif ;
+    color: #011b30;
+}
 
-    .accordion-button {
-        border-radius: 8px !important;
-        border: 1px solid #DEE3E6 !important;
-        color: #03599F;
-        font-family: "Raleway" !important;
-        font-size: 16px !important;
-        font-weight: 500 !important;
-        line-height: 20px;
-    }
+.strike-price-checkout {
+    color: #94A3AF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    text-decoration: line-through;
+}
 
-    .accordion-button:focus {
-        box-shadow: none !important;
-        background-color: transparent !important;
-    }
+.main-price-checkout {
+    color: #011B30;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.order-details div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
 
-    .accordion-button:not(.collapsed) {
-        background-color: transparent !important;
-        border-radius: 8px 8px 0 0 !important;
-    }
+.total {
+    font-weight: 700;
+    font-size: 24px;
+}
+.terms {
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+}
 
-    .inputs-part {
-        margin-top: 16px;
-    }
+.terms a {
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+.pay-btn {
+    width: 100%;
+    background: #6a0dad;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pay-btn:hover {
+    background: #5a009a;
+}
+
+.lock-icon {
+    font-size: 16px;
+}
+
+.money-back {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.money-back strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    background: #f1f1f1;
+    border: none;
+    font-size: 16px;
+}
+.card-input {
+    position: relative;
+}
+.card-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    opacity: 0.5;
+}
+.card-icons img {
+    width: 40px;
+}
+
+.onlineBanking {
+    border: 1px solid #011B30 !important;
+    padding: 6px 12px !important;
+    border-radius: 8px;
 }

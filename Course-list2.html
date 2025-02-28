@@ -120,7 +120,7 @@
         </div>
         <!-- Main Navbar section  -->
         <nav class="navbar navbar-expand-md nav-main">
-            <div class="container">
+            <div class="container p-0">
                 <a class="navbar-brand" href="index.html"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -195,9 +195,59 @@
                     <form class="d-flex" role="search">
                         <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
                     </form>
-                    <a href="#" class="nt-icon ms-3">
-                        <img src="Lms-images/Notification.svg" alt="notification">
-                    </a>
+                    <div class="save-later ms-2">
+                        <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg"
+                                alt="bookmark-icon"></a>
+                    </div>
+
+                    <div class="notify dropdown ms-2">
+                        <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">
+                            <img src="images/bell.svg" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu notification-dropdown dropdown-menu-end"
+                            aria-labelledby="notificationDropdown">
+                            <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                                <span class="fw-bold nt-hdg">Notifications</span>
+                                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+                            </li>
+
+                            <li class="notification-item">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                    <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="profile-div ms-3 d-flex align-items-center">
                         <img src="Lms-images/profile.png" class="prof-img" alt="profile">
                         <div class="prof-dropdown">
@@ -213,8 +263,8 @@
                                     </div>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-menu-lg-end">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                <ul class="dropdown-menu dropMenu  dropdown-menu-lg-end">
+                                    <li><a class="dropdown-item" href="general.html" target="_blank">Setting</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
@@ -222,7 +272,7 @@
                         </div>
                     </div>
                     <div class="candidate-panel-div ms-2">
-                        <a href="home.html">Go to panel</a>
+                        <a href="home.html" target="_blank">Go to panel</a>
                     </div>
                 </div>
             </div>
@@ -656,10 +706,35 @@
 
                         <div class="scroll-div">
                             <div class="scroll-buttons left" id="scroll-left">
-                                <img class="left-btn" src="Lms-images/arrow-left1.svg"></img>
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="arrow-right-02-sharp">
+                                        <g id="elements">
+                                            <path id="Vector" d="M6.6665 16.0002L26.6665 16.0002" stroke="#011B30"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path id="Vector 6907"
+                                                d="M12 22.6667L6.04044 16.7072C5.70711 16.3739 5.54044 16.2072 5.54044 16.0001C5.54044 15.793 5.70711 15.6263 6.04044 15.293L12 9.33342"
+                                                stroke="#011B30" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                    </g>
+                                </svg>
+ 
                             </div>
                             <div class="scroll-buttons right" id="scroll-right">
-                                <img class="right-btn" src="Lms-images/arrow-right2.svg"></img>
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="arrow-right-02-sharp">
+                                    <g id="elements">
+                                        <path id="Vector" d="M25.3335 15.9998L5.3335 15.9998" stroke="#011B30"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path id="Vector 6907"
+                                            d="M20 9.33325L25.9596 15.2928C26.2929 15.6261 26.4596 15.7928 26.4596 15.9999C26.4596 16.207 26.2929 16.3737 25.9596 16.707L20 22.6666"
+                                            stroke="#011B30" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                </g>
+                            </svg>
                             </div>
 
                             <li class="nav-item tab-item">
@@ -710,13 +785,24 @@
                         <div id="navigation-tab2" class="tab-pane fade active show">
                             <div class="row g-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="cr-info-hdg d-flex align-items-center">
+                                                    <img src="Lms-images/image12.png" alt="comp-logo">
+                                                    <span class="comp-hdg ms-2">Macosnar Training Institute Corp.</span>
+                                                </div>
 
-                                            <div class="cr-info-hdg d-flex align-items-center">
-                                                <img src="Lms-images/image12.png" alt="comp-logo">
-                                                <span class="comp-hdg ms-2">Macosnar Training Institute Corp.</span>
+                                                <div class="save-for-later">
+                                                    <svg id="Layer_1" enable-background="new 0 0 511.958 511.958"
+                                                        height="24" viewBox="0 0 511.958 511.958" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m400.579 0h-289.2c-25.487 0-47.133 20.556-47.133 47.133v427.63c.075 33.733 41.277 49.561 64.701 25.882l110.235-110.204c8.834-9.216 24.76-9.216 33.594 0l110.235 110.204c23.434 23.688 64.631 7.836 64.701-25.882v-427.63c0-26.577-21.646-47.133-47.133-47.133zm17.133 474.764c-.037 7.142-8.915 9.499-13.508 4.649-22.037-22.071-84.882-84.897-110.195-110.164-19.913-20.826-56.117-20.832-76.021-.04-17.486 17.453-51.714 51.671-78.696 78.645l-31.39 31.376c-4.523 4.799-13.512 3.197-13.657-4.194v-427.903c0-9.582 7.767-17.133 17.134-17.133h289.199c9.353 0 17.134 7.539 17.134 17.133z" />
+                                                    </svg>
+                                                </div>
                                             </div>
+
 
                                             <div class="crInfobox mt-3">
                                                 <h6 class="info-hdg">Fundamentals: Marine Navigation</h6>
@@ -768,7 +854,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -823,7 +909,7 @@
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -881,7 +967,7 @@
 
                             <div class="row mt-2 g-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -935,7 +1021,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -989,7 +1075,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1048,7 +1134,7 @@
                             <div class="row mt-2 g-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
 
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1103,7 +1189,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1158,7 +1244,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1220,7 +1306,7 @@
                         <div id="safety-tab2" class="tab-pane fade">
                             <div class="row g-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1275,7 +1361,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1329,7 +1415,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1387,7 +1473,7 @@
 
                             <div class="row mt-2 g-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1441,7 +1527,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1495,7 +1581,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1556,7 +1642,7 @@
                         <div id="eng-tab2" class="tab-pane fade">
                             <div class="row g-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1610,7 +1696,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1664,7 +1750,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1721,7 +1807,7 @@
                             </div>
                             <div class="row mt-2 g-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1776,7 +1862,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1837,7 +1923,7 @@
                         <div id="cargo-tab2" class="tab-pane fade">
                             <div class="row g-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1891,7 +1977,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -1945,7 +2031,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -2003,7 +2089,7 @@
 
                             <div class="row mt-2 g-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -2058,7 +2144,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -2113,7 +2199,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -2172,7 +2258,7 @@
 
                             <div class="row mt-2 g-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -2227,7 +2313,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -2289,7 +2375,7 @@
                         <div id="comp-tab2" class="tab-pane fade">
                             <div class="row g-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -2344,7 +2430,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -2399,7 +2485,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -2458,7 +2544,7 @@
 
                             <div class="row mt-2 g-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -2513,7 +2599,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <a href="Course-signUp.html" class="course-box">
+                                    <a href="Course-detail2.html" class="course-box">
                                         <div class="course-info">
                                             <div class="cr-info-hdg d-flex align-items-center">
                                                 <img src="Lms-images/image12.png" alt="comp-logo">
@@ -2993,6 +3079,18 @@
         document.getElementById('scroll-right').addEventListener('click', function () {
             document.querySelector('.scroll-div').scrollBy({ left: 100, behavior: 'smooth' });
         });
+    </script>
+
+    <!-- script for save-for-later -->
+    <script>
+        document.querySelectorAll(".save-for-later").forEach(button => {
+            button.addEventListener("click", function (event) {
+                event.stopPropagation();
+                event.preventDefault();
+                this.classList.toggle("active"); // Toggle class instead of adding
+            });
+        });
+
     </script>
 </body>
 

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Panel</title>
+    <link rel="stylesheet" href="css/candidate.css" />
+    <link rel="stylesheet" href="css/resCandidate.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md nav-main">
+        <div class="container">
+            <a class="navbar-brand" href="index2.html"><img src="images/Logo.svg" alt="main-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto navbar-nav-scroll">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                            <img src="images/arrow-down-01-round.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu dropMenu">
+                            <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a>
+                            <li class="dropdown-submenu">
+                                <a href="#" data-bs-toggle="dropdown"
+                                    class="dropdown-item dropdown-toggle menu-item">People
+                                    of the Sea</a>
+                                <ul class="dropdown-menu items-submenu">
+                                    <li>
+                                        <a href="#" class="dropdown-item sub-item">Qualification</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item sub-item">Labor</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item sub-item">Training</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item menu-item" href="#">Ports and Auxiliary Maritime
+                                    Industries</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Consultations
+                            <img src="images/arrow-down-01-round.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu dropMenu">
+                            <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">People of the Sea</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Ports and Auxiliary Maritime
+                                    Industries</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">License Cancellation Notice</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Courses
+                            <img src="images/arrow-down-01-round.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu dropMenu">
+                            <li><a class="dropdown-item menu-item" href="#">Navigation</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Safety & Survival</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Engineering</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Cargo Handling</a></li>
+                            <li><a class="dropdown-item menu-item" href="#">Compliance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navDropdown" aria-current="page" href="#">About</a>
+                    </li>
+                </ul>
+                <div class=" nav-end ">
+                    <form class="d-flex" role="search">
+                        <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
+                    </form>
+                    <div class="save-later">
+                        <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg"
+                                alt="bookmark-icon"></a>
+                    </div>
+                    <div class="notify dropdown">
+                        <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">
+                            <img src="images/bell.svg" alt="">
+                        </button>
+
+                        <ul class="dropdown-menu notification-dropdown dropdown-menu-end"
+                            aria-labelledby="notificationDropdown">
+                            <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                                <span class="fw-bold nt-hdg">Notifications</span>
+                                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+                            </li>
+
+                            <li class="notification-item">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                    <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="profile-div  d-flex align-items-center">
+                        <img src="images/profile-photo.svg" class="prof-img" alt="profile">
+                        <div class="prof-dropdown">
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle dropdown-profile" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="prof-sect ms-2">
+                                        <h6 class="prof-name mb-0">Satyam</h6>
+                                        <p class="prof-dst mb-0">Captain</p>
+                                    </div>
+                                    <div class="dropDown-prof ms-2">
+                                        <img src="images/arrow-down-black.svg" alt="dropdown">
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
+                                    <li><a class="dropdown-item" href="general.html" target="_blank">Settings</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="title mb-4">
+                        <div class="title-text">
+                            <h2 class="mb-0">Course Enrollment
+                            </h2>
+                        </div>
+                        <div class="read-notf">
+                            <a href="saved-courses.html" class="notf-read">
+                                <h6 class="mb-0">Cancel</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="checkout-section d-flex flex-column gap-3">
+
+                        <div class="billing-address-inputs">
+                            <div class="row">
+                                <div class="checkout-title">
+                                    <h6>Billing address</h6>
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label input-label mb-0">Country</label>
+                                    <div class="billing-select d-flex align-items-center">
+                                        <img src="images/globe.svg" alt="globe-icon" class="language-icon">
+                                        <select id="language-select" class="form-select">
+                                            <option value="India" selected>India</option>
+                                            <option value="Austalia">Austalia</option>
+                                            <option value="Russia">Russia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label input-label mb-0">State / Union Territory</label>
+                                    <div class="billing-select d-flex align-items-center">
+                                        <select id="language-select" class="form-select select-tab"
+                                            style="background-color: transparent;">
+                                            <option value="Maharashtra">Maharashtra</option>
+                                            <option value="Gujarat">Gujarat</option>
+                                            <option value="Delhi">Delhi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <p class="form-p mt-2">NavLearn is required by law to collect
+                                    applicable transaction taxes
+                                    for purchases made in certain tax jurisdictions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="checkout-section-two">
+                            <div class="checkout-title d-flex align-items-center justify-content-between">
+                                <h6>Payment method</h6>
+                                <div class="payment-div">
+                                    <span type="button" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        data-bs-title="We use 256-bit encryption to protect your payment method against unauthorized access.">Secure
+                                        and encrypted</span>
+                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.55667 15.704C1.74407 17.0958 2.89694 18.1863 4.29988 18.2508C5.48039 18.305 6.67958 18.3333 8.00016 18.3333C9.32074 18.3333 10.5199 18.305 11.7004 18.2508C13.1034 18.1863 14.2563 17.0958 14.4437 15.704C14.566 14.7956 14.6668 13.8647 14.6668 12.9167C14.6668 11.9686 14.566 11.0378 14.4437 10.1294C14.2563 8.73752 13.1034 7.64707 11.7004 7.58258C10.5199 7.52831 9.32074 7.5 8.00016 7.5C6.67958 7.5 5.48039 7.52831 4.29988 7.58258C2.89694 7.64707 1.74407 8.73752 1.55667 10.1294C1.43437 11.0378 1.33349 11.9686 1.33349 12.9167C1.33349 13.8647 1.43437 14.7956 1.55667 15.704Z"
+                                            stroke="#000000" stroke-width="1.5" />
+                                        <path
+                                            d="M4.25 7.50008V5.41675C4.25 3.34568 5.92893 1.66675 8 1.66675C10.0711 1.66675 11.75 3.34568 11.75 5.41675V7.50008"
+                                            stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.99707 12.9167H8.00456" stroke="#000000" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="accordion checkout-accd" id="paymentAccordion">
+                                <!-- UPI -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header payment-accordion d-flex align-items-center gap-2">
+                                        <input class="form-check-input mt-0" type="radio" name="payment" id="upi"
+                                            data-bs-toggle="collapse" data-bs-target="#upiCollapse" checked>
+                                        <img class="pay-img" src="images/upi.svg" height="30" width="40" alt="upi-icon">
+                                        <label class="form-check-label upi-label" for="upi">UPI</label>
+                                    </h2>
+                                    <div id="upiCollapse" class="accordion-collapse collapse show"
+                                        data-bs-parent="#paymentAccordion">
+                                        <div class="accordion-body">
+                                            <p class="upi-para">How would you like to use UPI?</p>
+                                            <ul class="nav nav-pills upi-tabs-sect w-100 p-1" id="pills-tab"
+                                                role="tablist">
+                                                <button class="nav-link upi-tab-btn w-50 active" id="pills-QR-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-QR" type="button"
+                                                    role="tab" aria-controls="pills-QR" aria-selected="true">QR Code
+                                                </button>
+
+                                                <button class="nav-link upi-tab-btn w-50" id="pills-enterUPI-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-enterUPI" type="button"
+                                                    role="tab" aria-controls="pills-enterUPI"
+                                                    aria-selected="false">Enter UPI ID
+                                                </button>
+                                            </ul>
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-QR" role="tabpanel"
+                                                    aria-labelledby="pills-QR-tab" tabindex="0">
+                                                    <div class="content-seperator my-4">Complete your payment</div>
+                                                    <p class="qr-para">Click the "Pay" button to generate a QR code for
+                                                        UPI payment.</p>
+
+                                                    <!-- Placeholder div for QR Code and additional content -->
+                                                    <div id="qrCodeContainer"></div>
+                                                </div>
+
+
+                                                <div class="tab-pane fade" id="pills-enterUPI" role="tabpanel"
+                                                    aria-labelledby="pills-enterUPI-tab" tabindex="0">
+                                                    <div class="content-seperator my-4">Complete your payment</div>
+                                                    <div class="upi-form-div">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label upi-label">Enter
+                                                            UPI ID / VPA
+                                                        </label>
+                                                        <input class="form-control upi-input" type="text"
+                                                            id="exampleFormControlInput1"
+                                                            aria-label="default input example">
+                                                        <p class="upi-id-para mt-4">Enter your UPI ID / VPA and click
+                                                            "Proceed" to initiate the transaction.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Cards -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header payment-accordion">
+                                        <div class="cards-left d-flex align-items-center gap-2">
+                                            <input class="form-check-input mt-0" type="radio" name="payment" id="cards"
+                                                data-bs-toggle="collapse" data-bs-target="#cardsCollapse">
+                                            <img class="pay-img" src="images/card-default.svg" alt="upiCard" height="30"
+                                                width="40">
+                                            <label class="form-check-label upi-label" for="cards">Cards</label>
+                                        </div>
+
+                                    </h2>
+                                    <div id="cardsCollapse" class="accordion-collapse collapse "
+                                        data-bs-parent="#paymentAccordion">
+                                        <div class="accordion-body">
+
+                                            <div class="payment-container">
+                                                <form>
+                                                    <label class="input-label">Card number</label>
+                                                    <div class="card-input position-relative">
+                                                        <input type="text" class="upi-input form-control"
+                                                            placeholder="1234 5678 9012 3456">
+                                                        <img src="images/card-number.svg" alt="Card Icon"
+                                                            class="card-icon">
+                                                    </div>
+                                                    <div class="card-icons mt-1">
+                                                        <img src="images/visa.svg" alt="Visa">
+                                                        <img src="images/maestro.svg" alt="Mastercard">
+                                                        <img src="images/am-ex.svg" alt="Amex">
+                                                        <img src="images/mastercard.svg" alt="Rupay">
+                                                    </div>
+
+                                                    <div class="row mt-3">
+                                                        <div class="col-6">
+                                                            <label class="input-label">Expiry date</label>
+                                                            <input type="text" class="upi-input form-control"
+                                                                placeholder="MM/YY">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label class="input-label">CVC / CVV</label>
+                                                            <input type="text" class="upi-input form-control"
+                                                                placeholder="CVC">
+                                                        </div>
+                                                    </div>
+
+                                                    <label class="input-label mt-3">Name on card</label>
+                                                    <input type="text" class="upi-input form-control"
+                                                        placeholder="Name on card">
+
+                                                    <div class="form-check mt-3">
+                                                        <input class="form-check-input" type="checkbox" id="saveCard">
+                                                        <label class="form-check-label" for="saveCard">
+                                                            Securely save this card for my later purchase
+                                                        </label>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Net Banking -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header payment-accordion d-flex align-items-center gap-2">
+                                        <input class="form-check-input mt-0" type="radio" name="payment" id="netbanking"
+                                            data-bs-toggle="collapse" data-bs-target="#netbankingCollapse">
+                                        <img class="pay-img2" src="images/onlinebanking.svg" alt="Net-banking"
+                                            height="30" width="40">
+                                        <label class="form-check-label" for="netbanking">Net Banking</label>
+                                    </h2>
+                                    <div id="netbankingCollapse" class="accordion-collapse collapse"
+                                        data-bs-parent="#paymentAccordion">
+                                        <div class="accordion-body">
+                                            <select class="form-select onlineBanking">
+                                                <option>Select Bank</option>
+                                                <option>HDFC Bank</option>
+                                                <option>SBI Bank</option>
+                                                <option>ICICI Bank</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Mobile Wallets -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header payment-accordion d-flex align-items-center gap-2">
+                                        <input class="form-check-input mt-0" type="radio" name="payment" id="wallets"
+                                            data-bs-toggle="collapse" data-bs-target="#walletsCollapse">
+                                        <img class="pay-img2" src="images/wallet-in.svg" alt="Net-banking" height="30"
+                                            width="40">
+                                        <label class="form-check-label" for="wallets">Mobile Wallets</label>
+                                    </h2>
+                                    <div id="walletsCollapse" class="accordion-collapse collapse"
+                                        data-bs-parent="#paymentAccordion">
+                                        <div class="accordion-body">
+                                            <select class="form-select onlineBanking">
+                                                <option>Select Wallet</option>
+                                                <option>Airtel Money</option>
+                                                <option>Google Pay</option>
+                                                <option>Amazon Pay</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+
+                    <div class="order-summary">
+                        <h2 class="orderSummary-text">Order summary</h2>
+
+                        <div class="order-details ">
+                            <div class="d-flex justify-content-between ">
+                                <span class="order-price">Original Price:</span>
+                                <span class="strike-price-checkout mb-0">$80</span>
+                            </div>
+                            <div>
+                                <span class="order-price">Discounts <span class="discout-offer">(30% off)</span></span>
+                                <span class="main-price-checkout mb-0">$72</span>
+                            </div>
+                            <hr>
+                            <div class="total">
+                                <span>Total :</span>
+                                <span>$72</span>
+                            </div>
+                        </div>
+
+                        <p class="terms">By completing your purchase, you agree to these <a href="#">Terms of Use</a>.
+                        </p>
+
+                        <button class="pay-btn" id="payButton">
+                            🔒 Pay $72
+                        </button>
+
+                        <div class="money-back">
+                            <strong>30-Day Money-Back Guarantee</strong>
+                            <p>Not satisfied? Get a full refund within 30 days. Simple and straightforward!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- start footer section -->
+    <footer class="footer-web">
+        <div class="footerDiv">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer-left-section">
+                            <div class="footer-logo-img">
+                                <img src="Lms-images/Logo.svg" alt="logoImg">
+                            </div>
+                            <div class="footer-text-part">
+                                <p class="ft-para">We specialize in training in the IT industry and offer you the best
+                                    in-person and
+                                    online seminars, including in areas like <span class="inner-text">Navigation, Safety
+                                        & Survival,
+                                        Engineering, Cargo Handling, Compliance</span> and many more.
+                                    We design trainings for individuals, companies and entire teams.</p>
+                            </div>
+
+                            <div class="footer-logo-part">
+                                <a href="#" class="logoimgDiv">
+                                    <img src="Lms-images/fb.svg" alt="fbImg">
+                                </a>
+                                <a href="#" class="logoimgDiv">
+                                    <img src="Lms-images/instagram.svg" alt="insImg">
+                                </a>
+                                <a href="#" class="logoimgDiv">
+                                    <img src="Lms-images/twitter.svg" alt="tImg">
+                                </a>
+                                <a href="#" class="logoimgDiv">
+                                    <img src="Lms-images/linked.svg" alt="lknImg">
+                                </a>
+                            </div>
+
+                            <div class="pay-logo-part">
+                                <p>Pay securely with:</p>
+                                <div class="pay-img-part">
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge6.svg" alt="fbImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge.svg" alt="insImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge2.svg" alt="tImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge7.svg" alt="lknImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge3.svg" alt="lknImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge4.svg" alt="lknImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge8.svg" alt="lknImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge5.svg" alt="lknImg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <div class="footer-right-section">
+                            <div class="right-text-section">
+                                <h6 class="headingText">Navigation</h6>
+                            </div>
+                            <div class="links-part d-none d-lg-block d-md-block">
+                                <div class="row g-4">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <div class="navLinks">
+                                            <ul class="links-ul">
+                                                <li><a href="">Academy</a></li>
+                                                <li><a href="">Enterprise Solutions</a></li>
+                                                <li><a href="">About Us</a></li>
+                                                <li><a href="">Insights</a></li>
+                                                <li><a href="">E-learning</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-12">
+                                        <div class="nextLinks">
+                                            <a href="">All</a>
+                                            <a href="">iSAQB®</a>
+                                            <a href="">SAFe®</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">Inhouse Training</a>
+                                            <a href="">Customized SAFe Kickstarter</a>
+                                            <a href="">Digital Leaders</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">Who are we?</a>
+                                            <a href="">Our Trainers</a>
+                                            <a href="">References</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">All</a>
+                                            <a href="">Software Architecture</a>
+                                            <a href="">Case Studies</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">Sign-In</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="links-part d-sm-block d-lg-none d-md-none">
+                                <div class="row g-4">
+                                    <div class="col-sm-12">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        Academy
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">All</a></li>
+                                                            <li><a href="#">iSAQB®</a></li>
+                                                            <li><a href="#">SAFe®</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false"
+                                                        aria-controls="collapseTwo">
+                                                        Enterprise Solutions
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">Inhouse Training</a></li>
+                                                            <li><a href="#">Customized SAFe Kickstarter</a></li>
+                                                            <li><a href="#">Digital Leaders</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                                        aria-controls="collapseThree">
+                                                        About Us
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">Who are we?</a></li>
+                                                            <li><a href="#">Our Trainers</a></li>
+                                                            <li><a href="#">References</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                                        aria-controls="collapseFour">
+                                                        Insights
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">All</a></li>
+                                                            <li><a href="#">Software Architecture</a></li>
+                                                            <li><a href="#">Case Studies</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                                        aria-controls="collapseFive">
+                                                        E-learning
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFive" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">Sign-In</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inputs-part">
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="right-text-section">
+                                            <h6 class="headingText">Contact</h6>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="Lms-images/SVG1.svg" alt="location">
+                                            </div>
+                                            <div class="logoText">Ammerswilerstrasse 19a CH - 5600 Lenzburg</div>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="Lms-images/SVG2.svg" alt="location">
+                                            </div>
+                                            <div class="logoText">+91 00000 00000</div>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="Lms-images/SVG3.svg" alt="location">
+                                            </div>
+                                            <div class="logoText">hello@navlearn.com</div>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="Lms-images/SVG4.svg" alt="location">
+                                            </div>
+                                            <div class="logoText">Mon - Fri | 09:00 - 17:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12">
+                                        <div class="right-text-section">
+                                            <h6 class="headingText">Subscribe to the Newsletter</h6>
+                                        </div>
+                                        <div class="right-input-section">
+                                            <form action="">
+                                                <div class="inputsect">
+                                                    <input type="email" class="form-control footer-input"
+                                                        placeholder="E-Mail Address" id="InputEmail">
+                                                </div>
+                                                <div class="formInputDiv">
+                                                    <div class="mb-3 d-flex gap-2">
+                                                        <input type="checkbox" class="form-check-input check-input"
+                                                            id="inputCheck2">
+                                                        <label class="form-check-label" for="inputCheck2">I accept the
+                                                            monthly newsletter and getting informational e-mail for the
+                                                            email address provided.<br>
+                                                            <span><a class="terms-link" href="#">Terms of Service</a>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <button type="submit" class="joinBtn">Join</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footerBottomSect">
+        <div class="container">
+            <div class="row">
+                <div class="cp-sect">
+                    <div class="cp-text">
+                        <p>© Copyright 2024, Navlearn, All Rights Reserved</p>
+                    </div>
+                    <div class="policySect">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#" class="ms-4">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer section -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById("payButton").addEventListener("click", function () {
+            // New content to replace existing content
+            const newContent = `
+                <div class="content-seperator my-4">Scan the QR Code to Pay</div>
+                <p class="qr-para">Use your UPI app to scan this QR code and complete the payment.</p>
+                <img src="your-qrcode-image.png" alt="QR Code" class="qr-image" style="width: 200px; height: 200px;">
+            `;
+
+            // Replacing the content inside .accordion-body
+            document.getElementById("accordionBody").innerHTML = newContent;
+        });
+    </script>
+
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+</body>
+
+</html>

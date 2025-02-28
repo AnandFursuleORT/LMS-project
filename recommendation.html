@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-md nav-main">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="images/Logo.svg" alt="main-logo"></a>
+            <a class="navbar-brand" href="index2.html"><img src="images/Logo.svg" alt="main-logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -90,9 +90,57 @@
                     <form class="d-flex" role="search">
                         <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
                     </form>
-                    <div class="notify">
-                        <a href="#"><img src="images/bell.svg" alt=""></a>
+                    <div class="save-later">
+                        <a href="saved-courses.html" target="_blank" ><img src="images/Bookmark-header.svg"
+                            alt="bookmark-icon"></a>
+                      </div>
+                    <div class="notify dropdown">
+                        <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">
+                            <img src="images/bell.svg" alt="">
+                        </button>
 
+                        <ul class="dropdown-menu notification-dropdown dropdown-menu-end"
+                            aria-labelledby="notificationDropdown">
+                            <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                                <span class="fw-bold nt-hdg">Notifications</span>
+                                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+                            </li>
+
+                            <li class="notification-item">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+
+                            <li class="notification-item mt-2">
+                                <div class="icon-nt"></div>
+                                <div class="notification-text flex-grow-1">
+                                    <h6 class="fw-bold">Add templates</h6>
+                                    <p>To start work with data, please create your first components templates.</p>
+                                    <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                                </div>
+                                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                    <img src="images/cancel-cross.svg" alt="close">
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                     <div class="profile-div  d-flex align-items-center">
                         <img src="images/profile-photo.svg" class="prof-img" alt="profile">
@@ -110,7 +158,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
-                                    <li><a class="dropdown-item" href="general.html">Settings</a></li>
+                                    <li><a class="dropdown-item" href="general.html" target="_blank">Settings</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
@@ -180,6 +228,12 @@
                                                 <span>Certification</span>
                                             </a>
                                         </li>
+                                        <li class="menu-item">
+                                            <a href="saved-courses.html">
+                                              <img src="images/Bookmark.svg" alt="bookmark-icon" />
+                                              <span>Saved Courses</span>
+                                            </a>
+                                          </li>
                                     </ul>
                                 </div>
                                 <div class="menu-three">
@@ -210,27 +264,409 @@
                                 <h2 class="mb-0">Recommendation</h2>
                             </div>
 
-                            <div class="course-progress-tab d-flex">
+                            <div class="course-progress-tab d-flex align-items-center">
                                 <div class="recommend-tabs">
-                                     <ul class="nav nav-pills    gap-2" id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link course-tab active" id="pills-recommendation-all-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-recommendation-all" type="button" role="tab"
-                                            aria-controls="pills-recommendation-all" aria-selected="true">All</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link course-tab" id="pills-recommended-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-recommended" type="button"
-                                            role="tab" aria-controls="pills-recommended"
-                                            aria-selected="false">Recommended</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link course-tab" id="pills-mandatory-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-mandatory" type="button"
-                                            role="tab" aria-controls="pills-mandatory" aria-selected="false">Mandatory</button>
-                                    </li>
+                                    <ul class="nav nav-pills    gap-2" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link course-tab active" id="pills-recommendation-all-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-recommendation-all"
+                                                type="button" role="tab" aria-controls="pills-recommendation-all"
+                                                aria-selected="true">All</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link course-tab" id="pills-recommended-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-recommended" type="button"
+                                                role="tab" aria-controls="pills-recommended"
+                                                aria-selected="false">Recommended</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link course-tab" id="pills-mandatory-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-mandatory" type="button"
+                                                role="tab" aria-controls="pills-mandatory"
+                                                aria-selected="false">Mandatory</button>
+                                        </li>
 
-                                </ul>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle filter" type="button" data-bs-toggle="dropdown"
+                                        id="dropdownMenuButton">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none">
+                                            <path d="M22.1401 3H2.14014L10.1401 12.46V19L14.1401 21V12.46L22.1401 3Z"
+                                                stroke="#768998" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-end d-sect"
+                                        aria-labelledby="dropdownMenuButton">
+                                        <form action="">
+                                            <li class="filter-li">
+                                                <h6 class="dropdown-header ps-0">Filter</h6>
+                                                <input type="reset" class="reset-btn" value="Reset">
+                                            </li>
+                                            <li>
+                                                <div class="accordion" id="accordionExample">
+                                                    <!-- Location filter code -->
+                                                    <div class="accordion-item filter-acdn">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button filter-acdn-btn"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#f-collapseOne" aria-expanded="true"
+                                                                aria-controls="collapseOne">
+                                                                Location
+                                                            </button>
+                                                        </h2>
+                                                        <div id="f-collapseOne" class="accordion-collapse collapse show"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body pt-0">
+                                                                <div class="mb-3">
+                                                                    <input type="text" id="locationSearch"
+                                                                        class="filter-search" placeholder="Search">
+                                                                </div>
+                                                                <div id="locationList">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="asia" name="location"
+                                                                            value="Asia">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="asia">Asia</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="africa" name="location"
+                                                                            value="Africa">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="africa">Africa</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="europe" name="location"
+                                                                            value="Europe">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="europe">Europe</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="america" name="location"
+                                                                            value="America">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="america">America</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="panama" name="location"
+                                                                            value="Panama">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="panama">Panama</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Rank and Position filter code -->
+                                                    <div class="accordion-item filter-acdn">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button filter-acdn-btn"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#f-collapseTwo" aria-expanded="true"
+                                                                aria-controls="collapseOne">
+                                                                Rank/Position
+                                                            </button>
+                                                        </h2>
+                                                        <div id="f-collapseTwo" class="accordion-collapse collapse show"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body pt-0">
+                                                                <div class="mb-3">
+                                                                    <input type="text" id="RankSearch"
+                                                                        class="filter-search" placeholder="Search">
+                                                                </div>
+                                                                <div id="RankList">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="capt" name="rank"
+                                                                            value="Captains/Masters">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="capt">Captains/Masters
+                                                                            <span
+                                                                                class="rank-numbers">(50)</span></label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="officers" name="rank"
+                                                                            value="Officers">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="officers">Officers
+                                                                            <span
+                                                                                class="rank-numbers">(50)</span></label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="ratings" name="rank"
+                                                                            value="Ratings">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="ratings">Ratings<span
+                                                                                class="rank-numbers">(5)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Vessel Type filter code -->
+                                                    <div class="accordion-item filter-acdn">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button filter-acdn-btn"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#f-collapseThree" aria-expanded="true"
+                                                                aria-controls="collapseOne">
+                                                                Vessel Type
+                                                            </button>
+                                                        </h2>
+                                                        <div id="f-collapseThree"
+                                                            class="accordion-collapse collapse show"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body pt-0">
+                                                                <div class="mb-3">
+                                                                    <input type="text" id="VesselSearch"
+                                                                        class="filter-search" placeholder="Search">
+                                                                </div>
+                                                                <div id="VesselList">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="cont" name="vessel"
+                                                                            value="Container">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="cont">Container
+                                                                            <span
+                                                                                class="rank-numbers">(50)</span></label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="tankers" name="vessel"
+                                                                            value="Tankers">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="tankers">Tankers
+                                                                            <span
+                                                                                class="rank-numbers">(50)</span></label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="ratings" name="vessel"
+                                                                            value="Ratings">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="ratings">Ratings<span
+                                                                                class="rank-numbers">(5)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="carriers" name="vessel"
+                                                                            value="Carriers">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="carriers">Bulk
+                                                                            carriers<span
+                                                                                class="rank-numbers">(5)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="ships" name="vessel"
+                                                                            value="Ship">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="ships">Passenger
+                                                                            ships<span class="rank-numbers">(5)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="offshore" name="vessel"
+                                                                            value="Offshore">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="offshore">Offshore
+                                                                            vessels<span class="rank-numbers">(5)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="tanker" name="vessel"
+                                                                            value="Tanker">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="tanker">Tankers<span
+                                                                                class="rank-numbers">(5)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Duration filter code -->
+                                                    <div class="accordion-item filter-acdn">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button filter-acdn-btn"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#f-collapseFour" aria-expanded="true"
+                                                                aria-controls="collapseOne">
+                                                                Duration
+                                                            </button>
+                                                        </h2>
+                                                        <div id="f-collapseFour" class="accordion-collapse collapse"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body pt-0">
+                                                                <div class="mb-3">
+                                                                    <input type="text" id="DurationSearch"
+                                                                        class="filter-search" placeholder="Search">
+                                                                </div>
+                                                                <div id="DurationList">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="d1" name="Duration"
+                                                                            value="D1">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="d1">1
+                                                                            - 10 Days</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="d2" name="Duration"
+                                                                            value="D2">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="d2">10
+                                                                            - 20 Days</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="d3" name="Duration"
+                                                                            value="D3">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="d3">20
+                                                                            - 30 Days </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="d4" name="Duration"
+                                                                            value="D4">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="d4">30
+                                                                            - 40 Days</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="d5" name="Duration"
+                                                                            value="D5">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="d5">40
+                                                                            - 50 Days</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Bridge Watch filter code -->
+                                                    <div class="accordion-item filter-acdn">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button filter-acdn-btn"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#f-collapseFive" aria-expanded="true"
+                                                                aria-controls="collapseOne">
+                                                                Bridge Watch
+                                                            </button>
+                                                        </h2>
+                                                        <div id="f-collapseFive" class="accordion-collapse collapse"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body pt-0">
+                                                                <div class="mb-3">
+                                                                    <input type="text" id="BridgeSearch"
+                                                                        class="filter-search" placeholder="Search">
+                                                                </div>
+                                                                <div id="BridgeList">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="b1" name="Bridge"
+                                                                            value="B1">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="b1">Level 1</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="b2" name="Bridge"
+                                                                            value="B2">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="b2">Level 2</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="b3" name="Bridge"
+                                                                            value="B3">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="b3">Level 3</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Engine Watch filter code -->
+                                                    <div class="accordion-item filter-acdn">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button filter-acdn-btn"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#f-collapseSix" aria-expanded="true"
+                                                                aria-controls="collapseOne">
+                                                                Engine Watch
+                                                            </button>
+                                                        </h2>
+                                                        <div id="f-collapseSix" class="accordion-collapse collapse"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body pt-0">
+                                                                <div class="mb-3">
+                                                                    <input type="text" id="EngineSearch"
+                                                                        class="filter-search" placeholder="Search">
+                                                                </div>
+                                                                <div id="EngineList">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="e1" name="Bridge"
+                                                                            value="E1">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="e1">Level 1</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="e2" name="Bridge"
+                                                                            value="E2">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="e2">Level 2</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="e3" name="Bridge"
+                                                                            value="E3">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="e3">Level 3</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input filter-check"
+                                                                            type="checkbox" id="e4" name="Bridge"
+                                                                            value="E4">
+                                                                        <label class="form-check-label filter-label"
+                                                                            for="e4">Level 4</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </form>
+                                    </div>
                                 </div>
 
                                 <div class="search">
@@ -261,18 +697,20 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
-        
+
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="recommend">
                                                             <label>Recommended</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -290,8 +728,8 @@
                                                             <button class="w-100">Requested</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -313,17 +751,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="recommend">
                                                             <label>Recommended</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -342,8 +782,8 @@
                                                             <button class="accept w-100">Re-Apply</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -365,17 +805,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="recommend">
                                                             <label>Recommended</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -394,8 +836,8 @@
                                                             <button class="accept w-100">Accept</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -417,17 +859,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="mandatory">
                                                             <label>Mandatory</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -446,8 +890,8 @@
                                                             <button class="accept w-100">Accept</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -469,17 +913,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="mandatory">
                                                             <label>Mandatory</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -498,8 +944,8 @@
                                                             <button class="accept w-100">Accept</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -526,18 +972,20 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
-        
+
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="recommend">
                                                             <label>Recommended</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -555,8 +1003,8 @@
                                                             <button class="w-100">Requested</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -578,17 +1026,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="recommend">
                                                             <label>Recommended</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -607,8 +1057,8 @@
                                                             <button class="accept w-100">Re-Apply</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -630,17 +1080,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="recommend">
                                                             <label>Recommended</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -659,8 +1111,8 @@
                                                             <button class="accept w-100">Accept</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -687,17 +1139,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="mandatory">
                                                             <label>Mandatory</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -716,8 +1170,8 @@
                                                             <button class="accept w-100">Accept</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -739,17 +1193,19 @@
                                                                 <h4>Radar Operation and Safety</h4>
                                                             </div>
                                                             <div class="course-description">
-                                                                <p>Understand radar systems to ensure safe navigation at sea.
+                                                                <p>Understand radar systems to ensure safe navigation at
+                                                                    sea.
                                                                 </p>
                                                             </div>
-        
+
                                                         </div>
                                                     </div>
                                                     <div class="card-bottom  d-flex flex-column">
                                                         <div class="mandatory">
                                                             <label>Mandatory</label>
                                                         </div>
-                                                        <div class="reccomendation-course-info d-flex justify-content-between">
+                                                        <div
+                                                            class="reccomendation-course-info d-flex justify-content-between">
                                                             <div class="modeInfo d-flex align-items-center">
                                                                 <img src="images/mode.svg" alt="mode">
                                                                 <span class="mode-hdg ms-2">Online</span>
@@ -768,16 +1224,16 @@
                                                             <button class="accept w-100">Accept</button>
                                                         </div>
                                                     </div>
-        
-        
+
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
-                           
+
                         </div>
 
                     </div>
@@ -787,296 +1243,309 @@
         </div>
     </div>
 
-    <footer class="footer-web">
-        <div class="footerDiv">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                        <div class="brand-logo">
-                            <img src="images/brand-logo.svg" alt="brand-logo" />
-                        </div>
-                        <div class="footer-text">
-                            <p>
-                                We specialize in training in the IT industry and offer you the best in-person and
-                                online seminars, including in areas like
-                                <span class="highlighted-text">Navigation, Safety & Survival, Engineering, Cargo
-                                    Handling,
-                                    Compliance</span>
-                                and many more. We design trainings for individuals, companies and entire teams.
-                            </p>
-                        </div>
-                        <div class="social-media-icon">
-                            <a href=""><img src="images/facebook.svg" alt="fb-icon" /></a>
-                            <a href=""><img src="images/insta.svg" alt="insta-icon" /></a>
-                            <a href=""><img src="images/twitter.svg" alt="twitter-icon" /></a>
-                            <a href=""><img src="images/linkedin.svg" alt="linkedin-icon" /></a>
-
-                        </div>
-                        <div class="payments">
-                            <p>Pay securely with:</p>
-                            <div class="payment-part d-flex align-items-center">
-
-                                <div class="payment-icon">
-                                    <img src="images/visa.svg" alt="" />
-                                </div>
-
-                                <div class="payment-icon">
-                                    <img src="images/mastercard.svg" alt="" />
-                                </div>
-                                <div class="payment-icon">
-                                    <img src="images/maestro.svg" alt="" />
-                                </div>
-                                <div class="payment-icon">
-                                    <img src="images/am-ex.svg" alt="" />
-                                </div>
-                                <div class="payment-icon">
-                                    <img src="images/g-pay.svg" alt="" />
-                                </div>
-                                <div class="payment-icon">
-                                    <img src="images/apple-pay.svg" alt="" />
-                                </div>
-                                <div class="payment-icon">
-                                    <img src="images/klarna.svg" alt="" />
-                                </div>
-                                <div class="payment-icon">
-                                    <img src="images/amazon-pay.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-12">
-                        <div class="footer-right-section">
-                            <div class="right-text-section">
-                                <h6 class="headingText">Navigation</h6>
-                            </div>
-                            <div class="links-part d-none d-lg-block d-md-block">
-                                <div class="row g-4">
-                                    <div class="col-lg-3 col-md-3 col-sm-12">
-                                        <div class="navLinks">
-                                            <ul class="links-ul">
-                                                <li><a href="">Academy</a></li>
-                                                <li><a href="">Enterprise Solutions</a></li>
-                                                <li><a href="">About Us</a></li>
-                                                <li><a href="">Insights</a></li>
-                                                <li><a href="">E-learning</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-9 col-md-9 col-sm-12">
-                                        <div class="nextLinks">
-                                            <a href="">All</a>
-                                            <a href="">iSAQB®</a>
-                                            <a href="">SAFe®</a>
-                                        </div>
-                                        <div class="nextLinks">
-                                            <a href="">Inhouse Training</a>
-                                            <a href="">Customized SAFe Kickstarter</a>
-                                            <a href="">Digital Leaders</a>
-                                        </div>
-                                        <div class="nextLinks">
-                                            <a href="">Who are we?</a>
-                                            <a href="">Our Trainers</a>
-                                            <a href="">References</a>
-                                        </div>
-                                        <div class="nextLinks">
-                                            <a href="">All</a>
-                                            <a href="">Software Architecture</a>
-                                            <a href="">Case Studies</a>
-                                        </div>
-                                        <div class="nextLinks">
-                                            <a href="">Sign-In</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="links-part d-sm-block d-lg-none d-md-none">
-                                <div class="row g-4">
-                                    <div class="col-sm-12">
-                                        <div class="accordion" id="accordionExample">
-                                            <div class="accordion-item footer-adn">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                        aria-expanded="true" aria-controls="collapseOne">
-                                                        Academy
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                                    data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                        <ul class="accd-links">
-                                                            <li><a href="#">All</a></li>
-                                                            <li><a href="#">iSAQB®</a></li>
-                                                            <li><a href="#">SAFe®</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item footer-adn">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                        aria-expanded="false" aria-controls="collapseTwo">
-                                                        Enterprise Solutions
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                        <ul class="accd-links">
-                                                            <li><a href="#">Inhouse Training</a></li>
-                                                            <li><a href="#">Customized SAFe Kickstarter</a></li>
-                                                            <li><a href="#">Digital Leaders</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item footer-adn">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                        aria-expanded="false" aria-controls="collapseThree">
-                                                        About Us
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseThree" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                        <ul class="accd-links">
-                                                            <li><a href="#">Who are we?</a></li>
-                                                            <li><a href="#">Our Trainers</a></li>
-                                                            <li><a href="#">References</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item footer-adn">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                                        aria-expanded="false" aria-controls="collapseFour">
-                                                        Insights
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseFour" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                        <ul class="accd-links">
-                                                            <li><a href="#">All</a></li>
-                                                            <li><a href="#">Software Architecture</a></li>
-                                                            <li><a href="#">Case Studies</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item footer-adn">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                                        aria-expanded="false" aria-controls="collapseFive">
-                                                        E-learning
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseFive" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                        <ul class="accd-links">
-                                                            <li><a href="#">Sign-In</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="inputs-part">
-                                <div class="row g-4">
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <div class="right-text-section">
-                                            <h6 class="headingText">Contact</h6>
-                                        </div>
-                                        <div class="footer-logo-section">
-                                            <div class="logoSect">
-                                                <img src="images/location.svg" alt="location" />
-                                            </div>
-                                            <div class="logoText">Ammerswilerstrasse 19a CH - 5600 Lenzburg</div>
-                                        </div>
-                                        <div class="footer-logo-section">
-                                            <div class="logoSect">
-                                                <img src="images/phone.svg" alt="location" />
-                                            </div>
-                                            <div class="logoText">+91 00000 00000</div>
-                                        </div>
-                                        <div class="footer-logo-section">
-                                            <div class="logoSect">
-                                                <img src="images/email.svg" alt="location" />
-                                            </div>
-                                            <div class="logoText">hello@navlearn.com</div>
-                                        </div>
-                                        <div class="footer-logo-section">
-                                            <div class="logoSect">
-                                                <img src="images/location.svg" alt="location" />
-                                            </div>
-                                            <div class="logoText">Mon - Fri | 09:00 - 17:00</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-md-8 col-sm-12">
-                                        <div class="right-text-section">
-                                            <h6 class="headingText">Subscribe to the Newsletter</h6>
-                                        </div>
-                                        <div class="right-input-section">
-                                            <form action="">
-                                                <div class="inputsect">
-                                                    <input type="email" class="form-control footer-input"
-                                                        placeholder="E-Mail Address" id="InputEmail" />
-                                                </div>
-                                                <div class="formInputDiv d-flex">
-                                                    <div class="mb-3 d-flex gap-2">
-                                                        <input type="checkbox" class="form-check-input check-input"
-                                                            id="inputCheck2" />
-                                                        <label class="form-check-label" for="inputCheck2">I accept the
-                                                            monthly newsletter and
-                                                            getting informational e-mail
-                                                            for the email address provided.<br />
-                                                            <span><a class="terms-link" href="#">Terms of Service</a>
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <button type="submit" class="joinBtn">Join</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="footerBottomSect">
+  <!-- start footer section -->
+  <footer class="footer-web">
+    <div class="footerDiv">
         <div class="container">
-            <div class="row">
-                <div class="cp-sect">
-                    <div class="cp-text">
-                        <p class="mb-0">© Copyright 2024, Navlearn, All Rights Reserved</p>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="footer-left-section">
+                        <div class="footer-logo-img">
+                            <img src="Lms-images/Logo.svg" alt="logoImg">
+                        </div>
+                        <div class="footer-text-part">
+                            <p class="ft-para">We specialize in training in the IT industry and offer you the best
+                                in-person and
+                                online seminars, including in areas like <span class="inner-text">Navigation, Safety
+                                    & Survival,
+                                    Engineering, Cargo Handling, Compliance</span> and many more.
+                                We design trainings for individuals, companies and entire teams.</p>
+                        </div>
+
+                        <div class="footer-logo-part">
+                            <a href="#" class="logoimgDiv">
+                                <img src="Lms-images/fb.svg" alt="fbImg">
+                            </a>
+                            <a href="#" class="logoimgDiv">
+                                <img src="Lms-images/instagram.svg" alt="insImg">
+                            </a>
+                            <a href="#" class="logoimgDiv">
+                                <img src="Lms-images/twitter.svg" alt="tImg">
+                            </a>
+                            <a href="#" class="logoimgDiv">
+                                <img src="Lms-images/linked.svg" alt="lknImg">
+                            </a>
+                        </div>
+
+                        <div class="pay-logo-part">
+                            <p>Pay securely with:</p>
+                            <div class="pay-img-part">
+                                <div class="payimgDiv">
+                                    <img src="Lms-images/Badge6.svg" alt="fbImg">
+                                </div>
+                                <div class="payimgDiv">
+                                    <img src="Lms-images/Badge.svg" alt="insImg">
+                                </div>
+                                <div class="payimgDiv">
+                                    <img src="Lms-images/Badge2.svg" alt="tImg">
+                                </div>
+                                <div class="payimgDiv">
+                                    <img src="Lms-images/Badge7.svg" alt="lknImg">
+                                </div>
+                                <div class="payimgDiv">
+                                    <img src="Lms-images/Badge3.svg" alt="lknImg">
+                                </div>
+                                <div class="payimgDiv">
+                                    <img src="Lms-images/Badge4.svg" alt="lknImg">
+                                </div>
+                                <div class="payimgDiv">
+                                    <img src="Lms-images/Badge8.svg" alt="lknImg">
+                                </div>
+                                <div class="payimgDiv">
+                                    <img src="Lms-images/Badge5.svg" alt="lknImg">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="policySect">
-                        <a href="">Privacy Policy</a>
-                        <a href="" class="ms-4">Terms of Use</a>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12">
+                    <div class="footer-right-section">
+                        <div class="right-text-section">
+                            <h6 class="headingText">Navigation</h6>
+                        </div>
+                        <div class="links-part d-none d-lg-block d-md-block">
+                            <div class="row g-4">
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="navLinks">
+                                        <ul class="links-ul">
+                                            <li><a href="">Academy</a></li>
+                                            <li><a href="">Enterprise Solutions</a></li>
+                                            <li><a href="">About Us</a></li>
+                                            <li><a href="">Insights</a></li>
+                                            <li><a href="">E-learning</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="nextLinks">
+                                        <a href="">All</a>
+                                        <a href="">iSAQB®</a>
+                                        <a href="">SAFe®</a>
+                                    </div>
+                                    <div class="nextLinks">
+                                        <a href="">Inhouse Training</a>
+                                        <a href="">Customized SAFe Kickstarter</a>
+                                        <a href="">Digital Leaders</a>
+                                    </div>
+                                    <div class="nextLinks">
+                                        <a href="">Who are we?</a>
+                                        <a href="">Our Trainers</a>
+                                        <a href="">References</a>
+                                    </div>
+                                    <div class="nextLinks">
+                                        <a href="">All</a>
+                                        <a href="">Software Architecture</a>
+                                        <a href="">Case Studies</a>
+                                    </div>
+                                    <div class="nextLinks">
+                                        <a href="">Sign-In</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="links-part d-sm-block d-lg-none d-md-none">
+                            <div class="row g-4">
+                                <div class="col-sm-12">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item footer-adn">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button footer-acdn-btn" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Academy
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <ul class="accd-links">
+                                                        <li><a href="#">All</a></li>
+                                                        <li><a href="#">iSAQB®</a></li>
+                                                        <li><a href="#">SAFe®</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item footer-adn">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button footer-acdn-btn collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    Enterprise Solutions
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <ul class="accd-links">
+                                                        <li><a href="#">Inhouse Training</a></li>
+                                                        <li><a href="#">Customized SAFe Kickstarter</a></li>
+                                                        <li><a href="#">Digital Leaders</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item footer-adn">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button footer-acdn-btn collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    About Us
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <ul class="accd-links">
+                                                        <li><a href="#">Who are we?</a></li>
+                                                        <li><a href="#">Our Trainers</a></li>
+                                                        <li><a href="#">References</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item footer-adn">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button footer-acdn-btn collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseFour" aria-expanded="false"
+                                                    aria-controls="collapseFour">
+                                                    Insights
+                                                </button>
+                                            </h2>
+                                            <div id="collapseFour" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <ul class="accd-links">
+                                                        <li><a href="#">All</a></li>
+                                                        <li><a href="#">Software Architecture</a></li>
+                                                        <li><a href="#">Case Studies</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item footer-adn">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button footer-acdn-btn collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseFive" aria-expanded="false"
+                                                    aria-controls="collapseFive">
+                                                    E-learning
+                                                </button>
+                                            </h2>
+                                            <div id="collapseFive" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <ul class="accd-links">
+                                                        <li><a href="#">Sign-In</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inputs-part">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="right-text-section">
+                                        <h6 class="headingText">Contact</h6>
+                                    </div>
+                                    <div class="footer-logo-section">
+                                        <div class="logoSect">
+                                            <img src="Lms-images/SVG1.svg" alt="location">
+                                        </div>
+                                        <div class="logoText">Ammerswilerstrasse 19a CH - 5600 Lenzburg</div>
+                                    </div>
+                                    <div class="footer-logo-section">
+                                        <div class="logoSect">
+                                            <img src="Lms-images/SVG2.svg" alt="location">
+                                        </div>
+                                        <div class="logoText">+91 00000 00000</div>
+                                    </div>
+                                    <div class="footer-logo-section">
+                                        <div class="logoSect">
+                                            <img src="Lms-images/SVG3.svg" alt="location">
+                                        </div>
+                                        <div class="logoText">hello@navlearn.com</div>
+                                    </div>
+                                    <div class="footer-logo-section">
+                                        <div class="logoSect">
+                                            <img src="Lms-images/SVG4.svg" alt="location">
+                                        </div>
+                                        <div class="logoText">Mon - Fri | 09:00 - 17:00</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12">
+                                    <div class="right-text-section">
+                                        <h6 class="headingText">Subscribe to the Newsletter</h6>
+                                    </div>
+                                    <div class="right-input-section">
+                                        <form action="">
+                                            <div class="inputsect">
+                                                <input type="email" class="form-control footer-input"
+                                                    placeholder="E-Mail Address" id="InputEmail">
+                                            </div>
+                                            <div class="formInputDiv">
+                                                <div class="mb-3 d-flex gap-2">
+                                                    <input type="checkbox" class="form-check-input check-input"
+                                                        id="inputCheck2">
+                                                    <label class="form-check-label" for="inputCheck2">I accept the
+                                                        monthly newsletter and getting informational e-mail for the
+                                                        email address provided.<br>
+                                                        <span><a class="terms-link" href="#">Terms of Service</a>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <button type="submit" class="joinBtn">Join</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</footer>
+<div class="footerBottomSect">
+    <div class="container">
+        <div class="row">
+            <div class="cp-sect">
+                <div class="cp-text">
+                    <p>© Copyright 2024, Navlearn, All Rights Reserved</p>
+                </div>
+                <div class="policySect">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#" class="ms-4">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end footer section -->
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

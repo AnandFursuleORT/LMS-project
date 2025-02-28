@@ -229,6 +229,5 @@ document.addEventListener("DOMContentLoaded", function () {
             password2.getAttribute("type") === "password" ? "text" : "password";
         password2.setAttribute("type", type);
     });
+
 });
-
-

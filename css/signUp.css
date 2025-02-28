@@ -123,6 +123,11 @@ body {
   height: 20px;
 }
 
+.btn:focus-visible {
+  color: none !important;
+  box-shadow: none !important; 
+}
+
 .icon1 {
   width: 16px;
   height: 16px;

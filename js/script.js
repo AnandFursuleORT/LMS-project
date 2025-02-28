@@ -1,9 +1,22 @@
-
 document.querySelectorAll('.dropdown-menu').forEach(item => {
     item.addEventListener('click', function (e) {
         e.stopPropagation();
     });
 });
+
+
+// ========================= Notifications js code ====================================
+
+//  Prevent dropdown from closing when clicking inside (including notifications)
+document.querySelector(".dropdown-menu").addEventListener("click", function (event) {
+    event.stopPropagation();
+});
+
+// Remove only the clicked notification, dropdown stays open
+function removeNotification(event, button) {
+    event.stopPropagation(); // Prevent Bootstrap from closing the dropdown
+    button.closest(".notification-item").remove();
+}
 
 // Filter Dropdown code
 
@@ -35,3 +48,4 @@ setupSearchAndCheckboxBehavior('VesselSearch', 'VesselList');
 setupSearchAndCheckboxBehavior('DurationSearch', 'DurationList');
 setupSearchAndCheckboxBehavior('BridgeSearch', 'BridgeList');
 setupSearchAndCheckboxBehavior('EngineSearch', 'EngineList');
+

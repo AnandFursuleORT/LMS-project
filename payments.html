@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
 </head>
 
 <body>
@@ -89,9 +90,56 @@
           <form class="d-flex" role="search">
             <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
           </form>
-          <div class="notify">
-            <a href="#"><img src="images/bell.svg" alt=""></a>
+          <div class="save-later ms-2">
+            <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg"
+                    alt="bookmark-icon"></a>
+        </div>
+          <div class="notify dropdown">
+            <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              aria-expanded="false">
+              <img src="images/bell.svg" alt="">
+            </button>
 
+            <ul class="dropdown-menu notification-dropdown dropdown-menu-end" aria-labelledby="notificationDropdown">
+              <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                <span class="fw-bold nt-hdg">Notifications</span>
+                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+              </li>
+
+              <li class="notification-item">
+                <div class="icon-nt"></div>
+                <div class="notification-text flex-grow-1">
+                  <h6 class="fw-bold">Add templates</h6>
+                  <p>To start work with data, please create your first components templates.</p>
+                </div>
+                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                  <img src="images/cancel-cross.svg" alt="close">
+                </button>
+              </li>
+
+              <li class="notification-item mt-2">
+                <div class="icon-nt"></div>
+                <div class="notification-text flex-grow-1">
+                  <h6 class="fw-bold">Add templates</h6>
+                  <p>To start work with data, please create your first components templates.</p>
+                </div>
+                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                  <img src="images/cancel-cross.svg" alt="close">
+                </button>
+              </li>
+
+              <li class="notification-item mt-2">
+                <div class="icon-nt"></div>
+                <div class="notification-text flex-grow-1">
+                  <h6 class="fw-bold">Add templates</h6>
+                  <p>To start work with data, please create your first components templates.</p>
+                  <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                </div>
+                <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                  <img src="images/cancel-cross.svg" alt="close">
+                </button>
+              </li>
+            </ul>
           </div>
           <div class="profile-div  d-flex align-items-center">
             <img src="images/profile-photo.svg" class="prof-img" alt="profile">
@@ -109,7 +157,7 @@
                 </a>
 
                 <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
-                  <li><a class="dropdown-item" href="general.html">Settings</a></li>
+                  <li><a class="dropdown-item" href="general.html" target="_blank">Settings</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
@@ -211,7 +259,7 @@
                       <h6>customer@navlearn.com</h6>
                     </div>
                     <div class="card-expiry">
-                      <p>Expiry 06/08/2025</p>
+                      <p class="mb-0">Expiry 06/08/2025</p>
                     </div>
                   </div>
 
@@ -243,27 +291,9 @@
               </div>
 
               <div class="payment-history-btn d-flex gap-2">
-                <div class="filter-btn position-relative">
-                  <button class=" dropdown-toggle" id="filterButton" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="images/filter.svg" alt="filter-icon">
-                  </button>
-                  
-                  <!-- Dropdown Menu -->
-                  <ul class="dropdown-menu" aria-labelledby="filterButton" id="monthDropdown">
-                      <li><a class="dropdown-item" href="#">January</a></li>
-                      <li><a class="dropdown-item" href="#">February</a></li>
-                      <li><a class="dropdown-item" href="#">March</a></li>
-                      <li><a class="dropdown-item" href="#">April</a></li>
-                      <li><a class="dropdown-item" href="#">May</a></li>
-                      <li><a class="dropdown-item" href="#">June</a></li>
-                      <li><a class="dropdown-item" href="#">July</a></li>
-                      <li><a class="dropdown-item" href="#">August</a></li>
-                      <li><a class="dropdown-item" href="#">September</a></li>
-                      <li><a class="dropdown-item" href="#">October</a></li>
-                      <li><a class="dropdown-item" href="#">November</a></li>
-                      <li><a class="dropdown-item" href="#">December</a></li>
-                  </ul>
-              </div>
+
+                <input id='calendar' type="text" placeholder="MMM-YYYY" />
+
                 <div class="payment-history-download-btn">
                   <a href="#" role="button"><img src="images/download.svg" class="me-2" alt="download-icon">
                     Download All
@@ -397,282 +427,307 @@
     </div>
   </div>
 
-  <footer class="footer-web">
-    <div class="footerDiv">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-12">
-            <div class="brand-logo">
-              <img src="images/brand-logo.svg" alt="brand-logo" />
-            </div>
-            <div class="footer-text">
-              <p>
-                We specialize in training in the IT industry and offer you the best in-person and
-                online seminars, including in areas like
-                <span class="highlighted-text">Navigation, Safety & Survival, Engineering, Cargo Handling,
-                  Compliance</span>
-                and many more. We design trainings for individuals, companies and entire teams.
-              </p>
-            </div>
-            <div class="social-media-icon">
-              <a href=""><img src="images/facebook.svg" alt="fb-icon" /></a>
-              <a href=""><img src="images/insta.svg" alt="insta-icon" /></a>
-              <a href=""><img src="images/twitter.svg" alt="twitter-icon" /></a>
-              <a href=""><img src="images/linkedin.svg" alt="linkedin-icon" /></a>
-
-            </div>
-            <div class="payments">
-              <p>Pay securely with:</p>
-              <div class="payment-part d-flex align-items-center">
-
-                <div class="payment-icon">
-                  <img src="images/visa.svg" alt="" />
-                </div>
-
-                <div class="payment-icon">
-                  <img src="images/mastercard.svg" alt="" />
-                </div>
-                <div class="payment-icon">
-                  <img src="images/maestro.svg" alt="" />
-                </div>
-                <div class="payment-icon">
-                  <img src="images/am-ex.svg" alt="" />
-                </div>
-                <div class="payment-icon">
-                  <img src="images/g-pay.svg" alt="" />
-                </div>
-                <div class="payment-icon">
-                  <img src="images/apple-pay.svg" alt="" />
-                </div>
-                <div class="payment-icon">
-                  <img src="images/klarna.svg" alt="" />
-                </div>
-                <div class="payment-icon">
-                  <img src="images/amazon-pay.svg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-9 col-md-9 col-sm-12">
-            <div class="footer-right-section">
-              <div class="right-text-section">
-                <h6 class="headingText">Navigation</h6>
-              </div>
-              <div class="links-part d-none d-lg-block d-md-block">
+  <!-- start footer section -->
+    <footer class="footer-web">
+        <div class="footerDiv">
+            <div class="container">
                 <div class="row g-4">
-                  <div class="col-lg-3 col-md-3 col-sm-12">
-                    <div class="navLinks">
-                      <ul class="links-ul">
-                        <li><a href="">Academy</a></li>
-                        <li><a href="">Enterprise Solutions</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Insights</a></li>
-                        <li><a href="">E-learning</a></li>
-                      </ul>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer-left-section">
+                            <div class="footer-logo-img">
+                                <img src="Lms-images/Logo.svg" alt="logoImg">
+                            </div>
+                            <div class="footer-text-part">
+                                <p class="ft-para">We specialize in training in the IT industry and offer you the best
+                                    in-person and
+                                    online seminars, including in areas like <span class="inner-text">Navigation, Safety
+                                        & Survival,
+                                        Engineering, Cargo Handling, Compliance</span> and many more.
+                                    We design trainings for individuals, companies and entire teams.</p>
+                            </div>
+ 
+                            <div class="footer-logo-part">
+                                <a href="#" class="logoimgDiv">
+                                    <img src="Lms-images/fb.svg" alt="fbImg">
+                                </a>
+                                <a href="#" class="logoimgDiv">
+                                    <img src="Lms-images/instagram.svg" alt="insImg">
+                                </a>
+                                <a href="#" class="logoimgDiv">
+                                    <img src="Lms-images/twitter.svg" alt="tImg">
+                                </a>
+                                <a href="#" class="logoimgDiv">
+                                    <img src="Lms-images/linked.svg" alt="lknImg">
+                                </a>
+                            </div>
+ 
+                            <div class="pay-logo-part">
+                                <p>Pay securely with:</p>
+                                <div class="pay-img-part">
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge6.svg" alt="fbImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge.svg" alt="insImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge2.svg" alt="tImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge7.svg" alt="lknImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge3.svg" alt="lknImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge4.svg" alt="lknImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge8.svg" alt="lknImg">
+                                    </div>
+                                    <div class="payimgDiv">
+                                        <img src="Lms-images/Badge5.svg" alt="lknImg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-lg-9 col-md-9 col-sm-12">
-                    <div class="nextLinks">
-                      <a href="">All</a>
-                      <a href="">iSAQB®</a>
-                      <a href="">SAFe®</a>
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <div class="footer-right-section">
+                            <div class="right-text-section">
+                                <h6 class="headingText">Navigation</h6>
+                            </div>
+                            <div class="links-part d-none d-lg-block d-md-block">
+                                <div class="row g-4">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <div class="navLinks">
+                                            <ul class="links-ul">
+                                                <li><a href="">Academy</a></li>
+                                                <li><a href="">Enterprise Solutions</a></li>
+                                                <li><a href="">About Us</a></li>
+                                                <li><a href="">Insights</a></li>
+                                                <li><a href="">E-learning</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-12">
+                                        <div class="nextLinks">
+                                            <a href="">All</a>
+                                            <a href="">iSAQB®</a>
+                                            <a href="">SAFe®</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">Inhouse Training</a>
+                                            <a href="">Customized SAFe Kickstarter</a>
+                                            <a href="">Digital Leaders</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">Who are we?</a>
+                                            <a href="">Our Trainers</a>
+                                            <a href="">References</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">All</a>
+                                            <a href="">Software Architecture</a>
+                                            <a href="">Case Studies</a>
+                                        </div>
+                                        <div class="nextLinks">
+                                            <a href="">Sign-In</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+ 
+                            <div class="links-part d-sm-block d-lg-none d-md-none">
+                                <div class="row g-4">
+                                    <div class="col-sm-12">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        Academy
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">All</a></li>
+                                                            <li><a href="#">iSAQB®</a></li>
+                                                            <li><a href="#">SAFe®</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false"
+                                                        aria-controls="collapseTwo">
+                                                        Enterprise Solutions
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">Inhouse Training</a></li>
+                                                            <li><a href="#">Customized SAFe Kickstarter</a></li>
+                                                            <li><a href="#">Digital Leaders</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                                        aria-controls="collapseThree">
+                                                        About Us
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">Who are we?</a></li>
+                                                            <li><a href="#">Our Trainers</a></li>
+                                                            <li><a href="#">References</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                                        aria-controls="collapseFour">
+                                                        Insights
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">All</a></li>
+                                                            <li><a href="#">Software Architecture</a></li>
+                                                            <li><a href="#">Case Studies</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item footer-adn">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button footer-acdn-btn collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                                        aria-controls="collapseFive">
+                                                        E-learning
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFive" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="accd-links">
+                                                            <li><a href="#">Sign-In</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+ 
+                            <div class="inputs-part">
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="right-text-section">
+                                            <h6 class="headingText">Contact</h6>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="Lms-images/SVG1.svg" alt="location">
+                                            </div>
+                                            <div class="logoText">Ammerswilerstrasse 19a CH - 5600 Lenzburg</div>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="Lms-images/SVG2.svg" alt="location">
+                                            </div>
+                                            <div class="logoText">+91 00000 00000</div>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="Lms-images/SVG3.svg" alt="location">
+                                            </div>
+                                            <div class="logoText">hello@navlearn.com</div>
+                                        </div>
+                                        <div class="footer-logo-section">
+                                            <div class="logoSect">
+                                                <img src="Lms-images/SVG4.svg" alt="location">
+                                            </div>
+                                            <div class="logoText">Mon - Fri | 09:00 - 17:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12">
+                                        <div class="right-text-section">
+                                            <h6 class="headingText">Subscribe to the Newsletter</h6>
+                                        </div>
+                                        <div class="right-input-section">
+                                            <form action="">
+                                                <div class="inputsect">
+                                                    <input type="email" class="form-control footer-input"
+                                                        placeholder="E-Mail Address" id="InputEmail">
+                                                </div>
+                                                <div class="formInputDiv">
+                                                    <div class="mb-3 d-flex gap-2">
+                                                        <input type="checkbox" class="form-check-input check-input"
+                                                            id="inputCheck2">
+                                                        <label class="form-check-label" for="inputCheck2">I accept the
+                                                            monthly newsletter and getting informational e-mail for the
+                                                            email address provided.<br>
+                                                            <span><a class="terms-link" href="#">Terms of Service</a>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <button type="submit" class="joinBtn">Join</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="nextLinks">
-                      <a href="">Inhouse Training</a>
-                      <a href="">Customized SAFe Kickstarter</a>
-                      <a href="">Digital Leaders</a>
-                    </div>
-                    <div class="nextLinks">
-                      <a href="">Who are we?</a>
-                      <a href="">Our Trainers</a>
-                      <a href="">References</a>
-                    </div>
-                    <div class="nextLinks">
-                      <a href="">All</a>
-                      <a href="">Software Architecture</a>
-                      <a href="">Case Studies</a>
-                    </div>
-                    <div class="nextLinks">
-                      <a href="">Sign-In</a>
-                    </div>
-                  </div>
                 </div>
-              </div>
-
-              <div class="links-part d-sm-block d-lg-none d-md-none">
-                <div class="row g-4">
-                  <div class="col-sm-12">
-                    <div class="accordion" id="accordionExample">
-                      <div class="accordion-item footer-adn">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Academy
-                          </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show"
-                          data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ul class="accd-links">
-                              <li><a href="#">All</a></li>
-                              <li><a href="#">iSAQB®</a></li>
-                              <li><a href="#">SAFe®</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item footer-adn">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Enterprise Solutions
-                          </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ul class="accd-links">
-                              <li><a href="#">Inhouse Training</a></li>
-                              <li><a href="#">Customized SAFe Kickstarter</a></li>
-                              <li><a href="#">Digital Leaders</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item footer-adn">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            About Us
-                          </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ul class="accd-links">
-                              <li><a href="#">Who are we?</a></li>
-                              <li><a href="#">Our Trainers</a></li>
-                              <li><a href="#">References</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item footer-adn">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Insights
-                          </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ul class="accd-links">
-                              <li><a href="#">All</a></li>
-                              <li><a href="#">Software Architecture</a></li>
-                              <li><a href="#">Case Studies</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item footer-adn">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            E-learning
-                          </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ul class="accd-links">
-                              <li><a href="#">Sign-In</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="inputs-part">
-                <div class="row g-4">
-                  <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="right-text-section">
-                      <h6 class="headingText">Contact</h6>
-                    </div>
-                    <div class="footer-logo-section">
-                      <div class="logoSect">
-                        <img src="images/location.svg" alt="location" />
-                      </div>
-                      <div class="logoText">Ammerswilerstrasse 19a CH - 5600 Lenzburg</div>
-                    </div>
-                    <div class="footer-logo-section">
-                      <div class="logoSect">
-                        <img src="images/phone.svg" alt="location" />
-                      </div>
-                      <div class="logoText">+91 00000 00000</div>
-                    </div>
-                    <div class="footer-logo-section">
-                      <div class="logoSect">
-                        <img src="images/email.svg" alt="location" />
-                      </div>
-                      <div class="logoText">hello@navlearn.com</div>
-                    </div>
-                    <div class="footer-logo-section">
-                      <div class="logoSect">
-                        <img src="images/location.svg" alt="location" />
-                      </div>
-                      <div class="logoText">Mon - Fri | 09:00 - 17:00</div>
-                    </div>
-                  </div>
-                  <div class="col-lg-8 col-md-8 col-sm-12">
-                    <div class="right-text-section">
-                      <h6 class="headingText">Subscribe to the Newsletter</h6>
-                    </div>
-                    <div class="right-input-section">
-                      <form action="">
-                        <div class="inputsect">
-                          <input type="email" class="form-control footer-input" placeholder="E-Mail Address"
-                            id="InputEmail" />
-                        </div>
-                        <div class="formInputDiv d-flex">
-                          <div class="mb-3 d-flex gap-2">
-                            <input type="checkbox" class="form-check-input check-input" id="inputCheck2" />
-                            <label class="form-check-label" for="inputCheck2">I accept the monthly newsletter and
-                              getting informational e-mail
-                              for the email address provided.<br />
-                              <span><a class="terms-link" href="#">Terms of Service</a> </span>
-                            </label>
-                          </div>
-                          <div class="mb-3">
-                            <button type="submit" class="joinBtn">Join</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </footer>
-  <div class="footerBottomSect">
-    <div class="container">
-      <div class="row">
-        <div class="cp-sect">
-          <div class="cp-text">
-            <p class="mb-0">© Copyright 2024, Navlearn, All Rights Reserved</p>
-          </div>
-          <div class="policySect">
-            <a href="">Privacy Policy</a>
-            <a href="" class="ms-4">Terms of Use</a>
-          </div>
+    </footer>
+    <div class="footerBottomSect">
+        <div class="container">
+            <div class="row">
+                <div class="cp-sect">
+                    <div class="cp-text">
+                        <p>© Copyright 2024, Navlearn, All Rights Reserved</p>
+                    </div>
+                    <div class="policySect">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#" class="ms-4">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="modal" id="delete_account" tabindex="-1">
+    <!-- end footer section -->
+   <div class="modal" id="delete_account" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
@@ -690,17 +745,59 @@
   </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://jsuites.net/v4/jsuites.js"></script>
+  <script src="js/script.js"></script>
 
-    <!-- script for filter dropdown -->
+  <!-- Month and Year Filter  -->
 
   <script>
-    document.querySelectorAll("#monthDropdown .dropdown-item").forEach(item => {
-        item.addEventListener("click", function () {
-            document.getElementById("filterButton").innerHTML = 
-                '<img src="images/filter.svg" alt="filter-icon"> ' + this.innerText;
-        });
+    document.addEventListener("DOMContentLoaded", function () {
+      let calendarInput = document.getElementById("calendar");
+      let calendarInstance = null;
+
+      calendarInstance = jSuites.calendar(calendarInput, {
+        type: "year-month-picker",
+        format: "MMM-YYYY",
+        position: "top", // Controls where the calendar appears relative to input
+        opened: false, // Keep track of open state
+
+        onopen: function (instance) {
+          let calendarContainer = instance.calendar;
+          document.body.appendChild(calendarContainer); // Move calendar to body
+
+          updateCalendarPosition(calendarContainer);
+
+          // Prevent the calendar from moving when scrolling
+          window.addEventListener("scroll", function () {
+            if (calendarInstance.opened) {
+              updateCalendarPosition(calendarContainer);
+            }
+          });
+        },
+
+        onclose: function () {
+          calendarInstance.opened = false; // Mark as closed
+          if (!calendarInput.value) {
+            calendarInput.placeholder = "MMM-YYYY"; // Reset placeholder if empty
+          }
+        },
+      });
+
+      // Function to update the calendar position
+      function updateCalendarPosition(calendarContainer) {
+        let rect = calendarInput.getBoundingClientRect();
+        calendarContainer.style.position = "fixed"; // Keep it fixed
+        calendarContainer.style.top = `${rect.bottom}px`;
+        calendarContainer.style.left = `${rect.left}px`;
+        calendarContainer.style.zIndex = "9999"; // Ensure it stays on top
+      }
+
+      // Ensure placeholder remains visible on page load if empty
+      if (!calendarInput.value) {
+        calendarInput.placeholder = "MMM-YYYY";
+      }
     });
-</script>
+  </script>
 </body>
 
 </html>
