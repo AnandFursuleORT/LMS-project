@@ -1993,9 +1993,9 @@ Course List page CSS
 .strike-price {
     color: #94A3AF;
     font-family: "Plus Jakarta Sans";
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 30px;
     text-decoration: line-through;
 }
 
@@ -2911,7 +2911,7 @@ li::marker {
     font-family: "Plus Jakarta Sans";
     font-size: 22px;
     font-weight: 700;
-    line-height: 38px;
+    line-height: 30px;
 }
 
 .dis-offer {

@@ -226,43 +226,44 @@
         font-size: 16px;
         line-height: 22px;
     }
-
-
 }
-
-
-
-@media screen and (min-width: 1280px) and (max-width: 1600px) {}
-
-@media (min-width: 1600px) {
-    .custom-col {
-        flex: 0 0 33.3333% !important;
-        /* Equivalent to col-4 (4/12 columns) */
-        max-width: 33.3333% !important;
-    }
-}
-
 
 @media screen and (min-width: 1620px) {
+    .custom-col {
+        flex: 0 0 33.3333% !important;
+        max-width: 33.3333% !important;
+    }
 
-    .strike-price {
-        font-size: 20px;
-        line-height: 28px;
+    .course-Enroll-btn a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .price {
+        gap: 8px;
+    }
+
+    .course-info {
+        padding: 18px;
     }
 
     .main-price {
         font-size: 20px;
         line-height: 28px;
     }
-    .price {
-        gap: 8px !important;
-    }
+
     .course-info {
         padding: 18px;
     }
+
     .course-Enroll-btn a {
         font-size: 12px;
         padding: 6px 10px;
+    }
+
+    .strike-price {
+        font-size: 20px;
+        line-height: 28px;
     }
 }
 
