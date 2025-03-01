@@ -2174,7 +2174,7 @@ table td a {
 
 .btn-savechanges {
     padding: 12px 16px;
-    background-color: #43A9FB;
+    background-color: #03599F;
     color: #FAFBFB;
     border-radius: 12px;
     border: none;
@@ -2186,15 +2186,11 @@ table td a {
 }
 
 .btn-savechanges:hover {
-    background-color: #6ABBFC;
+    background-color: #03599ff0;
 }
 
 .btn-savechanges:active {
-    background-color: #1D97FB;
-}
-
-.btn-savechanges:disabled {
-    background-color: #A4D5FD;
+    background-color: #03599F;
 }
 
 .footer-btn {
@@ -2213,16 +2209,13 @@ table td a {
 
 .modal-body {
     padding: 32px;
-
 }
-
 
 .modal-body h5 {
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;
     color: #01233F;
-
 }
 
 .modal-body p {
@@ -2230,7 +2223,6 @@ table td a {
     line-height: 24px;
     font-size: 500;
     color: #768897;
-
 }
 
 .modal-btn {
@@ -2419,9 +2411,6 @@ table td a {
     color: #768897;
 }
 
-
-
-
 .input-group.privacy input {
 
     border-radius: 8px;
@@ -2459,7 +2448,7 @@ table td a {
 
 .enable-btn button {
     padding: 12px 16px;
-    background-color: #43A9FB;
+    background-color: #03599F;
     color: #FAFBFB;
     font-size: 16px;
     font-weight: 700;
@@ -2470,20 +2459,14 @@ table td a {
 }
 
 .enable-btn button:hover {
-    background-color: #6ABBFC;
+    background-color: #03599ff0;
 }
 
 .enable-btn button:active {
-    background-color: #1D97FB;
+    background-color: #03599F;
 }
-
-.enable-btn button:disabled {
-    background-color: #A4D5FD;
-}
-
 
 /* Notification */
-
 
 .notification-section-one,
 .notification-section-two,
@@ -2506,9 +2489,7 @@ table td a {
     line-height: 20px;
     font-weight: 500;
     color: #768897;
-
 }
-
 
 .notification {
     display: flex;
@@ -2528,7 +2509,6 @@ table td a {
     font-weight: 500;
     color: #01233F;
 }
-
 
 .form-switch.form-check-input {
     height: 20px;
@@ -2552,13 +2532,11 @@ table td a {
     border-bottom: 1px solid #DEE2E6;
 }
 
-
 /* Devices & Activities */
 
 .devices-activities-section-one {
     padding: 24px;
     border-bottom: 1px solid #DEE2E6;
-
 }
 
 .devices-activities-text h5 {
@@ -2574,11 +2552,7 @@ table td a {
     line-height: 20px;
     font-weight: 500;
     color: #768897;
-
 }
-
-
-
 
 .session-container {
     display: flex;
@@ -2586,8 +2560,6 @@ table td a {
     justify-content: space-between;
     max-width: 500px;
     margin-bottom: 24px;
-
-
 }
 
 .browser-icon {
@@ -3156,20 +3128,12 @@ table td a {
     line-height: 28px;
 }
 
-.accordion-item:first-of-type {
-    border-radius: 0 !important;
-}
-
-.accordion-item:last-of-type {
-    border-radius: 0 !important;
-}
-
 .form-check-input:checked {
     background-color: #011B30 !important;
 }
 
 .billing-select {
-    border: 1px solid #011B30 !important;
+    border: 1px solid #DEE2E6 !important;
     padding: 6px 12px !important;
     border-radius: 8px;
 }
@@ -3206,13 +3170,15 @@ table td a {
 }
 
 .pay-img {
-    border: 1px solid #d1d2e0;
+    border: 1px solid #DEE2E6;
     border-radius: 4px;
     background: #fff;
 }
+
 .pay-img2 {
     border-radius: 6px;
 }
+
 .upi-label {
     color: #011B30;
     font-family: "Raleway", serif;
@@ -3228,27 +3194,27 @@ table td a {
 }
 
 .upi-tabs-sect {
-    border: 1px solid #DEE3E6;
-    border-radius: 6px;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
     gap: 8px;
     flex-wrap: nowrap !important;
 }
 
 .upi-tab-btn {
     border: 0;
-    border-radius: 6px;
+    border-radius: 8px;
     color: #011B30 !important;
     font-weight: 500;
     text-align: center;
 }
 
 .nav-pills .upi-tab-btn.active {
-    background-color: #43A9FB !important;
-    border: 1px solid #01233F !important;
+    background-color: #03599F !important;
+    border: 1px solid #000910 !important;
 }
 
 .nav-pills .upi-tab-btn:hover {
-    background-color: #43A9FB !important;
+    background-color: #03599F !important;
 }
 
 .content-seperator {
@@ -3261,7 +3227,7 @@ table td a {
 }
 
 .content-seperator:before {
-    background: #e6e9eb;
+    background: #DDEFFE;
     content: "";
     display: block;
     height: 1px;
@@ -3270,7 +3236,7 @@ table td a {
 }
 
 .content-seperator:after {
-    background: #e6e9eb;
+    background: #DDEFFE;
     content: "";
     display: block;
     height: 1px;
@@ -3291,7 +3257,7 @@ table td a {
 }
 
 .upi-input {
-    border: 1px solid #011B30 !important;
+    border: 1px solid #DEE2E6 !important;
 }
 
 .upi-id-para {
@@ -3317,7 +3283,7 @@ table td a {
     font-size: 18px;
     line-height: 32px;
     font-weight: 600;
-    font-family: "Raleway", serif ;
+    font-family: "Raleway", serif;
     color: #011b30;
 }
 
@@ -3337,6 +3303,7 @@ table td a {
     font-weight: 700;
     line-height: 32px;
 }
+
 .order-details div {
     display: flex;
     justify-content: space-between;
@@ -3347,36 +3314,36 @@ table td a {
     font-weight: 700;
     font-size: 24px;
 }
+
 .terms {
     font-size: 14px;
-    color: gray;
+    color: #4C4C4C;
     margin-top: 10px;
 }
 
 .terms a {
-    color: #6a0dad;
+    color: #03599F;
     text-decoration: none;
 }
 
 .pay-btn {
     width: 100%;
-    background: #6a0dad;
-    color: white;
+    background-color: #03599F;
+    color: #FAFBFB;
     padding: 12px;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 8px;
     margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    text-decoration: none;
 }
 
 .pay-btn:hover {
-    background: #5a009a;
+    background-color: #03599ff0;
 }
 
 .lock-icon {
@@ -3400,9 +3367,11 @@ table td a {
     border: none;
     font-size: 16px;
 }
+
 .card-input {
     position: relative;
 }
+
 .card-icon {
     position: absolute;
     right: 10px;
@@ -3411,12 +3380,13 @@ table td a {
     width: 30px;
     opacity: 0.5;
 }
+
 .card-icons img {
     width: 40px;
 }
 
 .onlineBanking {
-    border: 1px solid #011B30 !important;
+    border: 1px solid #DEE2E6 !important;
     padding: 6px 12px !important;
     border-radius: 8px;
 }
