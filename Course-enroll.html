@@ -120,8 +120,8 @@
         </div>
         <!-- Main Navbar section  -->
         <nav class="navbar navbar-expand-md nav-main">
-            <div class="container">
-                <a class="navbar-brand" href="index2.html"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
+            <div class="container p-0">
+                <a class="navbar-brand" href="index.html"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -195,6 +195,10 @@
                     <form class="d-flex" role="search">
                         <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
                     </form>
+                    <div class="save-later ms-2">
+                        <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg"
+                                alt="bookmark-icon"></a>
+                    </div>
                     <div class="notify dropdown ms-2">
                         <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
                             data-bs-auto-close="outside" aria-expanded="false">
@@ -258,10 +262,10 @@
                                     </div>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
-                                    <li><a class="dropdown-item menu-item" href="general.html" target="_blank">Settings</a></li>
-                                    <li><a class="dropdown-item menu-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item menu-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu dropMenu  dropdown-menu-lg-end">
+                                    <li><a class="dropdown-item" href="general.html" target="_blank">Setting</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1995,6 +1999,36 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+    <!-- // ========================= Course Enroll Timer js code ==================================== -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let timeElements = document.querySelectorAll(".course-day1");
+
+            let totalSeconds = 364 * 24 * 60 * 60 + 24 * 60 * 60 + 60 * 60 + 40; // Corrected total seconds calculation
+
+            function updateTimer() {
+                let days = Math.floor(totalSeconds / (24 * 60 * 60));
+                let hours = Math.floor((totalSeconds % (24 * 60 * 60)) / (60 * 60));
+                let minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+                let seconds = totalSeconds % 60;
+
+                timeElements[0].textContent = days;
+                timeElements[1].textContent = hours;
+                timeElements[2].textContent = minutes;
+                timeElements[3].textContent = seconds;
+
+                if (totalSeconds > 0) {
+                    totalSeconds--;
+                }
+            }
+
+            updateTimer(); // Initial call to set the timer immediately
+            setInterval(updateTimer, 1000); // Update timer every second
+        });
+
+    </script>
 </body>
 
 </html>

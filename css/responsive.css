@@ -5,7 +5,7 @@
 
     .candidate-panel-div a {
         padding: 10px 16px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .heroSection {
@@ -338,9 +338,12 @@
     }
 
     .save-btn {
-        padding: 10px 18px;
         font-size: 14px;
     }
+
+    .btns-div a {
+        font-size: 14px;
+    } 
 
     .pre-content {
         padding: 12px;

@@ -48,3 +48,4 @@ setupSearchAndCheckboxBehavior('VesselSearch', 'VesselList');
 setupSearchAndCheckboxBehavior('DurationSearch', 'DurationList');
 setupSearchAndCheckboxBehavior('BridgeSearch', 'BridgeList');
 setupSearchAndCheckboxBehavior('EngineSearch', 'EngineList');
+

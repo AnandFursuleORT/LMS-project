@@ -14,7 +14,7 @@
     src: url('/fonts/ESRebondGrotesqueTRIAL-Medium-BF6618904088566.otf') format('truetype');
     src: url('/fonts/ESRebondGrotesqueTRIAL-Semibold-BF66189040640ea.otf') format('truetype');
 }
-
+ 
 
 
 html,
@@ -45,7 +45,6 @@ img {
     border-radius: 8px;
     background-color: transparent !important;
 }
-
 .save-later {
     padding: 12px;
     border: 1px solid #DEE3E6;
@@ -2904,6 +2903,8 @@ li::marker {
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .dis-price {
     color: #011B30;

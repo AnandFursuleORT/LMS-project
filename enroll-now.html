@@ -105,7 +105,7 @@
                             aria-labelledby="notificationDropdown">
                             <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
                                 <span class="fw-bold nt-hdg">Notifications</span>
-                                <a href="notification.html" class="nt-view-text text-decoration-none">View All</a>
+                                <a href="notification.html" target="_blank" class="nt-view-text text-decoration-none">View All</a>
                             </li>
 
                             <li class="notification-item">
@@ -203,7 +203,7 @@
                                 <div class="col-6">
                                     <label class="form-label input-label mb-0">Country</label>
                                     <div class="billing-select d-flex align-items-center">
-                                        <img src="images/globe1.svg" alt="globe-icon" class="language-icon">
+                                        <img src="images/globe.svg" alt="globe-icon" class="language-icon">
                                         <select id="language-select" class="form-select">
                                             <option value="India" selected>India</option>
                                             <option value="Austalia">Austalia</option>
@@ -256,7 +256,7 @@
                                     <h2 class="accordion-header payment-accordion d-flex align-items-center gap-2">
                                         <input class="form-check-input mt-0" type="radio" name="payment" id="upi"
                                             data-bs-toggle="collapse" data-bs-target="#upiCollapse" checked>
-                                        <img src="images/upi.svg" height="45" width="60" alt="upi-icon">
+                                        <img class="pay-img" src="images/upi.svg" height="30" width="40" alt="upi-icon">
                                         <label class="form-check-label upi-label" for="upi">UPI</label>
                                     </h2>
                                     <div id="upiCollapse" class="accordion-collapse collapse show"
@@ -280,10 +280,14 @@
                                                 <div class="tab-pane fade show active" id="pills-QR" role="tabpanel"
                                                     aria-labelledby="pills-QR-tab" tabindex="0">
                                                     <div class="content-seperator my-4">Complete your payment</div>
-                                                    <p class="qr-para">Click the "Proceed" button to generate a QR code
-                                                        for UPI payment.
-                                                    </p>
+                                                    <p class="qr-para">Click the "Pay" button to generate a QR code for
+                                                        UPI payment.</p>
+
+                                                    <!-- Placeholder div for QR Code and additional content -->
+                                                    <div id="qrCodeContainer"></div>
                                                 </div>
+
+
                                                 <div class="tab-pane fade" id="pills-enterUPI" role="tabpanel"
                                                     aria-labelledby="pills-enterUPI-tab" tabindex="0">
                                                     <div class="content-seperator my-4">Complete your payment</div>
@@ -306,21 +310,67 @@
                                 </div>
                                 <!-- Cards -->
                                 <div class="accordion-item">
-                                    <h2
-                                        class="accordion-header payment-accordion">
+                                    <h2 class="accordion-header payment-accordion">
                                         <div class="cards-left d-flex align-items-center gap-2">
                                             <input class="form-check-input mt-0" type="radio" name="payment" id="cards"
                                                 data-bs-toggle="collapse" data-bs-target="#cardsCollapse">
-                                            <img src="images/card-default.svg" alt="upiCard" height="40" width="60">
+                                            <img class="pay-img" src="images/card-default.svg" alt="upiCard" height="30"
+                                                width="40">
                                             <label class="form-check-label upi-label" for="cards">Cards</label>
                                         </div>
+                                        <!-- <div class="cards-right d-flex align-items-center">
+                                            <img src="images/visa.svg" alt="visa">
+                                            <img src="images/maestro.svg" alt="maestro">
+                                            <img src="images/am-ex.svg" alt="am-ex">
+                                            <img src="images/mastercard.svg" alt="mastercard">
+                                        </div> -->
                                     </h2>
-                                    <div id="cardsCollapse" class="accordion-collapse collapse"
+                                    <div id="cardsCollapse" class="accordion-collapse collapse "
                                         data-bs-parent="#paymentAccordion">
                                         <div class="accordion-body">
-                                            <input type="text" class="form-control" placeholder="Card Number">
-                                            <input type="text" class="form-control mt-2" placeholder="Expiration Date">
-                                            <input type="text" class="form-control mt-2" placeholder="CVV">
+
+                                            <div class="payment-container">
+                                                <form>
+                                                    <label class="input-label">Card number</label>
+                                                    <div class="card-input position-relative">
+                                                        <input type="text" class="upi-input form-control"
+                                                            placeholder="1234 5678 9012 3456">
+                                                        <img src="images/card-number.svg" alt="Card Icon"
+                                                            class="card-icon">
+                                                    </div>
+                                                    <div class="card-icons mt-1">
+                                                        <img src="images/visa.svg" alt="Visa">
+                                                        <img src="images/maestro.svg" alt="Mastercard">
+                                                        <img src="images/am-ex.svg" alt="Amex">
+                                                        <img src="images/mastercard.svg" alt="Rupay">
+                                                    </div>
+
+                                                    <div class="row mt-3">
+                                                        <div class="col-6">
+                                                            <label class="input-label">Expiry date</label>
+                                                            <input type="text" class="upi-input form-control"
+                                                                placeholder="MM/YY">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label class="input-label">CVC / CVV</label>
+                                                            <input type="text" class="upi-input form-control"
+                                                                placeholder="CVC">
+                                                        </div>
+                                                    </div>
+
+                                                    <label class="input-label mt-3">Name on card</label>
+                                                    <input type="text" class="upi-input form-control"
+                                                        placeholder="Name on card">
+
+                                                    <div class="form-check mt-3">
+                                                        <input class="form-check-input" type="checkbox" id="saveCard">
+                                                        <label class="form-check-label" for="saveCard">
+                                                            Securely save this card for my later purchase
+                                                        </label>
+                                                    </div>
+                                                </form>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -329,12 +379,14 @@
                                     <h2 class="accordion-header payment-accordion d-flex align-items-center gap-2">
                                         <input class="form-check-input mt-0" type="radio" name="payment" id="netbanking"
                                             data-bs-toggle="collapse" data-bs-target="#netbankingCollapse">
+                                        <img class="pay-img2" src="images/onlinebanking.svg" alt="Net-banking"
+                                            height="30" width="40">
                                         <label class="form-check-label" for="netbanking">Net Banking</label>
                                     </h2>
                                     <div id="netbankingCollapse" class="accordion-collapse collapse"
                                         data-bs-parent="#paymentAccordion">
                                         <div class="accordion-body">
-                                            <select class="form-select">
+                                            <select class="form-select onlineBanking">
                                                 <option>Select Bank</option>
                                                 <option>HDFC Bank</option>
                                                 <option>SBI Bank</option>
@@ -348,16 +400,18 @@
                                     <h2 class="accordion-header payment-accordion d-flex align-items-center gap-2">
                                         <input class="form-check-input mt-0" type="radio" name="payment" id="wallets"
                                             data-bs-toggle="collapse" data-bs-target="#walletsCollapse">
+                                        <img class="pay-img2" src="images/wallet-in.svg" alt="Net-banking" height="30"
+                                            width="40">
                                         <label class="form-check-label" for="wallets">Mobile Wallets</label>
                                     </h2>
                                     <div id="walletsCollapse" class="accordion-collapse collapse"
                                         data-bs-parent="#paymentAccordion">
                                         <div class="accordion-body">
-                                            <select class="form-select">
+                                            <select class="form-select onlineBanking">
                                                 <option>Select Wallet</option>
-                                                <option>Paytm</option>
+                                                <option>Airtel Money</option>
                                                 <option>Google Pay</option>
-                                                <option>PhonePe</option>
+                                                <option>Amazon Pay</option>
                                             </select>
                                         </div>
                                     </div>
@@ -366,7 +420,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5"></div>
+                <div class="col-md-5">
+
+                    <div class="order-summary">
+                        <h2 class="orderSummary-text">Order summary</h2>
+
+                        <div class="order-details ">
+                            <div class="d-flex justify-content-between ">
+                                <span class="order-price">Original Price:</span>
+                                <span class="strike-price-checkout mb-0">$80</span>
+                            </div>
+                            <div>
+                                <span class="order-price">Discounts <span class="discout-offer">(30% off)</span></span>
+                                <span class="main-price-checkout mb-0">$72</span>
+                            </div>
+                            <hr>
+                            <div class="total">
+                                <span>Total :</span>
+                                <span>$72</span>
+                            </div>
+                        </div>
+
+                        <p class="terms">By completing your purchase, you agree to these <a href="#">Terms of Use</a>.
+                        </p>
+
+                        <button class="pay-btn" onclick="location.href='course-enroll.html';" id="payButton">
+                            🔒 Pay $72
+                        </button>
+
+                        <div class="money-back">
+                            <strong>30-Day Money-Back Guarantee</strong>
+                            <p>Not satisfied? Get a full refund within 30 days. Simple and straightforward!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -676,6 +763,20 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        document.getElementById("payButton").addEventListener("click", function () {
+            // New content to replace existing content
+            const newContent = `
+                <div class="content-seperator my-4">Scan the QR Code to Pay</div>
+                <p class="qr-para">Use your UPI app to scan this QR code and complete the payment.</p>
+                <img src="your-qrcode-image.png" alt="QR Code" class="qr-image" style="width: 200px; height: 200px;">
+            `;
+
+            // Replacing the content inside .accordion-body
+            document.getElementById("accordionBody").innerHTML = newContent;
+        });
+    </script>
+
 
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')

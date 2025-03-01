@@ -3170,7 +3170,7 @@ table td a {
 
 .billing-select {
     border: 1px solid #011B30 !important;
-    padding: 6px 12px;
+    padding: 6px 12px !important;
     border-radius: 8px;
 }
 
@@ -3205,6 +3205,14 @@ table td a {
     background-color: #F5F5F5;
 }
 
+.pay-img {
+    border: 1px solid #d1d2e0;
+    border-radius: 4px;
+    background: #fff;
+}
+.pay-img2 {
+    border-radius: 6px;
+}
 .upi-label {
     color: #011B30;
     font-family: "Raleway", serif;
@@ -3290,4 +3298,125 @@ table td a {
     color: #011B30;
     font-size: 16px;
     font-weight: 400;
+}
+
+.order-summary {
+    padding: 22px;
+    border-radius: 10px;
+}
+
+.orderSummary-text {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #011B30;
+    font-family: "ES Rebond Grotesque TRIAL" !important;
+}
+
+.order-price {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: "Raleway", serif ;
+    color: #011b30;
+}
+
+.strike-price-checkout {
+    color: #94A3AF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    text-decoration: line-through;
+}
+
+.main-price-checkout {
+    color: #011B30;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.order-details div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.total {
+    font-weight: 700;
+    font-size: 24px;
+}
+.terms {
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+.pay-btn {
+    width: 100%;
+    background: #6a0dad;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pay-btn:hover {
+    background: #5a009a;
+}
+
+.lock-icon {
+    font-size: 16px;
+}
+
+.money-back {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.money-back strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    background: #f1f1f1;
+    border: none;
+    font-size: 16px;
+}
+.card-input {
+    position: relative;
+}
+.card-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    opacity: 0.5;
+}
+.card-icons img {
+    width: 40px;
+}
+
+.onlineBanking {
+    border: 1px solid #011B30 !important;
+    padding: 6px 12px !important;
+    border-radius: 8px;
 }
