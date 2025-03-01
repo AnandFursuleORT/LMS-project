@@ -2924,7 +2924,7 @@ li::marker {
 
 .save-btn {
     display: flex;
-    padding: 8px 12px;
+    padding: 10px 12px;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
@@ -2935,6 +2935,7 @@ li::marker {
     font-family: "Plus Jakarta Sans";
     font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .enroll-btn {

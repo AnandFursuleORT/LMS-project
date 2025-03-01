@@ -339,11 +339,17 @@
 
     .save-btn {
         font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .enroll-btn {
+        font-size: 14px;
+        padding: 6px 10px;
     }
 
     .btns-div a {
         font-size: 14px;
-    } 
+    }
 
     .pre-content {
         padding: 12px;
