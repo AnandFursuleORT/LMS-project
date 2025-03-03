@@ -7,6 +7,13 @@
   font-family: "Plus Jakarta Sans", serif;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 svg {
   color: #5c6e81;
 }
@@ -31,12 +38,7 @@ svg {
   padding: 0;
 }
 
-body {
-  overflow: auto;
-}
-
 .box-1 {
-  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,9 +72,7 @@ body {
 }
 
 .container1 {
-  margin-top: 10rem;
   width: 80%;
-  /* background: #fff; */
   margin-top: 2rem;
   border-radius: 5px;
   padding: 0px 35px;
@@ -102,7 +102,6 @@ body {
   display: flex;
   gap: 1rem;
   flex-direction: row;
-  /* margin-bottom: 0.6rem; */
 }
 
 .number {
@@ -125,7 +124,7 @@ body {
 
 .btn:focus-visible {
   color: none !important;
-  box-shadow: none !important; 
+  box-shadow: none !important;
 }
 
 .icon1 {
@@ -157,7 +156,6 @@ body {
 .upload-btn {
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
-  /* padding: 0 1.5rem 0 2.5rem; */
 }
 
 .upload-inputs {
@@ -230,9 +228,7 @@ body {
 }
 
 .form-control:hover {
-  /* border: 1px solid #43a9fb; */
   background-color: #f5f6f7;
-  /* box-shadow: none; */
 }
 
 .form-control:focus {
@@ -250,7 +246,6 @@ body {
 }
 
 .buttons {
-  /* margin-top: 2.4rem; */
   display: flex;
   justify-content: space-between;
 }
@@ -923,7 +918,6 @@ span {
 
 .active-color {
   background-color: #18bb54;
-  /* color: #f1f8ff; */
   transition: 0.2s linear;
 }
 
