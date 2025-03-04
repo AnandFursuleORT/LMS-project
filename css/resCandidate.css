@@ -273,6 +273,95 @@
 
 
 @media only screen and (max-width: 480px) {
+
+    .main {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .main .title {
+        margin-top: 24px;
+    }
+
+    .main .title h2 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+   
+
+    .course-card, .home-empty-card {
+        gap: 24px;
+    }
+
+    /* courses */
+
+    .strike-price {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .main-price {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .price {
+        gap: 10px;
+    }
+
+
+    /* Feedback  */
+
+    .history{
+        margin-top: 30px ;
+    }
+
+    .previous-btn, .submit-btn {
+        width: auto;
+    }
+
+    /* FAQ */
+
+    .faq-heading {
+        margin-bottom: 24px;
+    }
+    .faq-tab-accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .faq-question {
+        margin-top: 24px;
+    }
+
+    .faq-accordion {
+        gap: 8px;
+    }
+
+    /* Setting Payments  */
+
+    .payments-section-two {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .payment-history-download-btn a{
+        font-size: 12px;
+    }
+
+    .card-expiry p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+
+
+
+
+
+      /* footer */
+
+
     .footer-web {
         padding: 32px 16px;
     }
