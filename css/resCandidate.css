@@ -267,11 +267,6 @@
     }
 }
 
-
-
-
-
-
 @media only screen and (max-width: 480px) {
     .footer-web {
         padding: 32px 16px;
@@ -333,7 +328,6 @@
 
     .accd-links li a {
         color: #03599F;
-
         font-size: 16px;
         font-weight: 500;
         line-height: 20px;
@@ -378,4 +372,32 @@
     .inputs-part {
         margin-top: 16px;
     }
+
+    /* Notifications css */
+
+    .nt-part-div {
+        flex-direction: column;
+    }
+
+    .nt-right-div {
+        gap: 1rem !important;
+    }
+
+    .main {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .nt-main-div {
+        padding: 12px;
+    }
+
+    .nt-img-div {
+        width: 70px;
+    }
+
+    .nt-view-btn {
+        font-size: 12px;
+    }
+
 }

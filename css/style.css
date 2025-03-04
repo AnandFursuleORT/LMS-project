@@ -188,7 +188,7 @@ img {
 .top-bar {
     background-color: #011B30;
     display: flex;
-    padding: 16px 0;
+    padding: 10px 0;
     justify-content: space-between;
     align-items: center;
 }
@@ -219,7 +219,7 @@ img {
 }
 
 .nav-main {
-    padding: 20px 0 !important;
+    padding: 12px 0 !important;
     background-color: rgba(255, 230, 198, 0.20);
 }
 
@@ -1546,7 +1546,7 @@ Course List page CSS
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
     overflow-x: auto;
     max-width: 100%;
     white-space: nowrap;
@@ -1563,7 +1563,6 @@ Course List page CSS
     top: 50%;
     transform: translateY(-50%);
     padding: 5px;
-    border-radius: 16px;
     cursor: pointer;
 }
 
@@ -1829,12 +1828,6 @@ Course List page CSS
     font-weight: 400;
     line-height: 20px;
     padding-top: 8px;
-}
-
-@media only screen and (max-width: 480px) {
-    .mainSkillDiv {
-        flex-direction: column;
-    }
 }
 
 /* ===================================

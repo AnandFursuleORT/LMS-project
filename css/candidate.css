@@ -2611,7 +2611,6 @@ table td a {
 }
 
 
-
 /* Setting-Paymemts */
 .payments-section-one {
     padding: 24px;
@@ -2993,13 +2992,17 @@ table td a {
 .nt-part-div {
     display: flex;
     padding: 16px;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     gap: 16px;
     border-radius: 16px;
     border: 1px solid #DEE3E6;
     background: #FAFBFB;
     box-shadow: 0px 4px 4px 0px rgba(9, 11, 33, 0.02);
+}
+
+.nt-right-div {
+    gap: 24px;
 }
 
 .nt-para {

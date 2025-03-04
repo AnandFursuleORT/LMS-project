@@ -554,8 +554,9 @@
     }
 
     .heroSection {
-        padding: 54px 16px 16px 16px;
-        height: 100vh;
+        padding: 40px 16px 40px 16px;
+        min-height: 100vh;
+        background-image: url('/Lms-images/Banner-mobile.png');
     }
 
     .counter-sect {
@@ -931,7 +932,7 @@
 
     .line-container {
         margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+        margin-bottom:0.5rem;
     }
 
     /* SignUp page css */
@@ -943,8 +944,64 @@
 
     .container1 {
         padding: 0px !important;
+        margin-top: 1rem;
     }
 
+    .buttons-1 {
+        margin-top: 2rem;
+    }
+
+    /* Course list page css */
+
+    .Course-list-banner {
+        padding-bottom: 40px;
+    }
+
+    .courseHdg {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .Course-list-banner .col-sm-12 {
+        justify-content: flex-start !important;
+    }
+
+    .scroll-buttons.left-scroll {
+        left: 25%;
+    }
+
+    .mainSkillDiv {
+        flex-direction: column;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .course-tabHdg {
+        margin-bottom: 16px;
+    }
+
+    .Course-list {
+        padding: 40px 0;
+    }
+
+    .course-tabHdg h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .courses-number {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .Skills-sect {
+        padding: 40px 0;
+    }
+
+    .skill-hdg {
+        font-size: 28px;
+        line-height: 36px;
+    }
 }
 
 
