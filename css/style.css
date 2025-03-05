@@ -409,6 +409,82 @@ img {
 }
 
 /* ===================================
+    1. Mobile Offcanvas Header
+====================================== */
+
+.offcanvas-nav {
+    background-color: #FFFAF4;
+}
+
+.navbar-toggler-icon {
+    background-image: url('/Lms-images/menu-03.svg') !important;
+}
+
+.mobile-nav-btn {
+    border: none !important;
+}
+
+.mobile-nav-btn:focus {
+    box-shadow: none !important;
+}
+
+.offcanvas-close-btn:focus {
+    box-shadow: none !important;
+}
+
+.wrap {
+    position: relative;
+    width: 0%;
+    background-color: transparent;
+    border: 1px solid #011B30 !important;
+    padding: 6px 18px; 
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.input {
+    border: 0;
+    background: transparent;
+    position: relative;
+    width: 0%;
+    outline: none;
+    font-size: 14px;
+    color: #011b30;
+    transition: all 0.3s ease;
+}
+
+.wrap .search-icon {
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.wrap.active {
+    width: 124px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+
+.input.active {
+    width: 100%;
+    padding-left: 5px;
+    transition: all 0.5s 0.8s ease;
+}
+
+.input::placeholder {
+    font-size: 14px;
+}
+
+.offcanvas-btn-div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ===================================
 Homepage CSS
     2. Banner
 ====================================== */
@@ -1237,19 +1313,6 @@ Course List page CSS
     font-weight: 600;
 }
 
-.look-small {
-    border-radius: 50%;
-    background: #E28000;
-    text-align: center;
-    width: 45px;
-    height: 45px;
-    margin-left: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .look-small span {
     color: #FFF;
     font-family: "Raleway", serif;
@@ -1879,6 +1942,12 @@ Course Details page css
     font-size: 48px;
     font-weight: 700;
     line-height: 64px;
+}
+
+.video-div {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
 }
 
 .demo-btn {
@@ -3111,11 +3180,11 @@ li::marker {
 
 @media only screen and (max-width: 480px) {
     .swiper-next {
-        right: 42%;
+        right: 40%;
     }
 
     .swiper-prev {
-        left: 40%;
+        left: 38%;
     }
 
     .gallery-sect {

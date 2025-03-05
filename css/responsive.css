@@ -537,6 +537,11 @@
         width: 200px;
     }
 
+    .banner-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
     .nav-main {
         padding: 16px 0 !important;
     }
@@ -575,8 +580,18 @@
         padding: 12px 16px;
     }
 
-    .dropdown:hover .dropdown-menu {
-        display: block;
+    .login-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .signIn-btn {
+        margin-left: 0 !important;
+    }
+    
+    .signUp-btn {
+        margin-left: 0 !important;
     }
 
     /* Features section css */
@@ -790,7 +805,7 @@
     /* Contact form section css  */
 
     .contact-sect {
-        padding: 32px 16px;
+        padding: 32px 0px;
     }
 
     .formInputDiv {
@@ -932,7 +947,7 @@
 
     .line-container {
         margin-top: 0.5rem;
-        margin-bottom:0.5rem;
+        margin-bottom: 0.5rem;
     }
 
     /* SignUp page css */
@@ -958,8 +973,8 @@
     }
 
     .courseHdg {
-        font-size: 36px;
-        line-height: 48px;
+        font-size: 28px;
+        line-height: 40px;
     }
 
     .Course-list-banner .col-sm-12 {
@@ -976,12 +991,20 @@
         padding-right: 16px !important;
     }
 
+    .hdgSect {
+        padding-top: 20px;
+    }
+
     .course-tabHdg {
         margin-bottom: 16px;
     }
 
     .Course-list {
         padding: 40px 0;
+    }
+
+    .coursePara {
+        font-size: 14px;
     }
 
     .course-tabHdg h2 {
@@ -1001,6 +1024,47 @@
     .skill-hdg {
         font-size: 28px;
         line-height: 36px;
+    }
+
+    /* Course details css */
+
+    .course-details-main {
+        padding: 40px 0;
+    }
+
+    .ust-hdg-div h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .breadcrumb-item.active {
+        font-size: 12px;
+    }
+
+    .university-name {
+        font-size: 20px;
+    }
+
+    .play-videoDiv {
+        margin-top: 12px;
+    }
+
+    .video-div {
+        justify-content: flex-start !important;
+    }
+
+    .demo-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .sign-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .about-content ul {
+        padding: 1rem !important;
     }
 }
 

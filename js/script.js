@@ -4,6 +4,18 @@ document.querySelectorAll('.dropdown-menu').forEach(item => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    var searchIcon = document.querySelector(".search-icon");
+    var wrapElement = document.querySelector(".wrap");
+    var inputElement = document.querySelector(".input");
+    var textInput = document.querySelector("input[type='text']");
+
+    searchIcon.addEventListener("click", function () {
+        wrapElement.classList.toggle("active");
+        inputElement.classList.toggle("active");
+        textInput.focus();
+    });
+});
 
 // ========================= Notifications js code ====================================
 

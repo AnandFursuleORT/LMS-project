@@ -281,9 +281,10 @@
         font-size: 18px;
         line-height: 26px;
     }
-   
 
-    .course-card, .home-empty-card {
+
+    .course-card,
+    .home-empty-card {
         gap: 24px;
     }
 
@@ -298,6 +299,7 @@
         font-size: 20px;
         line-height: 28px;
     }
+
     .price {
         gap: 10px;
     }
@@ -305,11 +307,12 @@
 
     /* Feedback  */
 
-    .history{
-        margin-top: 30px ;
+    .history {
+        margin-top: 30px;
     }
 
-    .previous-btn, .submit-btn {
+    .previous-btn,
+    .submit-btn {
         width: auto;
     }
 
@@ -318,11 +321,13 @@
     .faq-heading {
         margin-bottom: 24px;
     }
+
     .faq-tab-accordion {
         display: flex;
         flex-direction: column;
         gap: 8px;
     }
+
     .faq-question {
         margin-top: 24px;
     }
@@ -338,7 +343,7 @@
         flex-direction: column;
     }
 
-    .payment-history-download-btn a{
+    .payment-history-download-btn a {
         font-size: 12px;
     }
 
@@ -354,7 +359,7 @@
 
 
 
-      /* footer */
+    /* footer */
 
 
     .footer-web {
@@ -460,6 +465,11 @@
 
     .inputs-part {
         margin-top: 16px;
+    }
+
+    .formInputDiv {
+        gap: 0 !important;
+        flex-direction: column;
     }
 
     /* Notifications css */
