@@ -585,11 +585,11 @@
         flex-direction: column;
         gap: 16px;
     }
-    
+
     .signIn-btn {
         margin-left: 0 !important;
     }
-    
+
     .signUp-btn {
         margin-left: 0 !important;
     }
@@ -836,6 +836,14 @@
         gap: 8px;
     }
 
+    .ft-para {
+        font-size: 14px;
+    }
+
+    .inner-text {
+        font-size: 14px;
+    }
+
     .nextLinks a {
         font-size: 16px;
     }
@@ -1028,6 +1036,10 @@
 
     /* Course details css */
 
+    .dts-cont .col-sm-12 {
+        justify-content: flex-start !important;
+    }
+
     .course-details-main {
         padding: 40px 0;
     }
@@ -1065,6 +1077,110 @@
 
     .about-content ul {
         padding: 1rem !important;
+    }
+
+    .nav-pills .details-tab-btn.active {
+        padding: 8px 16px !important;
+        font-size: 14px;
+    }
+
+    .nav-pills .details-tab-btn {
+        padding: 8px 16px !important;
+        font-size: 14px;
+    }
+
+    .content-para {
+        font-size: 14px;
+    }
+
+    .lms-info {
+        font-size: 14px;
+    }
+
+    .dt-info-hdg {
+        font-size: 14px;
+    }
+
+    .pre-para {
+        font-size: 14px;
+    }
+
+    .pre-hdr {
+        font-size: 14px;
+    }
+
+    .inst-name {
+        font-size: 14px;
+    }
+
+    .inst-info-div span {
+        font-size: 12px;
+    }
+
+    .inst-info {
+        font-size: 12px;
+    }
+
+    .lsn-acdn-btn {
+        padding: 8px 12px 8px 16px !important;
+        background-position: 4px 12px;
+        font-size: 12px !important;
+        background-size: 12px !important;
+    }
+
+    .lsn-acdn-btn:not(.collapsed) {
+        background-position: 4px 12px;
+    }
+
+    .lect {
+        font-size: 12px;
+    }
+
+    .duration {
+        font-size: 12px;
+    }
+
+    .lect-hdg-left {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .faq-acdn-btn {
+        font-size: 14px !important;
+    }
+
+    .faq-sect p {
+        font-size: 14px !important;
+    }
+
+    .review-sect-hd {
+        font-size: 16px;
+    }
+
+    .review-dsc {
+        font-size: 14px;
+    }
+
+    .web-search {
+        width: 240px;
+    }
+
+    .inst-inner-div {
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+    }
+
+    .loct-dn {
+        width: 140px;
+        background-position: 108px 12px;
+        font-size: 14px !important;
+    }
+
+    .cont-dn {
+        width: 140px;
+        background-position: 108px 12px;
+        font-size: 14px !important;
     }
 }
 
