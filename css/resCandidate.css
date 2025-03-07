@@ -282,8 +282,6 @@
         line-height: 26px;
     }
 
-
-    .course-card,
     .home-empty-card {
         gap: 24px;
     }
@@ -353,15 +351,7 @@
     }
 
 
-
-
-
-
-
-
     /* footer */
-
-
     .footer-web {
         padding: 32px 16px;
     }
@@ -499,4 +489,20 @@
         font-size: 12px;
     }
 
+    /* training css */
+
+    .training-heading {
+        flex-direction: column;
+        align-items: start !important;
+        gap: 16px;
+    }
+
+    .course-progress-tab {
+        flex-direction: column;
+    }
+
+    .course-tab {
+        padding: 6px 12px !important;
+        font-size: 12px;
+    }
 }

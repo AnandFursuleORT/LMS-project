@@ -207,7 +207,7 @@
                                         <img src="images/globe.svg" alt="globe-icon" class="language-icon">
                                         <select id="language-select" class="form-select">
                                             <option value="India" selected>India</option>
-                                            <option value="Austalia">Austalia</option>
+                                            <option value="Austalia">Australia</option>
                                             <option value="Russia">Russia</option>
                                         </select>
                                     </div>
@@ -436,7 +436,7 @@
                             </div>
                             <hr>
                             <div class="total">
-                                <span>Total :</span>
+                                <span>Total:</span>
                                 <span>$72</span>
                             </div>
                         </div>
@@ -761,20 +761,6 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        document.getElementById("payButton").addEventListener("click", function () {
-            // New content to replace existing content
-            const newContent = `
-                <div class="content-seperator my-4">Scan the QR Code to Pay</div>
-                <p class="qr-para">Use your UPI app to scan this QR code and complete the payment.</p>
-                <img src="your-qrcode-image.png" alt="QR Code" class="qr-image" style="width: 200px; height: 200px;">
-            `;
-
-            // Replacing the content inside .accordion-body
-            document.getElementById("accordionBody").innerHTML = newContent;
-        });
-    </script>
-
 
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')

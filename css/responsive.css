@@ -974,6 +974,18 @@
         margin-top: 2rem;
     }
 
+    .buttons-2 {
+        margin-top: 2rem;
+    }
+
+    .buttons-3 {
+        margin-top: 2rem;
+    }
+
+    .buttons-4 {
+        margin-top: 2rem;
+    }
+
     /* Course list page css */
 
     .Course-list-banner {
@@ -1035,6 +1047,10 @@
     }
 
     /* Course details css */
+
+    .Course-detail-banner {
+        padding: 40px 0;
+    }
 
     .dts-cont .col-sm-12 {
         justify-content: flex-start !important;

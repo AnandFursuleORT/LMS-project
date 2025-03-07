@@ -299,6 +299,11 @@ img {
     border-radius: 8px;
 }
 
+.sidebar-active .sidebar-options {
+    color: #03599F !important;
+    font-weight: 600 !important;
+}
+
 .menu-list {
     list-style: none;
     padding: 0;
@@ -709,7 +714,6 @@ img {
     }
 
     .footer-adn {
-
         margin-bottom: 16px;
         border-radius: 8px !important;
         border: 1px solid #DEE3E6 !important;
@@ -757,6 +761,11 @@ img {
     border: 1px solid #DEE3E6;
     border-radius: 8px;
     max-width: 150px;
+}
+
+.training-heading {
+    display: flex;
+    align-items: center;
 }
 
 .course-progress-tab {
@@ -1000,11 +1009,9 @@ img {
 /* Courses */
 
 .course-tab {
-
     border-radius: 100px !important;
     border: 1px solid #DEE3E6 !important;
     font-size: 14px !important;
-    line-height: 20px !important;
     font-weight: 500 !important;
     color: #1D3C55 !important;
 }
