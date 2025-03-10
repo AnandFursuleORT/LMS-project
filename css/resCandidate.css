@@ -302,6 +302,10 @@
         gap: 10px;
     }
 
+    .course-card {
+        gap: 16px;
+    }
+
 
     /* Feedback  */
 
@@ -493,7 +497,7 @@
 
     .training-heading {
         flex-direction: column;
-        align-items: start !important;
+        align-items: flex-start;
         gap: 16px;
     }
 
@@ -504,5 +508,123 @@
     .course-tab {
         padding: 6px 12px !important;
         font-size: 12px;
+    }
+
+    /* recommendation css */
+
+    .recommendation-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .filter-recommd {
+        display: flex;
+        align-items: center;
+    }
+
+    /* devices settings page css */
+
+    .devices-activities-section-content {
+        padding: 0;
+    }
+
+    .browser-name {
+        font-size: 12px;
+    }
+
+    .session-details {
+        font-size: 12px;
+    }
+
+    .signout-btn {
+        font-size: 12px;
+    }
+
+    /* notification settings page css */
+
+    .notification-section-one,
+    .notification-section-two,
+    .notification-section-three {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .privacy-section-content {
+        padding: 0;
+    }
+
+    .privacy_policy-btn {
+        justify-content: start;
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+
+    .payments-section-one {
+        padding: 12px;
+    }
+
+    .payments-section-two {
+        padding: 12px;
+    }
+
+    /* institute page css */
+
+    .inst-name {
+        font-size: 16px;
+    }
+
+    .enroll-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .enroll-info-div {
+        text-align: left;
+    }
+
+    .enroll-price {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .inst-info-hdg {
+        font-size: 1.1rem;
+    }
+
+    .inst-info-para {
+        font-size: 0.9rem;
+    }
+
+    .inst-info-card {
+        gap: 0;
+    }
+
+    .footer-btn {
+        justify-content: start;
+        padding: 40px 24px 24px 0;
+    }
+
+    .delete-acct-btn {
+        justify-content: start;
+    }
+
+    .general-section-one,
+    .general-section-two,
+    .general-section-three,
+    .general-section-four {
+        padding: 12px 0;
+        border-bottom: 1px solid #DEE2E6;
+    }
+
+    .btn-cancel {
+        font-size: 14px;
+        width: 140px;
+    }
+
+    .btn-savechanges {
+        font-size: 14px;
+        width: 140px;
     }
 }

@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md nav-main">
+    <nav class="navbar navbar-expand-md nav-main d-none d-lg-block d-md-block">
         <div class="container">
             <a class="navbar-brand" href="index2.html"><img src="images/Logo.svg" alt="main-logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -91,9 +91,9 @@
                         <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
                     </form>
                     <div class="save-later">
-                        <a href="saved-courses.html" target="_blank" ><img src="images/Bookmark-header.svg"
-                            alt="bookmark-icon"></a>
-                      </div>
+                        <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg"
+                                alt="bookmark-icon"></a>
+                    </div>
                     <div class="notify dropdown">
                         <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
                             data-bs-auto-close="outside" aria-expanded="false">
@@ -104,7 +104,8 @@
                             aria-labelledby="notificationDropdown">
                             <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
                                 <span class="fw-bold nt-hdg">Notifications</span>
-                                <a href="notification.html" target="_blank" class="nt-view-text text-decoration-none">View All</a>
+                                <a href="notification.html" target="_blank"
+                                    class="nt-view-text text-decoration-none">View All</a>
                             </li>
 
                             <li class="notification-item">
@@ -172,6 +173,177 @@
         </div>
     </nav>
 
+    <!-- Mobile offcanvas navbar -->
+    <nav class="navbar offcanvas-nav d-sm-block d-lg-none d-md-none">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
+            <div class="wrap">
+                <form>
+                    <input type="text" class="input" placeholder="Search..">
+                </form>
+                <img src="Lms-images/search.svg" class="search-icon" alt="">
+            </div>
+            <button class="navbar-toggler mobile-nav-btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="#"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
+                    <div class="profile-div ms-3 d-flex align-items-center">
+                        <img src="Lms-images/profile.png" class="prof-img" alt="profile">
+                        <div class="prof-dropdown">
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle dropdown-profile" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="prof-sect ms-2">
+                                        <h6 class="prof-name mb-0">Satyam</h6>
+                                        <p class="prof-dst mb-0">Captain</p>
+                                    </div>
+                                    <div class="dropDown-prof ms-2">
+                                        <img src="Lms-images/arrow-down-round2.svg" alt="dropdown">
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-end dropMenu">
+                                    <li><a class="dropdown-item menu-item" target="_blank"
+                                            href="general.html">Settings</a></li>
+                                    <li><a class="dropdown-item menu-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item menu-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close offcanvas-close-btn" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end pe-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navDropdown" href="#" data-bs-toggle="dropdown">
+                                Services
+                                <img src="Lms-images/arrow-down-01-round.svg" alt="arrow2">
+                            </a>
+                            <ul class="dropdown-menu dropMenu">
+                                <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a>
+                                <li class="dropdown-submenu">
+                                    <a href="#" data-bs-toggle="dropdown"
+                                        class="dropdown-item dropdown-toggle menu-item">People
+                                        of the Sea</a>
+                                    <ul class="dropdown-menu items-submenu">
+                                        <li>
+                                            <a href="#" class="dropdown-item sub-item">Qualification</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item sub-item">Labor</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item sub-item">Training</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item menu-item" href="#">Ports and Auxiliary Maritime
+                                        Industries</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navDropdown" href="#" data-bs-toggle="dropdown">
+                                Consultations
+                                <img src="Lms-images/arrow-down-01-round.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropMenu">
+                                <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">People of the Sea</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Ports and Auxiliary Maritime
+                                        Industries</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">License Cancellation Notice</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navDropdown" href="#" data-bs-toggle="dropdown">
+                                Courses
+                                <img src="Lms-images/arrow-down-01-round.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropMenu">
+                                <li><a class="dropdown-item menu-item" href="#">Navigation</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Safety & Survival</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Engineering</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Cargo Handling</a></li>
+                                <li><a class="dropdown-item menu-item" href="#">Compliance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navDropdown" aria-current="page" href="#">About</a>
+                        </li>
+                    </ul>
+
+                    <div class="offcanvas-btn-div mt-4">
+                        <div class="save-later">
+                            <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg"
+                                    alt="bookmark-icon"></a>
+                        </div>
+                        <div class="notify dropdown">
+                            <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" aria-expanded="false">
+                                <img src="images/bell.svg" alt="">
+                            </button>
+
+                            <ul class="dropdown-menu notification-dropdown" aria-labelledby="notificationDropdown">
+                                <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                                    <span class="fw-bold nt-hdg">Notifications</span>
+                                    <a href="notification.html" target="_blank"
+                                        class="nt-view-text text-decoration-none">View All</a>
+                                </li>
+
+                                <li class="notification-item">
+                                    <div class="icon-nt"></div>
+                                    <div class="notification-text flex-grow-1">
+                                        <h6 class="fw-bold">Add templates</h6>
+                                        <p>To start work with data, please create your first components templates.
+                                        </p>
+                                    </div>
+                                    <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                        <img src="images/cancel-cross.svg" alt="close">
+                                    </button>
+                                </li>
+
+                                <li class="notification-item mt-2">
+                                    <div class="icon-nt"></div>
+                                    <div class="notification-text flex-grow-1">
+                                        <h6 class="fw-bold">Add templates</h6>
+                                        <p>To start work with data, please create your first components templates.
+                                        </p>
+                                    </div>
+                                    <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                        <img src="images/cancel-cross.svg" alt="close">
+                                    </button>
+                                </li>
+
+                                <li class="notification-item mt-2">
+                                    <div class="icon-nt"></div>
+                                    <div class="notification-text flex-grow-1">
+                                        <h6 class="fw-bold">Add templates</h6>
+                                        <p>To start work with data, please create your first components templates.
+                                        </p>
+                                        <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                                    </div>
+                                    <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                        <img src="images/cancel-cross.svg" alt="close">
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div class="main">
         <div class="container">
             <div class="row">
@@ -231,10 +403,10 @@
                                         </li>
                                         <li class="menu-item">
                                             <a href="saved-courses.html">
-                                              <img src="images/Bookmark.svg" alt="bookmark-icon" />
-                                              <span>Saved Courses</span>
+                                                <img src="images/Bookmark.svg" alt="bookmark-icon" />
+                                                <span>Saved Courses</span>
                                             </a>
-                                          </li>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="menu-three">
@@ -289,55 +461,55 @@
                 <div class="col-md-3">
                     <div class="history">
                         <div class="card">
-                        <div class="card-body">
-                            <div class="history-title ">
-                                History
-                            </div>
-                            <div class="history d-flex flex-column gap-2">
-                                <div class="feeback-history d-flex flex-column gap-2">
-                                    <div class="feedback-text">
-                                        Sint culpa provident accusantium quaerat et. Quae et et aut in...
+                            <div class="card-body">
+                                <div class="history-title ">
+                                    History
+                                </div>
+                                <div class="history d-flex flex-column gap-2">
+                                    <div class="feeback-history d-flex flex-column gap-2">
+                                        <div class="feedback-text">
+                                            Sint culpa provident accusantium quaerat et. Quae et et aut in...
+                                        </div>
+                                        <div class="date-time">
+                                            26 Jan, 2023 · 3:30 pm
+                                        </div>
                                     </div>
-                                    <div class="date-time">
-                                        26 Jan, 2023 · 3:30 pm
+                                    <div class="feeback-history d-flex flex-column gap-2">
+                                        <div class="feedback-text">
+                                            Sint culpa provident accusantium quaerat et. Quae et et aut in...
+                                        </div>
+                                        <div class="date-time">
+                                            26 Jan, 2023 · 3:30 pm
+                                        </div>
+                                    </div>
+                                    <div class="feeback-history d-flex flex-column gap-2">
+                                        <div class="feedback-text">
+                                            Sint culpa provident accusantium quaerat et. Quae et et aut in...
+                                        </div>
+                                        <div class="date-time">
+                                            26 Jan, 2023 · 3:30 pm
+                                        </div>
+                                    </div>
+                                    <div class="feeback-history d-flex flex-column gap-2">
+                                        <div class="feedback-text">
+                                            Sint culpa provident accusantium quaerat et. Quae et et aut in...
+                                        </div>
+                                        <div class="date-time">
+                                            26 Jan, 2023 · 3:30 pm
+                                        </div>
+                                    </div>
+                                    <div class="feeback-history d-flex flex-column gap-2">
+                                        <div class="feedback-text">
+                                            Sint culpa provident accusantium quaerat et. Quae et et aut in...
+                                        </div>
+                                        <div class="date-time">
+                                            26 Jan, 2023 · 3:30 pm
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="feeback-history d-flex flex-column gap-2">
-                                    <div class="feedback-text">
-                                        Sint culpa provident accusantium quaerat et. Quae et et aut in...
-                                    </div>
-                                    <div class="date-time">
-                                        26 Jan, 2023 · 3:30 pm
-                                    </div>
-                                </div>
-                                <div class="feeback-history d-flex flex-column gap-2">
-                                    <div class="feedback-text">
-                                        Sint culpa provident accusantium quaerat et. Quae et et aut in...
-                                    </div>
-                                    <div class="date-time">
-                                        26 Jan, 2023 · 3:30 pm
-                                    </div>
-                                </div>
-                                <div class="feeback-history d-flex flex-column gap-2">
-                                    <div class="feedback-text">
-                                        Sint culpa provident accusantium quaerat et. Quae et et aut in...
-                                    </div>
-                                    <div class="date-time">
-                                        26 Jan, 2023 · 3:30 pm
-                                    </div>
-                                </div>
-                                <div class="feeback-history d-flex flex-column gap-2">
-                                    <div class="feedback-text">
-                                        Sint culpa provident accusantium quaerat et. Quae et et aut in...
-                                    </div>
-                                    <div class="date-time">
-                                        26 Jan, 2023 · 3:30 pm
-                                    </div>
-                                </div>
-                            </div>
 
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
@@ -360,7 +532,7 @@
                                         Engineering, Cargo Handling, Compliance</span> and many more.
                                     We design trainings for individuals, companies and entire teams.</p>
                             </div>
-    
+
                             <div class="footer-logo-part">
                                 <a href="#" class="logoimgDiv">
                                     <img src="Lms-images/fb.svg" alt="fbImg">
@@ -375,7 +547,7 @@
                                     <img src="Lms-images/linked.svg" alt="lknImg">
                                 </a>
                             </div>
-    
+
                             <div class="pay-logo-part">
                                 <p>Pay securely with:</p>
                                 <div class="pay-img-part">
@@ -452,7 +624,7 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="links-part d-sm-block d-lg-none d-md-none">
                                 <div class="row g-4">
                                     <div class="col-sm-12">
@@ -558,7 +730,7 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="inputs-part">
                                 <div class="row g-4">
                                     <div class="col-lg-4 col-md-4 col-sm-12">
