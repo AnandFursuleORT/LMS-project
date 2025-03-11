@@ -91,9 +91,9 @@
                         <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
                     </form>
                     <div class="save-later">
-                        <a href="saved-courses.html" target="_blank" ><img src="images/Bookmark-header.svg"
-                            alt="bookmark-icon"></a>
-                      </div>
+                        <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg"
+                                alt="bookmark-icon"></a>
+                    </div>
                     <div class="notify dropdown">
                         <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
                             data-bs-auto-close="outside" aria-expanded="false">
@@ -104,7 +104,8 @@
                             aria-labelledby="notificationDropdown">
                             <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
                                 <span class="fw-bold nt-hdg">Notifications</span>
-                                <a href="notification.html" target="_blank" class="nt-view-text text-decoration-none">View All</a>
+                                <a href="notification.html" target="_blank"
+                                    class="nt-view-text text-decoration-none">View All</a>
                             </li>
 
                             <li class="notification-item">
@@ -176,12 +177,82 @@
     <nav class="navbar offcanvas-nav d-sm-block d-lg-none d-md-none">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
-            <div class="wrap">
-                <form>
-                    <input type="text" class="input" placeholder="Search..">
-                </form>
-                <img src="Lms-images/search.svg" class="search-icon" alt="">
+
+            <div class="offcanvas-btn-div">
+                <div class="save-later">
+                    <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg"
+                            alt="bookmark-icon"></a>
+                </div>
+                <div class="notify dropdown">
+                    <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside" aria-expanded="false">
+                        <img src="images/bell.svg" alt="">
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end notification-dropdown"
+                        aria-labelledby="notificationDropdown">
+                        <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                            <span class="fw-bold nt-hdg">Notifications</span>
+                            <a href="notification.html" target="_blank" class="nt-view-text text-decoration-none">View
+                                All</a>
+                        </li>
+
+                        <li class="notification-item">
+                            <div class="icon-nt"></div>
+                            <div class="notification-text flex-grow-1">
+                                <h6 class="fw-bold">Add templates</h6>
+                                <p>To start work with data, please create your first components templates.
+                                </p>
+                            </div>
+                            <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                <img src="images/cancel-cross.svg" alt="close">
+                            </button>
+                        </li>
+
+                        <li class="notification-item mt-2">
+                            <div class="icon-nt"></div>
+                            <div class="notification-text flex-grow-1">
+                                <h6 class="fw-bold">Add templates</h6>
+                                <p>To start work with data, please create your first components templates.
+                                </p>
+                            </div>
+                            <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                <img src="images/cancel-cross.svg" alt="close">
+                            </button>
+                        </li>
+
+                        <li class="notification-item mt-2">
+                            <div class="icon-nt"></div>
+                            <div class="notification-text flex-grow-1">
+                                <h6 class="fw-bold">Add templates</h6>
+                                <p>To start work with data, please create your first components templates.
+                                </p>
+                                <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                            </div>
+                            <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                <img src="images/cancel-cross.svg" alt="close">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle search-dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="Lms-images/search.svg" class="search-icon" alt="">
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end dropMenu px-2">
+                    <li>
+                        <form class="d-flex" role="search">
+                            <input type="search" name="Search" id="yoursearch" class="search-input"
+                                placeholder="Search">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
             <button class="navbar-toggler mobile-nav-btn" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -280,66 +351,6 @@
                             <a class="nav-link navDropdown" aria-current="page" href="#">About</a>
                         </li>
                     </ul>
-
-                    <div class="offcanvas-btn-div mt-4">
-                        <div class="save-later">
-                            <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg"
-                                    alt="bookmark-icon"></a>
-                        </div>
-                        <div class="notify dropdown">
-                            <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
-                                data-bs-auto-close="outside" aria-expanded="false">
-                                <img src="images/bell.svg" alt="">
-                            </button>
-
-                            <ul class="dropdown-menu notification-dropdown"
-                                aria-labelledby="notificationDropdown">
-                                <li
-                                    class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
-                                    <span class="fw-bold nt-hdg">Notifications</span>
-                                    <a href="notification.html" target="_blank"
-                                        class="nt-view-text text-decoration-none">View All</a>
-                                </li>
-
-                                <li class="notification-item">
-                                    <div class="icon-nt"></div>
-                                    <div class="notification-text flex-grow-1">
-                                        <h6 class="fw-bold">Add templates</h6>
-                                        <p>To start work with data, please create your first components templates.
-                                        </p>
-                                    </div>
-                                    <button class="close-btn mt-2" onclick="removeNotification(event, this)">
-                                        <img src="images/cancel-cross.svg" alt="close">
-                                    </button>
-                                </li>
-
-                                <li class="notification-item mt-2">
-                                    <div class="icon-nt"></div>
-                                    <div class="notification-text flex-grow-1">
-                                        <h6 class="fw-bold">Add templates</h6>
-                                        <p>To start work with data, please create your first components templates.
-                                        </p>
-                                    </div>
-                                    <button class="close-btn mt-2" onclick="removeNotification(event, this)">
-                                        <img src="images/cancel-cross.svg" alt="close">
-                                    </button>
-                                </li>
-
-                                <li class="notification-item mt-2">
-                                    <div class="icon-nt"></div>
-                                    <div class="notification-text flex-grow-1">
-                                        <h6 class="fw-bold">Add templates</h6>
-                                        <p>To start work with data, please create your first components templates.
-                                        </p>
-                                        <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
-                                    </div>
-                                    <button class="close-btn mt-2" onclick="removeNotification(event, this)">
-                                        <img src="images/cancel-cross.svg" alt="close">
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -404,10 +415,10 @@
                                         </li>
                                         <li class="menu-item">
                                             <a href="saved-courses.html">
-                                              <img src="images/Bookmark.svg" alt="bookmark-icon" />
-                                              <span>Saved Courses</span>
+                                                <img src="images/Bookmark.svg" alt="bookmark-icon" />
+                                                <span>Saved Courses</span>
                                             </a>
-                                          </li>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="menu-three">
@@ -2548,7 +2559,7 @@
                                         Engineering, Cargo Handling, Compliance</span> and many more.
                                     We design trainings for individuals, companies and entire teams.</p>
                             </div>
-    
+
                             <div class="footer-logo-part">
                                 <a href="#" class="logoimgDiv">
                                     <img src="Lms-images/fb.svg" alt="fbImg">
@@ -2563,7 +2574,7 @@
                                     <img src="Lms-images/linked.svg" alt="lknImg">
                                 </a>
                             </div>
-    
+
                             <div class="pay-logo-part">
                                 <p>Pay securely with:</p>
                                 <div class="pay-img-part">
@@ -2640,7 +2651,7 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="links-part d-sm-block d-lg-none d-md-none">
                                 <div class="row g-4">
                                     <div class="col-sm-12">
@@ -2746,7 +2757,7 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="inputs-part">
                                 <div class="row g-4">
                                     <div class="col-lg-4 col-md-4 col-sm-12">

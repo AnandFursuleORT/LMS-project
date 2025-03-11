@@ -44,13 +44,12 @@ img {
 
 .dropMenu {
     background-color: #FFFAF4 !important;
+    margin-top: 12px !important;
 }
 
 .items-submenu {
     background-color: #FFFAF4 !important;
 }
-
-
 
 .menu-item:active {
     background-color: transparent !important;
@@ -89,16 +88,6 @@ img {
     font-size: 18px;
     font-weight: 600 !important;
 }
-
-/* .search-btn {
-    display: flex;
-    padding: 12px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    border: 1px solid #DEE3E6;
-    background: linear-gradient(273deg, #FFB555 -50.01%, #E28000 100%);
-} */
 
 .search-input {
     background-image: url('/images/search.svg');
@@ -295,6 +284,7 @@ img {
 
 .mobile-nav-btn {
     border: none !important;
+    padding-left: 0 !important;
 }
 
 .mobile-nav-btn:focus {
@@ -305,50 +295,13 @@ img {
     box-shadow: none !important;
 }
 
-.wrap {
-    position: relative;
-    width: 0%;
-    background-color: transparent;
-    border: 1px solid #011B30 !important;
-    padding: 6px 18px;
+.search-icon {
+    display: flex !important;
+    padding: 12px !important;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    transition: all 0.5s ease;
-}
-
-.input {
-    border: 0;
-    background: transparent;
-    position: relative;
-    width: 0%;
-    outline: none;
-    font-size: 14px;
-    color: #011b30;
-    transition: all 0.3s ease;
-}
-
-.wrap .search-icon {
-    color: #fff;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 16px;
-    cursor: pointer;
-}
-
-.wrap.active {
-    width: 124px;
-    border-radius: 50px;
-    transition: all 0.5s ease;
-}
-
-.input.active {
-    width: 100%;
-    padding-left: 5px;
-    transition: all 0.5s 0.8s ease;
-}
-
-.input::placeholder {
-    font-size: 14px;
+    border: 1px solid #DEE3E6;
 }
 
 .offcanvas-btn-div {
@@ -402,15 +355,6 @@ img {
     margin-bottom: 8px;
 }
 
-.menu-two,
-.menu-three p {
-    margin-bottom: 8px !important;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 400;
-    color: #768998;
-}
-
 .main .title h2 {
     font-size: 24px;
     line-height: 36px;
@@ -438,8 +382,6 @@ img {
     padding: 24px;
     border: 1px solid #DEE3E6 !important;
     border-radius: 16px !important;
-
-
 }
 
 .card-body {
@@ -1810,7 +1752,6 @@ table td a {
     font-weight: 500;
     background-color: #F5F6F7;
     border-radius: 100px;
-
 }
 
 .rated {
@@ -1867,7 +1808,6 @@ table td a {
 }
 
 .download-btn {
-
     padding: 8px 12px;
     background-color: #03599F;
     font-size: 14px;
@@ -1883,13 +1823,12 @@ table td a {
 
 /* Setting */
 
-.settting-title h2 {
+.setting-title h2 {
     font-size: 28px;
     line-height: 42px;
     font-weight: 600;
     font-family: "ES Rebond Grotesque TRIAL" !important;
     color: #011B30;
-
 }
 
 /* Setting-General */
@@ -1901,7 +1840,6 @@ table td a {
     padding: 24px;
     border-bottom: 1px solid #DEE2E6;
 }
-
 
 .personal-info-text h5 {
     font-size: 16px;
@@ -1933,7 +1871,6 @@ table td a {
     font-weight: 500;
     color: #768897;
 }
-
 
 .personal-info label {
     font-size: 14px;
@@ -1986,13 +1923,10 @@ table td a {
 }
 
 .input-group input {
-
     border-radius: 8px;
     background-color: #FAFBFB;
     padding: 8px 16px;
     max-width: 330px;
-
-
 }
 
 .pass-btn {
@@ -2008,12 +1942,10 @@ table td a {
 
 .form-control {
     box-shadow: none !important;
-
 }
 
 .form-control:focus {
     box-shadow: none !important;
-
 }
 
 .acct-info input {
@@ -2080,7 +2012,6 @@ table td a {
     box-shadow: none !important;
 }
 
-
 .timezone-input label {
     font-size: 14px;
     line-height: 20px;
@@ -2125,7 +2056,6 @@ table td a {
     font-weight: 700;
     line-height: 24px;
     background-color: #FAFBFB;
-
 }
 
 .delete-acct-btn {
@@ -2279,7 +2209,6 @@ table td a {
     background-color: #FFFFFF;
     gap: 8px;
     text-decoration: none;
-
 }
 
 .privacy_policy-btn {
@@ -2291,7 +2220,6 @@ table td a {
     max-width: 500px;
     align-items: center;
 }
-
 
 .verification-text h5 {
     font-size: 16px;
@@ -2326,7 +2254,6 @@ table td a {
     font-weight: 500;
     color: #01233F;
 }
-
 
 .form-switch.form-check-input {
     height: 20px;
@@ -2601,7 +2528,7 @@ table td a {
 }
 
 .payments-section-two {
-    padding: 24px;
+    padding: 12px;
 }
 
 .payment-method h5 {
@@ -2810,7 +2737,7 @@ table td a {
     background-color: rgba(250, 204, 21, 0.15) !important;
 }
 
-/* Setting-Documents */ 
+/* Setting-Documents */
 
 .documents-info {
     padding: 12px 16px;

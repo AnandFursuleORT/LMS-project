@@ -171,7 +171,6 @@
 
     /* Setting-Devices-&-Activities */
 
-
     .signout-btn {
         padding: 8px 10px;
         font-size: 12px;
@@ -187,9 +186,6 @@
         font-size: 16px;
         line-height: 22px;
     }
-
-    /* Setting-Institute */
-
 
     /* institute css */
 
@@ -269,6 +265,11 @@
 
 @media only screen and (max-width: 480px) {
 
+    .notification-dropdown {
+        width: 360px;
+        right: -80px !important;
+    }
+
     .main {
         padding: 40px 0px 40px 0px;
     }
@@ -284,6 +285,10 @@
 
     .home-empty-card {
         gap: 24px;
+    }
+
+    .menu-list {
+        width: 250px !important;
     }
 
     /* courses */
@@ -341,8 +346,8 @@
     /* Setting Payments  */
 
     .payments-section-two {
-        display: flex;
         flex-direction: column;
+        gap: 12px;
     }
 
     .payment-history-download-btn a {
@@ -353,7 +358,6 @@
         font-size: 14px;
         line-height: 20px;
     }
-
 
     /* footer */
     .footer-web {
@@ -626,5 +630,13 @@
     .btn-savechanges {
         font-size: 14px;
         width: 140px;
+    }
+
+    /* Sidemenu dropdown css */
+
+    .setting-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
