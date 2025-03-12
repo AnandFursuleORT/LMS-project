@@ -1305,11 +1305,9 @@ table td a {
     color: #03599F !important;
 }
 
-
 .form-check-input {
     border: 1.5px solid #768998 !important;
 }
-
 
 .status-dropdown {
     border: 1px solid #DEE3E6;
@@ -1327,7 +1325,6 @@ table td a {
     font-weight: 500;
     color: #768998;
 }
-
 
 .course-name {
     gap: 12px;
@@ -1399,9 +1396,6 @@ table td a {
 .offcanvas-backdrop {
     cursor: url('/images/cancel-01.svg'), auto;
 }
-
-
-
 
 /* FAQ */
 

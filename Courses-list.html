@@ -209,11 +209,21 @@
         <nav class="navbar offcanvas-nav d-sm-block d-lg-none d-md-none">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
-                <div class="wrap">
-                    <form>
-                        <input type="text" class="input" placeholder="Search..">
-                    </form>
-                    <img src="Lms-images/search.svg" class="search-icon" alt="">
+
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle search-dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="Lms-images/search.svg" class="search-icon" alt="">
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropMenu px-2">
+                        <li>
+                            <form class="d-flex" role="search">
+                                <input type="search" name="Search" id="yoursearch" class="search-input"
+                                    placeholder="Search">
+                            </form>
+                        </li>
+                    </ul>
                 </div>
                 <button class="navbar-toggler mobile-nav-btn" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -222,7 +232,7 @@
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <a class="navbar-brand" href="#"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
+                        <a class="navbar-brand" href="index.html"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
                         <button type="button" class="btn-close offcanvas-close-btn" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
