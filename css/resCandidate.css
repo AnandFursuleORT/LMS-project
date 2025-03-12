@@ -265,13 +265,27 @@
 
 @media only screen and (max-width: 480px) {
 
-    .notification-dropdown {
-        width: 360px;
-        right: -80px !important;
+    .navbar>.container-fluid {
+        flex-wrap: nowrap !important;
+        gap: 8px;
     }
 
-    .main {
-        padding: 40px 0px 40px 0px;
+    .notification-dropdown {
+        width: 340px;
+        right: -100px !important;
+    }
+
+    .notification-item {
+        gap: 8px;
+    }
+
+    .icon-nt {
+        width: 60px;
+        height: 30px;
+    }
+
+    .sidebar-active {
+        border-radius: 0;
     }
 
     .main .title {
@@ -289,6 +303,11 @@
 
     .menu-list {
         width: 250px !important;
+    }
+
+    .notify-btn {
+        padding: 0 6px 6px 6px !important;
+        border: none;
     }
 
     /* courses */
@@ -638,5 +657,32 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    /* feedback mobile css */
+
+    .save-later {
+        padding: 0 6px 6px 6px !important;
+        border: none;
+    }
+
+    .next-btn {
+        width: auto;
+    }
+
+    .home-btn {
+        width: auto;
+    }
+
+    .feedback-title h5 {
+        font-size: 20px;
+    }
+
+    .add-feedback-text {
+        font-size: 14px;
+    }
+
+    .feedback-title-thankyou h5 {
+        font-size: 20px;
     }
 }

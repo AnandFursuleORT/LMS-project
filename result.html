@@ -177,12 +177,82 @@
     <nav class="navbar offcanvas-nav d-sm-block d-lg-none d-md-none">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
-            <div class="wrap">
-                <form>
-                    <input type="text" class="input" placeholder="Search..">
-                </form>
-                <img src="Lms-images/search.svg" class="search-icon" alt="">
+
+            <div class="offcanvas-btn-div">
+                <div class="save-later">
+                    <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg"
+                            alt="bookmark-icon"></a>
+                </div>
+                <div class="notify dropdown">
+                    <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside" aria-expanded="false">
+                        <img src="images/bell.svg" alt="">
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end notification-dropdown"
+                        aria-labelledby="notificationDropdown">
+                        <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
+                            <span class="fw-bold nt-hdg">Notifications</span>
+                            <a href="notification.html" target="_blank" class="nt-view-text text-decoration-none">View
+                                All</a>
+                        </li>
+
+                        <li class="notification-item">
+                            <div class="icon-nt"></div>
+                            <div class="notification-text flex-grow-1">
+                                <h6 class="fw-bold">Add templates</h6>
+                                <p>To start work with data, please create your first components templates.
+                                </p>
+                            </div>
+                            <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                <img src="images/cancel-cross.svg" alt="close">
+                            </button>
+                        </li>
+
+                        <li class="notification-item mt-2">
+                            <div class="icon-nt"></div>
+                            <div class="notification-text flex-grow-1">
+                                <h6 class="fw-bold">Add templates</h6>
+                                <p>To start work with data, please create your first components templates.
+                                </p>
+                            </div>
+                            <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                <img src="images/cancel-cross.svg" alt="close">
+                            </button>
+                        </li>
+
+                        <li class="notification-item mt-2">
+                            <div class="icon-nt"></div>
+                            <div class="notification-text flex-grow-1">
+                                <h6 class="fw-bold">Add templates</h6>
+                                <p>To start work with data, please create your first components templates.
+                                </p>
+                                <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
+                            </div>
+                            <button class="close-btn mt-2" onclick="removeNotification(event, this)">
+                                <img src="images/cancel-cross.svg" alt="close">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle search-dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="Lms-images/search.svg" class="search-icon" alt="">
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end dropMenu px-2">
+                    <li>
+                        <form class="d-flex" role="search">
+                            <input type="search" name="Search" id="yoursearch" class="search-input"
+                                placeholder="Search">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
             <button class="navbar-toggler mobile-nav-btn" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -281,64 +351,6 @@
                             <a class="nav-link navDropdown" aria-current="page" href="#">About</a>
                         </li>
                     </ul>
-
-                    <div class="offcanvas-btn-div mt-4">
-                        <div class="save-later">
-                            <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg"
-                                    alt="bookmark-icon"></a>
-                        </div>
-                        <div class="notify dropdown">
-                            <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
-                                data-bs-auto-close="outside" aria-expanded="false">
-                                <img src="images/bell.svg" alt="">
-                            </button>
-
-                            <ul class="dropdown-menu notification-dropdown" aria-labelledby="notificationDropdown">
-                                <li class="dropdown-header d-flex justify-content-between align-items-center px-0 py-2">
-                                    <span class="fw-bold nt-hdg">Notifications</span>
-                                    <a href="notification.html" target="_blank"
-                                        class="nt-view-text text-decoration-none">View All</a>
-                                </li>
-
-                                <li class="notification-item">
-                                    <div class="icon-nt"></div>
-                                    <div class="notification-text flex-grow-1">
-                                        <h6 class="fw-bold">Add templates</h6>
-                                        <p>To start work with data, please create your first components templates.
-                                        </p>
-                                    </div>
-                                    <button class="close-btn mt-2" onclick="removeNotification(event, this)">
-                                        <img src="images/cancel-cross.svg" alt="close">
-                                    </button>
-                                </li>
-
-                                <li class="notification-item mt-2">
-                                    <div class="icon-nt"></div>
-                                    <div class="notification-text flex-grow-1">
-                                        <h6 class="fw-bold">Add templates</h6>
-                                        <p>To start work with data, please create your first components templates.
-                                        </p>
-                                    </div>
-                                    <button class="close-btn mt-2" onclick="removeNotification(event, this)">
-                                        <img src="images/cancel-cross.svg" alt="close">
-                                    </button>
-                                </li>
-
-                                <li class="notification-item mt-2">
-                                    <div class="icon-nt"></div>
-                                    <div class="notification-text flex-grow-1">
-                                        <h6 class="fw-bold">Add templates</h6>
-                                        <p>To start work with data, please create your first components templates.
-                                        </p>
-                                        <a href="#" class="btn btn-sm claim-btn mt-2">Claim Offer</a>
-                                    </div>
-                                    <button class="close-btn mt-2" onclick="removeNotification(event, this)">
-                                        <img src="images/cancel-cross.svg" alt="close">
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -347,7 +359,94 @@
     <div class="main">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="sidebar-dropdown-div d-sm-block d-lg-none d-md-none d-flex justify-content-end">
+                    <div class="nav-item dropdown status-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Results
+                            <img src="images/arrow-down-black.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end mt-3 menu-list">
+                            <div class="sidebar">
+                                <div class="menu-one">
+                                    <ul class="menu-list">
+                                        <li class="menu-item">
+                                            <a href="home.html">
+                                                <img src="images/home.svg" alt="home-icon" />
+                                                <span>Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="training.html">
+                                                <img src="images/sidebar-yourTraining.svg" alt="training-icon" />
+                                                <span>Your Training</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-two">
+                                    <p class="ps-2">Library</p>
+                                    <ul class="menu-list">
+                                        <li class="menu-item">
+                                            <a href="recommendation.html">
+                                                <img src="images/sidebar-reccomendation.svg" alt="Recommendation-icon" />
+                                                <span>Recommendation</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="course.html">
+                                                <img src="images/sidebar-courses.svg" alt="courses-icon" />
+                                                <span>Courses</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="exam.html">
+                                                <img src="images/sidebar-exam.svg" alt="exam-icon" />
+                                                <span>Exam</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item sidebar-active">
+                                            <a href="result.html">
+                                                <img src="images/result.svg" alt="results-icon" />
+                                                <span class="sidebar-options">Results</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="certificate.html">
+                                                <img src="images/sidebar-certification.svg" alt="certification-icon" />
+                                                <span>Certification</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="saved-courses.html">
+                                                <img src="images/Bookmark.svg" alt="bookmark-icon" />
+                                                <span>Saved Courses</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-three">
+                                    <p class="ps-2">Others</p>
+                                    <ul class="menu-list">
+                                        <li class="menu-item">
+                                            <a href="feedback.html">
+                                                <img src="images/sidebar-feedback.svg" alt="courses-icon" />
+                                                <span>Feedback</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="faq.html">
+                                                <img src="images/sidebar-faq.svg" alt="exam-icon" />
+                                                <span>FAQs</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 d-none d-lg-block d-md-block">
                     <div class="card">
                         <div class="card-body">
                             <div class="sidebar">
@@ -430,7 +529,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-lg-9 col-md-9 col-sm-12">
                     <div class="main-content">
                         <div class="course-heading d-flex  flex-column gap-4">
                             <div class="title d-flex justify-content-between align-items-center">
@@ -483,8 +582,8 @@
                                 </ul>
 
                                 <div class="nav-item dropdown status-dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
                                         Status
                                         <img src="images/arrow-down-black.svg" alt="">
                                     </a>

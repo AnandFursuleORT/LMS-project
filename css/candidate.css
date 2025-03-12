@@ -307,7 +307,7 @@ img {
 .offcanvas-btn-div {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 8px;
 }
 
 .main {
@@ -316,8 +316,8 @@ img {
     padding-bottom: 100px;
 }
 
-.sidebar {
-    gap: 16px;
+.sidebar p {
+    font-weight: 700;
 }
 
 .sidebar-active {
@@ -1315,7 +1315,6 @@ table td a {
     border: 1px solid #DEE3E6;
     border-radius: 8px;
     padding: 8px 12px;
-    gap: 8px;
 }
 
 .nav-link:focus-visible {
