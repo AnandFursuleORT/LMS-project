@@ -594,6 +594,70 @@
         margin-left: 0 !important;
     }
 
+    /* ===================================
+    1. Mobile Offcanvas Header
+====================================== */
+
+    .offcanvas-nav {
+        background-color: #FFFAF4;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url('/Lms-images/menu-03.svg') !important;
+    }
+
+    .mobile-nav-btn {
+        border: none !important;
+        padding-left: 0 !important;
+    }
+
+    .mobile-nav-btn:focus {
+        box-shadow: none !important;
+    }
+
+    .offcanvas-close-btn:focus {
+        box-shadow: none !important;
+    }
+
+    .search-icon {
+        display: flex !important;
+        padding: 12px !important;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid #DEE3E6;
+    }
+
+    .offcanvas-btn-div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .navbar>.container-fluid {
+        flex-wrap: nowrap !important;
+        gap: 8px;
+    }
+
+    .notification-dropdown {
+        width: 340px;
+        right: -100px !important;
+    }
+
+    .notification-item {
+        gap: 8px;
+    }
+
+    .notify-btn {
+        padding: 0 6px 6px 6px !important;
+        border: none;
+    }
+
+    .save-later {
+        padding: 0 6px 6px 6px !important;
+        border: none;
+    }
+
     /* Features section css */
 
     .features-sect {
@@ -729,7 +793,9 @@
 
     .mission-info-sect {
         background-color: #03599F;
-        padding: 40px 20px;
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
         gap: 12px;
         border-radius: 0 0 16px 16px;
     }
@@ -746,7 +812,9 @@
 
     .vission-info-sect {
         background-color: #E28000;
-        padding: 40px 20px;
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
         gap: 12px;
         border-radius: 0 0 16px 16px;
     }
