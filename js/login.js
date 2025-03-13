@@ -72,6 +72,7 @@ const prevBtnSec = document.querySelector(".prev-1");
 const nextBtnSec = document.querySelector(".next-1");
 const prevBtnThird = document.querySelector(".prev-2");
 const nextBtnThird = document.querySelector(".next-2");
+const nextBtnFourth = document.querySelector(".next-3");
 const prevBtnFourth = document.querySelector(".prev-3");
 const submitBtn = document.querySelector(".submit");
 const progressText = document.querySelectorAll(".step p");
@@ -80,18 +81,21 @@ const bullet = document.querySelectorAll(".step .bullet");
 const step1 = document.querySelector(".step1");
 const step2 = document.querySelector(".step2");
 const step3 = document.querySelector(".step3");
+const step4 = document.querySelector(".step4");
 const number3 = document.querySelector(".number3");
 const line1 = document.querySelector(".line-1");
 const line2 = document.querySelector(".line-2");
+const line3 = document.querySelector(".line-3");
 const p1 = document.querySelector(".progress-text-1");
 const p2 = document.querySelector(".progress-text-2");
 const p3 = document.querySelector(".progress-text-3");
+const p4 = document.querySelector(".progress-text-4");
 const check = document.querySelector(".step1");
 let current = 1;
 
 nextBtnFirst.addEventListener("click", function (event) {
     event.preventDefault();
-    slidePage.style.marginLeft = "-25%";
+    slidePage.style.marginLeft = "-20%";
     step1.classList.add("active-color");
     line1.classList.add("active-line");
     p1.classList.add("active-color-p");
@@ -99,7 +103,7 @@ nextBtnFirst.addEventListener("click", function (event) {
 });
 nextBtnSec.addEventListener("click", function (event) {
     event.preventDefault();
-    slidePage.style.marginLeft = "-50%";
+    slidePage.style.marginLeft = "-40%";
     step2.classList.add("active-color");
     line2.classList.add("active-line");
     p2.classList.add("active-color-p");
@@ -107,10 +111,18 @@ nextBtnSec.addEventListener("click", function (event) {
 });
 nextBtnThird.addEventListener("click", function (event) {
     event.preventDefault();
-    slidePage.style.marginLeft = "-75%";
+    slidePage.style.marginLeft = "-60%";
     step3.classList.add("active-color");
+    line3.classList.add("active-line");
     p3.classList.add("active-color-p");
     p3.innerHTML = `<i class="check fas fa-check "></i>`;
+});
+nextBtnFourth.addEventListener("click", function (event) {
+    event.preventDefault();
+    slidePage.style.marginLeft = "-80%";
+    step4.classList.add("active-color");
+    p4.classList.add("active-color-p");
+    p4.innerHTML = `<i class="check fas fa-check "></i>`;
 });
 submitBtn.addEventListener("click", function () {
     bullet[current - 1].classList.add("active");
@@ -133,7 +145,7 @@ prevBtnSec.addEventListener("click", function (event) {
 });
 prevBtnThird.addEventListener("click", function (event) {
     event.preventDefault();
-    slidePage.style.marginLeft = "-25%";
+    slidePage.style.marginLeft = "-20%";
     step2.classList.remove("active-color");
     line2.classList.remove("active-line");
     p2.classList.remove("active-color-p");
@@ -141,7 +153,7 @@ prevBtnThird.addEventListener("click", function (event) {
 });
 prevBtnFourth.addEventListener("click", function (event) {
     event.preventDefault();
-    slidePage.style.marginLeft = "-50%";
+    slidePage.style.marginLeft = "-40%";
     step3.classList.remove("active-color");
     p3.classList.remove("active-color-p");
     p3.innerHTML = `03`;
