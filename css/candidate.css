@@ -44,7 +44,6 @@ img {
 
 .dropMenu {
     background-color: #FFFAF4 !important;
-    margin-top: 12px !important;
 }
 
 .items-submenu {
@@ -1284,6 +1283,12 @@ img {
     padding: 0 !important;
 }
 
+.course-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 table th {
     padding: 14px !important;
     background-color: #DDEFFE80 !important;
@@ -1310,6 +1315,12 @@ table td a {
 }
 
 .status-dropdown {
+    border: 1px solid #DEE3E6;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.status1-dropdown {
     border: 1px solid #DEE3E6;
     border-radius: 8px;
     padding: 8px 12px;
@@ -2676,7 +2687,6 @@ table td a {
     border-radius: 12px;
     color: #FACC15;
     background-color: rgba(229, 58, 58, 0.15);
-    ;
     padding: 16px;
 }
 
@@ -2690,13 +2700,8 @@ table td a {
 .upload-btn .btn {
     background-color: #03599F !important;
     font-size: 16px;
-    line-height: 24px;
     font-weight: 600;
     color: #FAFBFB;
-}
-
-.upload-btn .btn:hover {
-    color: #FAFBFB !important;
 }
 
 .seafarers-info .form-text {

@@ -85,17 +85,17 @@
             <a class="nav-link navDropdown" aria-current="page" href="#">About</a>
           </li>
         </ul>
-        <div class=" nav-end ">
+        <div class="nav-end">
           <form class="d-flex" role="search">
             <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
           </form>
           <div class="save-later">
-            <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg" alt="bookmark-icon"></a>
+            <a href="saved-courses.html" target="_blank"><img src="images/bookmark1.svg" alt="bookmark-icon"></a>
           </div>
           <div class="notify dropdown">
             <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown" data-bs-auto-close="outside"
               aria-expanded="false">
-              <img src="images/bell.svg" alt="">
+              <img src="Lms-images/notification-01.svg" alt="">
             </button>
 
             <ul class="dropdown-menu notification-dropdown dropdown-menu-end" aria-labelledby="notificationDropdown">
@@ -177,13 +177,13 @@
 
       <div class="offcanvas-btn-div ms-3">
         <a href="saved-courses.html" class="save-later" target="_blank">
-          <img src="images/Bookmark-header.svg" alt="bookmark-icon">
+          <img src="images/bookmark1.svg" alt="bookmark-icon">
         </a>
 
         <div class="notify dropdown">
           <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown" data-bs-auto-close="outside"
             aria-expanded="false">
-            <img src="images/bell.svg" alt="">
+            <img src="Lms-images/notification-01.svg" alt="">
           </button>
 
           <ul class="dropdown-menu dropdown-menu-end notification-dropdown" aria-labelledby="notificationDropdown">
@@ -232,120 +232,120 @@
           </ul>
         </div>
 
-        <div class="dropdown">
-          <a class="nav-link dropdown-toggle search-dropdown" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <img src="Lms-images/search.svg" class="search-icon" alt="">
-          </a>
+        <a class="search-dropdown" href="#" data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvas">
+          <img src="Lms-images/search.svg" class="search-icon" alt="">
+        </a>
 
-          <ul class="dropdown-menu dropdown-menu-end dropMenu px-2">
-            <li>
-              <form class="d-flex" role="search">
-                <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
-              </form>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-top search-offcanvas" id="searchOffcanvas">
+          <div class="offcanvas-header">
+            <h4 class="offcanvas-title">Search results</h4>
+            <button type="button" class="btn-close search-close-btn" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex" role="search">
+              <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
+            </form>
+          </div>
         </div>
-      </div>
 
-      <button class="navbar-toggler mobile-nav-btn" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <a class="navbar-brand" href="#"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
-          <div class="profile-div ms-3 d-flex align-items-center">
-            <img src="Lms-images/profile.png" class="prof-img" alt="profile">
-            <div class="prof-dropdown">
-              <div class="dropdown">
-                <a class="nav-link dropdown-toggle dropdown-profile" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <div class="prof-sect ms-2">
-                    <h6 class="prof-name mb-0">Satyam</h6>
-                    <p class="prof-dst mb-0">Captain</p>
-                  </div>
-                  <div class="dropDown-prof ms-2">
-                    <img src="Lms-images/arrow-down-round2.svg" alt="dropdown">
-                  </div>
-                </a>
+        <button class="navbar-toggler mobile-nav-btn" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a class="navbar-brand" href="#"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
+            <div class="profile-div ms-3 d-flex align-items-center">
+              <img src="Lms-images/profile.png" class="prof-img" alt="profile">
+              <div class="prof-dropdown">
+                <div class="dropdown">
+                  <a class="nav-link dropdown-toggle dropdown-profile" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <div class="prof-sect ms-2">
+                      <h6 class="prof-name mb-0">Satyam</h6>
+                      <p class="prof-dst mb-0">Captain</p>
+                    </div>
+                    <div class="dropDown-prof ms-2">
+                      <img src="Lms-images/arrow-down-round2.svg" alt="dropdown">
+                    </div>
+                  </a>
 
-                <ul class="dropdown-menu dropdown-menu-end dropMenu">
-                  <li><a class="dropdown-item menu-item" target="_blank" href="general.html">Settings</a></li>
-                  <li><a class="dropdown-item menu-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item menu-item" href="#">Something else here</a></li>
-                </ul>
+                  <ul class="dropdown-menu dropdown-menu-end dropMenu">
+                    <li><a class="dropdown-item menu-item" target="_blank" href="general.html">Settings</a></li>
+                    <li><a class="dropdown-item menu-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item menu-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
+            <button type="button" class="btn-close offcanvas-close-btn" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
-          <button type="button" class="btn-close offcanvas-close-btn" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end pe-3">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle navDropdown" href="#" data-bs-toggle="dropdown">
-                Services
-                <img src="Lms-images/arrow-down-01-round.svg" alt="arrow2">
-              </a>
-              <ul class="dropdown-menu dropMenu">
-                <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
-                <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a>
-                <li class="dropdown-submenu">
-                  <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle menu-item">People
-                    of the Sea</a>
-                  <ul class="dropdown-menu items-submenu">
-                    <li>
-                      <a href="#" class="dropdown-item sub-item">Qualification</a>
-                    </li>
-                    <li>
-                      <a href="#" class="dropdown-item sub-item">Labor</a>
-                    </li>
-                    <li>
-                      <a href="#" class="dropdown-item sub-item">Training</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a class="dropdown-item menu-item" href="#">Ports and Auxiliary Maritime
-                    Industries</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle navDropdown" href="#" data-bs-toggle="dropdown">
-                Consultations
-                <img src="Lms-images/arrow-down-01-round.svg" alt="">
-              </a>
-              <ul class="dropdown-menu dropMenu">
-                <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
-                <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a></li>
-                <li><a class="dropdown-item menu-item" href="#">People of the Sea</a></li>
-                <li><a class="dropdown-item menu-item" href="#">Ports and Auxiliary Maritime
-                    Industries</a></li>
-                <li><a class="dropdown-item menu-item" href="#">License Cancellation Notice</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle navDropdown" href="#" data-bs-toggle="dropdown">
-                Courses
-                <img src="Lms-images/arrow-down-01-round.svg" alt="">
-              </a>
-              <ul class="dropdown-menu dropMenu">
-                <li><a class="dropdown-item menu-item" href="#">Navigation</a></li>
-                <li><a class="dropdown-item menu-item" href="#">Safety & Survival</a></li>
-                <li><a class="dropdown-item menu-item" href="#">Engineering</a></li>
-                <li><a class="dropdown-item menu-item" href="#">Cargo Handling</a></li>
-                <li><a class="dropdown-item menu-item" href="#">Compliance</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navDropdown" aria-current="page" href="#">About</a>
-            </li>
-          </ul>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end pe-3">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navDropdown" href="#" data-bs-toggle="dropdown">
+                  Services
+                  <img src="Lms-images/arrow-down-01-round.svg" alt="arrow2">
+                </a>
+                <ul class="dropdown-menu dropMenu">
+                  <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
+                  <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a>
+                  <li class="dropdown-submenu">
+                    <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle menu-item">People
+                      of the Sea</a>
+                    <ul class="dropdown-menu items-submenu">
+                      <li>
+                        <a href="#" class="dropdown-item sub-item">Qualification</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item sub-item">Labor</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item sub-item">Training</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item menu-item" href="#">Ports and Auxiliary Maritime
+                      Industries</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navDropdown" href="#" data-bs-toggle="dropdown">
+                  Consultations
+                  <img src="Lms-images/arrow-down-01-round.svg" alt="">
+                </a>
+                <ul class="dropdown-menu dropMenu">
+                  <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
+                  <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a></li>
+                  <li><a class="dropdown-item menu-item" href="#">People of the Sea</a></li>
+                  <li><a class="dropdown-item menu-item" href="#">Ports and Auxiliary Maritime
+                      Industries</a></li>
+                  <li><a class="dropdown-item menu-item" href="#">License Cancellation Notice</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navDropdown" href="#" data-bs-toggle="dropdown">
+                  Courses
+                  <img src="Lms-images/arrow-down-01-round.svg" alt="">
+                </a>
+                <ul class="dropdown-menu dropMenu">
+                  <li><a class="dropdown-item menu-item" href="#">Navigation</a></li>
+                  <li><a class="dropdown-item menu-item" href="#">Safety & Survival</a></li>
+                  <li><a class="dropdown-item menu-item" href="#">Engineering</a></li>
+                  <li><a class="dropdown-item menu-item" href="#">Cargo Handling</a></li>
+                  <li><a class="dropdown-item menu-item" href="#">Compliance</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navDropdown" aria-current="page" href="#">About</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
   </nav>
 
 

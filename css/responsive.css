@@ -533,7 +533,7 @@
 
     .banner-pg {
         font-size: 14px;
-        line-height: 18px;
+        line-height: 20px;
         width: 200px;
     }
 
@@ -656,6 +656,18 @@
     .save-later {
         padding: 0 6px 6px 6px !important;
         border: none;
+    }
+
+    .search-offcanvas {
+        height: 20vh !important;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .search-close-btn:focus {
+        box-shadow: none !important;
     }
 
     /* Features section css */
@@ -889,6 +901,10 @@
         margin-top: 24px;
     }
 
+    .textSide p {
+        font-size: 14px;
+    }
+
     /* Footer css */
 
     .footer-web {
@@ -1062,7 +1078,7 @@
 
     .courseHdg {
         font-size: 28px;
-        line-height: 40px;
+        line-height: 36px;
     }
 
     .Course-list-banner .col-sm-12 {
@@ -1070,7 +1086,7 @@
     }
 
     .scroll-buttons.left-scroll {
-        left: 25%;
+        left: 28%;
     }
 
     .mainSkillDiv {
@@ -1081,6 +1097,10 @@
 
     .hdgSect {
         padding-top: 20px;
+    }
+
+    .d-sect {
+        width: 350px;
     }
 
     .course-tabHdg {
@@ -1114,6 +1134,18 @@
         line-height: 36px;
     }
 
+    .title-course {
+        padding: 0 36px 0 24px;
+    }
+
+    .cr-title {
+        font-size: 18px;
+    }
+
+    .c-tab-title {
+        font-size: 16px !important;
+    }
+
     /* Course details css */
 
     .Course-detail-banner {
@@ -1131,6 +1163,10 @@
     .ust-hdg-div h2 {
         font-size: 28px;
         line-height: 40px;
+    }
+
+    .breadcrumb-item {
+        font-size: 12px;
     }
 
     .breadcrumb-item.active {

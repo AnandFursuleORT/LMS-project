@@ -310,6 +310,18 @@
         border: none;
     }
 
+    .search-offcanvas {
+        height: 20vh !important;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .search-close-btn:focus {
+        box-shadow: none !important;
+    }
+
     /* courses */
 
     .strike-price {
@@ -684,5 +696,45 @@
 
     .feedback-title-thankyou h5 {
         font-size: 20px;
+    }
+
+    /* documents page css */
+
+    .validity-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .expiry-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .coc-expiry {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .coc-validity {
+        padding: 8px;
+    }
+
+    .upload-btn .btn {
+        font-size: 12px;
+        padding: 8px !important;
+        width: 80px;
+    }
+
+    .upload-btn .btn img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .course-tabs {
+        align-items: baseline !important;
+    }
+
+    .status1-dropdown {
+        padding: 8px 20px 8px 8px;
     }
 }

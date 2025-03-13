@@ -90,12 +90,12 @@
             <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
           </form>
           <div class="save-later ms-2">
-            <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg" alt="bookmark-icon"></a>
+            <a href="saved-courses.html" target="_blank"><img src="images/bookmark1.svg" alt="bookmark-icon"></a>
           </div>
           <div class="notify dropdown">
             <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown" data-bs-auto-close="outside"
               aria-expanded="false">
-              <img src="images/bell.svg" alt="">
+              <img src="Lms-images/notification-01.svg" alt="">
             </button>
 
             <ul class="dropdown-menu notification-dropdown dropdown-menu-end" aria-labelledby="notificationDropdown">
@@ -174,12 +174,12 @@
 
       <div class="offcanvas-btn-div">
         <div class="save-later">
-          <a href="saved-courses.html" target="_blank"><img src="images/Bookmark-header.svg" alt="bookmark-icon"></a>
+          <a href="saved-courses.html" target="_blank"><img src="images/bookmark1.svg" alt="bookmark-icon"></a>
         </div>
         <div class="notify dropdown">
           <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown" data-bs-auto-close="outside"
             aria-expanded="false">
-            <img src="images/bell.svg" alt="">
+            <img src="Lms-images/notification-01.svg" alt="">
           </button>
 
           <ul class="dropdown-menu dropdown-menu-end notification-dropdown" aria-labelledby="notificationDropdown">
@@ -229,19 +229,20 @@
         </div>
       </div>
 
-      <div class="dropdown">
-        <a class="nav-link dropdown-toggle search-dropdown" href="#" role="button" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          <img src="Lms-images/search.svg" class="search-icon" alt="">
-        </a>
+      <a class="search-dropdown" href="#" data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvas">
+        <img src="Lms-images/search.svg" class="search-icon" alt="">
+      </a>
 
-        <ul class="dropdown-menu dropdown-menu-end dropMenu px-2">
-          <li>
-            <form class="d-flex" role="search">
-              <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
-            </form>
-          </li>
-        </ul>
+      <div class="offcanvas offcanvas-top search-offcanvas" id="searchOffcanvas">
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title">Search results</h4>
+          <button type="button" class="btn-close search-close-btn" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form class="d-flex" role="search">
+            <input type="search" name="Search" id="yoursearch" class="search-input" placeholder="Search">
+          </form>
+        </div>
       </div>
 
       <button class="navbar-toggler mobile-nav-btn" type="button" data-bs-toggle="offcanvas"
