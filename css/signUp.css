@@ -338,7 +338,7 @@ svg {
 
 .btn-outline-secondary:active {
   color: #01233f !important;
-  background-color: #dee2e6 !important;
+  background-color: #13304d !important;
 }
 
 .container1 .form-outer {
@@ -348,11 +348,11 @@ svg {
 
 .container1 .form-outer form {
   display: flex;
-  width: 400%;
+  width: 500%;
 }
 
 .form-outer form .page {
-  width: 25%;
+  width: 20%;
   transition: margin-left 0.3s ease-in-out;
 }
 
@@ -881,6 +881,15 @@ span {
   justify-content: center;
   align-items: center;
 }
+.step4 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #dee2e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .number-1 {
   position: relative;
@@ -903,6 +912,11 @@ span {
 }
 
 .line-2 {
+  height: 2px;
+  background-color: #f2f2f2;
+  flex-grow: 1;
+}
+.line-3 {
   height: 2px;
   background-color: #f2f2f2;
   flex-grow: 1;
