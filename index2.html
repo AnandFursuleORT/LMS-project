@@ -285,11 +285,12 @@
         <nav class="navbar offcanvas-nav d-sm-block d-lg-none d-md-none">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
-                <div class="offcanvas-btn-div">
+                <div class="offcanvas-btn-div ms-auto">
                     <div class="save-later">
                         <a href="saved-courses.html" target="_blank"><img src="images/bookmark1.svg"
                                 alt="bookmark-icon"></a>
                     </div>
+
                     <div class="notify dropdown">
                         <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
                             data-bs-auto-close="outside" aria-expanded="false">
@@ -343,21 +344,23 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <a class="search-dropdown" href="#" data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvas">
-                    <img src="Lms-images/search.svg" class="search-icon" alt="">
-                </a>
 
-                <div class="offcanvas offcanvas-top search-offcanvas" id="searchOffcanvas">
-                    <div class="offcanvas-header">
-                        <h4 class="offcanvas-title">Search results</h4>
-                        <button type="button" class="btn-close search-close-btn" data-bs-dismiss="offcanvas"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <form class="d-flex" role="search">
-                            <input type="search" name="Search" id="yoursearch" class="search-input"
-                                placeholder="Search">
-                        </form>
+                    <a class="search-dropdown" href="#" data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvas">
+                        <img src="Lms-images/search.svg" class="search-icon" alt="">
+                    </a>
+
+                    <div class="offcanvas offcanvas-top search-offcanvas" id="searchOffcanvas">
+                        <div class="offcanvas-header">
+                            <h4 class="offcanvas-title">Search results</h4>
+                            <button type="button" class="btn-close search-close-btn"
+                                data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form class="d-flex" role="search">
+                                <input type="search" name="Search" id="yoursearch" class="search-input"
+                                    placeholder="Search">
+                            </form>
+                        </div>
                     </div>
                 </div>
 

@@ -456,6 +456,15 @@ img {
     gap: 8px;
 }
 
+.search-offcanvas {
+    height: 20vh !important;
+    background-color: #FFFAF4 !important;
+}
+
+.offcanvas.offcanvas-end {
+    background-color: #FFFAF4 !important;
+}
+
 /* ===================================
 Homepage CSS
     2. Banner

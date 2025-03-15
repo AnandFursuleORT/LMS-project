@@ -178,11 +178,12 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="index2.html"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
 
-            <div class="offcanvas-btn-div">
+            <div class="offcanvas-btn-div ms-auto">
                 <div class="save-later">
                     <a href="saved-courses.html" target="_blank"><img src="images/bookmark1.svg"
                             alt="bookmark-icon"></a>
                 </div>
+
                 <div class="notify dropdown">
                     <button id="notificationDropdown" class="notify-btn" data-bs-toggle="dropdown"
                         data-bs-auto-close="outside" aria-expanded="false">
@@ -235,10 +236,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
 
-           <a class="search-dropdown" href="#" data-bs-toggle="offcanvas"
-                    data-bs-target="#searchOffcanvas">
+                <a class="search-dropdown" href="#" data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvas">
                     <img src="Lms-images/search.svg" class="search-icon" alt="">
                 </a>
 
@@ -254,6 +253,7 @@
                         </form>
                     </div>
                 </div>
+            </div>
 
             <button class="navbar-toggler mobile-nav-btn" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -362,14 +362,14 @@
     <div class="main">
         <div class="container">
             <div class="row">
-                <div class="sidebar-dropdown-div d-sm-block d-lg-none d-md-none d-flex justify-content-end">
+                <div class="sidebar-dropdown-div d-sm-block d-lg-none d-md-none">
                     <div class="nav-item dropdown status-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle d-flex justify-content-between" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Recommendation
                             <img src="images/arrow-down-black.svg" alt="">
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end mt-3 menu-list">
+                        <ul class="dropdown-menu mt-3 menu-list">
                             <div class="sidebar">
                                 <div class="menu-one">
                                     <ul class="menu-list">
@@ -392,8 +392,7 @@
                                     <ul class="menu-list">
                                         <li class="menu-item sidebar-active">
                                             <a href="recommendation.html">
-                                                <img src="images/reccomendation.svg"
-                                                    alt="Recommendation-icon" />
+                                                <img src="images/reccomendation.svg" alt="Recommendation-icon" />
                                                 <span class="sidebar-options">Recommendation</span>
                                             </a>
                                         </li>

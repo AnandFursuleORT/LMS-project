@@ -288,13 +288,13 @@
         border-radius: 0;
     }
 
-    .main .title {
-        margin-top: 24px;
-    }
-
     .main .title h2 {
         font-size: 18px;
         line-height: 26px;
+    }
+
+    .main-content {
+        margin-top: 12px;
     }
 
     .home-empty-card {
@@ -302,7 +302,7 @@
     }
 
     .menu-list {
-        width: 250px !important;
+        width: 320px !important;
     }
 
     .notify-btn {
@@ -337,11 +337,14 @@
     .price {
         gap: 10px;
     }
-
-    .course-card {
-        gap: 16px;
+ 
+    .card-title {
+        font-size: 20px;
     }
 
+    .title {
+        margin-top: 12px;
+    }
 
     /* Feedback  */
 
@@ -372,6 +375,15 @@
 
     .faq-accordion {
         gap: 8px;
+    }
+
+    .banner-search {
+        padding: 0;
+    }
+
+    .banner-text {
+        font-size: 24px;
+        line-height: 32px;
     }
 
     /* Setting Payments  */
@@ -574,6 +586,7 @@
 
     .signout-btn {
         font-size: 12px;
+        width: 100px;
     }
 
     /* notification settings page css */

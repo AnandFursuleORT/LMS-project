@@ -658,10 +658,6 @@
         border: none;
     }
 
-    .search-offcanvas {
-        height: 20vh !important;
-    }
-
     .search-input {
         width: 100%;
     }
