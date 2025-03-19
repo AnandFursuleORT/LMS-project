@@ -525,6 +525,7 @@
 /* =================== Mobile view css ================= */
 
 @media only screen and (max-width: 480px) {
+
     .banner-heading {
         color: #FFF;
         font-size: 24px;
@@ -695,17 +696,25 @@
         padding: 32px 16px;
     }
 
+    .home-c-hdg {
+        font-size: 14px;
+    }
+
+    .home-p {
+        font-size: 12px;
+    }
+
     .ct-text {
         font-size: 12px;
+    }
+
+    .box-of-course {
+        padding: 20px;
     }
 
     .c-heading h6 {
         font-size: 24px;
         border-bottom: 2px solid #FFE6C6;
-    }
-
-    .c-tab {
-        padding: 20px !important;
     }
 
     .course-para p {
@@ -717,7 +726,16 @@
     }
 
     .tab-title.active {
-        padding: 0 !important;
+        padding: 22px 0 !important;
+        font-size: 16px;
+    }
+
+    .main-title {
+        font-size: 16px !important;
+    }
+
+    .tab-title {
+        font-size: 16px !important;
     }
 
     .cert-Sect {
@@ -757,10 +775,12 @@
 
     .sol-hdg h2 {
         font-size: 24px;
+        text-align: left;
     }
 
     .sol-hdg p {
         font-size: 16px;
+        text-align: left;
     }
 
     .solution-part h6 {
@@ -885,16 +905,18 @@
     }
 
     .formInputDiv {
-        gap: 0 !important;
+        margin-top: 8px;
+        gap: 4px !important;
         flex-direction: column;
     }
 
     .contactForm {
-        padding: 16px;
+        padding: 16px 10px;
     }
 
     .contact-info {
         margin-top: 24px;
+        gap: 24px;
     }
 
     .textSide p {
@@ -1066,6 +1088,10 @@
         margin-top: 2rem;
     }
 
+    .form-outer form .page .field {
+        flex-direction: column;
+    }
+
     /* Course list page css */
 
     .Course-list-banner {
@@ -1082,7 +1108,7 @@
     }
 
     .scroll-buttons.left-scroll {
-        left: 28%;
+        left: 25%;
     }
 
     .mainSkillDiv {
@@ -1128,6 +1154,12 @@
     .skill-hdg {
         font-size: 28px;
         line-height: 36px;
+        text-align: left;
+    }
+
+    .skill-para {
+        text-align: left;
+        font-size: 16px;
     }
 
     .title-course {
@@ -1159,6 +1191,15 @@
     .ust-hdg-div h2 {
         font-size: 28px;
         line-height: 40px;
+    }
+
+    .watch-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .lect-time {
+        font-size: 12px;
     }
 
     .breadcrumb-item {
@@ -1245,7 +1286,7 @@
     }
 
     .lsn-acdn-btn:not(.collapsed) {
-        background-position: 4px 12px;
+        background-position: 4px 16px;
     }
 
     .lect {
@@ -1257,8 +1298,12 @@
     }
 
     .lect-hdg-left {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 20px;
+    }
+
+    .lesson-body {
+        padding: 8px 12px !important;
     }
 
     .faq-acdn-btn {
@@ -1297,6 +1342,16 @@
         width: 140px;
         background-position: 108px 12px;
         font-size: 14px !important;
+    }
+
+    .lang-select {
+        padding: 8px 12px !important;
+        width: 140px !important;
+    }
+
+    .inst-hdg {
+        font-size: 20px;
+        line-height: 28px;
     }
 }
 

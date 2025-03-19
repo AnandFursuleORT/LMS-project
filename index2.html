@@ -266,10 +266,30 @@
                                 </a>
 
                                 <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
-                                    <li><a class="dropdown-item menu-item" target="_blank"
-                                            href="general.html">Settings</a></li>
-                                    <li><a class="dropdown-item menu-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item menu-item" href="#">Something else here</a></li>
+                                    <li>
+                                        <a class="dropdown-item settings-menu" target="_blank" href="home.html">
+                                            <img src="Lms-images/Dashboard.svg" alt="set-img">
+                                            Dashboard
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item settings-menu" target="_blank" href="general.html">
+                                            <img src="Lms-images/Settings.svg" alt="set-img">
+                                            Settings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item settings-menu" target="_blank" href="faq.html">
+                                            <img src="images/sidebar-faq.svg" alt="">
+                                            Query
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item logout-menu" href="login.html">
+                                            <img src="Lms-images/Logout.svg" alt="">
+                                            Logout
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -372,30 +392,6 @@
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <a class="navbar-brand" href="#"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
-                        <div class="profile-div ms-3 d-flex align-items-center">
-                            <img src="Lms-images/profile.png" class="prof-img" alt="profile">
-                            <div class="prof-dropdown">
-                                <div class="dropdown">
-                                    <a class="nav-link dropdown-toggle dropdown-profile" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <div class="prof-sect ms-2">
-                                            <h6 class="prof-name">Satyam</h6>
-                                            <p class="prof-dst">Captain</p>
-                                        </div>
-                                        <div class="dropDown-prof ms-2">
-                                            <img src="Lms-images/arrow-down-round2.svg" alt="dropdown">
-                                        </div>
-                                    </a>
-
-                                    <ul class="dropdown-menu dropdown-menu-end dropMenu">
-                                        <li><a class="dropdown-item menu-item" target="_blank"
-                                                href="general.html">Settings</a></li>
-                                        <li><a class="dropdown-item menu-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item menu-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                         <button type="button" class="btn-close offcanvas-close-btn" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -406,7 +402,7 @@
                                     Services
                                     <img src="Lms-images/arrow-down-01-round.svg" alt="arrow2">
                                 </a>
-                                <ul class="dropdown-menu dropMenu">
+                                <ul class="dropdown-menu dropMenu show">
                                     <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
                                     <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a>
                                     <li class="dropdown-submenu">
@@ -460,6 +456,20 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link navDropdown" aria-current="page" href="#">About</a>
+                            </li>
+
+                            <hr class="solid">
+
+                            <li class="nav-item">
+                                <a class="nav-link navDropdown" target="_blank" href="general.html">Settings</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link navDropdown" href="faq.html">Query</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link navDropdown" href="index.html">Logout</a>
                             </li>
                         </ul>
 
@@ -1495,7 +1505,7 @@
                 </div>
             </div>
 
-            <div class="row mt-5 align-items-center gx-5">
+            <div class="row mt-4 align-items-center gx-5">
                 <div class="col-lg-8 col-md-8 col-sm-12">
                     <form class="contactForm">
                         <div class="container">

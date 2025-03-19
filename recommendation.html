@@ -364,8 +364,8 @@
             <div class="row">
                 <div class="sidebar-dropdown-div d-sm-block d-lg-none d-md-none">
                     <div class="nav-item dropdown status-dropdown">
-                        <a class="nav-link dropdown-toggle d-flex justify-content-between" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle d-flex justify-content-between" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Recommendation
                             <img src="images/arrow-down-black.svg" alt="">
                         </a>
@@ -1112,8 +1112,10 @@
                                                             </div>
                                                         </div>
                                                         <div class="decline-accpt-btn d-flex ">
-                                                            <button class="decline w-100">Decline</button>
-                                                            <button class="accept w-100">Accept</button>
+                                                            <button class="decline w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#declineModal">Decline</button>
+                                                            <button class="accept w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#AcceptModal">Accept</button>
                                                         </div>
                                                     </div>
 
@@ -1166,8 +1168,10 @@
                                                             </div>
                                                         </div>
                                                         <div class="decline-accpt-btn d-flex ">
-                                                            <button class="decline w-100">Decline</button>
-                                                            <button class="accept w-100">Accept</button>
+                                                            <button class="decline w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#declineModal">Decline</button>
+                                                            <button class="accept w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#AcceptModal">Accept</button>
                                                         </div>
                                                     </div>
 
@@ -1220,8 +1224,10 @@
                                                             </div>
                                                         </div>
                                                         <div class="decline-accpt-btn d-flex ">
-                                                            <button class="decline w-100">Decline</button>
-                                                            <button class="accept w-100">Accept</button>
+                                                            <button class="decline w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#declineModal">Decline</button>
+                                                            <button class="accept w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#AcceptModal">Accept</button>
                                                         </div>
                                                     </div>
 
@@ -1387,8 +1393,10 @@
                                                             </div>
                                                         </div>
                                                         <div class="decline-accpt-btn d-flex ">
-                                                            <button class="decline w-100">Decline</button>
-                                                            <button class="accept w-100">Accept</button>
+                                                            <button class="decline w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#declineModal">Decline</button>
+                                                            <button class="accept w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#AcceptModal">Accept</button>
                                                         </div>
                                                     </div>
 
@@ -1446,8 +1454,10 @@
                                                             </div>
                                                         </div>
                                                         <div class="decline-accpt-btn d-flex ">
-                                                            <button class="decline w-100">Decline</button>
-                                                            <button class="accept w-100">Accept</button>
+                                                            <button class="decline w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#declineModal">Decline</button>
+                                                            <button class="accept w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#AcceptModal">Accept</button>
                                                         </div>
                                                     </div>
 
@@ -1500,24 +1510,83 @@
                                                             </div>
                                                         </div>
                                                         <div class="decline-accpt-btn d-flex ">
-                                                            <button class="decline w-100">Decline</button>
-                                                            <button class="accept w-100">Accept</button>
+                                                            <button class="decline w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#declineModal">Decline</button>
+                                                            <button class="accept w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#AcceptModal">Accept</button>
                                                         </div>
                                                     </div>
-
-
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Accept Course Modal code -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="AcceptModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body accpt-body">
+                    <img src="Lms-images/check-tick.svg" alt="tick-img">
+                    <h2 class="acpt-title mb-0">Congratulations !</h2>
+                    <p class="acpt-pgh">Your submission has been received, We will contact you soon for further details.
+                    </p>
+                </div>
+                <div class="modal-footer accpt-modal-footer">
+                    <button type="button" class="acpt-btn" data-bs-dismiss="modal">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Decline Course Modal code -->
+
+    <div class="modal fade" id="declineModal" aria-hidden="true" aria-labelledby="declineModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body decline-body d-flex align-items-center flex-column">
+                    <img src="Lms-images/decline.svg" alt="cross-img">
+                    <h2 class="acpt-title">Decline Course</h2>
+                    <p class="acpt-pgh">Do you want to reject the course suggestion?</p>
+                </div>
+                <div class="modal-footer accpt-modal-footer">
+                    <button class="no-btn" data-bs-dismiss="modal">No</button>
+                    <button class="yes-btn" data-bs-target="#reasonModal" data-bs-toggle="modal">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="reasonModal" aria-hidden="true" aria-labelledby="reasonModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body decline-body">
+                    <h2 class="acpt-title">Reason For Rejection</h2>
+                    <p class="acpt-pgh">Do you want to reject the course. Could you please inform us why are you
+                        rejecting
+                        the particular course? <br> Your Suggestion?</p>
+                    <div class="course-input-div">
+                        <div class="form-check checkbox-input">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label check-label" for="flexCheckDefault">
+                                Have already did this course?
+                            </label>
+                        </div>
+                        <textarea class="message-modal-area" id="exampleFormControlTextarea1" rows="6"
+                            placeholder="Your message..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer accpt-modal-footer">
+                    <button class="no-btn" data-bs-dismiss="modal">No</button>
+                    <button class="yes-btn" data-bs-target="#reasonModal" data-bs-toggle="modal">Yes</button>
                 </div>
             </div>
         </div>

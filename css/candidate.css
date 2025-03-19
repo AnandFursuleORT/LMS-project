@@ -931,6 +931,123 @@ img {
     color: #FAFBFB;
 }
 
+.acpt-title {
+    color: #1D3C55;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.accpt-body {
+    padding: 24px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.acpt-pgh {
+    color: #768998;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+}
+
+.accpt-modal-footer {
+    border: none !important;
+    justify-content: center !important;
+    padding: 0 24px 24px 24px !important;
+    flex-wrap: nowrap !important;
+}
+
+.acpt-btn {
+    display: flex;
+    width: 140px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #03599F;
+    color: #FAFBFB;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+.no-btn {
+    display: flex;
+    width: 50%;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #EBEDF0;
+    color: #1D3C55;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+.yes-btn {
+    display: flex;
+    width: 50%;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #03599F;
+    color: #FAFBFB;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+.course-input-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.decline-body {
+    padding: 24px !important;
+}
+
+.message-modal-area {
+    width: 100%;
+}
+
+.message-modal-area {
+    padding: 18px 16px;
+    border-radius: 16px;
+    border: 1px solid #EBEDF0;
+    resize: none;
+}
+
+.check-label {
+    color: #011B30;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+textarea::placeholder {
+    color: #576E81;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
 /* Courses */
 
 .course-tab {
@@ -1381,7 +1498,6 @@ table td a {
     line-height: 24px;
     font-weight: 600;
     color: #011B30;
-
 }
 
 .attempt-mode {
@@ -1529,9 +1645,7 @@ table td a {
     line-height: 28px !important;
     font-weight: 600;
     font-family: "Raleway" !important;
-
 }
-
 
 .tab-links ul li a {
     text-decoration: none;
@@ -1701,7 +1815,6 @@ table td a {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-
 }
 
 .prev-nxt-btn2 {
@@ -2138,7 +2251,7 @@ table td a {
 .modal-body p {
     font-size: 16px;
     line-height: 24px;
-    font-size: 500;
+    font-weight: 500;
     color: #768897;
 }
 

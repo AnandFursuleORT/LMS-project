@@ -263,6 +263,28 @@ img {
     color: #03599F !important;
 }
 
+.settings-menu {
+    color: #768998 !important;
+    font-family: "Plus Jakarta Sans" !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px !important;
+}
+
+.logout-menu {
+    color: #E53A3A !important;
+    font-family: "Plus Jakarta Sans" !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 6px 12px !important;
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+}
+
 .navbar-nav li:hover>ul.dropdown-menu {
     display: block;
 }
@@ -434,7 +456,7 @@ img {
     width: 0%;
     background-color: transparent;
     border: 1px solid #011B30 !important;
-    padding: 6px 18px; 
+    padding: 6px 18px;
     border-radius: 50%;
     transition: all 0.5s ease;
 }
@@ -688,11 +710,6 @@ Homepage CSS
 
 .scroll-buttons.right-scroll {
     right: 0;
-}
-
-.title-course {
-    border-right: 1px solid rgba(255, 255, 255, 0.60);
-    padding-right: 48px;
 }
 
 .tab-title {
@@ -2341,6 +2358,11 @@ li::marker {
 
 .lesson-body {
     padding: 8px 16px !important;
+}
+
+.lect-right {
+    display: flex;
+    align-items: center;
 }
 
 .lect {
