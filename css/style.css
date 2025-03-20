@@ -129,55 +129,6 @@ img {
     transform: translateY(-50%);
 }
 
-.prof-name {
-    color: #011B30;
-    font-family: "Plus Jakarta Sans";
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.prof-dst {
-    color: #768998;
-    font-family: "Plus Jakarta Sans";
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.prof-img {
-    border-radius: 50%;
-}
-
-.dropdown-profile::after {
-    display: none !important;
-}
-
-.dropdown-profile {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-}
-
-.candidate-panel-div a {
-    display: flex;
-    padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    border: 1px solid #03599F;
-    text-decoration: none;
-    color: #03599F;
-    text-align: center;
-    font-family: "Plus Jakarta Sans", serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-}
-
-.candidate-panel-div a:hover {
-    background-color: #03599F;
-    color: #FAFBFB;
-}
-
 /* ===================================
     1. Header
 ====================================== */
@@ -409,22 +360,6 @@ img {
     display: flex !important;
     align-items: center;
     justify-content: center;
-}
-
-.candidate-panel-div a {
-    display: flex;
-    padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    border: 1px solid #03599F;
-    text-decoration: none;
-    color: #03599F;
-    text-align: center;
-    font-family: "Plus Jakarta Sans", serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
 }
 
 /* ===================================

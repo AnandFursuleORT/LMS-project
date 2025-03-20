@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-md nav-main d-none d-lg-block d-md-block">
         <div class="container">
-            <a class="navbar-brand" href="home.html"><img src="images/Logo.svg" alt="main-logo"></a>
+            <a class="navbar-brand" href="index2.html"><img src="images/Logo.svg" alt="main-logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -143,6 +143,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="profile-div  d-flex align-items-center">
                         <img src="images/profile-photo.svg" class="prof-img" alt="profile">
                         <div class="prof-dropdown">
@@ -159,16 +160,29 @@
                                 </a>
 
                                 <ul class="dropdown-menu dropdown-menu-lg-end dropMenu">
-                                    <li><a class="dropdown-item" href="general.html" target="_blank">Settings</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li>
+                                        <a class="dropdown-item settings-menu" target="_blank" href="index2.html">
+                                            <img src="Lms-images/globe.svg" alt="set-img">
+                                            Homepage
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item settings-menu" target="_blank" href="home.html">
+                                            <img src="Lms-images/Dashboard.svg" alt="set-img">
+                                            Dashboard
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item logout-menu" href="login.html">
+                                            <img src="Lms-images/Logout.svg" alt="">
+                                            Logout
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </nav>
@@ -176,8 +190,7 @@
     <!-- Mobile offcanvas navbar -->
     <nav class="navbar offcanvas-nav d-sm-block d-lg-none d-md-none">
         <div class="container-fluid">
-            <a class="navbar-brand" href="home.html"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
-
+            <a class="navbar-brand" href="#"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
             <div class="offcanvas-btn-div ms-auto">
                 <div class="save-later">
                     <a href="saved-courses.html" target="_blank"><img src="images/bookmark1.svg"
@@ -262,31 +275,7 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <a class="navbar-brand" href="home.html"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
-                    <div class="profile-div ms-3 d-flex align-items-center">
-                        <img src="Lms-images/profile.png" class="prof-img" alt="profile">
-                        <div class="prof-dropdown">
-                            <div class="dropdown">
-                                <a class="nav-link dropdown-toggle dropdown-profile" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <div class="prof-sect ms-2">
-                                        <h6 class="prof-name mb-0">Satyam</h6>
-                                        <p class="prof-dst mb-0">Captain</p>
-                                    </div>
-                                    <div class="dropDown-prof ms-2">
-                                        <img src="Lms-images/arrow-down-round2.svg" alt="dropdown">
-                                    </div>
-                                </a>
-
-                                <ul class="dropdown-menu dropdown-menu-end dropMenu">
-                                    <li><a class="dropdown-item menu-item" target="_blank"
-                                            href="general.html">Settings</a></li>
-                                    <li><a class="dropdown-item menu-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item menu-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <a class="navbar-brand" href="#"><img src="Lms-images/Logo.svg" alt="main-logo"></a>
                     <button type="button" class="btn-close offcanvas-close-btn" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -297,7 +286,7 @@
                                 Services
                                 <img src="Lms-images/arrow-down-01-round.svg" alt="arrow2">
                             </a>
-                            <ul class="dropdown-menu dropMenu">
+                            <ul class="dropdown-menu dropMenu show">
                                 <li><a class="dropdown-item menu-item" href="#">Merchant fleet</a></li>
                                 <li><a class="dropdown-item menu-item" href="#">Public Registry of Ships</a>
                                 <li class="dropdown-submenu">
@@ -352,12 +341,25 @@
                         <li class="nav-item">
                             <a class="nav-link navDropdown" aria-current="page" href="#">About</a>
                         </li>
+
+                        <hr class="solid">
+
+                        <li class="nav-item">
+                            <a class="nav-link navDropdown" target="_blank" href="index2.html">Homepage</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link navDropdown" target="_blank" href="home.html">Dashboard</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link navDropdown" href="index.html">Logout</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
-
 
     <div class="main">
         <div class="container">

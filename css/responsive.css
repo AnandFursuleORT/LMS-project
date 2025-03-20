@@ -3,11 +3,6 @@
         font-size: 14px !important;
     }
 
-    .candidate-panel-div a {
-        padding: 10px 16px;
-        font-size: 12px;
-    }
-
     .heroSection {
         height: 110vh;
     }
@@ -571,6 +566,10 @@
         border: 1px solid rgba(255, 255, 255, 0.60);
         background: rgba(2, 53, 95, 0.60);
         backdrop-filter: blur(4px);
+    }
+
+    .c-catalog a {
+        flex-direction: column;
     }
 
     .alt-font {

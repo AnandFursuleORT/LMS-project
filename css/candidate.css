@@ -134,25 +134,26 @@ img {
     background-color: transparent !important;
 }
 
-.candidate-panel-div a {
-    display: flex;
-    padding: 12px 24px;
-    justify-content: center;
+.settings-menu {
+    color: #768998 !important;
+    font-family: "Plus Jakarta Sans" !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    display: flex !important;
     align-items: center;
-    border-radius: 8px;
-    border: 1px solid #03599F;
-    text-decoration: none;
-    color: #03599F;
-    text-align: center;
-    font-family: "Plus Jakarta Sans", serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
+    gap: 8px;
+    padding: 6px 12px !important;
 }
 
-.candidate-panel-div a:hover {
-    background-color: #03599F;
-    color: #FAFBFB;
+.logout-menu {
+    color: #E53A3A !important;
+    font-family: "Plus Jakarta Sans" !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 6px 12px !important;
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
 }
 
 .nt-hdg {
