@@ -857,7 +857,6 @@ img {
     border-bottom: 1px solid #DEE3E6;
     padding-bottom: 16px;
     font-size: 14px;
-    line-height: 20px;
     font-weight: 400;
     color: #1D3C55;
 }
@@ -868,7 +867,6 @@ img {
     padding: 4px 8px;
     border-radius: 6px;
     font-size: 12px;
-    line-height: 18px;
     font-weight: 500;
     color: #9747FF;
 }
@@ -879,7 +877,6 @@ img {
     padding: 4px 8px;
     border-radius: 6px;
     font-size: 12px;
-    line-height: 18px;
     font-weight: 500;
     color: #FE9000;
 }
@@ -890,7 +887,6 @@ img {
     padding: 8px 12px;
     border-radius: 8px;
     font-size: 14px;
-    line-height: 20px;
     font-weight: 600;
     color: #FAFBFB;
 }
@@ -901,7 +897,6 @@ img {
     padding: 8px 12px;
     border-radius: 8px;
     font-size: 14px;
-    line-height: 20px;
     font-weight: 600;
     color: #1D3C55;
 }
@@ -912,7 +907,6 @@ img {
     padding: 8px 12px;
     border-radius: 8px;
     font-size: 14px;
-    line-height: 20px;
     font-weight: 500;
     color: #1D3C55;
 }
@@ -927,7 +921,6 @@ img {
     padding: 8px 12px;
     border-radius: 8px;
     font-size: 14px;
-    line-height: 20px;
     font-weight: 600;
     color: #FAFBFB;
 }
@@ -938,7 +931,6 @@ img {
     font-family: "Raleway";
     font-size: 18px;
     font-weight: 600;
-    line-height: 24px;
 }
 
 .accpt-body {
@@ -1016,6 +1008,16 @@ img {
     justify-content: center;
     flex-direction: column;
     gap: 16px;
+}
+
+.declined {
+    background-color: #dc3545;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FAFBFB;
 }
 
 .decline-body {

@@ -922,6 +922,10 @@
         font-size: 14px;
     }
 
+    .course-start-div {
+        align-items: center;
+    }
+
     /* Footer css */
 
     .footer-web {
