@@ -2926,7 +2926,7 @@ table td a {
 .inst-info-hdg {
     color: #011B30;
     font-family: "Plus Jakarta Sans";
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 24px;
 }
@@ -2966,14 +2966,6 @@ table td a {
     font-family: "Plus Jakarta Sans";
     font-size: 18px;
     font-weight: 700;
-    line-height: 24px;
-}
-
-.inst-info-hdg {
-    color: #011B30;
-    font-family: "Plus Jakarta Sans";
-    font-size: 16px;
-    font-weight: 600;
     line-height: 24px;
 }
 

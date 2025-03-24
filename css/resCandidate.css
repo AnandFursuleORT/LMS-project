@@ -11,7 +11,7 @@
     }
 
     .main .title h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .course-text .text {
@@ -200,8 +200,8 @@
     }
 
     .inst-info-hdg {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 22px;
     }
 
     .inst-info-para {
@@ -289,7 +289,7 @@
     }
 
     .main .title h2 {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 26px;
     }
 
@@ -320,6 +320,14 @@
 
     .search-close-btn:focus {
         box-shadow: none !important;
+    }
+
+    .inst-body {
+        padding: 12px !important;
+    }
+
+    .progressBar-text {
+        font-size: 12px;
     }
 
     /* courses */
@@ -402,6 +410,28 @@
         line-height: 20px;
     }
 
+    .payment-card {
+        padding: 12px;
+        gap: 8px;
+    }
+    
+    .card-text h6 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .change-btn {
+        padding: 8px 12px;
+    }
+
+    .payment-history-download-btn {
+        padding: 8px;
+    }
+
+    .jcalendar-input {
+        padding: 10px;
+    }
+
     /* footer */
     .footer-web {
         padding: 32px 16px;
@@ -482,6 +512,7 @@
     .accordion-button::after {
         background-image: url('/Lms-images/elements.svg') !important;
         background-position: center center;
+        background-size: 14px auto !important;
     }
 
     .accordion-button {
@@ -613,7 +644,7 @@
     }
 
     .payments-section-two {
-        padding: 12px;
+        padding: 8px;
     }
 
     /* institute page css */
@@ -638,11 +669,13 @@
     }
 
     .inst-info-hdg {
-        font-size: 1.1rem;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .inst-info-para {
-        font-size: 0.9rem;
+        font-size: 12px;
+        margin-bottom: 0;
     }
 
     .inst-info-card {
