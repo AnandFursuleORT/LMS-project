@@ -1046,6 +1046,14 @@
         border-radius: 8px 8px 0 0 !important;
     }
 
+    .cp-text p {
+        font-size: 14px;
+    }
+
+    .policySect a {
+        font-size: 14px;
+    }
+
     .inputs-part {
         margin-top: 16px;
     }
@@ -1302,7 +1310,7 @@
     }
 
     .lsn-acdn-btn:not(.collapsed) {
-        background-position: 4px 16px;
+        background-position: 4px 12px;
     }
 
     .lect {
