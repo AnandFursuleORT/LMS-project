@@ -26,7 +26,6 @@ img {
     max-width: 100%;
 }
 
-
 .nav-main {
     padding: 12px 0 !important;
     background-color: rgba(255, 230, 198, 0.20);
@@ -39,7 +38,6 @@ img {
 .dropdown-submenu .dropdown-menu {
     top: 10%;
     left: 100%;
-    margin-top: -1px;
 }
 
 .dropMenu {
@@ -421,7 +419,6 @@ img {
 .course-text {
     display: flex;
     justify-content: space-between;
-
 }
 
 .course-text .text {
@@ -732,9 +729,7 @@ img {
 
 .progress {
     height: 6px !important;
-    background-color: #DDEFFE !important;
-
-
+    background-color: #DDEFFE !important
 }
 
 .institute-label {
@@ -755,7 +750,6 @@ img {
     font-weight: 400;
     color: #011B30;
     margin-bottom: 24px;
-
 }
 
 .progress-percent {
@@ -770,16 +764,12 @@ img {
 
 }
 
-
 .course-title h4 {
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
     color: #011B30;
-
     font-family: "Raleway" !important;
-
-
 }
 
 .progress-bar {
@@ -793,7 +783,6 @@ img {
 .zero {
     background-color: #EBEDF0 !important;
 }
-
 
 .course-info {
     font-size: 14px;
@@ -833,7 +822,6 @@ img {
     font-weight: 600;
     color: #E53A3A;
 }
-
 
 /* Recommendation */
 
@@ -1287,7 +1275,6 @@ textarea::placeholder {
     box-shadow: none !important;
 }
 
-
 .info-hdg {
     color: #011B30;
     font-family: "Raleway", serif;
@@ -1508,7 +1495,6 @@ table td a {
     line-height: 18px;
     font-weight: 400;
     color: #768998;
-
 }
 
 .attempt-connect {
@@ -1628,7 +1614,6 @@ table td a {
     color: #E28000;
     text-decoration: none;
 }
-
 
 .accordion-tab {
     padding: 16px 24px !important;
@@ -1899,7 +1884,6 @@ table td a {
     font-weight: 500;
     color: #81858B;
 }
-
 
 /* Certification */
 
@@ -2392,14 +2376,12 @@ table td a {
     box-shadow: none !important;
 }
 
-
 .privacy-input label {
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
     color: #768897;
 }
-
 
 .privacy-input {
     display: flex;
@@ -2811,6 +2793,10 @@ table td a {
     font-size: 16px;
     font-weight: 600;
     color: #FAFBFB;
+}
+
+.upload-btn .btn:hover {
+    color: #FAFBFB !important;
 }
 
 .seafarers-info .form-text {
