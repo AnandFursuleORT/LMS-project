@@ -586,13 +586,6 @@
         gap: 16px;
     }
 
-    .signIn-btn {
-        margin-left: 0 !important;
-    }
-
-    .signUp-btn {
-        margin-left: 0 !important;
-    }
 
     .img-swiper {
         margin-top: 20px;
@@ -1079,11 +1072,31 @@
         margin-bottom: 0.5rem;
     }
 
+    .heading h2 {
+        font-size: 1.25rem;
+    }
+
+    .signIn-btn {
+        margin-left: 0 !important;
+    }
+
+    .forgot-password a {
+        font-size: 0.625rem;
+    }
+
+    .first label {
+        font-size: 0.75rem;
+    }
+
     /* SignUp page css */
 
     .img-div img {
         height: 40vh;
         object-fit: cover;
+    }
+
+    .signUp-btn {
+        margin-left: 0 !important;
     }
 
     .container1 {

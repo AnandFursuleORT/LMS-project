@@ -30,20 +30,6 @@ body {
   width: 100%;
 }
 
-.heading h2 {
-  font-family: "Plus Jakarta Sans", serif;
-  font-weight: 700;
-  font-size: 1.375rem;
-  color: #01233f;
-}
-
-.heading p {
-  font-weight: 500;
-  font-size: 0.875rem;
-  color: #768897;
-  margin-bottom: 0.5rem;
-}
-
 ::selection {
   color: #fff;
   background: #d43f8d;
