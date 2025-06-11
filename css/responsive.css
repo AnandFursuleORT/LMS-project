@@ -557,7 +557,7 @@
     .heroSection {
         padding: 40px 16px 40px 16px;
         min-height: 100vh;
-        background-image: url('/Lms-images/Banner-mobile.png');
+        background-image: url('../assets/Lms-images/Banner-mobile.png');
     }
 
     .counter-sect {
@@ -600,7 +600,7 @@
     }
 
     .navbar-toggler-icon {
-        background-image: url('/Lms-images/menu-03.svg') !important;
+        background-image: url('../assets/Lms-images/menu-03.svg') !important;
     }
 
     .mobile-nav-btn {
@@ -1015,7 +1015,7 @@
     }
 
     .footer-acdn-btn::after {
-        background-image: url('/Lms-images/elements.svg') !important;
+        background-image: url('../assets/Lms-images/elements.svg') !important;
         background-position: center center;
     }
 

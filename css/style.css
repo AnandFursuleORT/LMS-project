@@ -260,7 +260,7 @@ img {
 }
 
 .search-input {
-    background-image: url('/Lms-images/search-icon.svg');
+    background-image: url('../assets/Lms-images/search-icon.svg');
     background-repeat: no-repeat;
     background-position: 12px 14px;
     background-size: 20px 20px;
@@ -371,7 +371,7 @@ img {
 }
 
 .navbar-toggler-icon {
-    background-image: url('/Lms-images/menu-03.svg') !important;
+    background-image: url('../assets/Lms-images/menu-03.svg') !important;
 }
 
 .mobile-nav-btn {
@@ -459,7 +459,7 @@ Homepage CSS
 
 .heroSection {
     padding: 40px 0 20px 0;
-    background: url('/Lms-images/Banner-img2.png') lightgray;
+    background: url('../assets/Lms-images/Banner-img2.png') lightgray;
     min-height: 125vh;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -847,7 +847,7 @@ Homepage CSS
 
 .mission-sect {
     border-radius: 20px;
-    background: url('/Lms-images/about1.png') lightgray 50% / cover no-repeat;
+    background: url('../assets/Lms-images/about1.png') lightgray 50% / cover no-repeat;
     display: flex;
     padding: 24px;
     align-items: center;
@@ -884,7 +884,7 @@ Homepage CSS
 
 .vision-sect {
     border-radius: 20px;
-    background: url('/Lms-images/about2.png') lightgray 50% / cover no-repeat;
+    background: url('../assets/Lms-images/about2.png') lightgray 50% / cover no-repeat;
     display: flex;
     padding: 24px;
     align-items: center;
@@ -1298,7 +1298,7 @@ Course List page CSS
     border: 1px solid #DEE3E6;
     background: #FAFBFB;
     border-radius: 12px;
-    background-image: url('/Lms-images/search-icon.svg');
+    background-image: url('../assets/Lms-images/search-icon.svg');
     background-position: 16px 16px;
     background-size: 24px 24px;
     background-repeat: no-repeat;
@@ -1324,7 +1324,7 @@ Course List page CSS
     border-radius: 8px;
     border: 1px solid #DEE3E6;
     background: #FAFBFB;
-    background-image: url('/Lms-images/small-search.svg');
+    background-image: url('../assets/Lms-images/small-search.svg');
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 12px 12px 34px;
@@ -1460,7 +1460,7 @@ Course List page CSS
 }
 
 .filter-acdn-btn::after {
-    background-image: url('/Lms-images/filter-down.svg') !important;
+    background-image: url('../assets/Lms-images/filter-down.svg') !important;
     background-position: center center;
 }
 
@@ -1852,7 +1852,7 @@ Course Details page css
 
 .Course-detail-banner {
     padding: 32px 0 60px 0;
-    background: linear-gradient(180deg, rgba(1, 27, 48, 0.00) -1.73%, rgba(1, 27, 48, 0.90) 100%), url('/Lms-images/detail-Image.png') lightgray 0px -440.078px / 100% 256.031% no-repeat;
+    background: linear-gradient(180deg, rgba(1, 27, 48, 0.00) -1.73%, rgba(1, 27, 48, 0.90) 100%), url('../assets/Lms-images/detail-Image.png') lightgray 0px -440.078px / 100% 256.031% no-repeat;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2137,7 +2137,7 @@ li::marker {
 }
 
 .loct-dn {
-    background-image: url('/Lms-images/arrow-down-round2.svg');
+    background-image: url('../assets/Lms-images/arrow-down-round2.svg');
     background-repeat: no-repeat;
     background-position: 165px 15px;
     padding: 12px 16px !important;
@@ -2153,7 +2153,7 @@ li::marker {
 }
 
 .cont-dn {
-    background-image: url('/Lms-images/arrow-down-round2.svg');
+    background-image: url('../assets/Lms-images/arrow-down-round2.svg');
     background-repeat: no-repeat;
     background-position: 165px 15px;
     padding: 12px 16px !important;
@@ -2243,7 +2243,7 @@ li::marker {
 }
 
 .lsn-acdn-btn {
-    background-image: url('/Lms-images/arrow-down-01-round.svg');
+    background-image: url('../assets/Lms-images/arrow-down-01-round.svg');
     background-repeat: no-repeat;
     background-position: 14px 16px;
     padding-left: 40px !important;
@@ -2263,7 +2263,7 @@ li::marker {
 }
 
 .lsn-acdn-btn:not(.collapsed) {
-    background-image: url('/Lms-images/arrow-down-02-round.svg');
+    background-image: url('../assets/Lms-images/arrow-down-02-round.svg');
     background-repeat: no-repeat;
     background-position: 14px 16px;
     color: #FAFBFB !important;
@@ -2371,7 +2371,7 @@ li::marker {
 }
 
 .lang-select {
-    background-image: url('/Lms-images/arrow-down-01-sharp.svg') !important;
+    background-image: url('../assets/Lms-images/arrow-down-01-sharp.svg') !important;
     background-size: 18px 18px !important;
     border-radius: 8px !important;
     border: 1px solid #DEE3E6 !important;
@@ -2501,7 +2501,7 @@ li::marker {
 }
 
 .faq-acdn-btn::after {
-    background-image: url('/Lms-images/arrow-down-round2.svg') !important;
+    background-image: url('../assets/Lms-images/arrow-down-round2.svg') !important;
     background-repeat: no-repeat !important;
 }
 
@@ -2511,7 +2511,7 @@ li::marker {
 }
 
 .faq-acdn-btn:not(.collapsed)::after {
-    background-image: url('/Lms-images/arrow-down-02-round.svg') !important;
+    background-image: url('../assets/Lms-images/arrow-down-02-round.svg') !important;
     background-repeat: no-repeat !important;
 }
 

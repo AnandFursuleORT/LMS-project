@@ -87,7 +87,7 @@ img {
 }
 
 .search-input {
-    background-image: url('/images/search.svg');
+    background-image: url('../assets/images/search.svg');
     background-repeat: no-repeat;
     background-position: 12px 14px;
     background-size: 20px 20px;
@@ -277,7 +277,7 @@ img {
 }
 
 .navbar-toggler-icon {
-    background-image: url('/Lms-images/menu-03.svg') !important;
+    background-image: url('../assets/Lms-images/menu-03.svg') !important;
 }
 
 .mobile-nav-btn {
@@ -669,7 +669,7 @@ img {
 /* Your Traning */
 
 .training-search {
-    background-image: url('/images/training-search.svg');
+    background-image: url('../assets/images/training-search.svg');
     background-repeat: no-repeat;
     background-position: 8px 9px;
     background-size: 12% auto;
@@ -1074,7 +1074,7 @@ textarea::placeholder {
     border-radius: 8px;
     border: 1px solid #DEE3E6;
     background: #FAFBFB;
-    background-image: url('/Lms-images/small-search.svg');
+    background-image: url('../assets/Lms-images/small-search.svg');
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 12px 12px 34px;
@@ -1210,7 +1210,7 @@ textarea::placeholder {
 }
 
 .filter-acdn-btn::after {
-    background-image: url('/Lms-images/filter-down.svg') !important;
+    background-image: url('../assets/Lms-images/filter-down.svg') !important;
     background-position: center center;
 }
 
@@ -1519,7 +1519,7 @@ table td a {
 }
 
 .offcanvas-backdrop {
-    cursor: url('/images/cancel-01.svg'), auto;
+    cursor: url('../assets/images/cancel-01.svg'), auto;
 }
 
 /* FAQ */
@@ -1546,7 +1546,7 @@ table td a {
 
 .faq-banner-search {
     background-color: transparent;
-    background-image: url('/images/training-search.svg');
+    background-image: url('../assets/images/training-search.svg');
     background-repeat: no-repeat;
     background-position: 98% 50%;
     padding: 12px;
@@ -1695,7 +1695,7 @@ table td a {
 }
 
 .faq-accordion-btn::after {
-    background-image: url('/images/arrow-down-accordion.svg') !important;
+    background-image: url('../assets/images/arrow-down-accordion.svg') !important;
 }
 
 .faq-accordion-btn:focus {
@@ -2405,11 +2405,11 @@ table td a {
 }
 
 .form-switch .form-check-input:focus {
-    background-image: url('/images/toggle-background.svg') !important;
+    background-image: url('../assets/images/toggle-background.svg') !important;
 }
 
 .form-switch .form-check-input:checked {
-    background-image: url('/images/white-toggle.svg') !important;
+    background-image: url('../assets/images/white-toggle.svg') !important;
     background-color: #E28000 !important;
     border: none !important;
 }
@@ -2699,7 +2699,7 @@ table td a {
 
 .jcalendar-input {
     padding: 12px 16px;
-    background-image: url('/images/filter.svg') !important;
+    background-image: url('../assets/images/filter.svg') !important;
     padding-right: 0px !important;
     font-size: 14px !important;
     line-height: 20px !important;
@@ -2885,7 +2885,7 @@ table td a {
 }
 
 .inst-accordion-btn::after {
-    background-image: url('/images/arrow-down-accordion.svg') !important;
+    background-image: url('../assets/images/arrow-down-accordion.svg') !important;
 }
 
 .inst-accordion-btn:focus {

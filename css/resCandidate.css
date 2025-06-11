@@ -507,7 +507,7 @@
     }
 
     .accordion-button::after {
-        background-image: url('/Lms-images/elements.svg') !important;
+        background-image: url('../assets/Lms-images/elements.svg') !important;
         background-position: center center;
         background-size: 14px auto !important;
     }
